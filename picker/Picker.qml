@@ -29,6 +29,7 @@ PanelWindow {
         const e = Quickshell.env("EMOJIZASU_DBUS_NAME")
         return (e && e.length > 0) ? e : "org.emojizasu.InputMethod"
     }
+    readonly property string dbusInterface: "org.emojizasu.InputMethod"
 
     // Unix socket the addon forwards keystrokes over while the picker is up.
     // The addon never lets the picker take Wayland keyboard focus, so search /
@@ -104,7 +105,7 @@ PanelWindow {
                 "qdbus6",
                 window.dbusService,
                 "/imd",
-                window.dbusService + ".QueuedCommit",
+                window.dbusInterface + ".QueuedCommit",
                 emoji
             ]
             commitProcess.running = true

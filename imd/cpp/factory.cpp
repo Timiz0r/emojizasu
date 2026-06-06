@@ -6,22 +6,19 @@
 
 // Rust exports
 extern "C" {
-    void* rust_addon_init(FcitxAddonManager* mgr);
-    void  rust_addon_destroy(void* state);
+    void rust_addon_init(FcitxAddonManager* mgr);
+    void rust_addon_destroy();
 }
 
 class EmojizasuAddon : public fcitx::AddonInstance {
 public:
-    explicit EmojizasuAddon(fcitx::AddonManager* mgr)
-        : rust_state_(rust_addon_init(
-              reinterpret_cast<FcitxAddonManager*>(mgr))) {}
-
-    ~EmojizasuAddon() override {
-        rust_addon_destroy(rust_state_);
+    explicit EmojizasuAddon(fcitx::AddonManager* mgr) {
+        rust_addon_init(reinterpret_cast<FcitxAddonManager*>(mgr));
     }
 
-private:
-    void* rust_state_;
+    ~EmojizasuAddon() override {
+        rust_addon_destroy();
+    }
 };
 
 class EmojizasuFactory : public fcitx::AddonFactory {

@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 # End-to-end emoji-commit tests.
 #
-# For each case the harness: focuses a target window, locks it via RegisterSelf,
-# issues a QueuedCommit (exactly what the real picker does on an emoji click),
-# then reads the target text back over IPC and asserts the emoji landed. This is
-# the real pipeline: addon -> waylandim -> KWin -> target's text-input-v3.
+# For each case the harness: focuses a target window, issues a QueuedCommit
+# (exactly what the real picker does on an emoji click), then reads the target
+# text back over IPC and asserts the emoji landed. This is the real pipeline:
+# addon -> waylandim -> KWin -> target's text-input-v3.
 #
 # Drives the isolated test addon (org.emojizasu.InputMethodTest), which writes to
 # its own recent.json (…/emojizasu-test/) — so runs never touch the production
@@ -15,6 +15,7 @@ SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 TARGET_DIR="$SCRIPT_DIR/target"
 TARGET_TITLE="EmojizasuTestTarget"
 SERVICE="org.emojizasu.InputMethodTest"
+INTERFACE="org.emojizasu.InputMethod"
 # Which compositor's IPC drives window focus. "kwin" = live KDE session;
 # "sway" = headless sway (container/CI); "none" = rely on self-activation alone.
 TEST_COMPOSITOR="${TEST_COMPOSITOR:?TEST_COMPOSITOR must be set}"
@@ -44,7 +45,7 @@ ok()   { echo "  ✓ $*"; PASS=$((PASS+1)); }
 bad()  { echo "  ✗ $*"; FAIL=$((FAIL+1)); }
 skip() { echo "  ⊘ $*"; SKIP=$((SKIP+1)); }
 
-imd()        { qdbus6 "$SERVICE" /imd "$SERVICE.$1" "${@:2}"; }
+imd()        { qdbus6 "$SERVICE" /imd "$INTERFACE.$1" "${@:2}"; }
 tgt()        { qs ipc --path "$TARGET_DIR" call testtarget "$@" 2>/dev/null; }
 pkr()        { qs ipc --path "$PICKER_DIR" call emojizasu "$@" 2>/dev/null; }
 pkr_broken() { qs ipc --path "$PICKER_DIR_BROKEN" call emojizasu "$@" 2>/dev/null; }
@@ -106,14 +107,11 @@ commit_case() {
     ensure_focused || { bad "$name (target never gained focus)"; return; }
     tgt clear >/dev/null
     [ -n "$seed" ] && tgt setText "$seed" >/dev/null
-    imd RegisterSelf
-    sleep 0.1
     for e in "${emojis[@]}"; do imd QueuedCommit "$e"; sleep 0.15; done
 
     local got="$(expect_text "$want")"
     if [ "$got" = "$want" ]; then ok "$name → '$got'"
     else bad "$name: expected '$want' got '$got'"; fi
-    imd UnregisterSelf
 }
 
 # The test addon's key socket (test-variant uses emojizasu-imd-test.sock). Point
@@ -133,11 +131,9 @@ picker_ui_case() {
     start_picker   || { bad "$name (picker didn't start)"; return; }
     ensure_focused || { bad "$name (target never gained focus)"; return; }
     tgt clear >/dev/null
-    imd RegisterSelf
-    sleep 0.1
     pkr open >/dev/null
     sleep 0.3
-    if [ "$(pkr isVisible)" != "true" ]; then bad "$name (picker not visible)"; imd UnregisterSelf; return; fi
+    if [ "$(pkr isVisible)" != "true" ]; then bad "$name (picker not visible)"; return; fi
     pkr pick "$pick" >/dev/null
 
     local got search
@@ -148,7 +144,6 @@ picker_ui_case() {
     else
         bad "$name: target='$got' (want '$pick'), searchBox='$search' (want empty)"
     fi
-    imd UnregisterSelf
     pkr hide >/dev/null
 }
 
@@ -195,11 +190,9 @@ picker_leak_control_case() {
     start_picker_broken || { bad "$name (broken picker didn't start)"; return; }
     ensure_focused      || { bad "$name (target never gained focus)"; return; }
     tgt clear >/dev/null
-    imd RegisterSelf
-    sleep 0.1
     pkr_broken open >/dev/null # focusable:true
     sleep 0.5
-    if [ "$(pkr_broken isVisible)" != "true" ]; then bad "$name (picker not visible)"; imd UnregisterSelf; return; fi
+    if [ "$(pkr_broken isVisible)" != "true" ]; then bad "$name (picker not visible)"; return; fi
     pkr_broken focusSearch >/dev/null
     sleep 0.2
     pkr_broken pick "$pick" >/dev/null
@@ -213,7 +206,6 @@ picker_leak_control_case() {
     else
         bad "$name: NO leak reproduced (target='$target_text', search='$search_text') — picker_ui_case can't catch the regression"
     fi
-    imd UnregisterSelf
     pkr_broken hide >/dev/null
     pkill -f -- "--path $PICKER_DIR_BROKEN" 2>/dev/null || true
 }
@@ -242,7 +234,7 @@ picker_search_input_case
 picker_leak_control_case
 
 # Recent list reflects committed emoji.
-ensure_focused && { tgt clear >/dev/null; imd RegisterSelf; imd QueuedCommit "🦄"; sleep 0.3; imd UnregisterSelf; }
+ensure_focused && { tgt clear >/dev/null; imd QueuedCommit "🦄"; sleep 0.3; }
 if imd GetRecent | grep -q "🦄"; then ok "recent list updated (contains 🦄)"
 else bad "recent list missing 🦄: $(imd GetRecent)"; fi
 

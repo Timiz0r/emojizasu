@@ -8,6 +8,7 @@ set -u
 ADDON_SO="${TEST_ADDON_SO:-/addon/libemojizasu_imd_test.so}"
 ADDON_CONF="${EMZ_ADDON_CONF:-/src/imd/emojizasu-imd-test.conf}"
 SERVICE="org.emojizasu.InputMethodTest"
+INTERFACE="org.emojizasu.InputMethod"
 TARGET_DIR="/src/test/target"
 
 export XDG_RUNTIME_DIR="${XDG_RUNTIME_DIR:-/tmp/xdg}"
@@ -60,10 +61,10 @@ log "addon installed; libs resolve"
 
 fcitx5 >/tmp/fcitx5.log 2>&1 &
 for i in $(seq 1 160); do
-    qdbus6 "$SERVICE" /imd "$SERVICE.GetRecent" >/dev/null 2>&1 && break
+    qdbus6 "$SERVICE" /imd "$INTERFACE.GetRecent" >/dev/null 2>&1 && break
     sleep 0.25
 done
-if ! qdbus6 "$SERVICE" /imd "$SERVICE.GetRecent" >/dev/null 2>&1; then
+if ! qdbus6 "$SERVICE" /imd "$INTERFACE.GetRecent" >/dev/null 2>&1; then
     echo "[setup] $SERVICE never came up. fcitx5 log:"; tail -25 /tmp/fcitx5.log
     echo "--- did the addon load? ---"; grep -i "emojizasu\|addon" /tmp/fcitx5.log | tail -10
     exit 1

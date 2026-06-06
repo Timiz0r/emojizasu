@@ -3,10 +3,6 @@
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
-# Lock the focused IC before the picker becomes visible.
-# RegisterSelf must happen while the target app's text input is still active.
-qdbus6 org.emojizasu.InputMethod /imd org.emojizasu.InputMethod.RegisterSelf 2>/dev/null || true
-
 # If qs is already running, toggle via IPC.
 if qs ipc --path "$SCRIPT_DIR/picker" call emojizasu toggle 2>/dev/null; then
     exit 0

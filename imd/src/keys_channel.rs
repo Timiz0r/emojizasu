@@ -1,11 +1,11 @@
 //! Key forwarding (addon → picker).
 //!
 //! While the picker is up it connects to the key socket; the C++ key watcher
-//! then calls [`on_key`] for every key on the locked IC. We forward keys to the
+//! then calls [`rust_key_handler`] for every key. We forward keys to the
 //! connected picker over the socket and report them consumed, so the underlying
 //! app never sees them. With no picker connected, keys pass straight through.
 
-use std::ffi::CStr;
+use std::future::Future;
 use std::os::raw::c_char;
 use std::path::PathBuf;
 use std::sync::atomic::{AtomicBool, Ordering};
@@ -15,11 +15,9 @@ use tokio::net::UnixListener;
 use tokio::sync::mpsc::{unbounded_channel, UnboundedReceiver, UnboundedSender};
 
 extern "C" {
-    fn shim_set_key_handler(cb: extern "C" fn(u32, u32, *const c_char, bool) -> bool);
+    fn shim_install_key_watcher(inst: *mut std::os::raw::c_void);
 }
 
-// Key-forwarding socket filename (under $XDG_RUNTIME_DIR), per variant so the
-// test addon and production addon never share one.
 #[cfg(not(feature = "test-variant"))]
 const KEY_SOCKET_NAME: &str = "emojizasu-imd.sock";
 #[cfg(feature = "test-variant")]
@@ -28,32 +26,40 @@ const KEY_SOCKET_NAME: &str = "emojizasu-imd-test.sock";
 static KEY_TX: OnceLock<UnboundedSender<String>> = OnceLock::new();
 static READER_CONNECTED: AtomicBool = AtomicBool::new(false);
 
-extern "C" fn on_key(sym: u32, states: u32, text: *const c_char, is_release: bool) -> bool {
-    let connected = READER_CONNECTED.load(Ordering::Acquire);
-    eprintln!("emojizasu-imd: on_key sym={sym:x} release={is_release} reader_connected={connected}");
-    // No picker listening — let the key reach the focused app untouched.
-    if !connected {
-        return false;
-    }
-    // Picker owns input: swallow releases (we only forward presses) but still
-    // report them consumed so stray releases don't leak to the app.
-    if is_release {
-        return true;
-    }
-    let utf8 = if text.is_null() {
-        ""
-    } else {
-        unsafe { CStr::from_ptr(text) }.to_str().unwrap_or("")
-    };
-    // Strip control chars so nothing can break the newline-framed wire format.
-    let safe: String = utf8.chars().filter(|c| !c.is_control()).collect();
-    if let Some(tx) = KEY_TX.get() {
-        let _ = tx.send(format!("{sym} {states} {safe}"));
-    }
-    true
+/// Owns the key-forwarding socket path and the channel receiver used to
+/// shuttle keys from the C++ watcher to the connected picker.
+pub(crate) struct KeysChannel {
+    socket_path: PathBuf,
+    rx: Option<UnboundedReceiver<String>>,
 }
 
-pub fn socket_path() -> PathBuf {
+impl Drop for KeysChannel {
+    fn drop(&mut self) {
+        let _ = std::fs::remove_file(&self.socket_path);
+    }
+}
+
+/// Install the C++ key watcher, resolve the socket path, and create the
+/// forwarding channel.
+pub(crate) fn new(instance_ptr: *mut std::os::raw::c_void) -> KeysChannel {
+    let (tx, rx) = unbounded_channel::<String>();
+    let _ = KEY_TX.set(tx);
+    unsafe { shim_install_key_watcher(instance_ptr) };
+    KeysChannel { socket_path: socket_path(), rx: Some(rx) }
+}
+
+impl KeysChannel {
+    /// Return a `'static` future that serves the key socket until cancelled.
+    /// Moves the receiver out so `self` can be placed in [`crate::AddonState`]
+    /// immediately after this call.
+    pub(crate) fn run(&mut self) -> impl Future<Output = std::convert::Infallible> + Send + 'static {
+        let path = self.socket_path.clone();
+        let rx = self.rx.take().expect("run called twice");
+        async move { run_socket(path, rx).await }
+    }
+}
+
+fn socket_path() -> PathBuf {
     if let Ok(p) = std::env::var("EMOJIZASU_KEY_SOCKET") {
         return PathBuf::from(p);
     }
@@ -63,18 +69,29 @@ pub fn socket_path() -> PathBuf {
     base.join(KEY_SOCKET_NAME)
 }
 
-/// Create the key-forwarding channel and install the C++ key handler. Returns
-/// the receiver to be drained by [`run_socket`].
-pub fn install_handler() -> UnboundedReceiver<String> {
-    let (tx, rx) = unbounded_channel::<String>();
-    let _ = KEY_TX.set(tx);
-    unsafe { shim_set_key_handler(on_key) };
-    rx
+#[no_mangle]
+pub extern "C" fn rust_key_handler(sym: u32, states: u32, text: *const c_char, text_len: usize, is_release: bool) -> bool {
+    let connected = READER_CONNECTED.load(Ordering::Acquire);
+    if !connected {
+        return false;
+    }
+    if is_release {
+        return true;
+    }
+    let utf8 = if text.is_null() || text_len == 0 {
+        ""
+    } else {
+        unsafe { std::str::from_utf8(std::slice::from_raw_parts(text as *const u8, text_len)) }
+            .unwrap_or("")
+    };
+    let safe: String = utf8.chars().filter(|c| !c.is_control()).collect();
+    if let Some(tx) = KEY_TX.get() {
+        let _ = tx.send(format!("{sym} {states} {safe}"));
+    }
+    true
 }
 
-/// Serve the key socket: bind (retrying on failure with capped backoff), then
-/// accept pickers forever. Runs until the task is cancelled at shutdown.
-pub async fn run_socket(path: PathBuf, mut rx: UnboundedReceiver<String>) -> ! {
+async fn run_socket(path: PathBuf, mut rx: UnboundedReceiver<String>) -> ! {
     let mut backoff = crate::RETRY_INIT;
     loop {
         let _ = std::fs::remove_file(&path);
