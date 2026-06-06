@@ -10,8 +10,6 @@ extern "C" {
     void  rust_addon_destroy(void* state);
 }
 
-// Thin C++ shell that satisfies fcitx5's vtable requirement.
-// All logic lives on the Rust side.
 class EmojizasuAddon : public fcitx::AddonInstance {
 public:
     explicit EmojizasuAddon(fcitx::AddonManager* mgr)
@@ -33,8 +31,6 @@ public:
     }
 };
 
-// Called from Rust's #[no_mangle] fcitx_addon_factory_instance so that
-// Rust's linker version script controls the symbol's export visibility.
 extern "C" fcitx::AddonFactory* emojizasu_get_factory() {
     static EmojizasuFactory factory;
     return &factory;

@@ -116,8 +116,14 @@ commit_case() {
     imd UnregisterSelf
 }
 
+# The test addon's key socket (test-variant uses emojizasu-imd-test.sock). Point
+# the picker at it so it never connects to / triggers interception on the
+# production addon's socket.
+KEY_SOCKET="${XDG_RUNTIME_DIR:-/tmp}/emojizasu-imd-test.sock"
+
 start_picker() {
-    EMOJIZASU_DBUS_NAME="$SERVICE" qs --path "$PICKER_DIR" &>/dev/null &
+    EMOJIZASU_DBUS_NAME="$SERVICE" EMOJIZASU_KEY_SOCKET="$KEY_SOCKET" \
+        qs --path "$PICKER_DIR" &>/dev/null &
     for i in $(seq 1 40); do pkr hide &>/dev/null && return 0; sleep 0.1; done
     return 1
 }
@@ -146,8 +152,31 @@ picker_ui_case() {
     pkr hide >/dev/null
 }
 
+# Forwarded keys (addon→socket→panel) drive the search box, with no Wayland
+# keyboard focus on the picker. Uses the feedKey hook to inject wire-format key
+# lines — the same path real keys take after the socket — so it runs without
+# input synthesis. fcitx keysyms: c=99 a=97 t=116, BackSpace=0xff08=65288.
+picker_search_input_case() {
+    local name="real picker: forwarded keys type into search box"
+    start_picker || { bad "$name (picker didn't start)"; return; }
+    pkr open >/dev/null; sleep 0.2
+    pkr feedKey "99 0 c" >/dev/null
+    pkr feedKey "97 0 a"  >/dev/null
+    pkr feedKey "116 0 t" >/dev/null
+    sleep 0.1
+    local s; s="$(pkr searchBoxText)"
+    if [ "$s" = "cat" ]; then ok "$name → search='$s'"
+    else bad "$name: search='$s' (want 'cat')"; fi
+
+    pkr feedKey "65288 0 " >/dev/null; sleep 0.1
+    s="$(pkr searchBoxText)"
+    if [ "$s" = "ca" ]; then ok "$name: backspace → '$s'"
+    else bad "$name: backspace got '$s' (want 'ca')"; fi
+    pkr hide >/dev/null
+}
+
 start_picker_broken() {
-    EMOJIZASU_DBUS_NAME="$SERVICE" EMOJIZASU_FORCE_FOCUSABLE=1 \
+    EMOJIZASU_DBUS_NAME="$SERVICE" EMOJIZASU_KEY_SOCKET="$KEY_SOCKET" EMOJIZASU_FORCE_FOCUSABLE=1 \
         qs --path "$PICKER_DIR_BROKEN" &>/dev/null &
     for i in $(seq 1 40); do pkr_broken hide &>/dev/null && return 0; sleep 0.1; done
     return 1
@@ -209,6 +238,7 @@ commit_case "commit into empty field"     ""      "🎉"
 commit_case "append at cursor (seeded)"    "neko"  "🐱"
 commit_case "multiple commits in a row"    ""      "🎉" "🔥" "💯"
 picker_ui_case
+picker_search_input_case
 picker_leak_control_case
 
 # Recent list reflects committed emoji.

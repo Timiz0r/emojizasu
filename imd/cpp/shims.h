@@ -18,6 +18,19 @@ FcitxInstance*     shim_get_instance(FcitxAddonManager* mgr);
 void               shim_setup_ic_tracking(FcitxInstance* inst,
                                           const char* skip_program);
 
+// Key handler invoked (on the fcitx5 main thread) for every key event on the
+// locked IC, in the PreInputMethod phase. Returns true if the key was consumed
+// (the watcher then filterAndAccept()s it so it never reaches the app).
+//   sym/states: fcitx KeySym / KeyStates as raw integers
+//   utf8:       keySymToUTF8(sym) — the typed character, "" for non-text keys
+//   isRelease:  true for key-release events
+typedef bool (*ShimKeyHandler)(unsigned int sym, unsigned int states,
+                               const char* utf8, bool isRelease);
+
+// Install the key handler used by the PreInputMethod key watcher. Pass nullptr
+// to disable forwarding.
+void               shim_set_key_handler(ShimKeyHandler cb);
+
 // Snapshot s_target_ic into s_locked_ic so commits go there until unlocked.
 void               shim_lock_ic();
 

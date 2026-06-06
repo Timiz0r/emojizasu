@@ -18,6 +18,17 @@ Rectangle {
     property string searchText: ""
     property string currentCategory: "recent"
 
+    // True only in the test negative-control (EMOJIZASU_FORCE_FOCUSABLE): the
+    // search field becomes a real focused IME TextInput that reproduces the
+    // focus-steal leak. Normally false — search is driven by keys forwarded from
+    // the addon over the socket, with no Wayland keyboard focus involved.
+    property bool forceFocusable: false
+    // Which UI element keys are routed to. Only "search" today; arrow/tab nav
+    // between grid/history will add more.
+    property string internalFocus: "search"
+    property bool caretOn: true
+    property bool keyChannelDown: false
+
     property var emojiData: null
     property var categoryMeta: []
     property var recentList: []
@@ -40,8 +51,53 @@ Rectangle {
 
     function focusSearch() { searchInput.forceActiveFocus() }
     // Whether the search field holds active focus — used by tests to assert a
-    // commit didn't leak into the search box.
+    // commit didn't leak into the search box. Normally always false (the picker
+    // never takes keyboard focus); only the negative-control TextInput can focus.
     readonly property bool searchFocused: searchInput.activeFocus
+
+    // fcitx keysyms (X11 keysym values) for the keys we act on.
+    readonly property int keyBackspace: 0xff08
+    readonly property int keyReturn:    0xff0d
+    readonly property int keyKpEnter:   0xff8d
+    readonly property int keyEscape:    0xff1b
+
+    // Entry point for keystrokes forwarded by the addon. Wire format is
+    // "<sym> <states> <text>" (text may be empty or contain spaces).
+    function handleKeyLine(line) {
+        var firstSpace = line.indexOf(' ')
+        if (firstSpace < 0) return
+        var secondSpace = line.indexOf(' ', firstSpace + 1)
+        if (secondSpace < 0) return
+        var sym = parseInt(line.substring(0, firstSpace))
+        var states = parseInt(line.substring(firstSpace + 1, secondSpace))
+        var text = line.substring(secondSpace + 1)
+        handleKey(sym, states, text)
+    }
+
+    function handleKey(sym, states, text) {
+        if (sym === keyEscape) { closeRequested(); return }
+        if (sym === keyReturn || sym === keyKpEnter) { activateFirst(); return }
+        if (internalFocus === "search") {
+            if (sym === keyBackspace) {
+                if (searchText.length > 0) searchText = searchText.slice(0, -1)
+                return
+            }
+            if (text && text.length > 0) searchText += text
+        }
+    }
+
+    // Commit the first item of whatever view is showing. Becomes
+    // selected-item-aware once arrow navigation lands.
+    function activateFirst() {
+        if (isSearching) {
+            if (searchEmojiItems.length > 0) { emojiSelected(searchEmojiItems[0].emoji); return }
+            if (searchKaomojiItems.length > 0) { emojiSelected(searchKaomojiItems[0].text); return }
+        } else if (currentCategory === "kaomoji") {
+            if (kaomojiItems.length > 0) emojiSelected(kaomojiItems[0].text)
+        } else if (browseItems.length > 0) {
+            emojiSelected(browseItems[0].emoji)
+        }
+    }
 
     FileView {
         id: emojiDataFile
@@ -71,7 +127,17 @@ Rectangle {
     }
 
     Component.onCompleted: {
-        Qt.callLater(function() { searchInput.forceActiveFocus() })
+        // Only the negative-control path takes real keyboard focus. Normally the
+        // picker must NOT focus a TextInput (that would enable zwp_text_input_v3
+        // and overwrite the addon's tracked target IC).
+        if (forceFocusable)
+            Qt.callLater(function() { searchInput.forceActiveFocus() })
+    }
+
+    Timer {
+        interval: 530; repeat: true
+        running: root.internalFocus === "search" && !root.forceFocusable
+        onTriggered: root.caretOn = !root.caretOn
     }
 
     function buildCategoryMeta() {
@@ -174,7 +240,9 @@ Rectangle {
                 height: 34
                 radius: 17
                 color: palette.base
-                border.color: searchInput.activeFocus ? palette.highlight : Qt.darker(palette.base, 1.2)
+                border.color: (root.forceFocusable ? searchInput.activeFocus
+                                                    : root.internalFocus === "search")
+                              ? palette.highlight : Qt.darker(palette.base, 1.2)
                 border.width: 1
 
                 RowLayout {
@@ -185,28 +253,60 @@ Rectangle {
                         text: "🔍"; font.pixelSize: 16; renderType: Text.NativeRendering
                     }
 
-                    TextInput {
-                        id: searchInput
+                    Item {
                         Layout.fillWidth: true; Layout.fillHeight: true
-                        font.pixelSize: 14; color: palette.text
-                        verticalAlignment: TextInput.AlignVCenter; clip: true
-                        onTextChanged: root.searchText = text
+                        clip: true
+
+                        // Negative-control / test path only: a real editable IME
+                        // text field that takes keyboard focus and reproduces the
+                        // focus-steal leak. Disabled in normal operation.
+                        TextInput {
+                            id: searchInput
+                            anchors.fill: parent
+                            visible: root.forceFocusable
+                            enabled: root.forceFocusable
+                            font.pixelSize: 14; color: palette.text
+                            verticalAlignment: TextInput.AlignVCenter; clip: true
+                            onTextChanged: if (root.forceFocusable) root.searchText = text
+                        }
+
+                        // Normal path: display-only. searchText is mutated by
+                        // handleKey from socket-forwarded keys; no IME, no focus.
+                        Row {
+                            anchors { left: parent.left; verticalCenter: parent.verticalCenter }
+                            spacing: 1
+                            visible: !root.forceFocusable
+                            Text {
+                                text: root.searchText
+                                font.pixelSize: 14; color: palette.text
+                                renderType: Text.NativeRendering
+                                verticalAlignment: Text.AlignVCenter
+                            }
+                            Rectangle {
+                                width: 1; height: 18; color: palette.text
+                                anchors.verticalCenter: parent.verticalCenter
+                                visible: root.internalFocus === "search" && root.caretOn
+                            }
+                        }
 
                         Text {
-                            anchors.fill: parent; verticalAlignment: Text.AlignVCenter
+                            anchors { left: parent.left; verticalCenter: parent.verticalCenter }
                             text: root.language === "ja" ? "絵文字を検索..." : "Search emoji..."
-                            color: Qt.alpha(palette.text, 0.38); font: parent.font
-                            visible: !parent.text
+                            color: Qt.alpha(palette.text, 0.38); font.pixelSize: 14
+                            visible: root.searchText.length === 0
                         }
                     }
 
                     Text {
                         text: "✕"; font.pixelSize: 12
                         color: Qt.alpha(palette.text, 0.5)
-                        visible: searchInput.text.length > 0
+                        visible: root.searchText.length > 0
                         MouseArea {
                             anchors.fill: parent; cursorShape: Qt.PointingHandCursor
-                            onClicked: { searchInput.text = ""; searchInput.forceActiveFocus() }
+                            onClicked: {
+                                root.searchText = ""
+                                if (root.forceFocusable) { searchInput.text = ""; searchInput.forceActiveFocus() }
+                            }
                         }
                     }
                 }
@@ -281,7 +381,8 @@ Rectangle {
                         cursorShape: Qt.PointingHandCursor
                         onClicked: {
                             root.currentCategory = modelData.id
-                            searchInput.text = ""
+                            root.searchText = ""
+                            if (root.forceFocusable) searchInput.text = ""
                         }
                         ToolTip.visible: containsMouse; ToolTip.delay: 600
                         ToolTip.text: root.language === "ja" ? modelData.name_ja : modelData.name_en
@@ -463,6 +564,34 @@ Rectangle {
                 anchors.horizontalCenter: parent.horizontalCenter
                 text: root.language === "ja" ? "読み込み中..." : "Loading..."
                 color: Qt.alpha(palette.windowText, 0.5); font.pixelSize: 14
+            }
+        }
+    }
+
+    Rectangle {
+        anchors.fill: parent; radius: 8; color: palette.window
+        visible: root.keyChannelDown
+
+        Column {
+            anchors.centerIn: parent; spacing: 12; width: 300
+            Text {
+                anchors.horizontalCenter: parent.horizontalCenter
+                text: "⚠️"; font.pixelSize: 48; renderType: Text.NativeRendering
+            }
+            Text {
+                width: parent.width
+                text: root.language === "ja" ? "キー入力サービスに接続できません"
+                                             : "Can't reach the key-input service"
+                color: palette.windowText; font.pixelSize: 15; font.bold: true
+                horizontalAlignment: Text.AlignHCenter; wrapMode: Text.Wrap
+            }
+            Text {
+                width: parent.width
+                text: root.language === "ja"
+                      ? "fcitx5 と emojizasu アドオンが動作しているか確認してください"
+                      : "Check that fcitx5 and the emojizasu addon are running, then reopen."
+                color: Qt.alpha(palette.windowText, 0.55); font.pixelSize: 12
+                horizontalAlignment: Text.AlignHCenter; wrapMode: Text.Wrap
             }
         }
     }

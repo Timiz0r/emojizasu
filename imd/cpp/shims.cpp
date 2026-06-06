@@ -6,6 +6,7 @@
 #include <fcitx/instance.h>
 #include <fcitx-utils/event.h>
 #include <fcitx-utils/handlertable.h>
+#include <fcitx-utils/key.h>
 #include <fcitx-utils/trackableobject.h>
 
 #include <cstdio>
@@ -23,6 +24,9 @@ static std::string s_pending_commit;
 
 static std::unique_ptr<fcitx::HandlerTableEntry<fcitx::EventHandler>> s_focus_watcher;
 static std::unique_ptr<fcitx::HandlerTableEntry<fcitx::EventHandler>> s_destroy_watcher;
+static std::unique_ptr<fcitx::HandlerTableEntry<fcitx::EventHandler>> s_key_watcher;
+// Forwards locked-IC keys to the picker; null when forwarding is off.
+static ShimKeyHandler s_key_cb = nullptr;
 // Deferred commit event: fires after waylandim finishes updating currentIC_.
 static std::unique_ptr<fcitx::EventSource> s_deferred_commit;
 
@@ -84,6 +88,35 @@ void shim_setup_ic_tracking(FcitxInstance* inst_opaque, const char* skip_program
                 static_cast<fcitx::InputContextEvent&>(evt).inputContext());
         }
     );
+
+    // PreInputMethod phase gives us first crack at keys, before the engine or
+    // the app. When the picker is up, s_key_cb forwards the locked IC's keys to
+    // it and we consume them so the underlying app never sees them.
+    s_key_watcher = inst->watchEvent(
+        fcitx::EventType::InputContextKeyEvent,
+        fcitx::EventWatcherPhase::PreInputMethod,
+        [](fcitx::Event& evt) {
+            auto& ke = static_cast<fcitx::KeyEvent&>(evt);
+            fcitx::Key key = ke.key();
+            fprintf(stderr, "emojizasu: Key ic=%p locked=%p sym=%x release=%d cb=%p\n",
+                    ke.inputContext(), s_locked_ic, key.sym(), ke.isRelease(),
+                    (void*)s_key_cb);
+            if (!s_key_cb) return;
+            if (ke.inputContext() != s_locked_ic) return;
+            if (key.isModifier()) return;
+            std::string utf8 = fcitx::Key::keySymToUTF8(key.sym());
+            bool consumed = s_key_cb(
+                static_cast<unsigned int>(key.sym()),
+                static_cast<unsigned int>(key.states().toInteger()),
+                utf8.c_str(), ke.isRelease());
+            fprintf(stderr, "emojizasu: Key forwarded consumed=%d\n", consumed);
+            if (consumed) ke.filterAndAccept();
+        }
+    );
+}
+
+void shim_set_key_handler(ShimKeyHandler cb) {
+    s_key_cb = cb;
 }
 
 void shim_lock_ic() {
