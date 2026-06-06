@@ -1,0 +1,12 @@
+services:
+  suite:
+    build:
+      context: .
+      dockerfile: Containerfile
+    image: emojizasu-test:latest
+    # /src = the repo (read-only); /addon = the host-built test-variant addon.
+    # Paths are relative to this compose file (test/container/).
+    volumes:
+      - ../../:/src:ro
+      - ../../imd/target/release/libemojizasu_imd.so:/addon/libemojizasu_imd_test.so:ro
+    command: ["bash", "/src/test/container/start.sh"]

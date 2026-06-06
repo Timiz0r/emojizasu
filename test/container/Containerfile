@@ -1,0 +1,15 @@
+FROM docker.io/library/archlinux:latest
+
+RUN pacman -Syu --noconfirm --needed \
+        sway dbus \
+        fcitx5 \
+        quickshell \
+        qt6-tools \
+        mesa noto-fonts \
+ # Arch's sway carries cap_sys_nice file caps; a rootless container can't exec a
+ # capability-bearing binary under no_new_privs. We run headless (pixman, no DRM/
+ # input), so the cap isn't needed — strip it.
+ && setcap -r /usr/bin/sway \
+ # Clean up image to save lots of MBs
+ && pacman -Scc --noconfirm \
+ && rm -rf /var/cache/pacman/pkg/*
