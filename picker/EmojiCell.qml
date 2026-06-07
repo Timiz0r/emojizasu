@@ -7,6 +7,7 @@ Item {
 
     property string emojiChar: ""
     property string label: ""
+    property bool selected: false
 
     signal activated()
 
@@ -15,7 +16,8 @@ Item {
     Rectangle {
         anchors { fill: parent; margins: 2 }
         radius: 6
-        color: ma.containsMouse ? Qt.alpha(pal.highlight, 0.2) : "transparent"
+        color: cell.selected ? Qt.alpha(pal.highlight, 0.35)
+               : ma.containsMouse ? Qt.alpha(pal.highlight, 0.2) : "transparent"
 
         Text {
             anchors.centerIn: parent

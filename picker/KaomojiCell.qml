@@ -9,12 +9,14 @@ Rectangle {
     property string kaomojiText: ""
     property string label: ""
     property bool highlight: false
+    property bool selected: false
 
     signal activated()
 
     SystemPalette { id: pal; colorGroup: SystemPalette.Active }
 
-    color: ma.containsMouse ? Qt.alpha(pal.highlight, 0.15)
+    color: cell.selected ? Qt.alpha(pal.highlight, 0.35)
+           : ma.containsMouse ? Qt.alpha(pal.highlight, 0.15)
            : highlight ? Qt.alpha(pal.windowText, 0.03) : "transparent"
     radius: 5
 

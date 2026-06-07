@@ -20,14 +20,14 @@ Rectangle {
 
     // True only in the test negative-control (EMOJIZASU_FORCE_FOCUSABLE): the
     // search field becomes a real focused IME TextInput that reproduces the
-    // focus-steal leak. Normally false — search is driven by keys forwarded from
-    // the addon over the socket, with no Wayland keyboard focus involved.
+    // focus-steal leak. Disabled in normal operation.
     property bool forceFocusable: false
-    // Which UI element keys are routed to. Only "search" today; arrow/tab nav
-    // between grid/history will add more.
+    // Which UI element keys are routed to. Values: "search", "categories", "grid".
     property string internalFocus: "search"
     property bool caretOn: true
     property bool keyChannelDown: false
+    property int cursorPos: 0
+    property int gridSelectedIndex: -1
 
     property var emojiData: null
     property var categoryMeta: []
@@ -49,6 +49,11 @@ Rectangle {
         return 0
     }
 
+    readonly property int browseGridColumns: browseGrid.width > 0
+        ? Math.max(1, Math.floor(browseGrid.width / browseGrid.cellWidth)) : 1
+    readonly property int searchEmojiCols: searchFlickable.width > 0
+        ? Math.max(1, Math.floor((searchFlickable.width + 2) / 44)) : 1
+
     function focusSearch() { searchInput.forceActiveFocus() }
     // Whether the search field holds active focus — used by tests to assert a
     // commit didn't leak into the search box. Normally always false (the picker
@@ -60,6 +65,12 @@ Rectangle {
     readonly property int keyReturn:    0xff0d
     readonly property int keyKpEnter:   0xff8d
     readonly property int keyEscape:    0xff1b
+    readonly property int keyLeft:      0xff51
+    readonly property int keyUp:        0xff52
+    readonly property int keyRight:     0xff53
+    readonly property int keyDown:      0xff54
+    readonly property int keyTab:       0xff09
+    readonly property int keyShiftTab:  0xfe20
 
     // Entry point for keystrokes forwarded by the addon. Wire format is
     // "<sym> <states> <text>" (text may be empty or contain spaces).
@@ -75,19 +86,164 @@ Rectangle {
     }
 
     function handleKey(sym, states, text) {
+        var shiftHeld = (states & 1) !== 0
+        var ctrlHeld  = (states & 4) !== 0
+
         if (sym === keyEscape) { closeRequested(); return }
-        if (sym === keyReturn || sym === keyKpEnter) { activateFirst(); return }
+
+        if (sym === keyReturn || sym === keyKpEnter) {
+            if (internalFocus === "grid" && gridSelectedIndex >= 0)
+                activateIndex(gridSelectedIndex)
+            else
+                activateFirst()
+            return
+        }
+
         if (internalFocus === "search") {
             if (sym === keyBackspace) {
-                if (searchText.length > 0) searchText = searchText.slice(0, -1)
+                if (cursorPos > 0) {
+                    cursorPos--
+                    searchText = searchText.slice(0, cursorPos) + searchText.slice(cursorPos + 1)
+                }
                 return
             }
-            if (text && text.length > 0) searchText += text
+            if (sym === keyLeft)  { if (cursorPos > 0) cursorPos--; return }
+            if (sym === keyRight) { if (cursorPos < searchText.length) cursorPos++; return }
+            if (sym === keyUp || sym === keyDown) return
+            if (sym === keyShiftTab || (sym === keyTab && shiftHeld)) return
+            if (sym === keyTab) {
+                if (isSearching) {
+                    internalFocus = "grid"
+                    gridSelectedIndex = 0
+                } else {
+                    internalFocus = "categories"
+                }
+                return
+            }
+            if (!ctrlHeld && text && text.length > 0) {
+                searchText = searchText.slice(0, cursorPos) + text + searchText.slice(cursorPos)
+                cursorPos += text.length
+            }
+            return
+        }
+
+        if (internalFocus === "categories") {
+            var ci = categoryIndexOf(currentCategory)
+            if (sym === keyLeft) {
+                if (ci > 0) {
+                    currentCategory = categoryMeta[ci - 1].id
+                    catBar.positionViewAtIndex(ci - 1, ListView.Contain)
+                }
+                return
+            }
+            if (sym === keyRight) {
+                if (ci < categoryMeta.length - 1) {
+                    currentCategory = categoryMeta[ci + 1].id
+                    catBar.positionViewAtIndex(ci + 1, ListView.Contain)
+                }
+                return
+            }
+            if (sym === keyUp || sym === keyDown) return
+            if (sym === keyShiftTab || (sym === keyTab && shiftHeld)) { internalFocus = "search"; return }
+            if (sym === keyTab) { internalFocus = "grid"; gridSelectedIndex = 0; return }
+            return
+        }
+
+        if (internalFocus === "grid") {
+            if (sym === keyShiftTab || (sym === keyTab && shiftHeld)) {
+                internalFocus = isSearching ? "search" : "categories"
+                gridSelectedIndex = -1
+                return
+            }
+            if (sym === keyTab) return
+            if (sym === keyLeft || sym === keyUp || sym === keyRight || sym === keyDown)
+                navigateGrid(sym)
+            return
         }
     }
 
-    // Commit the first item of whatever view is showing. Becomes
-    // selected-item-aware once arrow navigation lands.
+    function categoryIndexOf(id) {
+        for (var i = 0; i < categoryMeta.length; i++) {
+            if (categoryMeta[i].id === id) return i
+        }
+        return 0
+    }
+
+    function navigateGrid(sym) {
+        if (gridSelectedIndex < 0) { gridSelectedIndex = 0; return }
+        var total, cols, idx, ki, emojiCount, kaomojiCount
+
+        if (contentIndex === 0) {
+            total = browseItems.length
+            cols = browseGridColumns
+            idx = gridSelectedIndex
+            if (sym === keyLeft) {
+                if (idx % cols > 0) idx--
+            } else if (sym === keyRight) {
+                if (idx % cols < cols - 1 && idx + 1 < total) idx++
+            } else if (sym === keyUp) {
+                if (idx - cols >= 0) idx -= cols
+            } else if (sym === keyDown) {
+                if (idx + cols < total) idx += cols
+            }
+            gridSelectedIndex = idx
+            browseGrid.positionViewAtIndex(gridSelectedIndex, GridView.Contain)
+
+        } else if (contentIndex === 1) {
+            total = kaomojiItems.length
+            idx = gridSelectedIndex
+            if (sym === keyUp)   { if (idx > 0) idx-- }
+            else if (sym === keyDown) { if (idx < total - 1) idx++ }
+            gridSelectedIndex = idx
+            kaomojiList.positionViewAtIndex(gridSelectedIndex, ListView.Contain)
+
+        } else if (contentIndex === 2) {
+            emojiCount = searchEmojiItems.length
+            kaomojiCount = searchKaomojiItems.length
+            total = emojiCount + kaomojiCount
+            cols = searchEmojiCols
+            idx = gridSelectedIndex
+            if (idx < emojiCount) {
+                if (sym === keyLeft) {
+                    if (idx % cols > 0) idx--
+                } else if (sym === keyRight) {
+                    if (idx % cols < cols - 1 && idx + 1 < emojiCount) idx++
+                } else if (sym === keyUp) {
+                    if (idx - cols >= 0) idx -= cols
+                } else if (sym === keyDown) {
+                    if (idx + cols < emojiCount) idx += cols
+                    else if (kaomojiCount > 0) idx = emojiCount
+                }
+            } else {
+                ki = idx - emojiCount
+                if (sym === keyUp) {
+                    if (ki > 0) idx--
+                    else if (emojiCount > 0) idx = emojiCount - 1
+                } else if (sym === keyDown) {
+                    if (idx + 1 < total) idx++
+                }
+            }
+            gridSelectedIndex = idx
+        }
+    }
+
+    function activateIndex(idx) {
+        if (contentIndex === 0) {
+            if (idx >= 0 && idx < browseItems.length) emojiSelected(browseItems[idx].emoji)
+        } else if (contentIndex === 1) {
+            if (idx >= 0 && idx < kaomojiItems.length) emojiSelected(kaomojiItems[idx].text)
+        } else if (contentIndex === 2) {
+            var ei = searchEmojiItems.length
+            if (idx < ei) {
+                emojiSelected(searchEmojiItems[idx].emoji)
+            } else {
+                var ki = idx - ei
+                if (ki < searchKaomojiItems.length) emojiSelected(searchKaomojiItems[ki].text)
+            }
+        }
+    }
+
+    // Commit the first item of whatever view is showing.
     function activateFirst() {
         if (isSearching) {
             if (searchEmojiItems.length > 0) { emojiSelected(searchEmojiItems[0].emoji); return }
@@ -216,12 +372,25 @@ Rectangle {
         onTriggered: root.refreshSearch()
     }
 
+    onInternalFocusChanged: {
+        if (internalFocus === "search") caretOn = true
+    }
+
+    onIsSearchingChanged: {
+        if (isSearching && internalFocus === "categories") internalFocus = "search"
+        if (!isSearching) gridSelectedIndex = -1
+    }
+
     onCurrentCategoryChanged: {
         if (currentCategory === "kaomoji") refreshKaomoji()
         else refreshBrowse()
+        if (internalFocus === "grid") gridSelectedIndex = 0
     }
+
     onSearchTextChanged: {
+        if (cursorPos > searchText.length) cursorPos = searchText.length
         if (searchText.length > 0) searchTimer.restart()
+        if (internalFocus === "grid") gridSelectedIndex = 0
     }
 
     SystemPalette { id: palette; colorGroup: SystemPalette.Active }
@@ -274,10 +443,10 @@ Rectangle {
                         // handleKey from socket-forwarded keys; no IME, no focus.
                         Row {
                             anchors { left: parent.left; verticalCenter: parent.verticalCenter }
-                            spacing: 1
+                            spacing: 0
                             visible: !root.forceFocusable
                             Text {
-                                text: root.searchText
+                                text: root.searchText.substring(0, root.cursorPos)
                                 font.pixelSize: 14; color: palette.text
                                 renderType: Text.NativeRendering
                                 verticalAlignment: Text.AlignVCenter
@@ -286,6 +455,12 @@ Rectangle {
                                 width: 1; height: 18; color: palette.text
                                 anchors.verticalCenter: parent.verticalCenter
                                 visible: root.internalFocus === "search" && root.caretOn
+                            }
+                            Text {
+                                text: root.searchText.substring(root.cursorPos)
+                                font.pixelSize: 14; color: palette.text
+                                renderType: Text.NativeRendering
+                                verticalAlignment: Text.AlignVCenter
                             }
                         }
 
@@ -305,6 +480,7 @@ Rectangle {
                             anchors.fill: parent; cursorShape: Qt.PointingHandCursor
                             onClicked: {
                                 root.searchText = ""
+                                root.cursorPos = 0
                                 if (root.forceFocusable) { searchInput.text = ""; searchInput.forceActiveFocus() }
                             }
                         }
@@ -345,54 +521,67 @@ Rectangle {
         }
 
         // Categories
-        ListView {
-            id: catBar
-            Layout.fillWidth: true; height: 44
-            orientation: ListView.Horizontal; spacing: 1; clip: true
-            model: root.categoryMeta
-            ScrollBar.horizontal: ScrollBar { policy: ScrollBar.AlwaysOff }
+        Rectangle {
+            Layout.fillWidth: true
+            height: 44
+            color: "transparent"
+            radius: 6
+            border.color: root.internalFocus === "categories" ? Qt.alpha(palette.highlight, 0.6) : "transparent"
+            border.width: 1
+            visible: !root.isSearching
 
-            delegate: Item {
-                required property var modelData
-                width: 44; height: 44
+            ListView {
+                id: catBar
+                anchors.fill: parent; orientation: ListView.Horizontal; spacing: 1; clip: true
+                model: root.categoryMeta
+                ScrollBar.horizontal: ScrollBar { policy: ScrollBar.AlwaysOff }
 
-                Rectangle {
-                    anchors { fill: parent; margins: 2 }
-                    radius: 6
-                    color: root.currentCategory === modelData.id
-                           ? Qt.alpha(palette.highlight, 0.22)
-                           : tabHover.containsMouse ? Qt.alpha(palette.highlight, 0.1) : "transparent"
+                delegate: Item {
+                    required property var modelData
+                    width: 44; height: 44
 
                     Rectangle {
-                        anchors { bottom: parent.bottom; horizontalCenter: parent.horizontalCenter; bottomMargin: 1 }
-                        width: 20; height: 2; radius: 1; color: palette.highlight
-                        visible: root.currentCategory === modelData.id
-                    }
+                        anchors { fill: parent; margins: 2 }
+                        radius: 6
+                        color: root.currentCategory === modelData.id
+                               ? Qt.alpha(palette.highlight, 0.22)
+                               : tabHover.containsMouse ? Qt.alpha(palette.highlight, 0.1) : "transparent"
 
-                    Text {
-                        anchors.centerIn: parent
-                        text: modelData.icon
-                        font.pixelSize: modelData.id === "kaomoji" ? 8 : 22
-                        renderType: Text.NativeRendering
-                    }
-
-                    MouseArea {
-                        id: tabHover; anchors.fill: parent; hoverEnabled: true
-                        cursorShape: Qt.PointingHandCursor
-                        onClicked: {
-                            root.currentCategory = modelData.id
-                            root.searchText = ""
-                            if (root.forceFocusable) searchInput.text = ""
+                        Rectangle {
+                            anchors { bottom: parent.bottom; horizontalCenter: parent.horizontalCenter; bottomMargin: 1 }
+                            width: 20; height: 2; radius: 1; color: palette.highlight
+                            visible: root.currentCategory === modelData.id
                         }
-                        ToolTip.visible: containsMouse; ToolTip.delay: 600
-                        ToolTip.text: root.language === "ja" ? modelData.name_ja : modelData.name_en
+
+                        Text {
+                            anchors.centerIn: parent
+                            text: modelData.icon
+                            font.pixelSize: modelData.id === "kaomoji" ? 8 : 22
+                            renderType: Text.NativeRendering
+                        }
+
+                        MouseArea {
+                            id: tabHover; anchors.fill: parent; hoverEnabled: true
+                            cursorShape: Qt.PointingHandCursor
+                            onClicked: {
+                                root.currentCategory = modelData.id
+                                root.searchText = ""
+                                root.cursorPos = 0
+                                if (root.forceFocusable) searchInput.text = ""
+                            }
+                            ToolTip.visible: containsMouse; ToolTip.delay: 600
+                            ToolTip.text: root.language === "ja" ? modelData.name_ja : modelData.name_en
+                        }
                     }
                 }
             }
         }
 
         // Separator
-        Rectangle { Layout.fillWidth: true; height: 1; color: Qt.alpha(palette.windowText, 0.1) }
+        Rectangle {
+            Layout.fillWidth: true; height: 1; color: Qt.alpha(palette.windowText, 0.1)
+            visible: !root.isSearching
+        }
 
         // Status line
         Text {
@@ -433,8 +622,10 @@ Rectangle {
 
                     delegate: EmojiCell {
                         required property var modelData
+                        required property int index
                         emojiChar: modelData.emoji
                         label: root.language === "ja" ? (modelData.name_ja || modelData.name_en) : modelData.name_en
+                        selected: root.internalFocus === "grid" && index === root.gridSelectedIndex
                         onActivated: root.emojiSelected(emojiChar)
                     }
 
@@ -465,6 +656,7 @@ Rectangle {
                         label: root.language === "ja" ? modelData.name_ja : modelData.name_en
                         width: kaomojiList.width
                         highlight: index % 2 === 0
+                        selected: root.internalFocus === "grid" && index === root.gridSelectedIndex
                         onActivated: root.emojiSelected(kaomojiText)
                     }
                 }
@@ -493,8 +685,10 @@ Rectangle {
                                 model: root.searchEmojiItems
                                 delegate: EmojiCell {
                                     required property var modelData
+                                    required property int index
                                     emojiChar: modelData.emoji
                                     label: root.language === "ja" ? (modelData.name_ja || modelData.name_en) : modelData.name_en
+                                    selected: root.internalFocus === "grid" && index === root.gridSelectedIndex
                                     onActivated: root.emojiSelected(emojiChar)
                                 }
                             }
@@ -527,6 +721,7 @@ Rectangle {
                                     label: root.language === "ja" ? modelData.name_ja : modelData.name_en
                                     width: searchColumn.width
                                     highlight: index % 2 === 0
+                                    selected: root.internalFocus === "grid" && (root.searchEmojiItems.length + index) === root.gridSelectedIndex
                                     onActivated: root.emojiSelected(kaomojiText)
                                 }
                             }
