@@ -186,7 +186,7 @@ PanelWindow {
 
     Timer {
         id: yieldTimer
-        interval: 1
+        interval: 0
         onTriggered: {
             window.doCommit(window.pendingEmoji)
             window.pendingEmoji = ""

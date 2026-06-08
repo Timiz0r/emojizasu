@@ -148,6 +148,35 @@ picker_ui_case() {
     pkill -f -- "--path $PICKER_DIR" 2>/dev/null || true
 }
 
+# Same as picker_ui_case but commits while the search box is engaged
+# (focusSearch → wantsKeyboard=true → picker focusable), so it exercises the
+# commit() release path: releaseKeyboard → refocus (KWin) / yieldTimer (wlroots)
+# → doCommit. The emoji must still land in the target and not leak into the
+# focused search box. This is the positive counterpart to the negative control.
+picker_focused_commit_case() {
+    local name="real picker: engaged-search commit lands in target, not search box" pick="🎯"
+    start_picker   || { bad "$name (picker didn't start)"; return; }
+    ensure_focused || { bad "$name (target never gained focus)"; return; }
+    tgt clear >/dev/null
+    pkr open >/dev/null
+    sleep 0.3
+    if [ "$(pkr isVisible)" != "true" ]; then bad "$name (picker not visible)"; return; fi
+    pkr focusSearch >/dev/null
+    sleep 0.2
+    pkr pick "$pick" >/dev/null
+
+    local got search
+    got="$(expect_text "$pick")"
+    search="$(pkr searchBoxText)"
+    if [ "$got" = "$pick" ] && [ -z "$search" ]; then
+        ok "$name → target='$got', search box empty"
+    else
+        bad "$name: target='$got' (want '$pick'), searchBox='$search' (want empty)"
+    fi
+    pkr hide >/dev/null
+    pkill -f -- "--path $PICKER_DIR" 2>/dev/null || true
+}
+
 # Forwarded keys (addon→socket→panel) drive the search box, with no Wayland
 # keyboard focus on the picker. Uses the feedKey hook to inject wire-format key
 # lines — the same path real keys take after the socket — so it runs without
@@ -232,6 +261,7 @@ commit_case "commit into empty field"     ""      "🎉"
 commit_case "append at cursor (seeded)"    "neko"  "🐱"
 commit_case "multiple commits in a row"    ""      "🎉" "🔥" "💯"
 picker_ui_case
+picker_focused_commit_case
 picker_search_input_case
 picker_leak_control_case
 
