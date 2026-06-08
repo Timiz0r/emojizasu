@@ -4,6 +4,7 @@ import QtQuick.Layouts
 import QtCore
 import Quickshell
 import Quickshell.Io
+import "KeyNav.js" as KeyNav
 
 Rectangle {
     id: root
@@ -15,19 +16,16 @@ Rectangle {
     signal closeRequested()
 
     property string language: "ja"
-    property string searchText: ""
+    property alias searchText: searchInput.text
     property string currentCategory: "recent"
 
-    // True only in the test negative-control (EMOJIZASU_FORCE_FOCUSABLE): the
-    // search field becomes a real focused IME TextInput that reproduces the
-    // focus-steal leak. Disabled in normal operation.
-    property bool forceFocusable: false
-    // Which UI element keys are routed to. Values: "search", "categories", "grid".
-    property string internalFocus: "search"
-    property bool caretOn: true
+    // Which UI zone keys/selection target. Values: "search", "categories", "grid".
+    property string internalFocus: "grid"
+    // True when the picker should hold real Wayland keyboard focus so the search
+    // TextInput edits natively (Ctrl-A, selection, cursor).
+    property bool wantsKeyboard: false
     property bool keyChannelDown: false
-    property int cursorPos: 0
-    property int gridSelectedIndex: -1
+    property int gridSelectedIndex: 0
 
     property var emojiData: null
     property var categoryMeta: []
@@ -53,198 +51,215 @@ Rectangle {
         ? Math.max(1, Math.floor(browseGrid.width / browseGrid.cellWidth)) : 1
     readonly property int searchEmojiCols: searchFlickable.width > 0
         ? Math.max(1, Math.floor((searchFlickable.width + 2) / 44)) : 1
+    readonly property int gridCount: contentIndex === 1 ? kaomojiItems.length
+        : contentIndex === 2 ? (searchEmojiItems.length + searchKaomojiItems.length)
+        : browseItems.length
 
-    function focusSearch() { searchInput.forceActiveFocus() }
-    // Whether the search field holds active focus — used by tests to assert a
-    // commit didn't leak into the search box. Normally always false (the picker
-    // never takes keyboard focus); only the negative-control TextInput can focus.
+    // True only in the test negative-control (EMOJIZASU_FORCE_FOCUSABLE): the
+    // search field takes real keyboard focus and reproduces the focus-steal leak.
+    // Disabled in normal operation.
+    property bool forceFocusable: false
+
+    function dlog(where, scope) {
+        DebugLog.event(scope || "panel", where
+            + "  internalFocus=" + internalFocus
+            + " wantsKeyboard=" + wantsKeyboard
+            + " searchFocus=" + searchInput.activeFocus
+            + " gridSel=" + gridSelectedIndex
+            + " searching=" + isSearching)
+    }
+
+    function focusSearch() { engageSearch() }
+
+    function engageSearch() {
+        internalFocus = "search"
+        wantsKeyboard = true
+        dlog("engageSearch")
+    }
+
+    function releaseKeyboard() { wantsKeyboard = false; dlog("releaseKeyboard") }
+
+    function focusGrid() {
+        if (gridCount <= 0) return
+        internalFocus = "grid"
+        if (gridSelectedIndex < 0) gridSelectedIndex = 0
+        wantsKeyboard = false
+        dlog("focusGrid")
+    }
+
+    // From the search box, Tab/Down advance to the next zone: the results grid while
+    // searching (categories are hidden), otherwise the category bar.
+    function advanceFromSearch() {
+        if (isSearching) focusGrid()
+        else { internalFocus = "categories"; wantsKeyboard = false }
+    }
+
+    // Leave the grid backward (Shift-Tab, or Up from the top row): to the search box
+    // while searching, otherwise to the category bar.
+    function leaveGridBackward() {
+        if (isSearching) engageSearch()
+        else internalFocus = "categories"
+        gridSelectedIndex = -1
+    }
+    
+    function resetFocusState() {
+        wantsKeyboard = false
+        internalFocus = "grid"
+        searchText = ""
+        gridSelectedIndex = 0
+        currentCategory = "recent"
+    }
+
+    onWantsKeyboardChanged: {
+        if (wantsKeyboard) Qt.callLater(() => {
+            searchInput.forceActiveFocus()
+            dlog("forceActiveFocus(callLater)")
+        })
+        else searchInput.focus = false
+    }
+
+    // Click-out: if the search field loses real focus while we still think we're
+    // searching, the user clicked away (e.g. back into the app) — give up keyboard
+    // focus so keys reach the app again. (Depends on the compositor releasing the
+    // layer surface's keyboard focus on outside-click.)
+    Connections {
+        target: searchInput
+        function onActiveFocusChanged() {
+            root.dlog("searchInput.activeFocusChanged=" + searchInput.activeFocus)
+            if (!searchInput.activeFocus && root.internalFocus === "search" && !root.forceFocusable)
+                root.releaseKeyboard()
+        }
+    }
+
     readonly property bool searchFocused: searchInput.activeFocus
 
-    // fcitx keysyms (X11 keysym values) for the keys we act on.
-    readonly property int keyBackspace: 0xff08
-    readonly property int keyReturn:    0xff0d
-    readonly property int keyKpEnter:   0xff8d
-    readonly property int keyEscape:    0xff1b
-    readonly property int keyLeft:      0xff51
-    readonly property int keyUp:        0xff52
-    readonly property int keyRight:     0xff53
-    readonly property int keyDown:      0xff54
-    readonly property int keyTab:       0xff09
-    readonly property int keyShiftTab:  0xfe20
-
-    // Entry point for keystrokes forwarded by the addon. Wire format is
-    // "<sym> <states> <text>" (text may be empty or contain spaces).
+    // Entry point for keystrokes forwarded by the addon (wire format
+    // "<sym> <states> <text>"). The routing decision is pure (KeyNav.route parses
+    // the line and picks an intent from the focused zone); this applies that
+    // intent to the widgets.
     function handleKeyLine(line) {
-        var firstSpace = line.indexOf(' ')
-        if (firstSpace < 0) return
-        var secondSpace = line.indexOf(' ', firstSpace + 1)
-        if (secondSpace < 0) return
-        var sym = parseInt(line.substring(0, firstSpace))
-        var states = parseInt(line.substring(firstSpace + 1, secondSpace))
-        var text = line.substring(secondSpace + 1)
-        handleKey(sym, states, text)
-    }
-
-    function handleKey(sym, states, text) {
-        var shiftHeld = (states & 1) !== 0
-        var ctrlHeld  = (states & 4) !== 0
-
-        if (sym === keyEscape) { closeRequested(); return }
-
-        if (sym === keyReturn || sym === keyKpEnter) {
-            if (internalFocus === "grid" && gridSelectedIndex >= 0)
-                activateIndex(gridSelectedIndex)
-            else
-                activateFirst()
+        const intent = KeyNav.route(line, internalFocus)
+        dlog("handleKeyLine '" + line + "' -> " + intent.kind)
+        switch (intent.kind) {
+        case "close":
+            closeRequested(); return
+        case "activate":
+            if (internalFocus === "grid" && gridSelectedIndex >= 0) selectEmojiAt(gridSelectedIndex)
+            else selectFirstEmoji()
             return
-        }
-
-        if (internalFocus === "search") {
-            if (sym === keyBackspace) {
-                if (cursorPos > 0) {
-                    cursorPos--
-                    searchText = searchText.slice(0, cursorPos) + searchText.slice(cursorPos + 1)
-                }
-                return
-            }
-            if (sym === keyLeft)  { if (cursorPos > 0) cursorPos--; return }
-            if (sym === keyRight) { if (cursorPos < searchText.length) cursorPos++; return }
-            if (sym === keyUp || sym === keyDown) return
-            if (sym === keyShiftTab || (sym === keyTab && shiftHeld)) return
-            if (sym === keyTab) {
-                if (isSearching) {
-                    internalFocus = "grid"
-                    gridSelectedIndex = 0
-                } else {
-                    internalFocus = "categories"
-                }
-                return
-            }
-            if (!ctrlHeld && text && text.length > 0) {
-                searchText = searchText.slice(0, cursorPos) + text + searchText.slice(cursorPos)
-                cursorPos += text.length
-            }
-            return
-        }
-
-        if (internalFocus === "categories") {
-            var ci = categoryIndexOf(currentCategory)
-            if (sym === keyLeft) {
-                if (ci > 0) {
-                    currentCategory = categoryMeta[ci - 1].id
-                    catBar.positionViewAtIndex(ci - 1, ListView.Contain)
-                }
-                return
-            }
-            if (sym === keyRight) {
-                if (ci < categoryMeta.length - 1) {
-                    currentCategory = categoryMeta[ci + 1].id
-                    catBar.positionViewAtIndex(ci + 1, ListView.Contain)
-                }
-                return
-            }
-            if (sym === keyUp || sym === keyDown) return
-            if (sym === keyShiftTab || (sym === keyTab && shiftHeld)) { internalFocus = "search"; return }
-            if (sym === keyTab) { internalFocus = "grid"; gridSelectedIndex = 0; return }
-            return
-        }
-
-        if (internalFocus === "grid") {
-            if (sym === keyShiftTab || (sym === keyTab && shiftHeld)) {
-                internalFocus = isSearching ? "search" : "categories"
-                gridSelectedIndex = -1
-                return
-            }
-            if (sym === keyTab) return
-            if (sym === keyLeft || sym === keyUp || sym === keyRight || sym === keyDown)
-                navigateGrid(sym)
+        case "insert":
+            insertInSearch(intent.text); return
+        case "clipboard":
+            clipboardInSearch(intent.op); return
+        case "deleteBack":
+            deleteBackInSearch(); return
+        case "cursorLeft":
+            moveSearchCursor(-1); return
+        case "cursorRight":
+            moveSearchCursor(1); return
+        case "advanceFromSearch":
+            advanceFromSearch(); return
+        case "setCategory":
+            moveCategory(intent.direction); return
+        case "engageSearch":
+            engageSearch(); return
+        case "focusGrid":
+            focusGrid(); return
+        case "leaveGridBackward":
+            leaveGridBackward(); return
+        case "navGrid":
+            navigateGrid(intent.direction); return
+        default:
             return
         }
     }
 
-    function categoryIndexOf(id) {
-        for (var i = 0; i < categoryMeta.length; i++) {
-            if (categoryMeta[i].id === id) return i
-        }
-        return 0
+    function ensureSearchEngaged() {
+        if (internalFocus !== "search") engageSearch()
+        else wantsKeyboard = true
     }
 
-    function navigateGrid(sym) {
+    function insertInSearch(text) {
+        ensureSearchEngaged()
+        const p = searchInput.cursorPosition
+        searchInput.text = searchInput.text.slice(0, p) + text + searchInput.text.slice(p)
+        searchInput.cursorPosition = p + text.length
+    }
+
+    function clipboardInSearch(op) {
+        ensureSearchEngaged()
+        if (op === "selectAll") Qt.callLater(() => searchInput.selectAll())
+        else if (op === "copy") Qt.callLater(() => searchInput.copy())
+        else if (op === "cut") Qt.callLater(() => searchInput.cut())
+        else if (op === "paste") Qt.callLater(() => searchInput.paste())
+    }
+
+    function deleteBackInSearch() {
+        ensureSearchEngaged()
+        const p = searchInput.cursorPosition
+        if (p > 0) {
+            searchInput.text = searchInput.text.slice(0, p - 1) + searchInput.text.slice(p)
+            searchInput.cursorPosition = p - 1
+        }
+    }
+
+    function moveSearchCursor(delta) {
+        ensureSearchEngaged()
+        const np = searchInput.cursorPosition + delta
+        if (np >= 0 && np <= searchInput.text.length) searchInput.cursorPosition = np
+    }
+
+    function moveCategory(direction) {
+        const ci = categoryMeta.findIndex(c => c.id === currentCategory)
+        const target = direction === "left" ? ci - 1 : ci + 1
+        if (target < 0 || target >= categoryMeta.length) return
+        currentCategory = categoryMeta[target].id
+        catBar.positionViewAtIndex(target, ListView.Contain)
+    }
+
+    // Whether the current grid selection sits in the first navigable row, so Up exits
+    // the grid (like Shift-Tab) instead of moving within it.
+    function gridAtTop() {
+        if (contentIndex === 0)
+            return gridSelectedIndex < browseGridColumns
+        if (contentIndex === 2 && searchEmojiItems.length > 0)
+            return gridSelectedIndex < Math.min(searchEmojiCols, searchEmojiItems.length)
+        return gridSelectedIndex <= 0
+    }
+
+    function navigateGrid(direction) {
+        if (direction === "up" && gridAtTop()) { leaveGridBackward(); return }
         if (gridSelectedIndex < 0) { gridSelectedIndex = 0; return }
-        var total, cols, idx, ki, emojiCount, kaomojiCount
-
         if (contentIndex === 0) {
-            total = browseItems.length
-            cols = browseGridColumns
-            idx = gridSelectedIndex
-            if (sym === keyLeft) {
-                if (idx % cols > 0) idx--
-            } else if (sym === keyRight) {
-                if (idx % cols < cols - 1 && idx + 1 < total) idx++
-            } else if (sym === keyUp) {
-                if (idx - cols >= 0) idx -= cols
-            } else if (sym === keyDown) {
-                if (idx + cols < total) idx += cols
-            }
-            gridSelectedIndex = idx
+            gridSelectedIndex = KeyNav.nextBrowseIndex(direction, gridSelectedIndex, browseGridColumns, browseItems.length)
             browseGrid.positionViewAtIndex(gridSelectedIndex, GridView.Contain)
-
         } else if (contentIndex === 1) {
-            total = kaomojiItems.length
-            idx = gridSelectedIndex
-            if (sym === keyUp)   { if (idx > 0) idx-- }
-            else if (sym === keyDown) { if (idx < total - 1) idx++ }
-            gridSelectedIndex = idx
+            gridSelectedIndex = KeyNav.nextKaomojiIndex(direction, gridSelectedIndex, kaomojiItems.length)
             kaomojiList.positionViewAtIndex(gridSelectedIndex, ListView.Contain)
-
         } else if (contentIndex === 2) {
-            emojiCount = searchEmojiItems.length
-            kaomojiCount = searchKaomojiItems.length
-            total = emojiCount + kaomojiCount
-            cols = searchEmojiCols
-            idx = gridSelectedIndex
-            if (idx < emojiCount) {
-                if (sym === keyLeft) {
-                    if (idx % cols > 0) idx--
-                } else if (sym === keyRight) {
-                    if (idx % cols < cols - 1 && idx + 1 < emojiCount) idx++
-                } else if (sym === keyUp) {
-                    if (idx - cols >= 0) idx -= cols
-                } else if (sym === keyDown) {
-                    if (idx + cols < emojiCount) idx += cols
-                    else if (kaomojiCount > 0) idx = emojiCount
-                }
-            } else {
-                ki = idx - emojiCount
-                if (sym === keyUp) {
-                    if (ki > 0) idx--
-                    else if (emojiCount > 0) idx = emojiCount - 1
-                } else if (sym === keyDown) {
-                    if (idx + 1 < total) idx++
-                }
-            }
-            gridSelectedIndex = idx
+            gridSelectedIndex = KeyNav.nextSearchIndex(direction, gridSelectedIndex,
+                searchEmojiItems.length, searchKaomojiItems.length, searchEmojiCols)
         }
     }
 
-    function activateIndex(idx) {
+    function selectEmojiAt(idx) {
         if (contentIndex === 0) {
             if (idx >= 0 && idx < browseItems.length) emojiSelected(browseItems[idx].emoji)
         } else if (contentIndex === 1) {
             if (idx >= 0 && idx < kaomojiItems.length) emojiSelected(kaomojiItems[idx].text)
         } else if (contentIndex === 2) {
-            var ei = searchEmojiItems.length
+            const ei = searchEmojiItems.length
             if (idx < ei) {
                 emojiSelected(searchEmojiItems[idx].emoji)
             } else {
-                var ki = idx - ei
+                const ki = idx - ei
                 if (ki < searchKaomojiItems.length) emojiSelected(searchKaomojiItems[ki].text)
             }
         }
     }
 
     // Commit the first item of whatever view is showing.
-    function activateFirst() {
+    function selectFirstEmoji() {
         if (isSearching) {
             if (searchEmojiItems.length > 0) { emojiSelected(searchEmojiItems[0].emoji); return }
             if (searchKaomojiItems.length > 0) { emojiSelected(searchKaomojiItems[0].text); return }
@@ -272,7 +287,7 @@ Rectangle {
         id: recentFile
         path: StandardPaths.writableLocation(StandardPaths.StateLocation)
               + "/emojizasu/recent.json"
-        printErrors: false // expected to fail on first run TODO: fixable?
+        printErrors: false
         onLoaded: {
             try { root.recentList = JSON.parse(recentFile.text()) }
             catch(e) { root.recentList = [] }
@@ -283,24 +298,15 @@ Rectangle {
     }
 
     Component.onCompleted: {
-        // Only the negative-control path takes real keyboard focus. Normally the
-        // picker must NOT focus a TextInput (that would enable zwp_text_input_v3
-        // and overwrite the addon's tracked target IC).
         if (forceFocusable)
-            Qt.callLater(function() { searchInput.forceActiveFocus() })
-    }
-
-    Timer {
-        interval: 530; repeat: true
-        running: root.internalFocus === "search" && !root.forceFocusable
-        onTriggered: root.caretOn = !root.caretOn
+            Qt.callLater(() => searchInput.forceActiveFocus())
     }
 
     function buildCategoryMeta() {
         if (!emojiData) return
-        var cats = [{ id: "recent", icon: "🕐", name_en: "Recently Used", name_ja: "最近使った" }]
-        for (var i = 0; i < emojiData.categories.length; i++) {
-            var c = emojiData.categories[i]
+        const cats = [{ id: "recent", icon: "🕐", name_en: "Recently Used", name_ja: "最近使った" }]
+        for (let i = 0; i < emojiData.categories.length; i++) {
+            const c = emojiData.categories[i]
             cats.push({ id: c.id, icon: c.icon, name_en: c.name_en, name_ja: c.name_ja })
         }
         cats.push({ id: "kaomoji", icon: "( ＾▽＾)", name_en: "Kaomoji", name_ja: "顔文字" })
@@ -310,12 +316,10 @@ Rectangle {
     function refreshBrowse() {
         if (!emojiData) return
         if (currentCategory === "recent") {
-            browseItems = recentList.map(function(e) {
-                return { emoji: e, name_en: e, name_ja: e }
-            })
+            browseItems = recentList.map(e => ({ emoji: e, name_en: e, name_ja: e }))
             return
         }
-        for (var i = 0; i < emojiData.categories.length; i++) {
+        for (let i = 0; i < emojiData.categories.length; i++) {
             if (emojiData.categories[i].id === currentCategory) {
                 browseItems = emojiData.categories[i].emoji
                 return
@@ -331,17 +335,17 @@ Rectangle {
 
     function refreshSearch() {
         if (!emojiData || searchText.length === 0) return
-        var q = searchText
-        var qlo = q.toLowerCase()
-        var em = [], km = []
+        const q = searchText
+        const qlo = q.toLowerCase()
+        const em = [], km = []
 
-        for (var ci = 0; ci < emojiData.categories.length && em.length < 200; ci++) {
-            var emojis = emojiData.categories[ci].emoji
-            for (var ei = 0; ei < emojis.length && em.length < 200; ei++) {
+        for (let ci = 0; ci < emojiData.categories.length && em.length < 200; ci++) {
+            const emojis = emojiData.categories[ci].emoji
+            for (let ei = 0; ei < emojis.length && em.length < 200; ei++) {
                 if (matchEmoji(emojis[ei], q, qlo)) em.push(emojis[ei])
             }
         }
-        for (var ki = 0; ki < emojiData.kaomoji.length; ki++) {
+        for (let ki = 0; ki < emojiData.kaomoji.length; ki++) {
             if (matchKaomoji(emojiData.kaomoji[ki], q, qlo)) km.push(emojiData.kaomoji[ki])
         }
         searchEmojiItems = em
@@ -352,9 +356,9 @@ Rectangle {
         if (e.emoji === q) return true
         if (e.name_en.toLowerCase().indexOf(qlo) >= 0) return true
         if (e.name_ja.indexOf(q) >= 0) return true
-        var ke = e.keywords_en, kj = e.keywords_ja
-        for (var i = 0; i < ke.length; i++) if (ke[i].toLowerCase().indexOf(qlo) >= 0) return true
-        for (var j = 0; j < kj.length; j++) if (kj[j].indexOf(q) >= 0) return true
+        const ke = e.keywords_en, kj = e.keywords_ja
+        for (let i = 0; i < ke.length; i++) if (ke[i].toLowerCase().indexOf(qlo) >= 0) return true
+        for (let j = 0; j < kj.length; j++) if (kj[j].indexOf(q) >= 0) return true
         return false
     }
 
@@ -362,8 +366,8 @@ Rectangle {
         if (km.text.indexOf(q) >= 0) return true
         if (km.name_en.toLowerCase().indexOf(qlo) >= 0) return true
         if (km.name_ja.indexOf(q) >= 0) return true
-        var t = km.tags
-        for (var i = 0; i < t.length; i++) if (t[i].toLowerCase().indexOf(qlo) >= 0) return true
+        const t = km.tags
+        for (let i = 0; i < t.length; i++) if (t[i].toLowerCase().indexOf(qlo) >= 0) return true
         return false
     }
 
@@ -372,13 +376,8 @@ Rectangle {
         onTriggered: root.refreshSearch()
     }
 
-    onInternalFocusChanged: {
-        if (internalFocus === "search") caretOn = true
-    }
-
     onIsSearchingChanged: {
-        if (isSearching && internalFocus === "categories") internalFocus = "search"
-        if (!isSearching) gridSelectedIndex = -1
+        gridSelectedIndex = isSearching ? 0 : (internalFocus === "grid" ? 0 : -1)
     }
 
     onCurrentCategoryChanged: {
@@ -388,7 +387,6 @@ Rectangle {
     }
 
     onSearchTextChanged: {
-        if (cursorPos > searchText.length) cursorPos = searchText.length
         if (searchText.length > 0) searchTimer.restart()
         if (internalFocus === "grid") gridSelectedIndex = 0
     }
@@ -426,49 +424,38 @@ Rectangle {
                         Layout.fillWidth: true; Layout.fillHeight: true
                         clip: true
 
-                        // Negative-control / test path only: a real editable IME
-                        // text field that takes keyboard focus and reproduces the
-                        // focus-steal leak. Disabled in normal operation.
                         TextInput {
                             id: searchInput
                             anchors.fill: parent
-                            visible: root.forceFocusable
-                            enabled: root.forceFocusable
                             font.pixelSize: 14; color: palette.text
                             verticalAlignment: TextInput.AlignVCenter; clip: true
-                            onTextChanged: if (root.forceFocusable) root.searchText = text
-                        }
+                            activeFocusOnPress: root.forceFocusable
+                            cursorVisible: root.forceFocusable ? activeFocus
+                                                               : root.internalFocus === "search"
 
-                        // Normal path: display-only. searchText is mutated by
-                        // handleKey from socket-forwarded keys; no IME, no focus.
-                        Row {
-                            anchors { left: parent.left; verticalCenter: parent.verticalCenter }
-                            spacing: 0
-                            visible: !root.forceFocusable
-                            Text {
-                                text: root.searchText.substring(0, root.cursorPos)
-                                font.pixelSize: 14; color: palette.text
-                                renderType: Text.NativeRendering
-                                verticalAlignment: Text.AlignVCenter
-                            }
-                            Rectangle {
-                                width: 1; height: 18; color: palette.text
-                                anchors.verticalCenter: parent.verticalCenter
-                                visible: root.internalFocus === "search" && root.caretOn
-                            }
-                            Text {
-                                text: root.searchText.substring(root.cursorPos)
-                                font.pixelSize: 14; color: palette.text
-                                renderType: Text.NativeRendering
-                                verticalAlignment: Text.AlignVCenter
-                            }
+                            Keys.onReturnPressed: { root.dlog("Qt Keys.Return"); root.selectFirstEmoji() }
+                            Keys.onEnterPressed: { root.dlog("Qt Keys.Enter"); root.selectFirstEmoji() }
+                            Keys.onEscapePressed: { root.dlog("Qt Keys.Escape"); root.closeRequested() }
+                            Keys.onTabPressed: { root.dlog("Qt Keys.Tab"); root.advanceFromSearch() }
+                            Keys.onBacktabPressed: { root.dlog("Qt Keys.Backtab"); root.internalFocus = "categories"; root.wantsKeyboard = false }
+                            Keys.onDownPressed: { root.dlog("Qt Keys.Down"); root.advanceFromSearch() }
                         }
 
                         Text {
                             anchors { left: parent.left; verticalCenter: parent.verticalCenter }
                             text: root.language === "ja" ? "絵文字を検索..." : "Search emoji..."
                             color: Qt.alpha(palette.text, 0.38); font.pixelSize: 14
-                            visible: root.searchText.length === 0
+                            visible: searchInput.text.length === 0
+                        }
+
+                        // Click the search box to engage (take real keyboard focus);
+                        // once engaged the MouseArea disables so clicks reach the
+                        // TextInput for cursor positioning.
+                        MouseArea {
+                            anchors.fill: parent
+                            enabled: !root.wantsKeyboard && !root.forceFocusable
+                            cursorShape: Qt.IBeamCursor
+                            onClicked: root.engageSearch()
                         }
                     }
 
@@ -480,8 +467,7 @@ Rectangle {
                             anchors.fill: parent; cursorShape: Qt.PointingHandCursor
                             onClicked: {
                                 root.searchText = ""
-                                root.cursorPos = 0
-                                if (root.forceFocusable) { searchInput.text = ""; searchInput.forceActiveFocus() }
+                                if (root.forceFocusable) searchInput.forceActiveFocus()
                             }
                         }
                     }
@@ -566,8 +552,6 @@ Rectangle {
                             onClicked: {
                                 root.currentCategory = modelData.id
                                 root.searchText = ""
-                                root.cursorPos = 0
-                                if (root.forceFocusable) searchInput.text = ""
                             }
                             ToolTip.visible: containsMouse; ToolTip.delay: 600
                             ToolTip.text: root.language === "ja" ? modelData.name_ja : modelData.name_en
@@ -590,16 +574,16 @@ Rectangle {
             visible: root.dataReady
             text: {
                 if (root.isSearching) {
-                    var n = root.searchEmojiItems.length + root.searchKaomojiItems.length
+                    const n = root.searchEmojiItems.length + root.searchKaomojiItems.length
                     return root.language === "ja" ? n + " 件の検索結果" : n + " results"
                 }
                 if (root.currentCategory === "recent")
                     return root.language === "ja" ? "最近使った絵文字" : "Recently used"
                 if (root.currentCategory === "kaomoji")
                     return root.language === "ja" ? "顔文字  " + root.kaomojiItems.length + " 件" : root.kaomojiItems.length + " kaomoji"
-                for (var i = 0; i < root.categoryMeta.length; i++) {
+                for (let i = 0; i < root.categoryMeta.length; i++) {
                     if (root.categoryMeta[i].id === root.currentCategory) {
-                        var nm = root.language === "ja" ? root.categoryMeta[i].name_ja : root.categoryMeta[i].name_en
+                        const nm = root.language === "ja" ? root.categoryMeta[i].name_ja : root.categoryMeta[i].name_en
                         return nm + "  " + root.browseItems.length
                     }
                 }

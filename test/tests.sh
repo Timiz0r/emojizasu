@@ -145,6 +145,7 @@ picker_ui_case() {
         bad "$name: target='$got' (want '$pick'), searchBox='$search' (want empty)"
     fi
     pkr hide >/dev/null
+    pkill -f -- "--path $PICKER_DIR" 2>/dev/null || true
 }
 
 # Forwarded keys (addon→socket→panel) drive the search box, with no Wayland
@@ -168,6 +169,7 @@ picker_search_input_case() {
     if [ "$s" = "ca" ]; then ok "$name: backspace → '$s'"
     else bad "$name: backspace got '$s' (want 'ca')"; fi
     pkr hide >/dev/null
+    pkill -f -- "--path $PICKER_DIR" 2>/dev/null || true
 }
 
 start_picker_broken() {
