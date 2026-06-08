@@ -15,10 +15,16 @@ Rectangle {
     signal emojiSelected(string emoji)
     signal closeRequested()
     signal moveWindowRequested(real dx, real dy)
+    signal resizeRequested(real w, real h)
 
     property string language: "ja"
     property alias searchText: searchInput.text
     property string currentCategory: "recent"
+
+    // Upper bound for the drag handle: window size minus the panel size, set by the
+    // host window so the panel can't be dragged off-screen.
+    property real dragMaxX: 0
+    property real dragMaxY: 0
 
     // Which UI zone keys/selection target. Values: "search", "categories", "grid".
     property string internalFocus: "grid"
@@ -456,6 +462,34 @@ Rectangle {
             Layout.fillWidth: true
             spacing: 6
 
+            Item {
+                Layout.preferredWidth: 20
+                Layout.preferredHeight: 34
+
+                Text {
+                    anchors.centerIn: parent
+                    text: "⠿"
+                    font.pixelSize: 18
+                    renderType: Text.NativeRendering
+                    color: Qt.alpha(palette.windowText,
+                                    dragArea.containsMouse || dragArea.drag.active ? 0.75 : 0.35)
+                }
+
+                MouseArea {
+                    id: dragArea
+                    anchors.fill: parent
+                    hoverEnabled: true
+                    cursorShape: Qt.SizeAllCursor
+                    drag.target: root
+                    drag.axis: Drag.XAndYAxis
+                    drag.threshold: 0
+                    drag.minimumX: 0
+                    drag.maximumX: root.dragMaxX
+                    drag.minimumY: 0
+                    drag.maximumY: root.dragMaxY
+                }
+            }
+
             Rectangle {
                 Layout.fillWidth: true
                 height: 34
@@ -885,6 +919,43 @@ Rectangle {
                       : "Check that fcitx5 and the emojizasu addon are running, then reopen."
                 color: Qt.alpha(palette.windowText, 0.55); font.pixelSize: 12
                 horizontalAlignment: Text.AlignHCenter; wrapMode: Text.Wrap
+            }
+        }
+    }
+
+    Item {
+        anchors { right: parent.right; bottom: parent.bottom }
+        width: 16
+        height: 16
+
+        Text {
+            anchors { right: parent.right; bottom: parent.bottom; rightMargin: 3; bottomMargin: 1 }
+            text: "◢"
+            font.pixelSize: 11
+            renderType: Text.NativeRendering
+            color: Qt.alpha(palette.windowText, resizeArea.containsMouse || resizeArea.pressed ? 0.7 : 0.3)
+        }
+
+        MouseArea {
+            id: resizeArea
+            anchors.fill: parent
+            hoverEnabled: true
+            cursorShape: Qt.SizeFDiagCursor
+            property real pressSceneX
+            property real pressSceneY
+            property real pressW
+            property real pressH
+            onPressed: mouse => {
+                const s = mapToItem(null, mouse.x, mouse.y)
+                pressSceneX = s.x
+                pressSceneY = s.y
+                pressW = root.width
+                pressH = root.height
+            }
+            onPositionChanged: mouse => {
+                if (!pressed) return
+                const s = mapToItem(null, mouse.x, mouse.y)
+                root.resizeRequested(pressW + (s.x - pressSceneX), pressH + (s.y - pressSceneY))
             }
         }
     }

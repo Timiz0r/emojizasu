@@ -4,8 +4,21 @@ import Quickshell.Io
 
 PanelWindow {
     id: window
-    implicitWidth: 460
-    implicitHeight: 540
+    color: "transparent"
+
+    // The surface spans the whole output and stays put; the panel is positioned as a
+    // child within it (panel.x/panel.y).
+    // The input mask is pinned to the panel so clicks outside it pass through to the app behind.
+    // A more normal attempt of positioning the window, or going with margins,
+    // failed because the window would lag behind and "vibrate".
+    anchors { top: true; bottom: true; left: true; right: true }
+    exclusiveZone: 0
+    mask: Region { item: panel }
+
+    property int panelWidth: 460
+    property int panelHeight: 540
+    onPanelWidthChanged: queueSaveGeometry()
+    onPanelHeightChanged: queueSaveGeometry()
 
     // Test injection to verify failure can happen if true
     readonly property bool forceFocusable: {
@@ -27,24 +40,13 @@ PanelWindow {
     focusable: panel.wantsKeyboard || forceFocusable
     visible: false
 
-    anchors.top: true
-    anchors.left: true
-    margins.top: Math.round(winY)
-    margins.left: Math.round(winX)
-
-    property real winX: 0
-    property real winY: 0
     property bool positioned: false
 
     property bool keyChannelDown: false
     property string pendingEmoji: ""
 
     onVisibleChanged: {
-        if (visible && !positioned && screen) {
-            winX = Math.round((screen.width - implicitWidth) / 2)
-            winY = Math.round((screen.height - implicitHeight) / 2)
-            positioned = true
-        }
+        if (visible && !positioned) window.tryApplyInitialGeometry()
         if (!visible) {
             keySocket.everConnected = false
             keyChannelDown = false
@@ -68,6 +70,68 @@ PanelWindow {
         if (e && e.length > 0) return e
         const rt = Quickshell.env("XDG_RUNTIME_DIR")
         return (rt && rt.length > 0 ? rt : "/tmp") + "/emojizasu-imd.sock"
+    }
+
+    // Persisted panel geometry, stored next to recent.json. Only seeds the first
+    // show of a fresh process; within a process the live panel.x/y/size are kept.
+    readonly property string statePath: {
+        const base = Quickshell.env("XDG_STATE_HOME") || (Quickshell.env("HOME") + "/.local/state")
+        return base + "/emojizasu/window.json"
+    }
+
+    property var savedGeometry: null
+
+    // The layer surface isn't configured (window.width/height still 0) when the
+    // picker first becomes visible, so defer positioning until it has a real size.
+    // Clamping is done in window-space — the same frame drag/nudge/resize and the
+    // saved values use — not screen-space, which on a multi-monitor setup is the
+    // wrong output and would yank the panel onto the primary screen.
+    function tryApplyInitialGeometry() {
+        if (positioned || window.width <= 0 || window.height <= 0) return
+        const g = window.savedGeometry || {}
+        const w = (g.w > 0) ? g.w : panelWidth
+        const h = (g.h > 0) ? g.h : panelHeight
+        panelWidth  = Math.max(minPanelWidth,  Math.min(window.width,  w))
+        panelHeight = Math.max(minPanelHeight, Math.min(window.height, h))
+        let x = (typeof g.x === "number") ? g.x : -1
+        let y = (typeof g.y === "number") ? g.y : -1
+        if (x < 0 || y < 0) {
+            x = Math.round((window.width  - panelWidth)  / 2)
+            y = Math.round((window.height - panelHeight) / 2)
+        }
+        panel.x = Math.max(0, Math.min(window.width  - panelWidth,  x))
+        panel.y = Math.max(0, Math.min(window.height - panelHeight, y))
+        positioned = true
+        DebugLog.event("geom", "saved=" + JSON.stringify(window.savedGeometry)
+            + " window=" + window.width + "x" + window.height
+            + " -> panel=" + panel.x + "," + panel.y + " size=" + panelWidth + "x" + panelHeight)
+    }
+
+    onWidthChanged: if (visible && !positioned) tryApplyInitialGeometry()
+    onHeightChanged: if (visible && !positioned) tryApplyInitialGeometry()
+
+    function queueSaveGeometry() {
+        if (positioned) saveTimer.restart()
+    }
+
+    FileView {
+        id: stateFile
+        path: window.statePath
+        blockLoading: true
+        printErrors: false
+        onLoaded: {
+            try { window.savedGeometry = JSON.parse(stateFile.text()) }
+            catch (e) { window.savedGeometry = null }
+        }
+        onLoadFailed: window.savedGeometry = null
+    }
+
+    Timer {
+        id: saveTimer
+        interval: 500
+        onTriggered: stateFile.setText(JSON.stringify({
+            x: panel.x, y: panel.y, w: window.panelWidth, h: window.panelHeight
+        }))
     }
 
     IpcHandler {
@@ -127,20 +191,34 @@ PanelWindow {
 
     EmojiPanel {
         id: panel
-        anchors.fill: parent
+        width: window.panelWidth
+        height: window.panelHeight
+        dragMaxX: window.width - window.panelWidth
+        dragMaxY: window.height - window.panelHeight
         forceFocusable: window.forceFocusable
         keyChannelDown: window.keyChannelDown
 
         onEmojiSelected: function(emoji) { window.commit(emoji) }
         onCloseRequested: window.visible = false
         onMoveWindowRequested: function(dx, dy) { window.nudge(dx, dy) }
+        onResizeRequested: function(w, h) { window.resize(w, h) }
+        onXChanged: window.queueSaveGeometry()
+        onYChanged: window.queueSaveGeometry()
     }
 
     function dlog(where) { panel.dlog(where, "picker") }
 
     function nudge(dx, dy) {
-        winX = Math.max(0, Math.min(screen.width  - implicitWidth,  winX + dx))
-        winY = Math.max(0, Math.min(screen.height - implicitHeight, winY + dy))
+        panel.x = Math.max(0, Math.min(window.width  - panelWidth,  panel.x + dx))
+        panel.y = Math.max(0, Math.min(window.height - panelHeight, panel.y + dy))
+    }
+
+    readonly property int minPanelWidth: 320
+    readonly property int minPanelHeight: 280
+
+    function resize(w, h) {
+        panelWidth  = Math.max(minPanelWidth,  Math.min(window.width  - panel.x, Math.round(w)))
+        panelHeight = Math.max(minPanelHeight, Math.min(window.height - panel.y, Math.round(h)))
     }
 
     // Commit an emoji to the target app. If the picker holds keyboard focus (search
