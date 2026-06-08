@@ -58,6 +58,14 @@ function route(line, internalFocus) {
     if (!ctrlHeld && text && text.length > 0 && sym !== keyTab && sym !== keyShiftTab)
         return { kind: "insert", text: text }
 
+    if (ctrlHeld && shiftHeld) {
+        const step = 10
+        if (sym === keyLeft)  return { kind: "moveWindow", dx: -step, dy: 0 }
+        if (sym === keyRight) return { kind: "moveWindow", dx:  step, dy: 0 }
+        if (sym === keyUp)    return { kind: "moveWindow", dx: 0, dy: -step }
+        if (sym === keyDown)  return { kind: "moveWindow", dx: 0, dy:  step }
+    }
+
     if (ctrlHeld) {
         let op = ""
         // Not clipboard, but meh

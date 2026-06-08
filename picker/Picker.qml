@@ -27,13 +27,29 @@ PanelWindow {
     focusable: panel.wantsKeyboard || forceFocusable
     visible: false
 
+    anchors.top: true
+    anchors.left: true
+    margins.top: Math.round(winY)
+    margins.left: Math.round(winX)
+
+    property real winX: 0
+    property real winY: 0
+    property bool positioned: false
+
     property bool keyChannelDown: false
     property string pendingEmoji: ""
 
-    onVisibleChanged: if (!visible) {
-        keySocket.everConnected = false
-        keyChannelDown = false
-        panel.resetFocusState()
+    onVisibleChanged: {
+        if (visible && !positioned && screen) {
+            winX = Math.round((screen.width - implicitWidth) / 2)
+            winY = Math.round((screen.height - implicitHeight) / 2)
+            positioned = true
+        }
+        if (!visible) {
+            keySocket.everConnected = false
+            keyChannelDown = false
+            panel.resetFocusState()
+        }
     }
 
     // D-Bus service to commit through. Defaults to production; the test harness
@@ -117,9 +133,15 @@ PanelWindow {
 
         onEmojiSelected: function(emoji) { window.commit(emoji) }
         onCloseRequested: window.visible = false
+        onMoveWindowRequested: function(dx, dy) { window.nudge(dx, dy) }
     }
 
     function dlog(where) { panel.dlog(where, "picker") }
+
+    function nudge(dx, dy) {
+        winX = Math.max(0, Math.min(screen.width  - implicitWidth,  winX + dx))
+        winY = Math.max(0, Math.min(screen.height - implicitHeight, winY + dy))
+    }
 
     // Commit an emoji to the target app. If the picker holds keyboard focus (search
     // engaged), first release it and re-activate the target so the target is
@@ -199,4 +221,9 @@ PanelWindow {
         sequence: "Escape"
         onActivated: window.visible = false
     }
+
+    Shortcut { sequence: "Ctrl+Shift+Left";  autoRepeat: true; onActivated: window.nudge(-10, 0) }
+    Shortcut { sequence: "Ctrl+Shift+Right"; autoRepeat: true; onActivated: window.nudge( 10, 0) }
+    Shortcut { sequence: "Ctrl+Shift+Up";    autoRepeat: true; onActivated: window.nudge(0, -10) }
+    Shortcut { sequence: "Ctrl+Shift+Down";  autoRepeat: true; onActivated: window.nudge(0,  10) }
 }

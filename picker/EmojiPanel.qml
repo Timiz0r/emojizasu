@@ -14,6 +14,7 @@ Rectangle {
 
     signal emojiSelected(string emoji)
     signal closeRequested()
+    signal moveWindowRequested(real dx, real dy)
 
     property string language: "ja"
     property alias searchText: searchInput.text
@@ -156,6 +157,8 @@ Rectangle {
             if (internalFocus === "grid" && gridSelectedIndex >= 0) selectEmojiAt(gridSelectedIndex)
             else selectFirstEmoji()
             return
+        case "moveWindow":
+            root.moveWindowRequested(intent.dx, intent.dy); return
         case "insert":
             insertInSearch(intent.text); return
         case "clipboard":
