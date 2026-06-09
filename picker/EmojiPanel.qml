@@ -258,6 +258,7 @@ Rectangle {
             if (currentCategory === "recent") {
                 gridSelectedIndex = KeyNav.nextSearchIndex(direction, gridSelectedIndex,
                     recentEmojiItems.length, recentKaomojiItems.length, recentEmojiCols)
+                ensureRecentVisible()
             } else {
                 gridSelectedIndex = KeyNav.nextBrowseIndex(direction, gridSelectedIndex, browseGridColumns, browseItems.length)
                 browseGrid.positionViewAtIndex(gridSelectedIndex, GridView.Contain)
@@ -269,6 +270,24 @@ Rectangle {
             gridSelectedIndex = KeyNav.nextSearchIndex(direction, gridSelectedIndex,
                 searchEmojiItems.length, searchKaomojiItems.length, searchEmojiCols)
         }
+    }
+
+    // The recent view is a Flickable of Repeater-driven delegates (no built-in
+    // viewport tracking like a ListView), so scroll it by hand to keep the
+    // selected cell visible: locate the delegate via its Repeater, map its bounds
+    // into content space, and nudge contentY just enough to contain it.
+    function ensureRecentVisible() {
+        if (gridSelectedIndex < 0) return
+        const item = gridSelectedIndex < recentEmojiItems.length
+            ? recentEmojiRepeater.itemAt(gridSelectedIndex)
+            : recentKaomojiRepeater.itemAt(gridSelectedIndex - recentEmojiItems.length)
+        if (!item) return
+        const top = item.mapToItem(recentColumn, 0, 0).y
+        const bottom = top + item.height
+        if (top < recentFlickable.contentY)
+            recentFlickable.contentY = top
+        else if (bottom > recentFlickable.contentY + recentFlickable.height)
+            recentFlickable.contentY = bottom - recentFlickable.height
     }
 
     function selectEmojiAt(idx) {
@@ -728,6 +747,7 @@ Rectangle {
                             spacing: 2
                             visible: root.recentEmojiItems.length > 0
                             Repeater {
+                                id: recentEmojiRepeater
                                 model: root.recentEmojiItems
                                 delegate: EmojiCell {
                                     required property var modelData
@@ -745,6 +765,7 @@ Rectangle {
                             spacing: 1
                             visible: root.recentKaomojiItems.length > 0
                             Repeater {
+                                id: recentKaomojiRepeater
                                 model: root.recentKaomojiItems
                                 delegate: KaomojiCell {
                                     required property var modelData
