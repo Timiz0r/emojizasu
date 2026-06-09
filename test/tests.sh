@@ -256,7 +256,14 @@ log "launching target window..."
 qs --path "$TARGET_DIR" --no-duplicate &>/dev/null &
 for i in $(seq 1 30); do tgt getText &>/dev/null && break; sleep 0.1; done
 
+localization_suite() {
+    log "running localization logic suite..."
+    if "$SCRIPT_DIR/localization/run.sh"; then ok "localization logic suite"
+    else bad "localization logic suite (see output above)"; fi
+}
+
 log "running cases..."
+localization_suite
 commit_case "commit into empty field"     ""      "🎉"
 commit_case "append at cursor (seeded)"    "neko"  "🐱"
 commit_case "multiple commits in a row"    ""      "🎉" "🔥" "💯"

@@ -17,7 +17,10 @@ Rectangle {
     signal moveWindowRequested(real dx, real dy)
     signal resizeRequested(real w, real h)
 
-    property string language: "ja"
+    readonly property var t: Localization.t
+    function _() { return Localization._.apply(null, arguments) }
+
+    readonly property string language: Localization.localeCode
     property alias searchText: searchInput.text
     property string currentCategory: "recent"
 
@@ -365,6 +368,7 @@ Rectangle {
     }
 
     Component.onCompleted: {
+        Localization.sources = [Qt.resolvedUrl("data/locale/ja.po")]
         if (forceFocusable)
             Qt.callLater(() => searchInput.forceActiveFocus())
     }
@@ -550,7 +554,7 @@ Rectangle {
 
                         Text {
                             anchors { left: parent.left; verticalCenter: parent.verticalCenter }
-                            text: root.language === "ja" ? "絵文字を検索..." : "Search emoji..."
+                            text: _`Search emoji...`
                             color: Qt.alpha(palette.text, 0.38); font.pixelSize: 14
                             visible: searchInput.text.length === 0
                         }
@@ -594,7 +598,7 @@ Rectangle {
                 MouseArea {
                     id: langHover; anchors.fill: parent; hoverEnabled: true
                     cursorShape: Qt.PointingHandCursor
-                    onClicked: root.language = (root.language === "ja" ? "en" : "ja")
+                    onClicked: Localization.localeCode = (Localization.localeCode === "ja" ? "en" : "ja")
                 }
             }
 
@@ -682,12 +686,14 @@ Rectangle {
             text: {
                 if (root.isSearching) {
                     const n = root.searchEmojiItems.length + root.searchKaomojiItems.length
-                    return root.language === "ja" ? n + " 件の検索結果" : n + " results"
+                    return _(t`${n} result`, n, { other: t`${n} results`, zero: t`No results` })
                 }
                 if (root.currentCategory === "recent")
-                    return root.language === "ja" ? "最近使った絵文字" : "Recently used"
-                if (root.currentCategory === "kaomoji")
-                    return root.language === "ja" ? "顔文字  " + root.kaomojiItems.length + " 件" : root.kaomojiItems.length + " kaomoji"
+                    return _`Recently used`
+                if (root.currentCategory === "kaomoji") {
+                    const n = root.kaomojiItems.length
+                    return _(t`${n} kaomoji`, n, { other: t`${n} kaomoji` })
+                }
                 for (let i = 0; i < root.categoryMeta.length; i++) {
                     if (root.categoryMeta[i].id === root.currentCategory) {
                         const nm = root.language === "ja" ? root.categoryMeta[i].name_ja : root.categoryMeta[i].name_en
@@ -724,7 +730,7 @@ Rectangle {
                     Text {
                         anchors.centerIn: parent
                         visible: browseGrid.count === 0 && root.dataReady
-                        text: root.language === "ja" ? "絵文字がありません" : "No emoji here"
+                        text: _`No emoji here`
                         color: Qt.alpha(palette.windowText, 0.38); font.pixelSize: 13
                         horizontalAlignment: Text.AlignHCenter; wrapMode: Text.Wrap; width: 200
                     }
@@ -785,7 +791,7 @@ Rectangle {
                             visible: root.recentEmojiItems.length === 0 && root.recentKaomojiItems.length === 0 && root.dataReady
                             Text {
                                 anchors.centerIn: parent
-                                text: root.language === "ja" ? "まだ使った絵文字がありません" : "No recently used emoji yet"
+                                text: _`No recently used emoji yet`
                                 color: Qt.alpha(palette.windowText, 0.38); font.pixelSize: 13
                                 horizontalAlignment: Text.AlignHCenter; wrapMode: Text.Wrap; width: 200
                             }
@@ -854,7 +860,7 @@ Rectangle {
 
                             Text {
                                 anchors { left: parent.left; verticalCenter: parent.verticalCenter; leftMargin: 4 }
-                                text: root.language === "ja" ? "顔文字" : "Kaomoji"
+                                text: _`Kaomoji`
                                 font.pixelSize: 11; font.bold: true
                                 color: Qt.alpha(palette.windowText, 0.4)
                             }
@@ -886,7 +892,7 @@ Rectangle {
                             visible: root.searchEmojiItems.length === 0 && root.searchKaomojiItems.length === 0 && root.isSearching && root.dataReady
                             Text {
                                 anchors.centerIn: parent
-                                text: root.language === "ja" ? "「" + root.searchText + "」は見つかりませんでした" : "No results for \"" + root.searchText + "\""
+                                text: _(t`No results for "${root.searchText}"`)
                                 color: Qt.alpha(palette.windowText, 0.38); font.pixelSize: 13
                                 horizontalAlignment: Text.AlignHCenter; wrapMode: Text.Wrap; width: 260
                             }
@@ -910,7 +916,7 @@ Rectangle {
             }
             Text {
                 anchors.horizontalCenter: parent.horizontalCenter
-                text: root.language === "ja" ? "読み込み中..." : "Loading..."
+                text: _`Loading...`
                 color: Qt.alpha(palette.windowText, 0.5); font.pixelSize: 14
             }
         }
@@ -928,16 +934,13 @@ Rectangle {
             }
             Text {
                 width: parent.width
-                text: root.language === "ja" ? "キー入力サービスに接続できません"
-                                             : "Can't reach the key-input service"
+                text: _`Can't reach the key-input service`
                 color: palette.windowText; font.pixelSize: 15; font.bold: true
                 horizontalAlignment: Text.AlignHCenter; wrapMode: Text.Wrap
             }
             Text {
                 width: parent.width
-                text: root.language === "ja"
-                      ? "fcitx5 と emojizasu アドオンが動作しているか確認してください"
-                      : "Check that fcitx5 and the emojizasu addon are running, then reopen."
+                text: _`Check that fcitx5 and the emojizasu addon are running, then reopen.`
                 color: Qt.alpha(palette.windowText, 0.55); font.pixelSize: 12
                 horizontalAlignment: Text.AlignHCenter; wrapMode: Text.Wrap
             }

@@ -1,0 +1,44 @@
+msgid ""
+msgstr ""
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-PluralRules-Zero: n = 0\n"
+
+msgid "Search emoji..."
+msgstr "絵文字を検索..."
+
+msgid "Recently used"
+msgstr "最近使った絵文字"
+
+msgid "Kaomoji"
+msgstr "顔文字"
+
+msgid "No emoji here"
+msgstr "絵文字がありません"
+
+msgid "No recently used emoji yet"
+msgstr "まだ使った絵文字がありません"
+
+msgid "Loading..."
+msgstr "読み込み中..."
+
+msgid "No results for \"{0}\""
+msgstr "「{0}」は見つかりませんでした"
+
+msgid "Can't reach the key-input service"
+msgstr "キー入力サービスに接続できません"
+
+msgid "Check that fcitx5 and the emojizasu addon are running, then reopen."
+msgstr "fcitx5 と emojizasu アドオンが動作しているか確認してください"
+
+msgid "{0} result"
+msgid_plural "{0} results"
+msgstr[0] "検索結果なし"
+msgstr[1] "{0} 件の検索結果"
+
+msgid "{0} kaomoji"
+msgid_plural "{0} kaomoji"
+msgstr[0] "顔文字  {0} 件"
+msgstr[1] "顔文字  {0} 件"

@@ -76,7 +76,7 @@ PanelWindow {
     // show of a fresh process; within a process the live panel.x/y/size are kept.
     readonly property string statePath: {
         const base = Quickshell.env("XDG_STATE_HOME") || (Quickshell.env("HOME") + "/.local/state")
-        return base + "/emojizasu/window.json"
+        return base + "/emojizasu/state.json"
     }
 
     property var savedGeometry: null
@@ -120,17 +120,26 @@ PanelWindow {
         blockLoading: true
         printErrors: false
         onLoaded: {
-            try { window.savedGeometry = JSON.parse(stateFile.text()) }
-            catch (e) { window.savedGeometry = null }
+            let g = null
+            try { g = JSON.parse(stateFile.text()) }
+            catch (e) {}
+            window.savedGeometry = g
+            if (g && g.locale) Localization.localeCode = g.locale
         }
         onLoadFailed: window.savedGeometry = null
+    }
+
+    Connections {
+        target: Localization
+        function onLocaleCodeChanged() { if (window.positioned) saveTimer.restart() }
     }
 
     Timer {
         id: saveTimer
         interval: 500
         onTriggered: stateFile.setText(JSON.stringify({
-            x: panel.x, y: panel.y, w: window.panelWidth, h: window.panelHeight
+            x: panel.x, y: panel.y, w: window.panelWidth, h: window.panelHeight,
+            locale: Localization.localeCode
         }))
     }
 
