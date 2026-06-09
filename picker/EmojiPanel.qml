@@ -1,9 +1,7 @@
 import QtQuick
 import QtQuick.Controls
 import QtQuick.Layouts
-import QtCore
 import Quickshell
-import Quickshell.Io
 import "KeyNav.js" as KeyNav
 
 Rectangle {
@@ -24,42 +22,40 @@ Rectangle {
     property alias searchText: searchInput.text
     property string currentCategory: "recent"
 
-    // Upper bound for the drag handle: window size minus the panel size, set by the
-    // host window so the panel can't be dragged off-screen.
     property real dragMaxX: 0
     property real dragMaxY: 0
 
-    // Which UI zone keys/selection target. Values: "search", "categories", "grid".
     property string internalFocus: "grid"
-    // True when the picker should hold real Wayland keyboard focus so the search
-    // TextInput edits natively (Ctrl-A, selection, cursor).
     property bool wantsKeyboard: false
     property bool keyChannelDown: false
     property int gridSelectedIndex: 0
 
-    property var emojiData: null
-    property var categoryMeta: []
-    property var recentList: []
+    readonly property bool dataReady: EmojiData.dataReady
 
-    // Items fed into the three content views
-    property var browseItems: []       // current category emoji
-    property var kaomojiItems: []      // kaomoji category full list
-    property var searchEmojiItems: []  // search: emoji matches
-    property var searchKaomojiItems: [] // search: kaomoji matches
-    property var recentEmojiItems: []  // recent: emoji entries
-    property var recentKaomojiItems: [] // recent: kaomoji entries
-    property var emojiSet: ({})        // emoji string → true, for recent split
-    property bool recentInitialLoaded: false
-
-    readonly property bool dataReady: emojiData !== null
-    readonly property bool isSearching: searchText.length > 0
-
-    // Content index: 0=category browse, 1=kaomoji category, 2=search results
-    readonly property int contentIndex: {
-        if (isSearching) return 2
-        if (currentCategory === "kaomoji") return 1
-        return 0
+    readonly property var categoryMeta: {
+        if (!EmojiData.dataReady) return []
+        const cats = [{ id: "recent", icon: "🕐", name_en: "Recently Used", name_ja: "最近使った" }]
+        for (let i = 0; i < EmojiData.categories.length; i++) cats.push(EmojiData.categories[i])
+        return cats
     }
+
+    property var browseItems: currentCategory !== "recent"
+        ? (EmojiData.categoryItems[currentCategory] || [])
+        : []
+
+    property var searchEmojiItems: []
+    property var searchKaomojiItems: []
+
+    readonly property var recentEmojiItems: EmojiData.recentItems.filter(i => i.category !== "kaomoji")
+    readonly property var recentKaomojiItems: EmojiData.recentItems.filter(i => i.category === "kaomoji")
+
+    // True only in the test negative-control (EMOJIZASU_FORCE_FOCUSABLE): the
+    // search field takes real keyboard focus and reproduces the focus-steal leak.
+    // Disabled in normal operation.
+    property bool forceFocusable: false
+
+    readonly property bool isSearching: searchText.length > 0
+    readonly property int contentIndex: isSearching ? 1 : 0
 
     readonly property int browseGridColumns: browseGrid.width > 0
         ? Math.max(1, Math.floor(browseGrid.width / browseGrid.cellWidth)) : 1
@@ -67,17 +63,12 @@ Rectangle {
         ? Math.max(1, Math.floor((searchFlickable.width + 2) / 44)) : 1
     readonly property int recentEmojiCols: browseGrid.width > 0
         ? Math.max(1, Math.floor((browseGrid.width + 2) / 44)) : 1
+
     readonly property int gridCount: {
-        if (contentIndex === 1) return kaomojiItems.length
-        if (contentIndex === 2) return searchEmojiItems.length + searchKaomojiItems.length
+        if (isSearching) return searchEmojiItems.length + searchKaomojiItems.length
         if (currentCategory === "recent") return recentEmojiItems.length + recentKaomojiItems.length
         return browseItems.length
     }
-
-    // True only in the test negative-control (EMOJIZASU_FORCE_FOCUSABLE): the
-    // search field takes real keyboard focus and reproduces the focus-steal leak.
-    // Disabled in normal operation.
-    property bool forceFocusable: false
 
     function dlog(where, scope) {
         DebugLog.event(scope || "panel", where
@@ -106,21 +97,17 @@ Rectangle {
         dlog("focusGrid")
     }
 
-    // From the search box, Tab/Down advance to the next zone: the results grid while
-    // searching (categories are hidden), otherwise the category bar.
     function advanceFromSearch() {
         if (isSearching) focusGrid()
         else { internalFocus = "categories"; wantsKeyboard = false }
     }
 
-    // Leave the grid backward (Shift-Tab, or Up from the top row): to the search box
-    // while searching, otherwise to the category bar.
     function leaveGridBackward() {
         if (isSearching) engageSearch()
         else internalFocus = "categories"
         gridSelectedIndex = -1
     }
-    
+
     function resetFocusState() {
         wantsKeyboard = false
         internalFocus = "grid"
@@ -137,10 +124,6 @@ Rectangle {
         else searchInput.focus = false
     }
 
-    // Click-out: if the search field loses real focus while we still think we're
-    // searching, the user clicked away (e.g. back into the app) — give up keyboard
-    // focus so keys reach the app again. (Depends on the compositor releasing the
-    // layer surface's keyboard focus on outside-click.)
     Connections {
         target: searchInput
         function onActiveFocusChanged() {
@@ -152,10 +135,6 @@ Rectangle {
 
     readonly property bool searchFocused: searchInput.activeFocus
 
-    // Entry point for keystrokes forwarded by the addon (wire format
-    // "<sym> <states> <text>"). The routing decision is pure (KeyNav.route parses
-    // the line and picks an intent from the focused zone); this applies that
-    // intent to the widgets.
     function handleKeyLine(line) {
         const intent = KeyNav.route(line, internalFocus)
         dlog("handleKeyLine '" + line + "' -> " + intent.kind)
@@ -238,8 +217,6 @@ Rectangle {
         catBar.positionViewAtIndex(target, ListView.Contain)
     }
 
-    // Whether the current grid selection sits in the first navigable row, so Up exits
-    // the grid (like Shift-Tab) instead of moving within it.
     function gridAtTop() {
         if (contentIndex === 0) {
             if (currentCategory === "recent") {
@@ -247,9 +224,11 @@ Rectangle {
                     return gridSelectedIndex < Math.min(recentEmojiCols, recentEmojiItems.length)
                 return gridSelectedIndex <= 0
             }
+            if (currentCategory === "kaomoji") return gridSelectedIndex <= 0
             return gridSelectedIndex < browseGridColumns
         }
-        if (contentIndex === 2 && searchEmojiItems.length > 0)
+        // search
+        if (searchEmojiItems.length > 0)
             return gridSelectedIndex < Math.min(searchEmojiCols, searchEmojiItems.length)
         return gridSelectedIndex <= 0
     }
@@ -262,23 +241,19 @@ Rectangle {
                 gridSelectedIndex = KeyNav.nextSearchIndex(direction, gridSelectedIndex,
                     recentEmojiItems.length, recentKaomojiItems.length, recentEmojiCols)
                 ensureRecentVisible()
+            } else if (currentCategory === "kaomoji") {
+                gridSelectedIndex = KeyNav.nextKaomojiIndex(direction, gridSelectedIndex, browseItems.length)
+                kaomojiListView.positionViewAtIndex(gridSelectedIndex, ListView.Contain)
             } else {
                 gridSelectedIndex = KeyNav.nextBrowseIndex(direction, gridSelectedIndex, browseGridColumns, browseItems.length)
                 browseGrid.positionViewAtIndex(gridSelectedIndex, GridView.Contain)
             }
-        } else if (contentIndex === 1) {
-            gridSelectedIndex = KeyNav.nextKaomojiIndex(direction, gridSelectedIndex, kaomojiItems.length)
-            kaomojiList.positionViewAtIndex(gridSelectedIndex, ListView.Contain)
-        } else if (contentIndex === 2) {
+        } else {
             gridSelectedIndex = KeyNav.nextSearchIndex(direction, gridSelectedIndex,
                 searchEmojiItems.length, searchKaomojiItems.length, searchEmojiCols)
         }
     }
 
-    // The recent view is a Flickable of Repeater-driven delegates (no built-in
-    // viewport tracking like a ListView), so scroll it by hand to keep the
-    // selected cell visible: locate the delegate via its Repeater, map its bounds
-    // into content space, and nudge contentY just enough to contain it.
     function ensureRecentVisible() {
         if (gridSelectedIndex < 0) return
         const item = gridSelectedIndex < recentEmojiItems.length
@@ -297,20 +272,18 @@ Rectangle {
         if (contentIndex === 0) {
             if (currentCategory === "recent") {
                 if (idx < recentEmojiItems.length) {
-                    emojiSelected(recentEmojiItems[idx].emoji)
+                    emojiSelected(recentEmojiItems[idx].text)
                 } else {
                     const ki = idx - recentEmojiItems.length
                     if (ki < recentKaomojiItems.length) emojiSelected(recentKaomojiItems[ki].text)
                 }
             } else if (idx >= 0 && idx < browseItems.length) {
-                emojiSelected(browseItems[idx].emoji)
+                emojiSelected(browseItems[idx].text)
             }
-        } else if (contentIndex === 1) {
-            if (idx >= 0 && idx < kaomojiItems.length) emojiSelected(kaomojiItems[idx].text)
-        } else if (contentIndex === 2) {
+        } else {
             const ei = searchEmojiItems.length
             if (idx < ei) {
-                emojiSelected(searchEmojiItems[idx].emoji)
+                emojiSelected(searchEmojiItems[idx].text)
             } else {
                 const ki = idx - ei
                 if (ki < searchKaomojiItems.length) emojiSelected(searchKaomojiItems[ki].text)
@@ -318,139 +291,38 @@ Rectangle {
         }
     }
 
-    // Commit the first item of whatever view is showing.
     function selectFirstEmoji() {
         if (isSearching) {
-            if (searchEmojiItems.length > 0) { emojiSelected(searchEmojiItems[0].emoji); return }
+            if (searchEmojiItems.length > 0) { emojiSelected(searchEmojiItems[0].text); return }
             if (searchKaomojiItems.length > 0) { emojiSelected(searchKaomojiItems[0].text); return }
-        } else if (currentCategory === "kaomoji") {
-            if (kaomojiItems.length > 0) emojiSelected(kaomojiItems[0].text)
         } else if (browseItems.length > 0) {
-            emojiSelected(browseItems[0].emoji)
+            emojiSelected(browseItems[0].text)
         }
-    }
-
-    FileView {
-        id: emojiDataFile
-        // Resolve relative to this component's location (not shellDir) so the
-        // picker loads its data when instantiated from any config dir, e.g. the
-        // test harness's test/picker config.
-        path: Qt.resolvedUrl("data/emoji.json")
-        onLoaded: {
-            root.emojiData = JSON.parse(emojiDataFile.text())
-            const s = {}
-            for (let ci = 0; ci < root.emojiData.categories.length; ci++) {
-                const emojis = root.emojiData.categories[ci].emoji
-                for (let ei = 0; ei < emojis.length; ei++) s[emojis[ei].emoji] = true
-            }
-            root.emojiSet = s
-            root.buildCategoryMeta()
-            root.refreshBrowse()
-        }
-    }
-
-    FileView {
-        id: recentFile
-        path: (Quickshell.env("XDG_STATE_HOME") || (Quickshell.env("HOME") + "/.local/state"))
-              + "/emojizasu/recent.json"
-        watchChanges: true
-        printErrors: false
-        onLoaded: {
-            try { root.recentList = JSON.parse(recentFile.text()) }
-            catch(e) { root.recentList = [] }
-            if (!root.recentInitialLoaded) {
-                root.recentInitialLoaded = true
-                if (root.currentCategory === "recent") root.refreshBrowse()
-            }
-        }
-        onFileChanged: recentFile.reload()
-        onLoadFailed: root.recentList = []
-    }
-
-    Component.onCompleted: {
-        Localization.sources = [Qt.resolvedUrl("data/locale/ja.po")]
-        if (forceFocusable)
-            Qt.callLater(() => searchInput.forceActiveFocus())
-    }
-
-    function buildCategoryMeta() {
-        if (!emojiData) return
-        const cats = [{ id: "recent", icon: "🕐", name_en: "Recently Used", name_ja: "最近使った" }]
-        for (let i = 0; i < emojiData.categories.length; i++) {
-            const c = emojiData.categories[i]
-            cats.push({ id: c.id, icon: c.icon, name_en: c.name_en, name_ja: c.name_ja })
-        }
-        cats.push({ id: "kaomoji", icon: "( ＾▽＾)", name_en: "Kaomoji", name_ja: "顔文字" })
-        categoryMeta = cats
-    }
-
-    function refreshBrowse() {
-        if (!emojiData) return
-        if (currentCategory === "recent") {
-            const ei = [], ki = []
-            for (let i = 0; i < recentList.length; i++) {
-                const e = recentList[i]
-                if (emojiSet[e]) {
-                    ei.push({ emoji: e, name_en: e, name_ja: e })
-                } else {
-                    const found = emojiData.kaomoji.find(k => k.text === e)
-                    ki.push(found || { text: e, name_en: e, name_ja: e })
-                }
-            }
-            recentEmojiItems = ei
-            recentKaomojiItems = ki
-            browseItems = []
-            return
-        }
-        for (let i = 0; i < emojiData.categories.length; i++) {
-            if (emojiData.categories[i].id === currentCategory) {
-                browseItems = emojiData.categories[i].emoji
-                return
-            }
-        }
-        browseItems = []
-    }
-
-    function refreshKaomoji() {
-        if (!emojiData) return
-        kaomojiItems = emojiData.kaomoji
     }
 
     function refreshSearch() {
-        if (!emojiData || searchText.length === 0) return
-        const q = searchText
-        const qlo = q.toLowerCase()
+        if (!EmojiData.dataReady || searchText.length === 0) return
+        const q = searchText, qlo = q.toLowerCase()
         const em = [], km = []
-
-        for (let ci = 0; ci < emojiData.categories.length && em.length < 200; ci++) {
-            const emojis = emojiData.categories[ci].emoji
-            for (let ei = 0; ei < emojis.length && em.length < 200; ei++) {
-                if (matchEmoji(emojis[ei], q, qlo)) em.push(emojis[ei])
+        const all = EmojiData.items
+        for (let i = 0; i < all.length && em.length < 200; i++) {
+            const item = all[i]
+            if (matchItem(item, q, qlo)) {
+                if (item.category === "kaomoji") km.push(item)
+                else em.push(item)
             }
-        }
-        for (let ki = 0; ki < emojiData.kaomoji.length; ki++) {
-            if (matchKaomoji(emojiData.kaomoji[ki], q, qlo)) km.push(emojiData.kaomoji[ki])
         }
         searchEmojiItems = em
         searchKaomojiItems = km
     }
 
-    function matchEmoji(e, q, qlo) {
-        if (e.emoji === q) return true
-        if (e.name_en.toLowerCase().indexOf(qlo) >= 0) return true
-        if (e.name_ja.indexOf(q) >= 0) return true
-        const ke = e.keywords_en, kj = e.keywords_ja
+    function matchItem(item, q, qlo) {
+        if (item.text === q) return true
+        if (item.name_en.toLowerCase().indexOf(qlo) >= 0) return true
+        if (item.name_ja && item.name_ja.indexOf(q) >= 0) return true
+        const ke = item.keywords_en || [], kj = item.keywords_ja || []
         for (let i = 0; i < ke.length; i++) if (ke[i].toLowerCase().indexOf(qlo) >= 0) return true
         for (let j = 0; j < kj.length; j++) if (kj[j].indexOf(q) >= 0) return true
-        return false
-    }
-
-    function matchKaomoji(km, q, qlo) {
-        if (km.text.indexOf(q) >= 0) return true
-        if (km.name_en.toLowerCase().indexOf(qlo) >= 0) return true
-        if (km.name_ja.indexOf(q) >= 0) return true
-        const t = km.tags
-        for (let i = 0; i < t.length; i++) if (t[i].toLowerCase().indexOf(qlo) >= 0) return true
         return false
     }
 
@@ -464,14 +336,17 @@ Rectangle {
     }
 
     onCurrentCategoryChanged: {
-        if (currentCategory === "kaomoji") refreshKaomoji()
-        else refreshBrowse()
         if (internalFocus === "grid") gridSelectedIndex = 0
     }
 
     onSearchTextChanged: {
         if (searchText.length > 0) searchTimer.restart()
-        if (internalFocus === "grid") gridSelectedIndex = 0
+    }
+
+    Component.onCompleted: {
+        Localization.sources = [Qt.resolvedUrl("data/locale/ja.po")]
+        if (forceFocusable)
+            Qt.callLater(() => searchInput.forceActiveFocus())
     }
 
     SystemPalette { id: palette; colorGroup: SystemPalette.Active }
@@ -559,9 +434,6 @@ Rectangle {
                             visible: searchInput.text.length === 0
                         }
 
-                        // Click the search box to engage (take real keyboard focus);
-                        // once engaged the MouseArea disables so clicks reach the
-                        // TextInput for cursor positioning.
                         MouseArea {
                             anchors.fill: parent
                             enabled: !root.wantsKeyboard && !root.forceFocusable
@@ -690,10 +562,6 @@ Rectangle {
                 }
                 if (root.currentCategory === "recent")
                     return _`Recently used`
-                if (root.currentCategory === "kaomoji") {
-                    const n = root.kaomojiItems.length
-                    return _(t`${n} kaomoji`, n, { other: t`${n} kaomoji` })
-                }
                 for (let i = 0; i < root.categoryMeta.length; i++) {
                     if (root.categoryMeta[i].id === root.currentCategory) {
                         const nm = root.language === "ja" ? root.categoryMeta[i].name_ja : root.categoryMeta[i].name_en
@@ -708,20 +576,20 @@ Rectangle {
             Layout.fillWidth: true; Layout.fillHeight: true
             currentIndex: root.contentIndex
 
-            // Category
+            // Browse / Recent
             Item {
                 GridView {
                     id: browseGrid
                     anchors.fill: parent; clip: true
                     cellWidth: 42; cellHeight: 42
                     model: root.browseItems
-                    visible: root.currentCategory !== "recent"
+                    visible: root.currentCategory !== "recent" && root.currentCategory !== "kaomoji"
                     ScrollBar.vertical: ScrollBar { policy: ScrollBar.AsNeeded }
 
                     delegate: EmojiCell {
                         required property var modelData
                         required property int index
-                        emojiChar: modelData.emoji
+                        emojiChar: modelData.text
                         label: root.language === "ja" ? (modelData.name_ja || modelData.name_en) : modelData.name_en
                         selected: root.internalFocus === "grid" && index === root.gridSelectedIndex
                         onActivated: root.emojiSelected(emojiChar)
@@ -733,6 +601,25 @@ Rectangle {
                         text: _`No emoji here`
                         color: Qt.alpha(palette.windowText, 0.38); font.pixelSize: 13
                         horizontalAlignment: Text.AlignHCenter; wrapMode: Text.Wrap; width: 200
+                    }
+                }
+
+                ListView {
+                    id: kaomojiListView
+                    anchors.fill: parent; clip: true; spacing: 1
+                    model: root.browseItems
+                    visible: root.currentCategory === "kaomoji"
+                    ScrollBar.vertical: ScrollBar { policy: ScrollBar.AsNeeded }
+
+                    delegate: KaomojiCell {
+                        required property var modelData
+                        required property int index
+                        kaomojiText: modelData.text
+                        label: root.language === "ja" ? modelData.name_ja : modelData.name_en
+                        width: kaomojiListView.width
+                        highlight: index % 2 === 0
+                        selected: root.internalFocus === "grid" && index === root.gridSelectedIndex
+                        onActivated: root.emojiSelected(kaomojiText)
                     }
                 }
 
@@ -758,7 +645,7 @@ Rectangle {
                                 delegate: EmojiCell {
                                     required property var modelData
                                     required property int index
-                                    emojiChar: modelData.emoji
+                                    emojiChar: modelData.text
                                     label: root.language === "ja" ? (modelData.name_ja || modelData.name_en) : modelData.name_en
                                     selected: root.internalFocus === "grid" && index === root.gridSelectedIndex
                                     onActivated: root.emojiSelected(emojiChar)
@@ -800,27 +687,6 @@ Rectangle {
                 }
             }
 
-            // Kaomoji
-            Item {
-                ListView {
-                    id: kaomojiList
-                    anchors.fill: parent; clip: true; spacing: 1
-                    model: root.kaomojiItems
-                    ScrollBar.vertical: ScrollBar { policy: ScrollBar.AsNeeded }
-
-                    delegate: KaomojiCell {
-                        required property var modelData
-                        required property int index
-                        kaomojiText: modelData.text
-                        label: root.language === "ja" ? modelData.name_ja : modelData.name_en
-                        width: kaomojiList.width
-                        highlight: index % 2 === 0
-                        selected: root.internalFocus === "grid" && index === root.gridSelectedIndex
-                        onActivated: root.emojiSelected(kaomojiText)
-                    }
-                }
-            }
-
             // Search results
             Item {
                 Flickable {
@@ -845,7 +711,7 @@ Rectangle {
                                 delegate: EmojiCell {
                                     required property var modelData
                                     required property int index
-                                    emojiChar: modelData.emoji
+                                    emojiChar: modelData.text
                                     label: root.language === "ja" ? (modelData.name_ja || modelData.name_en) : modelData.name_en
                                     selected: root.internalFocus === "grid" && index === root.gridSelectedIndex
                                     onActivated: root.emojiSelected(emojiChar)
