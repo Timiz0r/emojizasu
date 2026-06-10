@@ -1,0 +1,1134 @@
+msgid ""
+msgstr ""
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "😀.name"
+msgstr "grinning face"
+
+msgid "😀.keywords"
+msgstr "cheerful | cheery | face | grin | grinning | happy | laugh | nice | smile | smiling | teeth"
+
+msgid "😃.name"
+msgstr "grinning face with big eyes"
+
+msgid "😃.keywords"
+msgstr "awesome | big | eyes | face | grin | grinning | happy | mouth | open | smile | smiling | teeth | yay"
+
+msgid "😄.name"
+msgstr "grinning face with smiling eyes"
+
+msgid "😄.keywords"
+msgstr "eye | eyes | face | grin | grinning | happy | laugh | lol | mouth | open | smile | smiling"
+
+msgid "😁.name"
+msgstr "beaming face with smiling eyes"
+
+msgid "😁.keywords"
+msgstr "beaming | eye | eyes | face | grin | grinning | happy | nice | smile | smiling | teeth"
+
+msgid "😆.name"
+msgstr "grinning squinting face"
+
+msgid "😆.keywords"
+msgstr "closed | eyes | face | grinning | haha | hahaha | happy | laugh | lol | mouth | open | rofl | smile | smiling | squinting"
+
+msgid "😅.name"
+msgstr "grinning face with sweat"
+
+msgid "😅.keywords"
+msgstr "cold | dejected | excited | face | grinning | mouth | nervous | open | smile | smiling | stress | stressed | sweat"
+
+msgid "🤣.name"
+msgstr "rolling on the floor laughing"
+
+msgid "🤣.keywords"
+msgstr ""
+"crying | face | floor | funny | haha | happy | hehe | hilarious | joy | laugh | lmao | lol | rofl | roflmao | rolling | tear"
+" | "
+"rolling laughing | lmao | rofl | dead | hilarious | screaming"
+
+msgid "😂.name"
+msgstr "face with tears of joy"
+
+msgid "😂.keywords"
+msgstr ""
+"crying | face | feels | funny | haha | happy | hehe | hilarious | joy | laugh | lmao | lol | rofl | roflmao | tear"
+" | "
+"lmao | lol | crying laughing | dead | rofl | skull | hilarious"
+
+msgid "🙂.name"
+msgstr "slightly smiling face"
+
+msgid "🙂.keywords"
+msgstr "face | happy | slightly | smile | smiling"
+
+msgid "🙃.name"
+msgstr "upside-down face"
+
+msgid "🙃.keywords"
+msgstr "face | hehe | smile | upside-down"
+
+msgid "🫠.name"
+msgstr "melting face"
+
+msgid "🫠.keywords"
+msgstr ""
+"disappear | dissolve | embarrassed | face | haha | heat | hot | liquid | lol | melt | melting | sarcasm | sarcastic"
+" | "
+"melting | exhausted | suffering | hot | done | defeated"
+
+msgid "😉.name"
+msgstr "winking face"
+
+msgid "😉.keywords"
+msgstr "face | flirt | heartbreaker | sexy | slide | tease | wink | winking | winks"
+
+msgid "😊.name"
+msgstr "smiling face with smiling eyes"
+
+msgid "😊.keywords"
+msgstr ""
+"blush | eye | eyes | face | glad | satisfied | smile | smiling"
+" | "
+"smile | happy | blush | wholesome | warm"
+
+msgid "😇.name"
+msgstr "smiling face with halo"
+
+msgid "😇.keywords"
+msgstr "angel | angelic | angels | blessed | face | fairy | fairytale | fantasy | halo | happy | innocent | peaceful | smile | smiling | spirit | tale"
+
+msgid "🥰.name"
+msgstr "smiling face with hearts"
+
+msgid "🥰.keywords"
+msgstr ""
+"3 | adore | crush | face | heart | hearts | ily | love | romance | smile | smiling | you"
+" | "
+"love | cute | adorable | kawaii | smitten"
+
+msgid "😍.name"
+msgstr "smiling face with heart-eyes"
+
+msgid "😍.keywords"
+msgstr ""
+"143 | bae | eye | face | feels | heart-eyes | hearts | ily | kisses | love | romance | romantic | smile | xoxo"
+" | "
+"love | heart eyes | beautiful | kawaii | obsessed"
+
+msgid "🤩.name"
+msgstr "star-struck"
+
+msgid "🤩.keywords"
+msgstr "excited | eyes | face | grinning | smile | star | star-struck | starry-eyed | wow"
+
+msgid "😘.name"
+msgstr "face blowing a kiss"
+
+msgid "😘.keywords"
+msgstr "adorbs | bae | blowing | face | flirt | heart | ily | kiss | love | lover | miss | muah | romantic | smooch | xoxo | you"
+
+msgid "😗.name"
+msgstr "kissing face"
+
+msgid "😗.keywords"
+msgstr "143 | date | dating | face | flirt | ily | kiss | love | smooch | smooches | xoxo | you"
+
+msgid "☺️.name"
+msgstr "smiling face"
+
+msgid "☺️.keywords"
+msgstr "face | happy | outlined | relaxed | smile | smiling"
+
+msgid "😚.name"
+msgstr "kissing face with closed eyes"
+
+msgid "😚.keywords"
+msgstr "143 | bae | blush | closed | date | dating | eye | eyes | face | flirt | ily | kisses | kissing | smooches | xoxo"
+
+msgid "😙.name"
+msgstr "kissing face with smiling eyes"
+
+msgid "😙.keywords"
+msgstr "143 | closed | date | dating | eye | eyes | face | flirt | ily | kiss | kisses | kissing | love | night | smile | smiling"
+
+msgid "🥲.name"
+msgstr "smiling face with tear"
+
+msgid "🥲.keywords"
+msgstr "face | glad | grateful | happy | joy | pain | proud | relieved | smile | smiley | smiling | tear | touched"
+
+msgid "😋.name"
+msgstr "face savoring food"
+
+msgid "😋.keywords"
+msgstr "delicious | eat | face | food | full | hungry | savor | smile | smiling | tasty | um | yum | yummy"
+
+msgid "😛.name"
+msgstr "face with tongue"
+
+msgid "😛.keywords"
+msgstr "awesome | cool | face | nice | party | stuck-out | sweet | tongue"
+
+msgid "😜.name"
+msgstr "winking face with tongue"
+
+msgid "😜.keywords"
+msgstr "crazy | epic | eye | face | funny | joke | loopy | nutty | party | stuck-out | tongue | wacky | weirdo | wink | winking | yolo"
+
+msgid "🤪.name"
+msgstr "zany face"
+
+msgid "🤪.keywords"
+msgstr "crazy | eye | eyes | face | goofy | large | small | zany"
+
+msgid "😝.name"
+msgstr "squinting face with tongue"
+
+msgid "😝.keywords"
+msgstr "closed | eye | eyes | face | gross | horrible | omg | squinting | stuck-out | taste | tongue | whatever | yolo"
+
+msgid "🤑.name"
+msgstr "money-mouth face"
+
+msgid "🤑.keywords"
+msgstr "face | money | money-mouth | mouth | paid"
+
+msgid "🤗.name"
+msgstr "smiling face with open hands"
+
+msgid "🤗.keywords"
+msgstr ""
+"face | hands | hug | hugging | open | smiling"
+" | "
+"hug | hugs | wholesome | warm | friendly | love"
+
+msgid "🤭.name"
+msgstr "face with hand over mouth"
+
+msgid "🤭.keywords"
+msgstr "face | giggle | giggling | hand | mouth | oops | realization | secret | shock | sudden | surprise | whoops"
+
+msgid "🫢.name"
+msgstr "face with open eyes and hand over mouth"
+
+msgid "🫢.keywords"
+msgstr "amazement | awe | disbelief | embarrass | eyes | face | gasp | hand | mouth | omg | open | over | quiet | scared | shock | surprise"
+
+msgid "🫣.name"
+msgstr "face with peeking eye"
+
+msgid "🫣.keywords"
+msgstr "captivated | embarrass | eye | face | hide | hiding | peek | peeking | peep | scared | shy | stare"
+
+msgid "🤫.name"
+msgstr "shushing face"
+
+msgid "🤫.keywords"
+msgstr ""
+"face | quiet | shh | shush | shushing"
+" | "
+"shush | secret | quiet | hush | shhh"
+
+msgid "🤔.name"
+msgstr "thinking face"
+
+msgid "🤔.keywords"
+msgstr ""
+"chin | consider | face | hmm | ponder | pondering | thinking | wondering"
+" | "
+"thinking | hmm | ponder | considering | sus"
+
+msgid "🫡.name"
+msgstr "saluting face"
+
+msgid "🫡.keywords"
+msgstr ""
+"face | good | luck | ma’am | OK | respect | salute | saluting | sir | troops | yes"
+" | "
+"salute | yes sir | respectfully | understood | roger"
+
+msgid "🤐.name"
+msgstr "zipper-mouth face"
+
+msgid "🤐.keywords"
+msgstr "face | keep | mouth | quiet | secret | shut | zip | zipper | zipper-mouth"
+
+msgid "🤨.name"
+msgstr "face with raised eyebrow"
+
+msgid "🤨.keywords"
+msgstr "disapproval | disbelief | distrust | emoji | eyebrow | face | hmm | mild | raised | skeptic | skeptical | skepticism | surprise | what"
+
+msgid "😐.name"
+msgstr "neutral face"
+
+msgid "😐.keywords"
+msgstr "awkward | blank | deadpan | expressionless | face | fine | jealous | meh | neutral | oh | shade | straight | unamused | unhappy | unimpressed | whatever"
+
+msgid "😑.name"
+msgstr "expressionless face"
+
+msgid "😑.keywords"
+msgstr "awkward | dead | expressionless | face | fine | inexpressive | jealous | meh | not | oh | omg | straight | uh | unhappy | unimpressed | whatever"
+
+msgid "😶.name"
+msgstr "face without mouth"
+
+msgid "😶.keywords"
+msgstr "awkward | blank | expressionless | face | mouth | mouthless | mute | quiet | secret | silence | silent | speechless"
+
+msgid "🫥.name"
+msgstr "dotted line face"
+
+msgid "🫥.keywords"
+msgstr "depressed | disappear | dotted | face | hidden | hide | introvert | invisible | line | meh | whatever | wtv"
+
+msgid "😶‍🌫️.name"
+msgstr "face in clouds"
+
+msgid "😶‍🌫️.keywords"
+msgstr "absentminded | clouds | face | fog | head"
+
+msgid "😏.name"
+msgstr "smirking face"
+
+msgid "😏.keywords"
+msgstr ""
+"boss | dapper | face | flirt | homie | kidding | leer | shade | slick | sly | smirk | smug | snicker | suave | suspicious | swag"
+" | "
+"smirk | smug | doya | suspicious | sly | knowing"
+
+msgid "😒.name"
+msgstr "unamused face"
+
+msgid "😒.keywords"
+msgstr ""
+"... | bored | face | fine | jealous | jel | jelly | pissed | smh | ugh | uhh | unamused | unhappy | weird | whatever"
+" | "
+"side eye | unimpressed | whatever | annoyed | meh | unbothered"
+
+msgid "🙄.name"
+msgstr "face with rolling eyes"
+
+msgid "🙄.keywords"
+msgstr "eyeroll | eyes | face | rolling | shade | ugh | whatever"
+
+msgid "😬.name"
+msgstr "grimacing face"
+
+msgid "😬.keywords"
+msgstr ""
+"awk | awkward | dentist | face | grimace | grimacing | grinning | smile | smiling"
+" | "
+"grimace | awkward | oof | yikes | cringe"
+
+msgid "😮‍💨.name"
+msgstr "face exhaling"
+
+msgid "😮‍💨.keywords"
+msgstr "blow | blowing | exhale | exhaling | exhausted | face | gasp | groan | relief | sigh | smiley | smoke | whisper | whistle"
+
+msgid "🤥.name"
+msgstr "lying face"
+
+msgid "🤥.keywords"
+msgstr "face | liar | lie | lying | pinocchio"
+
+msgid "🫨.name"
+msgstr "shaking face"
+
+msgid "🫨.keywords"
+msgstr "crazy | daze | earthquake | face | omg | panic | shaking | shock | surprise | vibrate | whoa | wow"
+
+msgid "🙂‍↔️.name"
+msgstr "head shaking horizontally"
+
+msgid "🙂‍↔️.keywords"
+msgstr "head | horizontally | no | shake | shaking"
+
+msgid "🙂‍↕️.name"
+msgstr "head shaking vertically"
+
+msgid "🙂‍↕️.keywords"
+msgstr "head | nod | shaking | vertically | yes"
+
+msgid "😌.name"
+msgstr "relieved face"
+
+msgid "😌.keywords"
+msgstr "calm | face | peace | relief | relieved | zen"
+
+msgid "😔.name"
+msgstr "pensive face"
+
+msgid "😔.keywords"
+msgstr ""
+"awful | bored | dejected | died | disappointed | face | losing | lost | pensive | sad | sucks"
+" | "
+"sad | pensive | down | depressed | mood | lowkey sad"
+
+msgid "😪.name"
+msgstr "sleepy face"
+
+msgid "😪.keywords"
+msgstr "crying | face | good | night | sad | sleep | sleeping | sleepy | tired"
+
+msgid "🤤.name"
+msgstr "drooling face"
+
+msgid "🤤.keywords"
+msgstr "drooling | face"
+
+msgid "😴.name"
+msgstr "sleeping face"
+
+msgid "😴.keywords"
+msgstr ""
+"bed | bedtime | face | good | goodnight | nap | night | sleep | sleeping | tired | whatever | yawn | zzz"
+" | "
+"sleeping | zzz | tired | sleepy | goodnight | knocked out"
+
+msgid "🫩.name"
+msgstr "face with bags under eyes"
+
+msgid "🫩.keywords"
+msgstr "bags | bored | exhausted | eyes | face | fatigued | late | sleepy | tired | weary"
+
+msgid "😷.name"
+msgstr "face with medical mask"
+
+msgid "😷.keywords"
+msgstr "cold | dentist | dermatologist | doctor | dr | face | germs | mask | medical | medicine | sick"
+
+msgid "🤒.name"
+msgstr "face with thermometer"
+
+msgid "🤒.keywords"
+msgstr "face | ill | sick | thermometer"
+
+msgid "🤕.name"
+msgstr "face with head-bandage"
+
+msgid "🤕.keywords"
+msgstr "bandage | face | head-bandage | hurt | injury | ouch"
+
+msgid "🤢.name"
+msgstr "nauseated face"
+
+msgid "🤢.keywords"
+msgstr "face | gross | nasty | nauseated | sick | vomit"
+
+msgid "🤮.name"
+msgstr "face vomiting"
+
+msgid "🤮.keywords"
+msgstr "barf | ew | face | gross | puke | sick | spew | throw | up | vomit | vomiting"
+
+msgid "🤧.name"
+msgstr "sneezing face"
+
+msgid "🤧.keywords"
+msgstr "face | fever | flu | gesundheit | sick | sneeze | sneezing"
+
+msgid "🥵.name"
+msgstr "hot face"
+
+msgid "🥵.keywords"
+msgstr ""
+"dying | face | feverish | heat | hot | panting | red-faced | stroke | sweating | tongue"
+" | "
+"hot face | sweating | hot | spicy | thirsty"
+
+msgid "🥶.name"
+msgstr "cold face"
+
+msgid "🥶.keywords"
+msgstr ""
+"blue | blue-faced | cold | face | freezing | frostbite | icicles | subzero | teeth"
+" | "
+"cold face | freezing | cold | chilly"
+
+msgid "🥴.name"
+msgstr "woozy face"
+
+msgid "🥴.keywords"
+msgstr ""
+"dizzy | drunk | eyes | face | intoxicated | mouth | tipsy | uneven | wavy | woozy"
+" | "
+"woozy | drunk | dizzy | confused | loopy | disoriented"
+
+msgid "😵.name"
+msgstr "face with crossed-out eyes"
+
+msgid "😵.keywords"
+msgstr "crossed-out | dead | dizzy | eyes | face | feels | knocked | out | sick | tired"
+
+msgid "😵‍💫.name"
+msgstr "face with spiral eyes"
+
+msgid "😵‍💫.keywords"
+msgstr "confused | dizzy | eyes | face | hypnotized | omg | smiley | spiral | trouble | whoa | woah | woozy"
+
+msgid "🤯.name"
+msgstr "exploding head"
+
+msgid "🤯.keywords"
+msgstr "blown | explode | exploding | head | mind | mindblown | no | shocked | way"
+
+msgid "🤠.name"
+msgstr "cowboy hat face"
+
+msgid "🤠.keywords"
+msgstr "cowboy | cowgirl | face | hat"
+
+msgid "🥳.name"
+msgstr "partying face"
+
+msgid "🥳.keywords"
+msgstr ""
+"bday | birthday | celebrate | celebration | excited | face | happy | hat | hooray | horn | party | partying"
+" | "
+"party face | celebrate | yay | birthday | hype | lit"
+
+msgid "🥸.name"
+msgstr "disguised face"
+
+msgid "🥸.keywords"
+msgstr "disguise | eyebrow | face | glasses | incognito | moustache | mustache | nose | person | spy | tache | tash"
+
+msgid "😎.name"
+msgstr "smiling face with sunglasses"
+
+msgid "😎.keywords"
+msgstr ""
+"awesome | beach | bright | bro | chilling | cool | face | rad | relaxed | shades | slay | smile | style | sunglasses | swag | win"
+" | "
+"cool | sunglasses | chad | based | swag | sigma"
+
+msgid "🤓.name"
+msgstr "nerd face"
+
+msgid "🤓.keywords"
+msgstr "brainy | clever | expert | face | geek | gifted | glasses | intelligent | nerd | smart"
+
+msgid "🧐.name"
+msgstr "face with monocle"
+
+msgid "🧐.keywords"
+msgstr "classy | face | fancy | monocle | rich | stuffy | wealthy"
+
+msgid "😕.name"
+msgstr "confused face"
+
+msgid "😕.keywords"
+msgstr "befuddled | confused | confusing | dunno | face | frown | hm | meh | not | sad | sorry | sure"
+
+msgid "🫤.name"
+msgstr "face with diagonal mouth"
+
+msgid "🫤.keywords"
+msgstr "confused | confusion | diagonal | disappointed | doubt | doubtful | face | frustrated | frustration | meh | mouth | skeptical | unsure | whatever | wtv"
+
+msgid "😟.name"
+msgstr "worried face"
+
+msgid "😟.keywords"
+msgstr "anxious | butterflies | face | nerves | nervous | sad | stress | stressed | surprised | worried | worry"
+
+msgid "🙁.name"
+msgstr "slightly frowning face"
+
+msgid "🙁.keywords"
+msgstr "face | frown | frowning | sad | slightly"
+
+msgid "☹️.name"
+msgstr "frowning face"
+
+msgid "☹️.keywords"
+msgstr "face | frown | frowning | sad"
+
+msgid "😮.name"
+msgstr "face with open mouth"
+
+msgid "😮.keywords"
+msgstr "believe | face | forgot | mouth | omg | open | shocked | surprised | sympathy | unbelievable | unreal | whoa | wow | you"
+
+msgid "😯.name"
+msgstr "hushed face"
+
+msgid "😯.keywords"
+msgstr "epic | face | hushed | omg | stunned | surprised | whoa | woah"
+
+msgid "😲.name"
+msgstr "astonished face"
+
+msgid "😲.keywords"
+msgstr "astonished | cost | face | no | omg | shocked | totally | way"
+
+msgid "😳.name"
+msgstr "flushed face"
+
+msgid "😳.keywords"
+msgstr "amazed | awkward | crazy | dazed | dead | disbelief | embarrassed | face | flushed | geez | heat | hot | impressed | jeez | what | wow"
+
+msgid "🫪.name"
+msgstr "distorted face"
+
+msgid "🫪.keywords"
+msgstr "anxiety | bloated | panic | shocked | surprised | vulnerable"
+
+msgid "🥺.name"
+msgstr "pleading face"
+
+msgid "🥺.keywords"
+msgstr ""
+"begging | big | eyes | face | mercy | not | pleading | please | pretty | puppy | sad | why"
+" | "
+"pleading | pien | sad | puppy eyes | begging"
+
+msgid "🥹.name"
+msgstr "face holding back tears"
+
+msgid "🥹.keywords"
+msgstr "admiration | aww | back | cry | embarrassed | face | feelings | grateful | gratitude | holding | joy | please | proud | resist | sad | tears"
+
+msgid "😦.name"
+msgstr "frowning face with open mouth"
+
+msgid "😦.keywords"
+msgstr "caught | face | frown | frowning | guard | mouth | open | scared | scary | surprise | what | wow"
+
+msgid "😧.name"
+msgstr "anguished face"
+
+msgid "😧.keywords"
+msgstr "anguished | face | forgot | scared | scary | stressed | surprise | unhappy | what | wow"
+
+msgid "😨.name"
+msgstr "fearful face"
+
+msgid "😨.keywords"
+msgstr "afraid | anxious | blame | face | fear | fearful | scared | worried"
+
+msgid "😰.name"
+msgstr "anxious face with sweat"
+
+msgid "😰.keywords"
+msgstr "anxious | blue | cold | eek | face | mouth | nervous | open | rushed | scared | sweat | yikes"
+
+msgid "😥.name"
+msgstr "sad but relieved face"
+
+msgid "😥.keywords"
+msgstr "anxious | call | close | complicated | disappointed | face | not | relieved | sad | sweat | time | whew"
+
+msgid "😢.name"
+msgstr "crying face"
+
+msgid "😢.keywords"
+msgstr "awful | cry | crying | face | feels | miss | sad | tear | triste | unhappy"
+
+msgid "😭.name"
+msgstr "loudly crying face"
+
+msgid "😭.keywords"
+msgstr ""
+"bawling | cry | crying | face | loudly | sad | sob | tear | tears | unhappy"
+" | "
+"crying | sobbing | sad | devastated | not ok | bawling"
+
+msgid "😱.name"
+msgstr "face screaming in fear"
+
+msgid "😱.keywords"
+msgstr "epic | face | fear | fearful | munch | scared | scream | screamer | screaming | shocked | surprised | woah"
+
+msgid "😖.name"
+msgstr "confounded face"
+
+msgid "😖.keywords"
+msgstr "annoyed | confounded | confused | cringe | distraught | face | feels | frustrated | mad | sad"
+
+msgid "😣.name"
+msgstr "persevering face"
+
+msgid "😣.keywords"
+msgstr "concentrate | concentration | face | focus | headache | persevere | persevering"
+
+msgid "😞.name"
+msgstr "disappointed face"
+
+msgid "😞.keywords"
+msgstr "awful | blame | dejected | disappointed | face | fail | losing | sad | unhappy"
+
+msgid "😓.name"
+msgstr "downcast face with sweat"
+
+msgid "😓.keywords"
+msgstr "close | cold | downcast | face | feels | headache | nervous | sad | scared | sweat | yikes"
+
+msgid "😩.name"
+msgstr "weary face"
+
+msgid "😩.keywords"
+msgstr ""
+"crying | face | fail | feels | hungry | mad | nooo | sad | sleepy | tired | unhappy | weary"
+" | "
+"weary | tired | exhausted | stressed | ugh | done"
+
+msgid "😫.name"
+msgstr "tired face"
+
+msgid "😫.keywords"
+msgstr ""
+"cost | face | feels | nap | sad | sneeze | tired"
+" | "
+"tired | exhausted | weary | done | stressed | dead"
+
+msgid "🥱.name"
+msgstr "yawning face"
+
+msgid "🥱.keywords"
+msgstr "bedtime | bored | face | goodnight | nap | night | sleep | sleepy | tired | whatever | yawn | yawning | zzz"
+
+msgid "😤.name"
+msgstr "face with steam from nose"
+
+msgid "😤.keywords"
+msgstr ""
+"anger | angry | face | feels | fume | fuming | furious | fury | mad | nose | steam | triumph | unhappy | won"
+" | "
+"triumph | smug | proud | snort | frustrated"
+
+msgid "😡.name"
+msgstr "enraged face"
+
+msgid "😡.keywords"
+msgstr ""
+"anger | angry | enraged | face | feels | mad | maddening | pouting | rage | red | shade | unhappy | upset"
+" | "
+"angry | mad | furious | rage | pissed | heated"
+
+msgid "😠.name"
+msgstr "angry face"
+
+msgid "😠.keywords"
+msgstr "anger | angry | blame | face | feels | frustrated | mad | maddening | rage | shade | unhappy | upset"
+
+msgid "🤬.name"
+msgstr "face with symbols on mouth"
+
+msgid "🤬.keywords"
+msgstr "censor | cursing | cussing | face | mad | mouth | pissed | swearing | symbols"
+
+msgid "😈.name"
+msgstr "smiling face with horns"
+
+msgid "😈.keywords"
+msgstr ""
+"demon | devil | evil | face | fairy | fairytale | fantasy | horns | purple | shade | smile | smiling | tale"
+" | "
+"devil | evil | mischievous | imp | naughty | chaotic"
+
+msgid "👿.name"
+msgstr "angry face with horns"
+
+msgid "👿.keywords"
+msgstr "angry | demon | devil | evil | face | fairy | fairytale | fantasy | horns | imp | mischievous | purple | shade | tale"
+
+msgid "💀.name"
+msgstr "skull"
+
+msgid "💀.keywords"
+msgstr ""
+"body | dead | death | face | fairy | fairytale | i’m | lmao | monster | skull | tale | yolo"
+" | "
+"skull | dead | im dead | rip | lol | 💀"
+
+msgid "☠️.name"
+msgstr "skull and crossbones"
+
+msgid "☠️.keywords"
+msgstr "bone | crossbones | dead | death | face | monster | skull"
+
+msgid "💩.name"
+msgstr "pile of poo"
+
+msgid "💩.keywords"
+msgstr ""
+"bs | comic | doo | dung | face | fml | monster | pile | poo | poop | smelly | smh | stink | stinks | stinky | turd"
+" | "
+"poop | shit | crap | poo | bs | garbage"
+
+msgid "🤡.name"
+msgstr "clown face"
+
+msgid "🤡.keywords"
+msgstr ""
+"clown | face"
+" | "
+"clown | fool | circus | cap | lying | clowning"
+
+msgid "👹.name"
+msgstr "ogre"
+
+msgid "👹.keywords"
+msgstr "creature | devil | face | fairy | fairytale | fantasy | mask | monster | ogre | scary | tale"
+
+msgid "👺.name"
+msgstr "goblin"
+
+msgid "👺.keywords"
+msgstr "angry | creature | face | fairy | fairytale | fantasy | goblin | mask | mean | monster | tale"
+
+msgid "👻.name"
+msgstr "ghost"
+
+msgid "👻.keywords"
+msgstr ""
+"boo | creature | excited | face | fairy | fairytale | fantasy | ghost | halloween | haunting | monster | scary | silly | tale"
+" | "
+"ghost | ghosting | spooky | boo | halloween | transparent"
+
+msgid "👽.name"
+msgstr "alien"
+
+msgid "👽.keywords"
+msgstr "alien | creature | extraterrestrial | face | fairy | fairytale | fantasy | monster | space | tale | ufo"
+
+msgid "👾.name"
+msgstr "alien monster"
+
+msgid "👾.keywords"
+msgstr "alien | creature | extraterrestrial | face | fairy | fairytale | fantasy | game | gamer | games | monster | pixelated | space | tale | ufo"
+
+msgid "🤖.name"
+msgstr "robot"
+
+msgid "🤖.keywords"
+msgstr "face | monster | robot"
+
+msgid "😺.name"
+msgstr "grinning cat"
+
+msgid "😺.keywords"
+msgstr "animal | cat | face | grinning | mouth | open | smile | smiling"
+
+msgid "😸.name"
+msgstr "grinning cat with smiling eyes"
+
+msgid "😸.keywords"
+msgstr "animal | cat | eye | eyes | face | grin | grinning | smile | smiling"
+
+msgid "😹.name"
+msgstr "cat with tears of joy"
+
+msgid "😹.keywords"
+msgstr "animal | cat | face | joy | laugh | laughing | lol | tear | tears"
+
+msgid "😻.name"
+msgstr "smiling cat with heart-eyes"
+
+msgid "😻.keywords"
+msgstr "animal | cat | eye | face | heart | heart-eyes | love | smile | smiling"
+
+msgid "😼.name"
+msgstr "cat with wry smile"
+
+msgid "😼.keywords"
+msgstr "animal | cat | face | ironic | smile | wry"
+
+msgid "😽.name"
+msgstr "kissing cat"
+
+msgid "😽.keywords"
+msgstr "animal | cat | closed | eye | eyes | face | kiss | kissing"
+
+msgid "🙀.name"
+msgstr "weary cat"
+
+msgid "🙀.keywords"
+msgstr "animal | cat | face | oh | surprised | weary"
+
+msgid "😿.name"
+msgstr "crying cat"
+
+msgid "😿.keywords"
+msgstr "animal | cat | cry | crying | face | sad | tear"
+
+msgid "😾.name"
+msgstr "pouting cat"
+
+msgid "😾.keywords"
+msgstr "animal | cat | face | pouting"
+
+msgid "🙈.name"
+msgstr "see-no-evil monkey"
+
+msgid "🙈.keywords"
+msgstr "embarrassed | evil | face | forbidden | forgot | gesture | hide | monkey | no | omg | prohibited | scared | secret | smh | watch"
+
+msgid "🙉.name"
+msgstr "hear-no-evil monkey"
+
+msgid "🙉.keywords"
+msgstr "animal | ears | evil | face | forbidden | gesture | hear | listen | monkey | no | not | prohibited | secret | shh | tmi"
+
+msgid "🙊.name"
+msgstr "speak-no-evil monkey"
+
+msgid "🙊.keywords"
+msgstr "animal | evil | face | forbidden | gesture | monkey | no | not | oops | prohibited | quiet | secret | speak | stealth"
+
+msgid "💌.name"
+msgstr "love letter"
+
+msgid "💌.keywords"
+msgstr "heart | letter | love | mail | romance | valentine"
+
+msgid "💘.name"
+msgstr "heart with arrow"
+
+msgid "💘.keywords"
+msgstr "143 | adorbs | arrow | cupid | date | emotion | heart | ily | love | romance | valentine"
+
+msgid "💝.name"
+msgstr "heart with ribbon"
+
+msgid "💝.keywords"
+msgstr "143 | anniversary | emotion | heart | ily | kisses | ribbon | valentine | xoxo"
+
+msgid "💖.name"
+msgstr "sparkling heart"
+
+msgid "💖.keywords"
+msgstr "143 | emotion | excited | good | heart | ily | kisses | morning | night | sparkle | sparkling | xoxo"
+
+msgid "💗.name"
+msgstr "growing heart"
+
+msgid "💗.keywords"
+msgstr "143 | emotion | excited | growing | heart | heartpulse | ily | kisses | muah | nervous | pulse | xoxo"
+
+msgid "💓.name"
+msgstr "beating heart"
+
+msgid "💓.keywords"
+msgstr "143 | beating | cardio | emotion | heart | heartbeat | ily | love | pulsating | pulse"
+
+msgid "💞.name"
+msgstr "revolving hearts"
+
+msgid "💞.keywords"
+msgstr "143 | adorbs | anniversary | emotion | heart | hearts | revolving"
+
+msgid "💕.name"
+msgstr "two hearts"
+
+msgid "💕.keywords"
+msgstr "143 | anniversary | date | dating | emotion | heart | hearts | ily | kisses | love | loving | two | xoxo"
+
+msgid "💟.name"
+msgstr "heart decoration"
+
+msgid "💟.keywords"
+msgstr "143 | decoration | emotion | heart | hearth | purple | white"
+
+msgid "❣️.name"
+msgstr "heart exclamation"
+
+msgid "❣️.keywords"
+msgstr "exclamation | heart | heavy | mark | punctuation"
+
+msgid "💔.name"
+msgstr "broken heart"
+
+msgid "💔.keywords"
+msgstr "break | broken | crushed | emotion | heart | heartbroken | lonely | sad"
+
+msgid "❤️‍🔥.name"
+msgstr "heart on fire"
+
+msgid "❤️‍🔥.keywords"
+msgstr "burn | fire | heart | love | lust | sacred"
+
+msgid "❤️‍🩹.name"
+msgstr "mending heart"
+
+msgid "❤️‍🩹.keywords"
+msgstr "healthier | heart | improving | mending | recovering | recuperating | well"
+
+msgid "❤️.name"
+msgstr "red heart"
+
+msgid "❤️.keywords"
+msgstr ""
+"emotion | heart | love | red"
+" | "
+"heart | love | red heart | ily | romance"
+
+msgid "🩷.name"
+msgstr "pink heart"
+
+msgid "🩷.keywords"
+msgstr "143 | adorable | cute | emotion | heart | ily | like | love | pink | special | sweet"
+
+msgid "🧡.name"
+msgstr "orange heart"
+
+msgid "🧡.keywords"
+msgstr "143 | heart | orange"
+
+msgid "💛.name"
+msgstr "yellow heart"
+
+msgid "💛.keywords"
+msgstr "143 | cardiac | emotion | heart | ily | love | yellow"
+
+msgid "💚.name"
+msgstr "green heart"
+
+msgid "💚.keywords"
+msgstr "143 | emotion | green | heart | ily | love | romantic"
+
+msgid "💙.name"
+msgstr "blue heart"
+
+msgid "💙.keywords"
+msgstr "143 | blue | emotion | heart | ily | love | romance"
+
+msgid "🩵.name"
+msgstr "light blue heart"
+
+msgid "🩵.keywords"
+msgstr "143 | blue | cute | cyan | emotion | heart | ily | light | like | love | sky | special | teal"
+
+msgid "💜.name"
+msgstr "purple heart"
+
+msgid "💜.keywords"
+msgstr "143 | bestest | emotion | heart | ily | love | purple"
+
+msgid "🤎.name"
+msgstr "brown heart"
+
+msgid "🤎.keywords"
+msgstr "143 | brown | heart"
+
+msgid "🖤.name"
+msgstr "black heart"
+
+msgid "🖤.keywords"
+msgstr ""
+"black | evil | heart | wicked"
+" | "
+"black heart | dark | goth | edgy | aesthetic"
+
+msgid "🩶.name"
+msgstr "grey heart"
+
+msgid "🩶.keywords"
+msgstr "143 | emotion | gray | grey | heart | ily | love | silver | slate | special"
+
+msgid "🤍.name"
+msgstr "white heart"
+
+msgid "🤍.keywords"
+msgstr "143 | heart | white"
+
+msgid "💋.name"
+msgstr "kiss mark"
+
+msgid "💋.keywords"
+msgstr "dating | emotion | heart | kiss | kissing | lips | mark | romance | sexy"
+
+msgid "💯.name"
+msgstr "hundred points"
+
+msgid "💯.keywords"
+msgstr ""
+"100 | a+ | agree | clearly | definitely | faithful | fleek | full | hundred | keep | perfect | point | score | TRUE | truth | yup"
+" | "
+"100 | perfect | real | truth | no cap | based"
+
+msgid "💢.name"
+msgstr "anger symbol"
+
+msgid "💢.keywords"
+msgstr "anger | angry | comic | mad | symbol | upset"
+
+msgid "🫯.name"
+msgstr "fight cloud"
+
+msgid "🫯.keywords"
+msgstr "argument | brawl | debate | disagreement | fight | ruckus | wrestle"
+
+msgid "💥.name"
+msgstr "collision"
+
+msgid "💥.keywords"
+msgstr "bomb | boom | collide | collision | comic | explode"
+
+msgid "💫.name"
+msgstr "dizzy"
+
+msgid "💫.keywords"
+msgstr "comic | dizzy | shining | shooting | star | stars"
+
+msgid "💦.name"
+msgstr "sweat droplets"
+
+msgid "💦.keywords"
+msgstr "comic | drip | droplet | droplets | drops | splashing | squirt | sweat | water | wet | work | workout"
+
+msgid "💨.name"
+msgstr "dashing away"
+
+msgid "💨.keywords"
+msgstr "away | cloud | comic | dash | dashing | fart | fast | go | gone | gotta | running | smoke"
+
+msgid "🕳️.name"
+msgstr "hole"
+
+msgid "🕳️.keywords"
+msgstr "hole"
+
+msgid "💬.name"
+msgstr "speech balloon"
+
+msgid "💬.keywords"
+msgstr "balloon | bubble | comic | dialog | message | sms | speech | talk | text | typing"
+
+msgid "👁️‍🗨️.name"
+msgstr "eye in speech bubble"
+
+msgid "👁️‍🗨️.keywords"
+msgstr "balloon | bubble | eye | speech | witness"
+
+msgid "🗨️.name"
+msgstr "left speech bubble"
+
+msgid "🗨️.keywords"
+msgstr "balloon | bubble | dialog | left | speech"
+
+msgid "🗯️.name"
+msgstr "right anger bubble"
+
+msgid "🗯️.keywords"
+msgstr "anger | angry | balloon | bubble | mad | right"
+
+msgid "💭.name"
+msgstr "thought balloon"
+
+msgid "💭.keywords"
+msgstr "balloon | bubble | cartoon | cloud | comic | daydream | decisions | dream | idea | invent | invention | realize | think | thoughts | wonder"
+
+msgid "💤.name"
+msgstr "ZZZ"
+
+msgid "💤.keywords"
+msgstr "comic | good | goodnight | night | sleep | sleeping | sleepy | tired | zzz"

@@ -33,9 +33,12 @@ Rectangle {
     readonly property bool dataReady: EmojiData.dataReady
 
     readonly property var categoryMeta: {
+        void EmojiData.changeTracking
         if (!EmojiData.dataReady) return []
-        const cats = [{ id: "recent", icon: "🕐", name_en: "Recently Used", name_ja: "最近使った" }]
-        for (let i = 0; i < EmojiData.categories.length; i++) cats.push(EmojiData.categories[i])
+        const cats = [], list = EmojiData.categories
+        for (const id of list) {
+            cats.push({ id: id, icon: EmojiData.catEmoji(id), name: EmojiData.catName(id) })
+        }
         return cats
     }
 
@@ -50,8 +53,8 @@ Rectangle {
     property var recentKaomojiItems: []
 
     function refreshRecentSnapshot() {
-        recentEmojiItems = EmojiData.recentItems.filter(function(i) { return i.category !== "kaomoji" })
-        recentKaomojiItems = EmojiData.recentItems.filter(function(i) { return i.category === "kaomoji" })
+        recentEmojiItems = EmojiData.recentItems.filter(i => !EmojiData.kaomojis[i])
+        recentKaomojiItems = EmojiData.recentItems.filter(i => EmojiData.kaomojis[i])
     }
 
     // True only in the test negative-control (EMOJIZASU_FORCE_FOCUSABLE): the
@@ -60,7 +63,6 @@ Rectangle {
     property bool forceFocusable: false
 
     readonly property bool isSearching: searchText.length > 0
-    readonly property int contentIndex: isSearching ? 1 : 0
 
     readonly property int browseGridColumns: browseGrid.width > 0
         ? Math.max(1, Math.floor(browseGrid.width / browseGrid.cellWidth)) : 1
@@ -223,7 +225,7 @@ Rectangle {
     }
 
     function gridAtTop() {
-        if (contentIndex === 0) {
+        if (!isSearching) {
             if (currentCategory === "recent") {
                 if (recentEmojiItems.length > 0)
                     return gridSelectedIndex < Math.min(recentEmojiCols, recentEmojiItems.length)
@@ -241,7 +243,7 @@ Rectangle {
     function navigateGrid(direction) {
         if (direction === "up" && gridAtTop()) { leaveGridBackward(); return }
         if (gridSelectedIndex < 0) { gridSelectedIndex = 0; return }
-        if (contentIndex === 0) {
+        if (!isSearching) {
             if (currentCategory === "recent") {
                 gridSelectedIndex = KeyNav.nextSearchIndex(direction, gridSelectedIndex,
                     recentEmojiItems.length, recentKaomojiItems.length, recentEmojiCols)
@@ -274,46 +276,46 @@ Rectangle {
     }
 
     function selectEmojiAt(idx) {
-        if (contentIndex === 0) {
+        if (!isSearching) {
             if (currentCategory === "recent") {
                 if (idx < recentEmojiItems.length) {
-                    emojiSelected(recentEmojiItems[idx].text)
+                    emojiSelected(recentEmojiItems[idx])
                 } else {
                     const ki = idx - recentEmojiItems.length
-                    if (ki < recentKaomojiItems.length) emojiSelected(recentKaomojiItems[ki].text)
+                    if (ki < recentKaomojiItems.length) emojiSelected(recentKaomojiItems[ki])
                 }
             } else if (idx >= 0 && idx < browseItems.length) {
-                emojiSelected(browseItems[idx].text)
+                emojiSelected(browseItems[idx])
             }
         } else {
             const ei = searchEmojiItems.length
             if (idx < ei) {
-                emojiSelected(searchEmojiItems[idx].text)
+                emojiSelected(searchEmojiItems[idx])
             } else {
                 const ki = idx - ei
-                if (ki < searchKaomojiItems.length) emojiSelected(searchKaomojiItems[ki].text)
+                if (ki < searchKaomojiItems.length) emojiSelected(searchKaomojiItems[ki])
             }
         }
     }
 
     function selectFirstEmoji() {
         if (isSearching) {
-            if (searchEmojiItems.length > 0) { emojiSelected(searchEmojiItems[0].text); return }
-            if (searchKaomojiItems.length > 0) { emojiSelected(searchKaomojiItems[0].text); return }
+            if (searchEmojiItems.length > 0) { emojiSelected(searchEmojiItems[0]); return }
+            if (searchKaomojiItems.length > 0) { emojiSelected(searchKaomojiItems[0]); return }
         } else if (browseItems.length > 0) {
-            emojiSelected(browseItems[0].text)
+            emojiSelected(browseItems[0])
         }
     }
 
     function refreshSearch() {
         if (!EmojiData.dataReady || searchText.length === 0) return
-        const q = searchText, qlo = q.toLowerCase()
+        const searchTerm = searchText.toLowerCase()
         const em = [], km = []
         const all = EmojiData.items
-        for (let i = 0; i < all.length && em.length < 200; i++) {
-            const item = all[i]
-            if (matchItem(item, q, qlo)) {
-                if (item.category === "kaomoji") km.push(item)
+        for (const item of all) {
+            if (em.length >= 200) break
+            if (matchItem(item, searchTerm)) {
+                if (EmojiData.kaomojis[item]) km.push(item)
                 else em.push(item)
             }
         }
@@ -321,13 +323,16 @@ Rectangle {
         searchKaomojiItems = km
     }
 
-    function matchItem(item, q, qlo) {
-        if (item.text === q) return true
-        if (item.name_en.toLowerCase().indexOf(qlo) >= 0) return true
-        if (item.name_ja && item.name_ja.indexOf(q) >= 0) return true
-        const ke = item.keywords_en || [], kj = item.keywords_ja || []
-        for (let i = 0; i < ke.length; i++) if (ke[i].toLowerCase().indexOf(qlo) >= 0) return true
-        for (let j = 0; j < kj.length; j++) if (kj[j].indexOf(q) >= 0) return true
+    function matchItem(item, searchTerm) {
+        if (item === searchTerm) return true
+        if (EmojiData.enNameFor(item).toLowerCase().indexOf(searchTerm) >= 0) return true
+        const enKw = EmojiData.enKwFor(item)
+        for (const kw of enKw) if (kw.toLowerCase().indexOf(searchTerm) >= 0) return true
+        if (root.language !== "en") {
+            if (EmojiData.nameFor(item).toLowerCase().indexOf(searchTerm) >= 0) return true
+            const lKw = EmojiData.kwFor(item)
+            for (const kw of lKw) if (kw.toLowerCase().indexOf(searchTerm) >= 0) return true
+        }
         return false
     }
 
@@ -352,6 +357,11 @@ Rectangle {
 
     onSearchTextChanged: {
         if (searchText.length > 0) searchTimer.restart()
+    }
+
+    Connections {
+        target: EmojiData
+        function onEmojiRevisionChanged() { if (root.isSearching) root.refreshSearch() }
     }
 
     Component.onCompleted: {
@@ -548,7 +558,7 @@ Rectangle {
                                 root.searchText = ""
                             }
                             ToolTip.visible: containsMouse; ToolTip.delay: 600
-                            ToolTip.text: root.language === "ja" ? modelData.name_ja : modelData.name_en
+                            ToolTip.text: modelData.name
                         }
                     }
                 }
@@ -573,10 +583,9 @@ Rectangle {
                 }
                 if (root.currentCategory === "recent")
                     return _`Recently used`
-                for (let i = 0; i < root.categoryMeta.length; i++) {
-                    if (root.categoryMeta[i].id === root.currentCategory) {
-                        const nm = root.language === "ja" ? root.categoryMeta[i].name_ja : root.categoryMeta[i].name_en
-                        return nm + "  " + root.browseItems.length
+                for (const meta of root.categoryMeta) {
+                    if (meta.id === root.currentCategory) {
+                        return meta.name + "  " + root.browseItems.length
                     }
                 }
                 return ""
@@ -585,7 +594,7 @@ Rectangle {
 
         StackLayout {
             Layout.fillWidth: true; Layout.fillHeight: true
-            currentIndex: root.contentIndex
+            currentIndex: root.isSearching ? 1 : 0
 
             // Browse / Recent
             Item {
@@ -600,8 +609,8 @@ Rectangle {
                     delegate: EmojiCell {
                         required property var modelData
                         required property int index
-                        emojiChar: modelData.text
-                        label: root.language === "ja" ? (modelData.name_ja || modelData.name_en) : modelData.name_en
+                        emojiChar: modelData
+                        label: EmojiData.nameFor(modelData)
                         selected: root.internalFocus === "grid" && index === root.gridSelectedIndex
                         onActivated: root.emojiSelected(emojiChar)
                     }
@@ -625,8 +634,8 @@ Rectangle {
                     delegate: KaomojiCell {
                         required property var modelData
                         required property int index
-                        kaomojiText: modelData.text
-                        label: root.language === "ja" ? modelData.name_ja : modelData.name_en
+                        kaomojiText: modelData
+                        label: EmojiData.nameFor(modelData)
                         width: kaomojiListView.width
                         highlight: index % 2 === 0
                         selected: root.internalFocus === "grid" && index === root.gridSelectedIndex
@@ -656,8 +665,8 @@ Rectangle {
                                 delegate: EmojiCell {
                                     required property var modelData
                                     required property int index
-                                    emojiChar: modelData.text
-                                    label: root.language === "ja" ? (modelData.name_ja || modelData.name_en) : modelData.name_en
+                                    emojiChar: modelData
+                                    label: EmojiData.nameFor(modelData)
                                     selected: root.internalFocus === "grid" && index === root.gridSelectedIndex
                                     onActivated: root.emojiSelected(emojiChar)
                                 }
@@ -674,8 +683,8 @@ Rectangle {
                                 delegate: KaomojiCell {
                                     required property var modelData
                                     required property int index
-                                    kaomojiText: modelData.text
-                                    label: root.language === "ja" ? modelData.name_ja : modelData.name_en
+                                    kaomojiText: modelData
+                                    label: EmojiData.nameFor(modelData)
                                     width: recentColumn.width
                                     highlight: index % 2 === 0
                                     selected: root.internalFocus === "grid" && (root.recentEmojiItems.length + index) === root.gridSelectedIndex
@@ -722,8 +731,8 @@ Rectangle {
                                 delegate: EmojiCell {
                                     required property var modelData
                                     required property int index
-                                    emojiChar: modelData.text
-                                    label: root.language === "ja" ? (modelData.name_ja || modelData.name_en) : modelData.name_en
+                                    emojiChar: modelData
+                                    label: EmojiData.nameFor(modelData)
                                     selected: root.internalFocus === "grid" && index === root.gridSelectedIndex
                                     onActivated: root.emojiSelected(emojiChar)
                                 }
@@ -753,8 +762,8 @@ Rectangle {
                                 delegate: KaomojiCell {
                                     required property var modelData
                                     required property int index
-                                    kaomojiText: modelData.text
-                                    label: root.language === "ja" ? modelData.name_ja : modelData.name_en
+                                    kaomojiText: modelData
+                                    label: EmojiData.nameFor(modelData)
                                     width: searchColumn.width
                                     highlight: index % 2 === 0
                                     selected: root.internalFocus === "grid" && (root.searchEmojiItems.length + index) === root.gridSelectedIndex

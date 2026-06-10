@@ -1,0 +1,72 @@
+msgid ""
+msgstr ""
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "category.recent"
+msgstr "最近使った"
+
+msgid "category.recent.emoji"
+msgstr "🕐"
+
+msgid "category.smileys"
+msgstr "顔・気持ち"
+
+msgid "category.smileys.emoji"
+msgstr "😀"
+
+msgid "category.people"
+msgstr "人・ボディ"
+
+msgid "category.people.emoji"
+msgstr "👋"
+
+msgid "category.animals"
+msgstr "動物・自然"
+
+msgid "category.animals.emoji"
+msgstr "🐵"
+
+msgid "category.food"
+msgstr "食べ物・飲み物"
+
+msgid "category.food.emoji"
+msgstr "🍇"
+
+msgid "category.travel"
+msgstr "旅行・場所"
+
+msgid "category.travel.emoji"
+msgstr "🌍"
+
+msgid "category.activities"
+msgstr "活動"
+
+msgid "category.activities.emoji"
+msgstr "🎃"
+
+msgid "category.objects"
+msgstr "物"
+
+msgid "category.objects.emoji"
+msgstr "👓"
+
+msgid "category.symbols"
+msgstr "記号・シンボル"
+
+msgid "category.symbols.emoji"
+msgstr "🏧"
+
+msgid "category.flags"
+msgstr "旗"
+
+msgid "category.flags.emoji"
+msgstr "🏁"
+
+msgid "category.kaomoji"
+msgstr "顔文字"
+
+msgid "category.kaomoji.emoji"
+msgstr "(^▽^)"

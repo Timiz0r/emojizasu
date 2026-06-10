@@ -1,0 +1,1614 @@
+msgid ""
+msgstr ""
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "👓.name"
+msgstr "glasses"
+
+msgid "👓.keywords"
+msgstr "clothing | eye | eyeglasses | eyewear | glasses"
+
+msgid "🕶️.name"
+msgstr "sunglasses"
+
+msgid "🕶️.keywords"
+msgstr "dark | eye | eyewear | glasses | sunglasses"
+
+msgid "🥽.name"
+msgstr "goggles"
+
+msgid "🥽.keywords"
+msgstr "dive | eye | goggles | protection | scuba | swimming | welding"
+
+msgid "🥼.name"
+msgstr "lab coat"
+
+msgid "🥼.keywords"
+msgstr "clothes | coat | doctor | dr | experiment | jacket | lab | scientist | white"
+
+msgid "🦺.name"
+msgstr "safety vest"
+
+msgid "🦺.keywords"
+msgstr "emergency | safety | vest"
+
+msgid "👔.name"
+msgstr "necktie"
+
+msgid "👔.keywords"
+msgstr "clothing | employed | necktie | serious | shirt | tie"
+
+msgid "👕.name"
+msgstr "t-shirt"
+
+msgid "👕.keywords"
+msgstr "blue | casual | clothes | clothing | collar | dressed | shirt | shopping | t-shirt | tshirt | weekend"
+
+msgid "👖.name"
+msgstr "jeans"
+
+msgid "👖.keywords"
+msgstr "blue | casual | clothes | clothing | denim | dressed | jeans | pants | shopping | trousers | weekend"
+
+msgid "🧣.name"
+msgstr "scarf"
+
+msgid "🧣.keywords"
+msgstr "bundle | cold | neck | scarf | up"
+
+msgid "🧤.name"
+msgstr "gloves"
+
+msgid "🧤.keywords"
+msgstr "gloves | hand"
+
+msgid "🧥.name"
+msgstr "coat"
+
+msgid "🧥.keywords"
+msgstr "brr | bundle | coat | cold | jacket | up"
+
+msgid "🧦.name"
+msgstr "socks"
+
+msgid "🧦.keywords"
+msgstr "socks | stocking"
+
+msgid "👗.name"
+msgstr "dress"
+
+msgid "👗.keywords"
+msgstr "clothes | clothing | dress | dressed | fancy | shopping"
+
+msgid "👘.name"
+msgstr "kimono"
+
+msgid "👘.keywords"
+msgstr "clothing | comfortable | kimono"
+
+msgid "🥻.name"
+msgstr "sari"
+
+msgid "🥻.keywords"
+msgstr "clothing | dress | sari"
+
+msgid "🩱.name"
+msgstr "one-piece swimsuit"
+
+msgid "🩱.keywords"
+msgstr "bathing | one-piece | suit | swimsuit"
+
+msgid "🩲.name"
+msgstr "briefs"
+
+msgid "🩲.keywords"
+msgstr "bathing | briefs | one-piece | suit | swimsuit | underwear"
+
+msgid "🩳.name"
+msgstr "shorts"
+
+msgid "🩳.keywords"
+msgstr "bathing | pants | shorts | suit | swimsuit | underwear"
+
+msgid "👙.name"
+msgstr "bikini"
+
+msgid "👙.keywords"
+msgstr "bathing | beach | bikini | clothing | pool | suit | swim"
+
+msgid "👚.name"
+msgstr "woman’s clothes"
+
+msgid "👚.keywords"
+msgstr "blouse | clothes | clothing | collar | dress | dressed | lady | shirt | shopping | woman | woman’s"
+
+msgid "🪭.name"
+msgstr "folding hand fan"
+
+msgid "🪭.keywords"
+msgstr "clack | clap | cool | cooling | dance | fan | flirt | flutter | folding | hand | hot | shy"
+
+msgid "👛.name"
+msgstr "purse"
+
+msgid "👛.keywords"
+msgstr "clothes | clothing | coin | dress | fancy | handbag | purse | shopping"
+
+msgid "👜.name"
+msgstr "handbag"
+
+msgid "👜.keywords"
+msgstr "bag | clothes | clothing | dress | handbag | lady | purse | shopping"
+
+msgid "👝.name"
+msgstr "clutch bag"
+
+msgid "👝.keywords"
+msgstr "bag | clothes | clothing | clutch | dress | handbag | pouch | purse"
+
+msgid "🛍️.name"
+msgstr "shopping bags"
+
+msgid "🛍️.keywords"
+msgstr "bag | bags | hotel | shopping"
+
+msgid "🎒.name"
+msgstr "backpack"
+
+msgid "🎒.keywords"
+msgstr "backpack | backpacking | bag | bookbag | education | rucksack | satchel | school"
+
+msgid "🩴.name"
+msgstr "thong sandal"
+
+msgid "🩴.keywords"
+msgstr "beach | flip | flop | sandal | sandals | shoe | thong | thongs | zōri"
+
+msgid "👞.name"
+msgstr "man’s shoe"
+
+msgid "👞.keywords"
+msgstr "brown | clothes | clothing | feet | foot | kick | man | man’s | shoe | shoes | shopping"
+
+msgid "👟.name"
+msgstr "running shoe"
+
+msgid "👟.keywords"
+msgstr "athletic | clothes | clothing | fast | kick | running | shoe | shoes | shopping | sneaker | tennis"
+
+msgid "🥾.name"
+msgstr "hiking boot"
+
+msgid "🥾.keywords"
+msgstr "backpacking | boot | brown | camping | hiking | outdoors | shoe"
+
+msgid "🥿.name"
+msgstr "flat shoe"
+
+msgid "🥿.keywords"
+msgstr "ballet | comfy | flat | flats | shoe | slip-on | slipper"
+
+msgid "👠.name"
+msgstr "high-heeled shoe"
+
+msgid "👠.keywords"
+msgstr "clothes | clothing | dress | fashion | heel | heels | high-heeled | shoe | shoes | shopping | stiletto | woman"
+
+msgid "👡.name"
+msgstr "woman’s sandal"
+
+msgid "👡.keywords"
+msgstr "clothing | sandal | shoe | woman | woman’s"
+
+msgid "🩰.name"
+msgstr "ballet shoes"
+
+msgid "🩰.keywords"
+msgstr "ballet | dance | shoes"
+
+msgid "👢.name"
+msgstr "woman’s boot"
+
+msgid "👢.keywords"
+msgstr "boot | clothes | clothing | dress | shoe | shoes | shopping | woman | woman’s"
+
+msgid "🪮.name"
+msgstr "hair pick"
+
+msgid "🪮.keywords"
+msgstr "Afro | comb | groom | hair | pick"
+
+msgid "👑.name"
+msgstr "crown"
+
+msgid "👑.keywords"
+msgstr ""
+"clothing | crown | family | king | medieval | queen | royal | royalty | win"
+" | "
+"crown | king | queen | royalty | goat | legend | slay"
+
+msgid "👒.name"
+msgstr "woman’s hat"
+
+msgid "👒.keywords"
+msgstr "clothes | clothing | garden | hat | hats | party | woman | woman’s"
+
+msgid "🎩.name"
+msgstr "top hat"
+
+msgid "🎩.keywords"
+msgstr "clothes | clothing | fancy | formal | hat | magic | top | tophat"
+
+msgid "🎓.name"
+msgstr "graduation cap"
+
+msgid "🎓.keywords"
+msgstr "cap | celebration | clothing | education | graduation | hat | scholar"
+
+msgid "🧢.name"
+msgstr "billed cap"
+
+msgid "🧢.keywords"
+msgstr ""
+"baseball | bent | billed | cap | dad | hat"
+" | "
+"cap | hat | lie | no cap | lying | cap emoji"
+
+msgid "🪖.name"
+msgstr "military helmet"
+
+msgid "🪖.keywords"
+msgstr "army | helmet | military | soldier | war | warrior"
+
+msgid "⛑️.name"
+msgstr "rescue worker’s helmet"
+
+msgid "⛑️.keywords"
+msgstr "aid | cross | face | hat | helmet | rescue | worker’s"
+
+msgid "📿.name"
+msgstr "prayer beads"
+
+msgid "📿.keywords"
+msgstr "beads | clothing | necklace | prayer | religion"
+
+msgid "💄.name"
+msgstr "lipstick"
+
+msgid "💄.keywords"
+msgstr "cosmetics | date | lipstick | makeup"
+
+msgid "💍.name"
+msgstr "ring"
+
+msgid "💍.keywords"
+msgstr "diamond | engaged | engagement | married | ring | romance | shiny | sparkling | wedding"
+
+msgid "💎.name"
+msgstr "gem stone"
+
+msgid "💎.keywords"
+msgstr "diamond | engagement | gem | jewel | money | romance | stone | wedding"
+
+msgid "🔇.name"
+msgstr "muted speaker"
+
+msgid "🔇.keywords"
+msgstr "mute | muted | quiet | silent | sound | speaker"
+
+msgid "🔈.name"
+msgstr "speaker low volume"
+
+msgid "🔈.keywords"
+msgstr "low | soft | sound | speaker | volume"
+
+msgid "🔉.name"
+msgstr "speaker medium volume"
+
+msgid "🔉.keywords"
+msgstr "medium | sound | speaker | volume"
+
+msgid "🔊.name"
+msgstr "speaker high volume"
+
+msgid "🔊.keywords"
+msgstr "high | loud | music | sound | speaker | volume"
+
+msgid "📢.name"
+msgstr "loudspeaker"
+
+msgid "📢.keywords"
+msgstr "address | communication | loud | loudspeaker | public | sound"
+
+msgid "📣.name"
+msgstr "megaphone"
+
+msgid "📣.keywords"
+msgstr "cheering | megaphone | sound"
+
+msgid "📯.name"
+msgstr "postal horn"
+
+msgid "📯.keywords"
+msgstr "horn | post | postal"
+
+msgid "🔔.name"
+msgstr "bell"
+
+msgid "🔔.keywords"
+msgstr "bell | break | church | sound"
+
+msgid "🔕.name"
+msgstr "bell with slash"
+
+msgid "🔕.keywords"
+msgstr "bell | forbidden | mute | no | not | prohibited | quiet | silent | slash | sound"
+
+msgid "🎼.name"
+msgstr "musical score"
+
+msgid "🎼.keywords"
+msgstr "music | musical | note | score"
+
+msgid "🎵.name"
+msgstr "musical note"
+
+msgid "🎵.keywords"
+msgstr ""
+"music | musical | note | sound"
+" | "
+"music | note | song | tune | bop | listen"
+
+msgid "🎶.name"
+msgstr "musical notes"
+
+msgid "🎶.keywords"
+msgstr "music | musical | note | notes | sound"
+
+msgid "🎙️.name"
+msgstr "studio microphone"
+
+msgid "🎙️.keywords"
+msgstr "mic | microphone | music | studio"
+
+msgid "🎚️.name"
+msgstr "level slider"
+
+msgid "🎚️.keywords"
+msgstr "level | music | slider"
+
+msgid "🎛️.name"
+msgstr "control knobs"
+
+msgid "🎛️.keywords"
+msgstr "control | knobs | music"
+
+msgid "🎤.name"
+msgstr "microphone"
+
+msgid "🎤.keywords"
+msgstr "karaoke | mic | microphone | music | sing | sound"
+
+msgid "🎧.name"
+msgstr "headphone"
+
+msgid "🎧.keywords"
+msgstr "earbud | headphone | sound"
+
+msgid "📻.name"
+msgstr "radio"
+
+msgid "📻.keywords"
+msgstr "entertainment | radio | tbt | video"
+
+msgid "🎷.name"
+msgstr "saxophone"
+
+msgid "🎷.keywords"
+msgstr "instrument | music | sax | saxophone"
+
+msgid "🎺.name"
+msgstr "trumpet"
+
+msgid "🎺.keywords"
+msgstr "instrument | music | trumpet"
+
+msgid "🪊.name"
+msgstr "trombone"
+
+msgid "🪊.keywords"
+msgstr "brass | instrument | jazz | music | sad | slide"
+
+msgid "🪗.name"
+msgstr "accordion"
+
+msgid "🪗.keywords"
+msgstr "accordion | box | concertina | instrument | music | squeeze | squeezebox"
+
+msgid "🎸.name"
+msgstr "guitar"
+
+msgid "🎸.keywords"
+msgstr "guitar | instrument | music | strat"
+
+msgid "🎹.name"
+msgstr "musical keyboard"
+
+msgid "🎹.keywords"
+msgstr "instrument | keyboard | music | musical | piano"
+
+msgid "🎻.name"
+msgstr "violin"
+
+msgid "🎻.keywords"
+msgstr "instrument | music | violin"
+
+msgid "🪕.name"
+msgstr "banjo"
+
+msgid "🪕.keywords"
+msgstr "banjo | music | stringed"
+
+msgid "🥁.name"
+msgstr "drum"
+
+msgid "🥁.keywords"
+msgstr "drum | drumsticks | music"
+
+msgid "🪘.name"
+msgstr "long drum"
+
+msgid "🪘.keywords"
+msgstr "beat | conga | drum | instrument | long | rhythm"
+
+msgid "🪇.name"
+msgstr "maracas"
+
+msgid "🪇.keywords"
+msgstr "cha | dance | instrument | maracas | music | party | percussion | rattle | shake | shaker"
+
+msgid "🪈.name"
+msgstr "flute"
+
+msgid "🪈.keywords"
+msgstr "band | fife | flautist | flute | instrument | marching | music | orchestra | piccolo | pipe | recorder | woodwind"
+
+msgid "🪉.name"
+msgstr "harp"
+
+msgid "🪉.keywords"
+msgstr "cupid | harp | instrument | love | music | orchestra"
+
+msgid "📱.name"
+msgstr "mobile phone"
+
+msgid "📱.keywords"
+msgstr "cell | communication | mobile | phone | telephone"
+
+msgid "📲.name"
+msgstr "mobile phone with arrow"
+
+msgid "📲.keywords"
+msgstr "arrow | build | call | cell | communication | mobile | phone | receive | telephone"
+
+msgid "☎️.name"
+msgstr "telephone"
+
+msgid "☎️.keywords"
+msgstr "phone | telephone"
+
+msgid "📞.name"
+msgstr "telephone receiver"
+
+msgid "📞.keywords"
+msgstr "communication | phone | receiver | telephone | voip"
+
+msgid "📟.name"
+msgstr "pager"
+
+msgid "📟.keywords"
+msgstr "communication | pager"
+
+msgid "📠.name"
+msgstr "fax machine"
+
+msgid "📠.keywords"
+msgstr "communication | fax | machine"
+
+msgid "🔋.name"
+msgstr "battery"
+
+msgid "🔋.keywords"
+msgstr "battery"
+
+msgid "🪫.name"
+msgstr "low battery"
+
+msgid "🪫.keywords"
+msgstr "battery | drained | electronic | energy | low | power"
+
+msgid "🔌.name"
+msgstr "electric plug"
+
+msgid "🔌.keywords"
+msgstr "electric | electricity | plug"
+
+msgid "💻.name"
+msgstr "laptop"
+
+msgid "💻.keywords"
+msgstr "computer | laptop | office | pc | personal"
+
+msgid "🖥️.name"
+msgstr "desktop computer"
+
+msgid "🖥️.keywords"
+msgstr "computer | desktop | monitor"
+
+msgid "🖨️.name"
+msgstr "printer"
+
+msgid "🖨️.keywords"
+msgstr "computer | printer"
+
+msgid "⌨️.name"
+msgstr "keyboard"
+
+msgid "⌨️.keywords"
+msgstr "computer | keyboard"
+
+msgid "🖱️.name"
+msgstr "computer mouse"
+
+msgid "🖱️.keywords"
+msgstr "computer | mouse"
+
+msgid "🖲️.name"
+msgstr "trackball"
+
+msgid "🖲️.keywords"
+msgstr "computer | trackball"
+
+msgid "💽.name"
+msgstr "computer disk"
+
+msgid "💽.keywords"
+msgstr "computer | disk | minidisk | optical"
+
+msgid "💾.name"
+msgstr "floppy disk"
+
+msgid "💾.keywords"
+msgstr "computer | disk | floppy"
+
+msgid "💿.name"
+msgstr "optical disk"
+
+msgid "💿.keywords"
+msgstr "blu-ray | CD | computer | disk | dvd | optical"
+
+msgid "📀.name"
+msgstr "dvd"
+
+msgid "📀.keywords"
+msgstr "Blu-ray | cd | computer | disk | DVD | optical"
+
+msgid "🧮.name"
+msgstr "abacus"
+
+msgid "🧮.keywords"
+msgstr "abacus | calculation | calculator"
+
+msgid "🎥.name"
+msgstr "movie camera"
+
+msgid "🎥.keywords"
+msgstr "bollywood | camera | cinema | film | hollywood | movie | record"
+
+msgid "🎞️.name"
+msgstr "film frames"
+
+msgid "🎞️.keywords"
+msgstr "cinema | film | frames | movie"
+
+msgid "📽️.name"
+msgstr "film projector"
+
+msgid "📽️.keywords"
+msgstr "cinema | film | movie | projector | video"
+
+msgid "🎬.name"
+msgstr "clapper board"
+
+msgid "🎬.keywords"
+msgstr "action | board | clapper | movie"
+
+msgid "📺.name"
+msgstr "television"
+
+msgid "📺.keywords"
+msgstr "television | tv | video"
+
+msgid "📷.name"
+msgstr "camera"
+
+msgid "📷.keywords"
+msgstr "camera | photo | selfie | snap | tbt | trip | video"
+
+msgid "📸.name"
+msgstr "camera with flash"
+
+msgid "📸.keywords"
+msgstr "camera | flash | video"
+
+msgid "📹.name"
+msgstr "video camera"
+
+msgid "📹.keywords"
+msgstr "camcorder | camera | tbt | video"
+
+msgid "📼.name"
+msgstr "videocassette"
+
+msgid "📼.keywords"
+msgstr "old | school | tape | vcr | vhs | video | videocassette"
+
+msgid "🔍.name"
+msgstr "magnifying glass tilted left"
+
+msgid "🔍.keywords"
+msgstr "glass | lab | left | left-pointing | magnifying | science | search | tilted | tool"
+
+msgid "🔎.name"
+msgstr "magnifying glass tilted right"
+
+msgid "🔎.keywords"
+msgstr "contact | glass | lab | magnifying | right | right-pointing | science | search | tilted | tool"
+
+msgid "🕯️.name"
+msgstr "candle"
+
+msgid "🕯️.keywords"
+msgstr "candle | light"
+
+msgid "💡.name"
+msgstr "light bulb"
+
+msgid "💡.keywords"
+msgstr "bulb | comic | electric | idea | light"
+
+msgid "🔦.name"
+msgstr "flashlight"
+
+msgid "🔦.keywords"
+msgstr "electric | flashlight | light | tool | torch"
+
+msgid "🏮.name"
+msgstr "red paper lantern"
+
+msgid "🏮.keywords"
+msgstr "bar | lantern | light | paper | red | restaurant"
+
+msgid "🪔.name"
+msgstr "diya lamp"
+
+msgid "🪔.keywords"
+msgstr "diya | lamp | light | oil"
+
+msgid "📔.name"
+msgstr "notebook with decorative cover"
+
+msgid "📔.keywords"
+msgstr "book | cover | decorated | decorative | education | notebook | school | writing"
+
+msgid "📕.name"
+msgstr "closed book"
+
+msgid "📕.keywords"
+msgstr "book | closed | education"
+
+msgid "📖.name"
+msgstr "open book"
+
+msgid "📖.keywords"
+msgstr "book | education | fantasy | knowledge | library | novels | open | reading"
+
+msgid "📗.name"
+msgstr "green book"
+
+msgid "📗.keywords"
+msgstr "book | education | fantasy | green | library | reading"
+
+msgid "📘.name"
+msgstr "blue book"
+
+msgid "📘.keywords"
+msgstr "blue | book | education | fantasy | library | reading"
+
+msgid "📙.name"
+msgstr "orange book"
+
+msgid "📙.keywords"
+msgstr "book | education | fantasy | library | orange | reading"
+
+msgid "📚.name"
+msgstr "books"
+
+msgid "📚.keywords"
+msgstr "book | books | education | fantasy | knowledge | library | novels | reading | school | study"
+
+msgid "📓.name"
+msgstr "notebook"
+
+msgid "📓.keywords"
+msgstr "notebook"
+
+msgid "📒.name"
+msgstr "ledger"
+
+msgid "📒.keywords"
+msgstr "ledger | notebook"
+
+msgid "📃.name"
+msgstr "page with curl"
+
+msgid "📃.keywords"
+msgstr "curl | document | page | paper"
+
+msgid "📜.name"
+msgstr "scroll"
+
+msgid "📜.keywords"
+msgstr "paper | scroll"
+
+msgid "📄.name"
+msgstr "page facing up"
+
+msgid "📄.keywords"
+msgstr "document | facing | page | paper | up"
+
+msgid "📰.name"
+msgstr "newspaper"
+
+msgid "📰.keywords"
+msgstr "communication | news | newspaper | paper"
+
+msgid "🗞️.name"
+msgstr "rolled-up newspaper"
+
+msgid "🗞️.keywords"
+msgstr "news | newspaper | paper | rolled | rolled-up"
+
+msgid "📑.name"
+msgstr "bookmark tabs"
+
+msgid "📑.keywords"
+msgstr "bookmark | mark | marker | tabs"
+
+msgid "🔖.name"
+msgstr "bookmark"
+
+msgid "🔖.keywords"
+msgstr "bookmark | mark"
+
+msgid "🏷️.name"
+msgstr "label"
+
+msgid "🏷️.keywords"
+msgstr "label | tag"
+
+msgid "🪙.name"
+msgstr "coin"
+
+msgid "🪙.keywords"
+msgstr "coin | dollar | euro | gold | metal | money | rich | silver | treasure"
+
+msgid "💰.name"
+msgstr "money bag"
+
+msgid "💰.keywords"
+msgstr "bag | bank | bet | billion | cash | cost | dollar | gold | million | money | moneybag | paid | paying | pot | rich | win"
+
+msgid "🪎.name"
+msgstr "treasure chest"
+
+msgid "🪎.keywords"
+msgstr "gem | gold | jewels | loot | money | prize | silver | valuables | wealth"
+
+msgid "💴.name"
+msgstr "yen banknote"
+
+msgid "💴.keywords"
+msgstr "bank | banknote | bill | currency | money | note | yen"
+
+msgid "💵.name"
+msgstr "dollar banknote"
+
+msgid "💵.keywords"
+msgstr "bank | banknote | bill | currency | dollar | money | note"
+
+msgid "💶.name"
+msgstr "euro banknote"
+
+msgid "💶.keywords"
+msgstr "100 | bank | banknote | bill | currency | euro | money | note | rich"
+
+msgid "💷.name"
+msgstr "pound banknote"
+
+msgid "💷.keywords"
+msgstr "bank | banknote | bill | billion | cash | currency | money | note | pound | pounds"
+
+msgid "💸.name"
+msgstr "money with wings"
+
+msgid "💸.keywords"
+msgstr "bank | banknote | bill | billion | cash | dollar | fly | million | money | note | pay | wings"
+
+msgid "💳.name"
+msgstr "credit card"
+
+msgid "💳.keywords"
+msgstr "bank | card | cash | charge | credit | money | pay"
+
+msgid "🧾.name"
+msgstr "receipt"
+
+msgid "🧾.keywords"
+msgstr "accounting | bookkeeping | evidence | invoice | proof | receipt"
+
+msgid "💹.name"
+msgstr "chart increasing with yen"
+
+msgid "💹.keywords"
+msgstr "bank | chart | currency | graph | growth | increasing | market | money | rise | trend | upward | yen"
+
+msgid "✉️.name"
+msgstr "envelope"
+
+msgid "✉️.keywords"
+msgstr "e-mail | email | envelope | letter"
+
+msgid "📧.name"
+msgstr "e-mail"
+
+msgid "📧.keywords"
+msgstr "e-mail | email | letter | mail"
+
+msgid "📨.name"
+msgstr "incoming envelope"
+
+msgid "📨.keywords"
+msgstr "delivering | e-mail | email | envelope | incoming | letter | mail | receive | sent"
+
+msgid "📩.name"
+msgstr "envelope with arrow"
+
+msgid "📩.keywords"
+msgstr "arrow | communication | down | e-mail | email | envelope | letter | mail | outgoing | send | sent"
+
+msgid "📤.name"
+msgstr "outbox tray"
+
+msgid "📤.keywords"
+msgstr "box | email | letter | mail | outbox | sent | tray"
+
+msgid "📥.name"
+msgstr "inbox tray"
+
+msgid "📥.keywords"
+msgstr "box | email | inbox | letter | mail | receive | tray | zero"
+
+msgid "📦.name"
+msgstr "package"
+
+msgid "📦.keywords"
+msgstr "box | communication | delivery | package | parcel | shipping"
+
+msgid "📫.name"
+msgstr "closed mailbox with raised flag"
+
+msgid "📫.keywords"
+msgstr "closed | communication | flag | mail | mailbox | postbox | raised"
+
+msgid "📪.name"
+msgstr "closed mailbox with lowered flag"
+
+msgid "📪.keywords"
+msgstr "closed | flag | lowered | mail | mailbox | postbox"
+
+msgid "📬.name"
+msgstr "open mailbox with raised flag"
+
+msgid "📬.keywords"
+msgstr "flag | mail | mailbox | open | postbox | raised"
+
+msgid "📭.name"
+msgstr "open mailbox with lowered flag"
+
+msgid "📭.keywords"
+msgstr "flag | lowered | mail | mailbox | open | postbox"
+
+msgid "📮.name"
+msgstr "postbox"
+
+msgid "📮.keywords"
+msgstr "mail | mailbox | postbox"
+
+msgid "🗳️.name"
+msgstr "ballot box with ballot"
+
+msgid "🗳️.keywords"
+msgstr "ballot | box"
+
+msgid "✏️.name"
+msgstr "pencil"
+
+msgid "✏️.keywords"
+msgstr "pencil"
+
+msgid "✒️.name"
+msgstr "black nib"
+
+msgid "✒️.keywords"
+msgstr "black | nib | pen"
+
+msgid "🖋️.name"
+msgstr "fountain pen"
+
+msgid "🖋️.keywords"
+msgstr "fountain | pen"
+
+msgid "🖊️.name"
+msgstr "pen"
+
+msgid "🖊️.keywords"
+msgstr "ballpoint | pen"
+
+msgid "🖌️.name"
+msgstr "paintbrush"
+
+msgid "🖌️.keywords"
+msgstr "paintbrush | painting"
+
+msgid "🖍️.name"
+msgstr "crayon"
+
+msgid "🖍️.keywords"
+msgstr "crayon"
+
+msgid "📝.name"
+msgstr "memo"
+
+msgid "📝.keywords"
+msgstr "communication | media | memo | notes | pencil"
+
+msgid "💼.name"
+msgstr "briefcase"
+
+msgid "💼.keywords"
+msgstr "briefcase | office"
+
+msgid "📁.name"
+msgstr "file folder"
+
+msgid "📁.keywords"
+msgstr "file | folder"
+
+msgid "📂.name"
+msgstr "open file folder"
+
+msgid "📂.keywords"
+msgstr "file | folder | open"
+
+msgid "🗂️.name"
+msgstr "card index dividers"
+
+msgid "🗂️.keywords"
+msgstr "card | dividers | index"
+
+msgid "📅.name"
+msgstr "calendar"
+
+msgid "📅.keywords"
+msgstr "calendar | date"
+
+msgid "📆.name"
+msgstr "tear-off calendar"
+
+msgid "📆.keywords"
+msgstr "calendar | tear-off"
+
+msgid "🗒️.name"
+msgstr "spiral notepad"
+
+msgid "🗒️.keywords"
+msgstr "note | notepad | pad | spiral"
+
+msgid "🗓️.name"
+msgstr "spiral calendar"
+
+msgid "🗓️.keywords"
+msgstr "calendar | pad | spiral"
+
+msgid "📇.name"
+msgstr "card index"
+
+msgid "📇.keywords"
+msgstr "card | index | old | rolodex | school"
+
+msgid "📈.name"
+msgstr "chart increasing"
+
+msgid "📈.keywords"
+msgstr "chart | data | graph | growth | increasing | right | trend | up | upward"
+
+msgid "📉.name"
+msgstr "chart decreasing"
+
+msgid "📉.keywords"
+msgstr "chart | data | decreasing | down | downward | graph | negative | trend"
+
+msgid "📊.name"
+msgstr "bar chart"
+
+msgid "📊.keywords"
+msgstr "bar | chart | data | graph"
+
+msgid "📋.name"
+msgstr "clipboard"
+
+msgid "📋.keywords"
+msgstr "clipboard | do | list | notes"
+
+msgid "📌.name"
+msgstr "pushpin"
+
+msgid "📌.keywords"
+msgstr "collage | pin | pushpin"
+
+msgid "📍.name"
+msgstr "round pushpin"
+
+msgid "📍.keywords"
+msgstr "location | map | pin | pushpin | round"
+
+msgid "📎.name"
+msgstr "paperclip"
+
+msgid "📎.keywords"
+msgstr "paperclip"
+
+msgid "🖇️.name"
+msgstr "linked paperclips"
+
+msgid "🖇️.keywords"
+msgstr "link | linked | paperclip | paperclips"
+
+msgid "📏.name"
+msgstr "straight ruler"
+
+msgid "📏.keywords"
+msgstr "angle | edge | math | ruler | straight | straightedge"
+
+msgid "📐.name"
+msgstr "triangular ruler"
+
+msgid "📐.keywords"
+msgstr "angle | math | rule | ruler | set | slide | triangle | triangular"
+
+msgid "✂️.name"
+msgstr "scissors"
+
+msgid "✂️.keywords"
+msgstr "cut | cutting | paper | scissors | tool"
+
+msgid "🗃️.name"
+msgstr "card file box"
+
+msgid "🗃️.keywords"
+msgstr "box | card | file"
+
+msgid "🗄️.name"
+msgstr "file cabinet"
+
+msgid "🗄️.keywords"
+msgstr "cabinet | file | filing | paper"
+
+msgid "🗑️.name"
+msgstr "wastebasket"
+
+msgid "🗑️.keywords"
+msgstr "can | garbage | trash | waste | wastebasket"
+
+msgid "🔒.name"
+msgstr "locked"
+
+msgid "🔒.keywords"
+msgstr "closed | lock | locked | private"
+
+msgid "🔓.name"
+msgstr "unlocked"
+
+msgid "🔓.keywords"
+msgstr "cracked | lock | open | unlock | unlocked"
+
+msgid "🔏.name"
+msgstr "locked with pen"
+
+msgid "🔏.keywords"
+msgstr "ink | lock | locked | nib | pen | privacy"
+
+msgid "🔐.name"
+msgstr "locked with key"
+
+msgid "🔐.keywords"
+msgstr "bike | closed | key | lock | locked | secure"
+
+msgid "🔑.name"
+msgstr "key"
+
+msgid "🔑.keywords"
+msgstr "key | keys | lock | major | password | unlock"
+
+msgid "🗝️.name"
+msgstr "old key"
+
+msgid "🗝️.keywords"
+msgstr "clue | key | lock | old"
+
+msgid "🔨.name"
+msgstr "hammer"
+
+msgid "🔨.keywords"
+msgstr "hammer | home | improvement | repairs | tool"
+
+msgid "🪓.name"
+msgstr "axe"
+
+msgid "🪓.keywords"
+msgstr "ax | axe | chop | hatchet | split | wood"
+
+msgid "⛏️.name"
+msgstr "pick"
+
+msgid "⛏️.keywords"
+msgstr "hammer | mining | pick | tool"
+
+msgid "⚒️.name"
+msgstr "hammer and pick"
+
+msgid "⚒️.keywords"
+msgstr "hammer | pick | tool"
+
+msgid "🛠️.name"
+msgstr "hammer and wrench"
+
+msgid "🛠️.keywords"
+msgstr "hammer | spanner | tool | wrench"
+
+msgid "🗡️.name"
+msgstr "dagger"
+
+msgid "🗡️.keywords"
+msgstr "dagger | knife | weapon"
+
+msgid "⚔️.name"
+msgstr "crossed swords"
+
+msgid "⚔️.keywords"
+msgstr "crossed | swords | weapon"
+
+msgid "💣.name"
+msgstr "bomb"
+
+msgid "💣.keywords"
+msgstr "bomb | boom | comic | dangerous | explosion | hot"
+
+msgid "🪃.name"
+msgstr "boomerang"
+
+msgid "🪃.keywords"
+msgstr "boomerang | rebound | repercussion | weapon"
+
+msgid "🏹.name"
+msgstr "bow and arrow"
+
+msgid "🏹.keywords"
+msgstr "archer | archery | arrow | bow | Sagittarius | tool | weapon | zodiac"
+
+msgid "🛡️.name"
+msgstr "shield"
+
+msgid "🛡️.keywords"
+msgstr "shield | weapon"
+
+msgid "🪚.name"
+msgstr "carpentry saw"
+
+msgid "🪚.keywords"
+msgstr "carpenter | carpentry | cut | lumber | saw | tool | trim"
+
+msgid "🔧.name"
+msgstr "wrench"
+
+msgid "🔧.keywords"
+msgstr "home | improvement | spanner | tool | wrench"
+
+msgid "🪛.name"
+msgstr "screwdriver"
+
+msgid "🪛.keywords"
+msgstr "flathead | handy | screw | screwdriver | tool"
+
+msgid "🔩.name"
+msgstr "nut and bolt"
+
+msgid "🔩.keywords"
+msgstr "bolt | home | improvement | nut | tool"
+
+msgid "⚙️.name"
+msgstr "gear"
+
+msgid "⚙️.keywords"
+msgstr "cog | cogwheel | gear | tool"
+
+msgid "🗜️.name"
+msgstr "clamp"
+
+msgid "🗜️.keywords"
+msgstr "clamp | compress | tool | vice"
+
+msgid "⚖️.name"
+msgstr "balance scale"
+
+msgid "⚖️.keywords"
+msgstr "balance | justice | Libra | scale | scales | tool | weight | zodiac"
+
+msgid "🦯.name"
+msgstr "white cane"
+
+msgid "🦯.keywords"
+msgstr "accessibility | blind | cane | probing | white"
+
+msgid "🔗.name"
+msgstr "link"
+
+msgid "🔗.keywords"
+msgstr "link | links"
+
+msgid "⛓️‍💥.name"
+msgstr "broken chain"
+
+msgid "⛓️‍💥.keywords"
+msgstr "break | breaking | broken | chain | cuffs | freedom"
+
+msgid "⛓️.name"
+msgstr "chains"
+
+msgid "⛓️.keywords"
+msgstr "chain | chains"
+
+msgid "🪝.name"
+msgstr "hook"
+
+msgid "🪝.keywords"
+msgstr "catch | crook | curve | ensnare | hook | point | selling"
+
+msgid "🧰.name"
+msgstr "toolbox"
+
+msgid "🧰.keywords"
+msgstr "box | chest | mechanic | red | tool | toolbox"
+
+msgid "🧲.name"
+msgstr "magnet"
+
+msgid "🧲.keywords"
+msgstr "attraction | horseshoe | magnet | magnetic | negative | positive | shape | u"
+
+msgid "🪜.name"
+msgstr "ladder"
+
+msgid "🪜.keywords"
+msgstr "climb | ladder | rung | step"
+
+msgid "🪏.name"
+msgstr "shovel"
+
+msgid "🪏.keywords"
+msgstr "bury | dig | garden | hole | plant | scoop | shovel | snow | spade"
+
+msgid "⚗️.name"
+msgstr "alembic"
+
+msgid "⚗️.keywords"
+msgstr "alembic | chemistry | tool"
+
+msgid "🧪.name"
+msgstr "test tube"
+
+msgid "🧪.keywords"
+msgstr "chemist | chemistry | experiment | lab | science | test | tube"
+
+msgid "🧫.name"
+msgstr "petri dish"
+
+msgid "🧫.keywords"
+msgstr "bacteria | biologist | biology | culture | dish | lab | petri"
+
+msgid "🧬.name"
+msgstr "dna"
+
+msgid "🧬.keywords"
+msgstr "biologist | dna | evolution | gene | genetics | life"
+
+msgid "🔬.name"
+msgstr "microscope"
+
+msgid "🔬.keywords"
+msgstr "experiment | lab | microscope | science | tool"
+
+msgid "🔭.name"
+msgstr "telescope"
+
+msgid "🔭.keywords"
+msgstr "contact | extraterrestrial | science | telescope | tool"
+
+msgid "📡.name"
+msgstr "satellite antenna"
+
+msgid "📡.keywords"
+msgstr "aliens | antenna | contact | dish | satellite | science"
+
+msgid "💉.name"
+msgstr "syringe"
+
+msgid "💉.keywords"
+msgstr "doctor | flu | medicine | needle | shot | sick | syringe | tool | vaccination"
+
+msgid "🩸.name"
+msgstr "drop of blood"
+
+msgid "🩸.keywords"
+msgstr "bleed | blood | donation | drop | injury | medicine | menstruation"
+
+msgid "💊.name"
+msgstr "pill"
+
+msgid "💊.keywords"
+msgstr "doctor | drugs | medicated | medicine | pill | pills | sick | vitamin"
+
+msgid "🩹.name"
+msgstr "adhesive bandage"
+
+msgid "🩹.keywords"
+msgstr "adhesive | bandage"
+
+msgid "🩼.name"
+msgstr "crutch"
+
+msgid "🩼.keywords"
+msgstr "aid | cane | crutch | disability | help | hurt | injured | mobility | stick"
+
+msgid "🩺.name"
+msgstr "stethoscope"
+
+msgid "🩺.keywords"
+msgstr "doctor | heart | medicine | stethoscope"
+
+msgid "🩻.name"
+msgstr "x-ray"
+
+msgid "🩻.keywords"
+msgstr "bones | doctor | medical | skeleton | skull | x-ray | xray"
+
+msgid "🚪.name"
+msgstr "door"
+
+msgid "🚪.keywords"
+msgstr "back | closet | door | front"
+
+msgid "🛗.name"
+msgstr "elevator"
+
+msgid "🛗.keywords"
+msgstr "accessibility | elevator | hoist | lift"
+
+msgid "🪞.name"
+msgstr "mirror"
+
+msgid "🪞.keywords"
+msgstr "makeup | mirror | reflection | reflector | speculum"
+
+msgid "🪟.name"
+msgstr "window"
+
+msgid "🪟.keywords"
+msgstr "air | frame | fresh | opening | transparent | view | window"
+
+msgid "🛏️.name"
+msgstr "bed"
+
+msgid "🛏️.keywords"
+msgstr "bed | hotel | sleep"
+
+msgid "🛋️.name"
+msgstr "couch and lamp"
+
+msgid "🛋️.keywords"
+msgstr "couch | hotel | lamp"
+
+msgid "🪑.name"
+msgstr "chair"
+
+msgid "🪑.keywords"
+msgstr "chair | seat | sit"
+
+msgid "🚽.name"
+msgstr "toilet"
+
+msgid "🚽.keywords"
+msgstr "bathroom | toilet"
+
+msgid "🪠.name"
+msgstr "plunger"
+
+msgid "🪠.keywords"
+msgstr "cup | force | plumber | plunger | poop | suction | toilet"
+
+msgid "🚿.name"
+msgstr "shower"
+
+msgid "🚿.keywords"
+msgstr "shower | water"
+
+msgid "🛁.name"
+msgstr "bathtub"
+
+msgid "🛁.keywords"
+msgstr "bath | bathtub"
+
+msgid "🪤.name"
+msgstr "mouse trap"
+
+msgid "🪤.keywords"
+msgstr "bait | cheese | lure | mouse | mousetrap | snare | trap"
+
+msgid "🪒.name"
+msgstr "razor"
+
+msgid "🪒.keywords"
+msgstr "razor | sharp | shave"
+
+msgid "🧴.name"
+msgstr "lotion bottle"
+
+msgid "🧴.keywords"
+msgstr "bottle | lotion | moisturizer | shampoo | sunscreen"
+
+msgid "🧷.name"
+msgstr "safety pin"
+
+msgid "🧷.keywords"
+msgstr "diaper | pin | punk | rock | safety"
+
+msgid "🧹.name"
+msgstr "broom"
+
+msgid "🧹.keywords"
+msgstr "broom | cleaning | sweeping | witch"
+
+msgid "🧺.name"
+msgstr "basket"
+
+msgid "🧺.keywords"
+msgstr "basket | farming | laundry | picnic"
+
+msgid "🧻.name"
+msgstr "roll of paper"
+
+msgid "🧻.keywords"
+msgstr "paper | roll | toilet | towels"
+
+msgid "🪣.name"
+msgstr "bucket"
+
+msgid "🪣.keywords"
+msgstr "bucket | cask | pail | vat"
+
+msgid "🧼.name"
+msgstr "soap"
+
+msgid "🧼.keywords"
+msgstr "bar | bathing | clean | cleaning | lather | soap | soapdish"
+
+msgid "🫧.name"
+msgstr "bubbles"
+
+msgid "🫧.keywords"
+msgstr "bubble | bubbles | burp | clean | floating | pearl | soap | underwater"
+
+msgid "🪥.name"
+msgstr "toothbrush"
+
+msgid "🪥.keywords"
+msgstr "bathroom | brush | clean | dental | hygiene | teeth | toiletry | toothbrush"
+
+msgid "🧽.name"
+msgstr "sponge"
+
+msgid "🧽.keywords"
+msgstr "absorbing | cleaning | porous | soak | sponge"
+
+msgid "🧯.name"
+msgstr "fire extinguisher"
+
+msgid "🧯.keywords"
+msgstr "extinguish | extinguisher | fire | quench"
+
+msgid "🛒.name"
+msgstr "shopping cart"
+
+msgid "🛒.keywords"
+msgstr "cart | shopping | trolley"
+
+msgid "🚬.name"
+msgstr "cigarette"
+
+msgid "🚬.keywords"
+msgstr "cigarette | smoking"
+
+msgid "⚰️.name"
+msgstr "coffin"
+
+msgid "⚰️.keywords"
+msgstr "coffin | dead | death | vampire"
+
+msgid "🪦.name"
+msgstr "headstone"
+
+msgid "🪦.keywords"
+msgstr "cemetery | dead | grave | graveyard | headstone | memorial | rip | tomb | tombstone"
+
+msgid "⚱️.name"
+msgstr "funeral urn"
+
+msgid "⚱️.keywords"
+msgstr "ashes | death | funeral | urn"
+
+msgid "🧿.name"
+msgstr "nazar amulet"
+
+msgid "🧿.keywords"
+msgstr "amulet | bead | blue | charm | evil-eye | nazar | talisman"
+
+msgid "🪬.name"
+msgstr "hamsa"
+
+msgid "🪬.keywords"
+msgstr "amulet | Fatima | fortune | guide | hamsa | hand | Mary | Miriam | palm | protect | protection"
+
+msgid "🗿.name"
+msgstr "moai"
+
+msgid "🗿.keywords"
+msgstr ""
+"face | moai | moyai | statue | stoneface | travel"
+" | "
+"moai | stone face | emotionless | chad | sigma | deadpan | bruh"
+
+msgid "🪧.name"
+msgstr "placard"
+
+msgid "🪧.keywords"
+msgstr "card | demonstration | notice | picket | placard | plaque | protest | sign"
+
+msgid "🪪.name"
+msgstr "identification card"
+
+msgid "🪪.keywords"
+msgstr "card | credentials | document | ID | identification | license | security"

@@ -1,0 +1,1344 @@
+msgid ""
+msgstr ""
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "🌍.name"
+msgstr "地球（ヨーロッパとアフリカ）"
+
+msgid "🌍.keywords"
+msgstr "アフリカ | ヨーロッパ | 世界 | 地球 | 地球（ヨーロッパとアフリカ）"
+
+msgid "🌎.name"
+msgstr "地球（アメリカ大陸）"
+
+msgid "🌎.keywords"
+msgstr "アメリカ | アメリカ大陸 | 世界 | 地球 | 地球（アメリカ大陸）"
+
+msgid "🌏.name"
+msgstr "地球（アジアとオーストラリア）"
+
+msgid "🌏.keywords"
+msgstr "アジア | オーストラリア | 世界 | 地球 | 地球（アジアとオーストラリア）"
+
+msgid "🌐.name"
+msgstr "子午線のある地球"
+
+msgid "🌐.keywords"
+msgstr "インターネット | 地球 | 子午線 | 子午線のある地球"
+
+msgid "🗺️.name"
+msgstr "世界地図"
+
+msgid "🗺️.keywords"
+msgstr "マップ | 世界 | 世界地図 | 地図"
+
+msgid "🗾.name"
+msgstr "日本地図"
+
+msgid "🗾.keywords"
+msgstr ""
+"地図 | 日本 | 日本地図"
+" | "
+"日本 | ニッポン | 日本地図"
+
+msgid "🧭.name"
+msgstr "コンパス"
+
+msgid "🧭.keywords"
+msgstr "オリエンテーリング | コンパス | 方位磁針 | 方角 | 磁石 | 航海 | 航空"
+
+msgid "🏔️.name"
+msgstr "雪山"
+
+msgid "🏔️.keywords"
+msgstr "冠雪 | 山 | 雪 | 雪山"
+
+msgid "⛰️.name"
+msgstr "山"
+
+msgid "⛰️.keywords"
+msgstr "山 | 山岳"
+
+msgid "🛘.name"
+msgstr "地滑り"
+
+msgid "🛘.keywords"
+msgstr "土砂災害 | 山 | 山崩れ | 岩石 | 崩落 | 災害 | 落石"
+
+msgid "🌋.name"
+msgstr "火山"
+
+msgid "🌋.keywords"
+msgstr "噴火 | 山 | 溶岩 | 火山"
+
+msgid "🗻.name"
+msgstr "富士山"
+
+msgid "🗻.keywords"
+msgstr "富士山 | 山"
+
+msgid "🏕️.name"
+msgstr "キャンプ"
+
+msgid "🏕️.keywords"
+msgstr "キャンプ | テント | 山"
+
+msgid "🏖️.name"
+msgstr "ビーチパラソル"
+
+msgid "🏖️.keywords"
+msgstr "パラソル | ビーチ | ビーチパラソル | 砂浜"
+
+msgid "🏜️.name"
+msgstr "砂漠"
+
+msgid "🏜️.keywords"
+msgstr "サボテン | サボテンのある砂漠 | 砂漠"
+
+msgid "🏝️.name"
+msgstr "無人島"
+
+msgid "🏝️.keywords"
+msgstr "ヤシ | ヤシの木のある島 | 島 | 無人島"
+
+msgid "🏞️.name"
+msgstr "国立公園"
+
+msgid "🏞️.keywords"
+msgstr "公園 | 国立公園 | 自然"
+
+msgid "🏟️.name"
+msgstr "競技場"
+
+msgid "🏟️.keywords"
+msgstr "スタジアム | 競技場 | 野球場"
+
+msgid "🏛️.name"
+msgstr "歴史的な建物"
+
+msgid "🏛️.keywords"
+msgstr "古代 | 史跡 | 歴史 | 歴史的な建物 | 歴史的建造物"
+
+msgid "🏗️.name"
+msgstr "建設中"
+
+msgid "🏗️.keywords"
+msgstr "クレーン | 工事 | 建築 | 建設 | 建設中"
+
+msgid "🧱.name"
+msgstr "れんが"
+
+msgid "🧱.keywords"
+msgstr "しっくい | ブロック | モルタル | れんが | 壁 | 煉瓦 | 粘土"
+
+msgid "🪨.name"
+msgstr "岩石"
+
+msgid "🪨.keywords"
+msgstr "岩 | 岩石 | 巨岩 | 石 | 石材 | 硬い | 重たい"
+
+msgid "🪵.name"
+msgstr "丸太"
+
+msgid "🪵.keywords"
+msgstr "ログ | 丸太 | 切り株 | 木 | 木材 | 材木 | 樹木"
+
+msgid "🛖.name"
+msgstr "わらぶき小屋"
+
+msgid "🛖.keywords"
+msgstr "バンガロー | ユルト | わらぶき小屋 | 家 | 小屋"
+
+msgid "🏘️.name"
+msgstr "住宅街"
+
+msgid "🏘️.keywords"
+msgstr "住宅街 | 家 | 街 | 複数の家"
+
+msgid "🏚️.name"
+msgstr "廃屋"
+
+msgid "🏚️.keywords"
+msgstr "家 | 廃屋 | 建物 | 空き家"
+
+msgid "🏠.name"
+msgstr "家"
+
+msgid "🏠.keywords"
+msgstr "マイホーム | 一戸建て | 家 | 建物 | 郊外"
+
+msgid "🏡.name"
+msgstr "庭付きの家"
+
+msgid "🏡.keywords"
+msgstr "マイホーム | 一戸建て | 家 | 庭 | 庭付きの家 | 建物 | 郊外"
+
+msgid "🏢.name"
+msgstr "オフィスビル"
+
+msgid "🏢.keywords"
+msgstr "オフィスビル | 会社 | 建物 | 社屋 | 都会"
+
+msgid "🏣.name"
+msgstr "郵便局"
+
+msgid "🏣.keywords"
+msgstr "建物 | 郵便 | 郵便局"
+
+msgid "🏤.name"
+msgstr "西洋の郵便局"
+
+msgid "🏤.keywords"
+msgstr "建物 | 西洋の郵便局 | 郵便"
+
+msgid "🏥.name"
+msgstr "病院"
+
+msgid "🏥.keywords"
+msgstr "医者 | 建物 | 病院 | 薬"
+
+msgid "🏦.name"
+msgstr "銀行"
+
+msgid "🏦.keywords"
+msgstr "建物 | 銀行"
+
+msgid "🏨.name"
+msgstr "ホテル"
+
+msgid "🏨.keywords"
+msgstr "ホテル | 建物"
+
+msgid "🏩.name"
+msgstr "ラブホテル"
+
+msgid "🏩.keywords"
+msgstr "ホテル | ラブホ | ラブホテル | 建物"
+
+msgid "🏪.name"
+msgstr "コンビニ"
+
+msgid "🏪.keywords"
+msgstr "24時間営業 | コンビニ | コンビニエンスストア | 店 | 建物"
+
+msgid "🏫.name"
+msgstr "学校"
+
+msgid "🏫.keywords"
+msgstr "学校 | 建物 | 校舎"
+
+msgid "🏬.name"
+msgstr "デパート"
+
+msgid "🏬.keywords"
+msgstr "デパート | ビル | 店舗 | 建物 | 百貨店"
+
+msgid "🏭.name"
+msgstr "工場"
+
+msgid "🏭.keywords"
+msgstr "ファクトリー | 工場 | 建物 | 煙突"
+
+msgid "🏯.name"
+msgstr "城"
+
+msgid "🏯.keywords"
+msgstr ""
+"城 | 建物 | 日本 | 日本の城"
+" | "
+"城 | 日本城 | お城 | 武士 | 侍"
+
+msgid "🏰.name"
+msgstr "西洋の城"
+
+msgid "🏰.keywords"
+msgstr "キャッスル | 城 | 建物 | 西洋の城"
+
+msgid "💒.name"
+msgstr "結婚式"
+
+msgid "💒.keywords"
+msgstr "チャペル | ロマンス | 建物 | 式場 | 教会 | 礼拝堂 | 結婚 | 結婚式"
+
+msgid "🗼.name"
+msgstr "東京タワー"
+
+msgid "🗼.keywords"
+msgstr "タワー | 塔 | 東京 | 東京タワー"
+
+msgid "🗽.name"
+msgstr "自由の女神"
+
+msgid "🗽.keywords"
+msgstr "アメリカ | ニューヨーク | 彫像 | 自由の女神"
+
+msgid "⛪.name"
+msgstr "教会"
+
+msgid "⛪.keywords"
+msgstr "キリスト教 | チャペル | 十字架 | 宗教 | 建物 | 教会 | 礼拝堂"
+
+msgid "🕌.name"
+msgstr "モスク"
+
+msgid "🕌.keywords"
+msgstr "イスラム教 | モスク | 宗教 | 建物"
+
+msgid "🛕.name"
+msgstr "ヒンドゥー教の寺院"
+
+msgid "🛕.keywords"
+msgstr "ヒンズー教 | ヒンドゥー教の寺院 | 宗教 | 寺 | 建物"
+
+msgid "🕍.name"
+msgstr "シナゴーグ"
+
+msgid "🕍.keywords"
+msgstr "シナゴーグ | ユダヤ教 | 宗教 | 建物"
+
+msgid "⛩️.name"
+msgstr "鳥居"
+
+msgid "⛩️.keywords"
+msgstr ""
+"宗教 | 建物 | 神社 | 神道 | 鳥居"
+" | "
+"鳥居 | 神社 | 参拝 | お参り | 御朱印"
+
+msgid "🕋.name"
+msgstr "カーバ"
+
+msgid "🕋.keywords"
+msgstr "イスラム教 | カーバ | メッカ | 宗教 | 建物 | 聖地 | 巡礼"
+
+msgid "⛲.name"
+msgstr "噴水"
+
+msgid "⛲.keywords"
+msgstr "噴水"
+
+msgid "⛺.name"
+msgstr "テント"
+
+msgid "⛺.keywords"
+msgstr "キャンプ | テント"
+
+msgid "🌁.name"
+msgstr "霧の都会"
+
+msgid "🌁.keywords"
+msgstr "もや | 都会 | 霧 | 霧の都会"
+
+msgid "🌃.name"
+msgstr "夜の都会"
+
+msgid "🌃.keywords"
+msgstr "夜 | 夜の都会 | 夜景 | 星 | 星空"
+
+msgid "🏙️.name"
+msgstr "高層ビル"
+
+msgid "🏙️.keywords"
+msgstr "ビル群 | 都会 | 都市 | 高層ビル"
+
+msgid "🌄.name"
+msgstr "山から日の出"
+
+msgid "🌄.keywords"
+msgstr "ご来光 | 太陽 | 山から日の出 | 日の出 | 朝 | 朝日"
+
+msgid "🌅.name"
+msgstr "日の出"
+
+msgid "🌅.keywords"
+msgstr "太陽 | 日の出 | 日光 | 朝 | 朝日"
+
+msgid "🌆.name"
+msgstr "夕暮れの都会"
+
+msgid "🌆.keywords"
+msgstr "ビル | 夕方 | 夕日 | 夕暮れ | 夕暮れの都会 | 都会 | 都市"
+
+msgid "🌇.name"
+msgstr "夕日"
+
+msgid "🌇.keywords"
+msgstr "ビル | 夕方 | 夕日 | 夕暮れ | 太陽 | 日暮れ | 日没"
+
+msgid "🌉.name"
+msgstr "夜の橋"
+
+msgid "🌉.keywords"
+msgstr "夜 | 夜の橋 | 夜景 | 橋"
+
+msgid "♨️.name"
+msgstr "温泉マーク"
+
+msgid "♨️.keywords"
+msgstr "温泉 | 温泉マーク | 湯気"
+
+msgid "🎠.name"
+msgstr "メリーゴーランド"
+
+msgid "🎠.keywords"
+msgstr "メリーゴーラウンド | メリーゴーランド | 回転木馬 | 遊園地 | 馬"
+
+msgid "🛝.name"
+msgstr "すべり台"
+
+msgid "🛝.keywords"
+msgstr "すべり台 | 公園 | 遊具"
+
+msgid "🎡.name"
+msgstr "観覧車"
+
+msgid "🎡.keywords"
+msgstr "アミューズメントパーク | 観覧車 | 遊園地"
+
+msgid "🎢.name"
+msgstr "ジェットコースター"
+
+msgid "🎢.keywords"
+msgstr "アミューズメントパーク | ジェットコースター | 遊園地"
+
+msgid "💈.name"
+msgstr "床屋"
+
+msgid "💈.keywords"
+msgstr "バーバー | ヘアサロン | 床屋 | 理容室 | 理容院 | 理髪店 | 美容室 | 美容院"
+
+msgid "🎪.name"
+msgstr "サーカス"
+
+msgid "🎪.keywords"
+msgstr "サーカス | サーカス小屋 | テント"
+
+msgid "🚂.name"
+msgstr "蒸気機関車"
+
+msgid "🚂.keywords"
+msgstr "SL | 乗り物 | 列車 | 機関車 | 汽車 | 蒸気機関車 | 鉄道"
+
+msgid "🚃.name"
+msgstr "電車"
+
+msgid "🚃.keywords"
+msgstr "トロリーバス | 乗り物 | 列車 | 鉄道 | 電車"
+
+msgid "🚄.name"
+msgstr "新幹線"
+
+msgid "🚄.keywords"
+msgstr "乗り物 | 新幹線 | 鉄道 | 電車 | 高速列車"
+
+msgid "🚅.name"
+msgstr "0系新幹線"
+
+msgid "🚅.keywords"
+msgstr "0系 | 0系新幹線 | 丸い新幹線 | 乗り物 | 新幹線 | 鉄道 | 電車 | 高速列車"
+
+msgid "🚆.name"
+msgstr "電車正面"
+
+msgid "🚆.keywords"
+msgstr "乗り物 | 列車 | 電車 | 電車正面"
+
+msgid "🚇.name"
+msgstr "地下鉄"
+
+msgid "🚇.keywords"
+msgstr "メトロ | 乗り物 | 地下鉄 | 電車"
+
+msgid "🚈.name"
+msgstr "ライトレール"
+
+msgid "🚈.keywords"
+msgstr "モノレール | ライトレール | 乗り物 | 鉄道 | 電車"
+
+msgid "🚉.name"
+msgstr "駅"
+
+msgid "🚉.keywords"
+msgstr "ステーション | 乗り物 | 列車 | 電車 | 駅"
+
+msgid "🚊.name"
+msgstr "路面電車正面"
+
+msgid "🚊.keywords"
+msgstr "乗り物 | 路面電車 | 路面電車正面 | 電車"
+
+msgid "🚝.name"
+msgstr "モノレール"
+
+msgid "🚝.keywords"
+msgstr "モノレール | 乗り物 | 電車"
+
+msgid "🚞.name"
+msgstr "登山鉄道"
+
+msgid "🚞.keywords"
+msgstr "乗り物 | 登山鉄道 | 登山電車 | 電車"
+
+msgid "🚋.name"
+msgstr "路面電車"
+
+msgid "🚋.keywords"
+msgstr "トロリーバス | 乗り物 | 路面電車 | 電車"
+
+msgid "🚌.name"
+msgstr "バス"
+
+msgid "🚌.keywords"
+msgstr "スクールバス | バス | 乗り物 | 車"
+
+msgid "🚍.name"
+msgstr "バス正面"
+
+msgid "🚍.keywords"
+msgstr "バス | バス正面 | 乗り物 | 車"
+
+msgid "🚎.name"
+msgstr "トロリーバス"
+
+msgid "🚎.keywords"
+msgstr "トロリーバス | バス | 乗り物 | 路面電車"
+
+msgid "🚐.name"
+msgstr "マイクロバス"
+
+msgid "🚐.keywords"
+msgstr "バス | マイクロバス | ミニバス | 乗り物 | 小型バス | 車"
+
+msgid "🚑.name"
+msgstr "救急車"
+
+msgid "🚑.keywords"
+msgstr "乗り物 | 救急車 | 車"
+
+msgid "🚒.name"
+msgstr "消防車"
+
+msgid "🚒.keywords"
+msgstr "乗り物 | 消防車 | 車"
+
+msgid "🚓.name"
+msgstr "パトカー"
+
+msgid "🚓.keywords"
+msgstr "パトカー | パトロール | 乗り物 | 警察"
+
+msgid "🚔.name"
+msgstr "パトカー正面"
+
+msgid "🚔.keywords"
+msgstr "パトカー | パトカー正面 | 乗り物 | 警察"
+
+msgid "🚕.name"
+msgstr "タクシー"
+
+msgid "🚕.keywords"
+msgstr "イエローキャブ | タクシー | 乗り物 | 車"
+
+msgid "🚖.name"
+msgstr "タクシー正面"
+
+msgid "🚖.keywords"
+msgstr "イエローキャブ | タクシー | タクシー正面 | 乗り物 | 車"
+
+msgid "🚗.name"
+msgstr "自動車"
+
+msgid "🚗.keywords"
+msgstr "ドライブ | 乗り物 | 乗用車 | 自動車 | 車"
+
+msgid "🚘.name"
+msgstr "自動車正面"
+
+msgid "🚘.keywords"
+msgstr "ドライブ | 乗り物 | 乗用車 | 自動車 | 自動車正面 | 車"
+
+msgid "🚙.name"
+msgstr "アールブイ車"
+
+msgid "🚙.keywords"
+msgstr "RV車 | SUV車 | アールブイ車 | 乗り物 | 乗用車 | 自動車 | 車"
+
+msgid "🛻.name"
+msgstr "軽トラック"
+
+msgid "🛻.keywords"
+msgstr "トラック | ピックアップトラック | 乗り物 | 自動車 | 車 | 軽トラック | 配達"
+
+msgid "🚚.name"
+msgstr "トラック"
+
+msgid "🚚.keywords"
+msgstr "トラック | 乗り物 | 車 | 配送 | 配達"
+
+msgid "🚛.name"
+msgstr "トレーラー"
+
+msgid "🚛.keywords"
+msgstr "トラック | トレーラー | 乗り物 | 車"
+
+msgid "🚜.name"
+msgstr "トラクター"
+
+msgid "🚜.keywords"
+msgstr "トラクター | 乗り物 | 車"
+
+msgid "🏎️.name"
+msgstr "レーシングカー"
+
+msgid "🏎️.keywords"
+msgstr "F1 | カーレース | スポーツ | モータースポーツ | レーシングカー | レース | 乗り物 | 車"
+
+msgid "🏍️.name"
+msgstr "オートバイ"
+
+msgid "🏍️.keywords"
+msgstr "オートバイ | オートレース | スポーツ | バイク | モータースポーツ | 乗り物"
+
+msgid "🛵.name"
+msgstr "スクーター"
+
+msgid "🛵.keywords"
+msgstr "オートバイ | スクーター | バイク | 原付"
+
+msgid "🦽.name"
+msgstr "手動式車椅子"
+
+msgid "🦽.keywords"
+msgstr "アクセシビリティ | 手動式車椅子 | 椅子 | 車椅子"
+
+msgid "🦼.name"
+msgstr "電動車椅子"
+
+msgid "🦼.keywords"
+msgstr "アクセシビリティ | 椅子 | 車椅子 | 電動車椅子"
+
+msgid "🛺.name"
+msgstr "三輪タクシー"
+
+msgid "🛺.keywords"
+msgstr "オートリクシャー | タクシー | トゥクトゥク | リクシャー | 三輪タクシー"
+
+msgid "🚲.name"
+msgstr "自転車"
+
+msgid "🚲.keywords"
+msgstr "サイクリング | 乗り物 | 自転車"
+
+msgid "🛴.name"
+msgstr "キックボード"
+
+msgid "🛴.keywords"
+msgstr "キックスクーター | キックスケーター | キックボード"
+
+msgid "🛹.name"
+msgstr "スケートボード"
+
+msgid "🛹.keywords"
+msgstr "スケートボード | スケボー | ボード"
+
+msgid "🛼.name"
+msgstr "ローラースケート"
+
+msgid "🛼.keywords"
+msgstr "スケート | スポーツ | ローラースケート"
+
+msgid "🚏.name"
+msgstr "バス停"
+
+msgid "🚏.keywords"
+msgstr "バス乗り場 | バス停 | 乗り物 | 停留所"
+
+msgid "🛣️.name"
+msgstr "高速道路"
+
+msgid "🛣️.keywords"
+msgstr "ハイウェイ | 道路 | 高速 | 高速道路"
+
+msgid "🛤️.name"
+msgstr "線路"
+
+msgid "🛤️.keywords"
+msgstr "線路 | 軌道 | 鉄道"
+
+msgid "🛢️.name"
+msgstr "ドラム缶"
+
+msgid "🛢️.keywords"
+msgstr "オイル | ドラム缶 | 石油"
+
+msgid "⛽.name"
+msgstr "ガソリンスタンド"
+
+msgid "⛽.keywords"
+msgstr "ガソリン | ガソリンスタンド | ガソリンノズル | 給油"
+
+msgid "🛞.name"
+msgstr "ホイール"
+
+msgid "🛞.keywords"
+msgstr "スポーク | タイヤ | ホイール | 自動車 | 車 | 車輪"
+
+msgid "🚨.name"
+msgstr "パトランプ"
+
+msgid "🚨.keywords"
+msgstr "サイレン | パトカー | パトランプ | 緊急 | 警察 | 赤色灯"
+
+msgid "🚥.name"
+msgstr "信号横"
+
+msgid "🚥.keywords"
+msgstr "交差点 | 交通 | 信号 | 信号横 | 信号機"
+
+msgid "🚦.name"
+msgstr "信号縦"
+
+msgid "🚦.keywords"
+msgstr "交差点 | 交通 | 信号 | 信号機 | 信号縦"
+
+msgid "🛑.name"
+msgstr "止まれの標識"
+
+msgid "🛑.keywords"
+msgstr "ストップ | 八角形 | 標識 | 止まれ | 止まれの標識"
+
+msgid "🚧.name"
+msgstr "工事中"
+
+msgid "🚧.keywords"
+msgstr "サイン | 工事中 | 通行止め"
+
+msgid "⚓.name"
+msgstr "錨"
+
+msgid "⚓.keywords"
+msgstr "いかり | 碇 | 船 | 錨"
+
+msgid "🛟.name"
+msgstr "救命浮環"
+
+msgid "🛟.keywords"
+msgstr "ブイ | ライフセーバー | レスキュー | 安全 | 救助 | 救命具 | 救命浮環 | 浮き輪"
+
+msgid "⛵.name"
+msgstr "ヨット"
+
+msgid "⛵.keywords"
+msgstr "セーリング | ヨット | 乗り物 | 帆船 | 船"
+
+msgid "🛶.name"
+msgstr "カヌー"
+
+msgid "🛶.keywords"
+msgstr "カヌー | カヤック | ボート | 乗り物 | 船"
+
+msgid "🚤.name"
+msgstr "スピードボート"
+
+msgid "🚤.keywords"
+msgstr "スピードボート | ボート | モーターボート | 乗り物 | 快速艇 | 船"
+
+msgid "🛳️.name"
+msgstr "客船"
+
+msgid "🛳️.keywords"
+msgstr "乗り物 | 客船 | 旅客船 | 船"
+
+msgid "⛴️.name"
+msgstr "フェリー"
+
+msgid "⛴️.keywords"
+msgstr "フェリー | 乗り物 | 客船 | 船"
+
+msgid "🛥️.name"
+msgstr "モーターボート"
+
+msgid "🛥️.keywords"
+msgstr "ボート | モーターボート | 乗り物 | 船"
+
+msgid "🚢.name"
+msgstr "船"
+
+msgid "🚢.keywords"
+msgstr "タイタニック号 | 乗り物 | 客船 | 船"
+
+msgid "✈️.name"
+msgstr "飛行機"
+
+msgid "✈️.keywords"
+msgstr "ジェット機 | 乗り物 | 旅行 | 航空機 | 飛行機"
+
+msgid "🛩️.name"
+msgstr "小型飛行機"
+
+msgid "🛩️.keywords"
+msgstr "乗り物 | 小型機 | 小型飛行機 | 航空機 | 飛行機"
+
+msgid "🛫.name"
+msgstr "飛行機離陸"
+
+msgid "🛫.keywords"
+msgstr "乗り物 | 航空機 | 離陸 | 飛行機 | 飛行機離陸"
+
+msgid "🛬.name"
+msgstr "飛行機着陸"
+
+msgid "🛬.keywords"
+msgstr "乗り物 | 着陸 | 航空機 | 飛行機 | 飛行機着陸"
+
+msgid "🪂.name"
+msgstr "パラシュート"
+
+msgid "🪂.keywords"
+msgstr "スカイダイビング | パラグライダー | パラシュート | パラセーリング | ハンググライダー"
+
+msgid "💺.name"
+msgstr "座席"
+
+msgid "💺.keywords"
+msgstr "シート | 席 | 座席 | 椅子"
+
+msgid "🚁.name"
+msgstr "ヘリコプター"
+
+msgid "🚁.keywords"
+msgstr "ヘリ | ヘリコプター | 乗り物"
+
+msgid "🚟.name"
+msgstr "懸垂式モノレール"
+
+msgid "🚟.keywords"
+msgstr "モノレール | 乗り物 | 懸垂式モノレール | 電車"
+
+msgid "🚠.name"
+msgstr "ケーブルカー"
+
+msgid "🚠.keywords"
+msgstr "ケーブルカー | ゴンドラ | リフト | 乗り物"
+
+msgid "🚡.name"
+msgstr "ロープウェイ"
+
+msgid "🚡.keywords"
+msgstr "ゴンドラ | ロープウェイ | 乗り物"
+
+msgid "🛰️.name"
+msgstr "人工衛星"
+
+msgid "🛰️.keywords"
+msgstr "人工衛星 | 宇宙"
+
+msgid "🚀.name"
+msgstr "ロケット"
+
+msgid "🚀.keywords"
+msgstr "ロケット | 乗り物 | 宇宙 | 宇宙旅行 | 発射"
+
+msgid "🛸.name"
+msgstr "空飛ぶ円盤"
+
+msgid "🛸.keywords"
+msgstr "UFO | 乗り物 | 宇宙 | 宇宙人 | 未確認飛行物体 | 空飛ぶ円盤"
+
+msgid "🛎️.name"
+msgstr "ベルボーイベル"
+
+msgid "🛎️.keywords"
+msgstr "ベル | ベルボーイベル | ホテル"
+
+msgid "🧳.name"
+msgstr "スーツケース"
+
+msgid "🧳.keywords"
+msgstr "キャリーケース | スーツケース | パッキング | 旅行 | 旅行かばん"
+
+msgid "⌛.name"
+msgstr "砂時計"
+
+msgid "⌛.keywords"
+msgstr "タイマー | 時計 | 砂 | 砂時計"
+
+msgid "⏳.name"
+msgstr "砂が落ちている砂時計"
+
+msgid "⏳.keywords"
+msgstr "タイマー | 時計 | 時間 | 砂 | 砂が落ちている砂時計 | 砂時計"
+
+msgid "⌚.name"
+msgstr "腕時計"
+
+msgid "⌚.keywords"
+msgstr "ウォッチ | 時計 | 時間 | 腕時計"
+
+msgid "⏰.name"
+msgstr "目覚まし時計"
+
+msgid "⏰.keywords"
+msgstr "アラーム | 時計 | 時間 | 目覚まし | 目覚まし時計"
+
+msgid "⏱️.name"
+msgstr "ストップウォッチ"
+
+msgid "⏱️.keywords"
+msgstr "ストップウォッチ | タイム | 時計"
+
+msgid "⏲️.name"
+msgstr "タイマー"
+
+msgid "⏲️.keywords"
+msgstr "タイマー | 時計"
+
+msgid "🕰️.name"
+msgstr "置時計"
+
+msgid "🕰️.keywords"
+msgstr "マンテルクロック | 時計 | 時間 | 置き時計 | 置時計"
+
+msgid "🕛.name"
+msgstr "12時"
+
+msgid "🕛.keywords"
+msgstr "12:00 | 12時 | 時計 | 正午 | 零時"
+
+msgid "🕧.name"
+msgstr "12時半"
+
+msgid "🕧.keywords"
+msgstr "12:30 | 12時30分 | 12時半 | 時計"
+
+msgid "🕐.name"
+msgstr "1時"
+
+msgid "🕐.keywords"
+msgstr "1:00 | 1時 | 時計"
+
+msgid "🕜.name"
+msgstr "1時半"
+
+msgid "🕜.keywords"
+msgstr "1:30 | 1時30分 | 1時半 | 時計"
+
+msgid "🕑.name"
+msgstr "2時"
+
+msgid "🕑.keywords"
+msgstr "2:00 | 2時 | 時計"
+
+msgid "🕝.name"
+msgstr "2時半"
+
+msgid "🕝.keywords"
+msgstr "2:30 | 2時30分 | 2時半 | 時計"
+
+msgid "🕒.name"
+msgstr "3時"
+
+msgid "🕒.keywords"
+msgstr "3:00 | 3時 | 時計"
+
+msgid "🕞.name"
+msgstr "3時半"
+
+msgid "🕞.keywords"
+msgstr "3:30 | 3時30分 | 3時半 | 時計"
+
+msgid "🕓.name"
+msgstr "4時"
+
+msgid "🕓.keywords"
+msgstr "4:00 | 4時 | 時計"
+
+msgid "🕟.name"
+msgstr "4時半"
+
+msgid "🕟.keywords"
+msgstr "4:30 | 4時30分 | 4時半 | 時計"
+
+msgid "🕔.name"
+msgstr "5時"
+
+msgid "🕔.keywords"
+msgstr "5:00 | 5時 | 時計"
+
+msgid "🕠.name"
+msgstr "5時半"
+
+msgid "🕠.keywords"
+msgstr "5:30 | 5時30分 | 5時半 | 時計"
+
+msgid "🕕.name"
+msgstr "6時"
+
+msgid "🕕.keywords"
+msgstr "6:00 | 6時 | 時計"
+
+msgid "🕡.name"
+msgstr "6時半"
+
+msgid "🕡.keywords"
+msgstr "6:30 | 6時30分 | 6時半 | 時計"
+
+msgid "🕖.name"
+msgstr "7時"
+
+msgid "🕖.keywords"
+msgstr "7:00 | 7時 | 時計"
+
+msgid "🕢.name"
+msgstr "7時半"
+
+msgid "🕢.keywords"
+msgstr "7:30 | 7時30分 | 7時半 | 時計"
+
+msgid "🕗.name"
+msgstr "8時"
+
+msgid "🕗.keywords"
+msgstr "8:00 | 8時 | 8時30分 | 時計"
+
+msgid "🕣.name"
+msgstr "8時半"
+
+msgid "🕣.keywords"
+msgstr "8:30 | 8時30分 | 8時半 | 時計"
+
+msgid "🕘.name"
+msgstr "9時"
+
+msgid "🕘.keywords"
+msgstr "9:00 | 9時 | 時計"
+
+msgid "🕤.name"
+msgstr "9時半"
+
+msgid "🕤.keywords"
+msgstr "9:30 | 9時30分 | 9時半 | 時計"
+
+msgid "🕙.name"
+msgstr "10時"
+
+msgid "🕙.keywords"
+msgstr "10:00 | 10時 | 時計"
+
+msgid "🕥.name"
+msgstr "10時半"
+
+msgid "🕥.keywords"
+msgstr "10:30 | 10時30分 | 10時半 | 時計"
+
+msgid "🕚.name"
+msgstr "11時"
+
+msgid "🕚.keywords"
+msgstr "11:00 | 11時 | 時計"
+
+msgid "🕦.name"
+msgstr "11時半"
+
+msgid "🕦.keywords"
+msgstr "11:30 | 11時30分 | 11時半 | 時計"
+
+msgid "🌑.name"
+msgstr "新月"
+
+msgid "🌑.keywords"
+msgstr "宇宙 | 新月 | 月 | 闇"
+
+msgid "🌒.name"
+msgstr "初月"
+
+msgid "🌒.keywords"
+msgstr "三日月 | 初月 | 宇宙 | 月"
+
+msgid "🌓.name"
+msgstr "上弦の月"
+
+msgid "🌓.keywords"
+msgstr "上弦 | 上弦の月 | 半月 | 宇宙 | 月"
+
+msgid "🌔.name"
+msgstr "十三夜月"
+
+msgid "🌔.keywords"
+msgstr "十三夜月 | 十日夜の月 | 宇宙 | 月"
+
+msgid "🌕.name"
+msgstr "満月"
+
+msgid "🌕.keywords"
+msgstr "宇宙 | 月 | 満月"
+
+msgid "🌖.name"
+msgstr "寝待月"
+
+msgid "🌖.keywords"
+msgstr "宇宙 | 寝待月 | 居待月 | 月"
+
+msgid "🌗.name"
+msgstr "下弦の月"
+
+msgid "🌗.keywords"
+msgstr "下弦 | 下弦の月 | 半月 | 宇宙 | 月"
+
+msgid "🌘.name"
+msgstr "有明月"
+
+msgid "🌘.keywords"
+msgstr "三日月 | 宇宙 | 月 | 有明月"
+
+msgid "🌙.name"
+msgstr "三日月"
+
+msgid "🌙.keywords"
+msgstr ""
+"三日月 | 宇宙 | 月"
+" | "
+"月 | 夜 | 三日月 | おやすみ | 夜空"
+
+msgid "🌚.name"
+msgstr "顔のある新月"
+
+msgid "🌚.keywords"
+msgstr "新月 | 月 | 顔 | 顔のある新月"
+
+msgid "🌛.name"
+msgstr "顔のある上弦の月"
+
+msgid "🌛.keywords"
+msgstr "上弦の月 | 半月 | 月 | 顔 | 顔のある上弦の月"
+
+msgid "🌜.name"
+msgstr "顔のある下弦の月"
+
+msgid "🌜.keywords"
+msgstr "下弦の月 | 半月 | 月 | 顔 | 顔のある下弦の月"
+
+msgid "🌡️.name"
+msgstr "温度計"
+
+msgid "🌡️.keywords"
+msgstr "天気 | 寒暖計 | 気温 | 温度 | 温度計"
+
+msgid "☀️.name"
+msgstr "太陽"
+
+msgid "☀️.keywords"
+msgstr "天気 | 太陽 | 日光 | 晴れ"
+
+msgid "🌝.name"
+msgstr "顔のある満月"
+
+msgid "🌝.keywords"
+msgstr "月 | 満月 | 顔 | 顔のある満月"
+
+msgid "🌞.name"
+msgstr "顔のある太陽"
+
+msgid "🌞.keywords"
+msgstr "太陽 | 顔 | 顔のある太陽"
+
+msgid "🪐.name"
+msgstr "環のある惑星"
+
+msgid "🪐.keywords"
+msgstr "リング | 土星 | 天体 | 惑星 | 星 | 環のある惑星"
+
+msgid "⭐.name"
+msgstr "スター"
+
+msgid "⭐.keywords"
+msgstr ""
+"スター | 天文学 | 星"
+" | "
+"星 | お気に入り | 願い | スター | 評価"
+
+msgid "🌟.name"
+msgstr "きらきら星"
+
+msgid "🌟.keywords"
+msgstr "きらきら | キラキラ | きらきら星 | スター | 星 | 輝き"
+
+msgid "🌠.name"
+msgstr "流れ星"
+
+msgid "🌠.keywords"
+msgstr "スター | 夜 | 宇宙 | 星 | 流れ星"
+
+msgid "🌌.name"
+msgstr "天の川"
+
+msgid "🌌.keywords"
+msgstr "ミルキーウェイ | 夜空 | 天の川 | 宇宙 | 星空 | 銀河"
+
+msgid "☁️.name"
+msgstr "雲"
+
+msgid "☁️.keywords"
+msgstr "天気 | 曇り | 雲"
+
+msgid "⛅.name"
+msgstr "曇り時々晴れ"
+
+msgid "⛅.keywords"
+msgstr "天気 | 太陽 | 曇り | 曇り時々晴れ | 雲"
+
+msgid "⛈️.name"
+msgstr "雷雨"
+
+msgid "⛈️.keywords"
+msgstr "天気 | 稲妻 | 雨 | 雲 | 雷 | 雷雨 | 雷雲"
+
+msgid "🌤️.name"
+msgstr "晴れ時々曇り"
+
+msgid "🌤️.keywords"
+msgstr "天気 | 太陽 | 晴れ | 晴れ時々曇り | 雲"
+
+msgid "🌥️.name"
+msgstr "曇り一時晴れ"
+
+msgid "🌥️.keywords"
+msgstr "天気 | 太陽 | 曇り | 曇り一時晴れ | 雲"
+
+msgid "🌦️.name"
+msgstr "雨時々晴れ"
+
+msgid "🌦️.keywords"
+msgstr "天気 | 天気雨 | 太陽 | 曇り | 雨時々晴れ | 雲"
+
+msgid "🌧️.name"
+msgstr "雨雲"
+
+msgid "🌧️.keywords"
+msgstr "天気 | 雨 | 雨雲 | 雲"
+
+msgid "🌨️.name"
+msgstr "雪雲"
+
+msgid "🌨️.keywords"
+msgstr "天気 | 雪 | 雪雲 | 雲"
+
+msgid "🌩️.name"
+msgstr "雷雲"
+
+msgid "🌩️.keywords"
+msgstr "天気 | 稲妻 | 雲 | 雷 | 雷雲"
+
+msgid "🌪️.name"
+msgstr "竜巻"
+
+msgid "🌪️.keywords"
+msgstr "トルネード | 天気 | 突風 | 竜巻"
+
+msgid "🌫️.name"
+msgstr "霧"
+
+msgid "🌫️.keywords"
+msgstr "天気 | 曇り | 雲 | 霧"
+
+msgid "🌬️.name"
+msgstr "顔のある風"
+
+msgid "🌬️.keywords"
+msgstr "雲 | 顔 | 顔のある風 | 風"
+
+msgid "🌀.name"
+msgstr "渦巻き"
+
+msgid "🌀.keywords"
+msgstr "サイクロン | ハリケーン | めまい | もやもや | 台風 | 天気 | 渦巻き"
+
+msgid "🌈.name"
+msgstr "虹"
+
+msgid "🌈.keywords"
+msgstr "GLBT | GLBTQ | LGBT | LGBTQ | ゲイ | トランスジェンダー | バイセクシュアル | レインボー | レズビアン | 天気"
+
+msgid "🌂.name"
+msgstr "閉じた傘"
+
+msgid "🌂.keywords"
+msgstr "傘 | 天気 | 持ち物 | 閉じた傘 | 雨"
+
+msgid "☂️.name"
+msgstr "傘"
+
+msgid "☂️.keywords"
+msgstr "傘 | 天気 | 持ち物 | 雨"
+
+msgid "☔.name"
+msgstr "傘と雨"
+
+msgid "☔.keywords"
+msgstr "傘 | 傘と雨 | 天気 | 持ち物 | 雨 | 雨粒"
+
+msgid "⛱️.name"
+msgstr "パラソル"
+
+msgid "⛱️.keywords"
+msgstr "パラソル | ビーチ | 傘 | 日傘 | 砂浜 | 雨"
+
+msgid "⚡.name"
+msgstr "高電圧"
+
+msgid "⚡.keywords"
+msgstr ""
+"危険 | 稲妻 | 雷 | 電気 | 高電圧"
+" | "
+"雷 | 稲妻 | エネルギー | 速い | ビリビリ"
+
+msgid "❄️.name"
+msgstr "雪の結晶"
+
+msgid "❄️.keywords"
+msgstr "天気 | 結晶 | 雪 | 雪の結晶"
+
+msgid "☃️.name"
+msgstr "雪だるまと雪"
+
+msgid "☃️.keywords"
+msgstr "雪 | 雪だるま | 雪だるまと雪"
+
+msgid "⛄.name"
+msgstr "雪だるま"
+
+msgid "⛄.keywords"
+msgstr "雪 | 雪だるま"
+
+msgid "☄️.name"
+msgstr "彗星"
+
+msgid "☄️.keywords"
+msgstr "すい星 | 宇宙 | 彗星"
+
+msgid "🔥.name"
+msgstr "火"
+
+msgid "🔥.keywords"
+msgstr ""
+"ファイアー | ファイヤー | 火 | 炎 | 熱い | 燃える"
+" | "
+"炎上 | バズる | アツい | 燃える | 熱い"
+
+msgid "💧.name"
+msgstr "水滴"
+
+msgid "💧.keywords"
+msgstr "しずく | たらーっ | 水 | 水滴 | 汗 | 涙"
+
+msgid "🌊.name"
+msgstr "波"
+
+msgid "🌊.keywords"
+msgstr ""
+"天気 | 波 | 波浪 | 海 | 自然"
+" | "
+"波 | 海 | サーフィン | 津波 | 大波"

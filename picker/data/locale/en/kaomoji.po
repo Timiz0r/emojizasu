@@ -1,0 +1,409 @@
+msgid ""
+msgstr ""
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "(^▽^).name"
+msgstr "Happy"
+
+msgid "(^▽^).keywords"
+msgstr "happy | smile | joy"
+
+msgid "ヽ(^o^)丿.name"
+msgstr "Cheering"
+
+msgid "ヽ(^o^)丿.keywords"
+msgstr "cheer | happy | yay"
+
+msgid "\\(≧▽≦)/.name"
+msgstr "Overjoyed"
+
+msgid "\\(≧▽≦)/.keywords"
+msgstr "joy | excited | yay"
+
+msgid "(＾▽＾).name"
+msgstr "Happy Face"
+
+msgid "(＾▽＾).keywords"
+msgstr "happy | smile"
+
+msgid "(ﾉ´∀｀)ﾉ.name"
+msgstr "Joyful"
+
+msgid "(ﾉ´∀｀)ﾉ.keywords"
+msgstr "happy | joyful"
+
+msgid "(*´▽`*).name"
+msgstr "Pleased"
+
+msgid "(*´▽`*).keywords"
+msgstr "pleased | happy | smile"
+
+msgid "ヾ(*´∀`*)ﾉ.name"
+msgstr "Super Happy"
+
+msgid "ヾ(*´∀`*)ﾉ.keywords"
+msgstr "happy | excited"
+
+msgid "(o^▽^o).name"
+msgstr "Gleeful"
+
+msgid "(o^▽^o).keywords"
+msgstr "happy | gleeful"
+
+msgid "(T_T).name"
+msgstr "Crying"
+
+msgid "(T_T).keywords"
+msgstr "sad | cry | tears"
+
+msgid "(;_;).name"
+msgstr "Weeping"
+
+msgid "(;_;).keywords"
+msgstr "sad | cry"
+
+msgid "(っ◞‸◟c).name"
+msgstr "Sobbing"
+
+msgid "(っ◞‸◟c).keywords"
+msgstr "sad | sob | cry"
+
+msgid "( ; ω ; ).name"
+msgstr "Sad"
+
+msgid "( ; ω ; ).keywords"
+msgstr "sad | cry"
+
+msgid "(´；ω；`).name"
+msgstr "Tear-eyed"
+
+msgid "(´；ω；`).keywords"
+msgstr "sad | cry"
+
+msgid "ヽ(;▽;)ノ.name"
+msgstr "Wailing"
+
+msgid "ヽ(;▽;)ノ.keywords"
+msgstr "sad | cry | wail"
+
+msgid "(╯°□°）╯︵ ┻━┻.name"
+msgstr "Table Flip"
+
+msgid "(╯°□°）╯︵ ┻━┻.keywords"
+msgstr "angry | flip | rage | rage quit"
+
+msgid "┻━┻ ︵ヽ(`Д´)ﾉ︵ ┻━┻.name"
+msgstr "Double Table Flip"
+
+msgid "┻━┻ ︵ヽ(`Д´)ﾉ︵ ┻━┻.keywords"
+msgstr "angry | flip | rage"
+
+msgid "٩(ఠ益ఠ)۶.name"
+msgstr "Furious"
+
+msgid "٩(ఠ益ఠ)۶.keywords"
+msgstr "angry | fury | rage"
+
+msgid "(╬ Ò ‸ Ó).name"
+msgstr "Angry"
+
+msgid "(╬ Ò ‸ Ó).keywords"
+msgstr "angry | mad"
+
+msgid "(*`益´*).name"
+msgstr "Mad"
+
+msgid "(*`益´*).keywords"
+msgstr "angry | mad"
+
+msgid "(〃>_<;〃).name"
+msgstr "Embarrassed"
+
+msgid "(〃>_<;〃).keywords"
+msgstr "shy | embarrassed | blush"
+
+msgid "(*ノωノ).name"
+msgstr "Blushing"
+
+msgid "(*ノωノ).keywords"
+msgstr "blush | shy"
+
+msgid "(*/ω\\*).name"
+msgstr "Hiding in Shame"
+
+msgid "(*/ω\\*).keywords"
+msgstr "shy | hide | embarrassed"
+
+msgid "(*^_^*).name"
+msgstr "Bashful"
+
+msgid "(*^_^*).keywords"
+msgstr "smile | shy | bashful"
+
+msgid "(°ロ°).name"
+msgstr "Shocked"
+
+msgid "(°ロ°).keywords"
+msgstr "shocked | surprised"
+
+msgid "(・・?).name"
+msgstr "Confused"
+
+msgid "(・・?).keywords"
+msgstr "confused | question"
+
+msgid "Σ(°△°|||).name"
+msgstr "Startled"
+
+msgid "Σ(°△°|||).keywords"
+msgstr "startled | shocked"
+
+msgid "(⊙_⊙).name"
+msgstr "Wide-eyed"
+
+msgid "(⊙_⊙).keywords"
+msgstr "surprised | wide eyes"
+
+msgid "(@_@).name"
+msgstr "Dazed"
+
+msgid "(@_@).keywords"
+msgstr "dizzy | dazed"
+
+msgid "(♡˙︶˙♡).name"
+msgstr "Love"
+
+msgid "(♡˙︶˙♡).keywords"
+msgstr "love | heart"
+
+msgid "(´ ▽`).。ｏ♡.name"
+msgstr "Daydreaming of Love"
+
+msgid "(´ ▽`).。ｏ♡.keywords"
+msgstr "love | dream | romance"
+
+msgid "(ノ*>∀<)ノ♡.name"
+msgstr "Sending Love"
+
+msgid "(ノ*>∀<)ノ♡.keywords"
+msgstr "love | heart"
+
+msgid "♡( ◡‿◡ ).name"
+msgstr "Adoring"
+
+msgid "♡( ◡‿◡ ).keywords"
+msgstr "love | adore"
+
+msgid "(づ￣ ³￣)づ.name"
+msgstr "Hugging"
+
+msgid "(づ￣ ³￣)づ.keywords"
+msgstr "hug | love"
+
+msgid "(づ。◕‿‿◕。)づ.name"
+msgstr "Big Hug"
+
+msgid "(づ。◕‿‿◕。)づ.keywords"
+msgstr "hug | cute"
+
+msgid "¯\\_(ツ)_/¯.name"
+msgstr "Shrug"
+
+msgid "¯\\_(ツ)_/¯.keywords"
+msgstr "shrug | idk | whatever"
+
+msgid "(・_・;).name"
+msgstr "Nervous Shrug"
+
+msgid "(・_・;).keywords"
+msgstr "nervous | shrug"
+
+msgid "(•_•) ( •_•)>⌐■-■ (⌐■_■).name"
+msgstr "Deal With It"
+
+msgid "(•_•) ( •_•)>⌐■-■ (⌐■_■).keywords"
+msgstr "cool | deal with it | sunglasses"
+
+msgid "( ͡° ͜ʖ ͡°).name"
+msgstr "Lenny Face"
+
+msgid "( ͡° ͜ʖ ͡°).keywords"
+msgstr "lenny | look | creep"
+
+msgid "(￣ー￣).name"
+msgstr "Smug"
+
+msgid "(￣ー￣).keywords"
+msgstr "smug | cool"
+
+msgid "(｀・ω・´).name"
+msgstr "Determined"
+
+msgid "(｀・ω・´).keywords"
+msgstr "determined | confident"
+
+msgid "(=^ω^=).name"
+msgstr "Cat Face"
+
+msgid "(=^ω^=).keywords"
+msgstr "cat | cute"
+
+msgid "(^･ω･^).name"
+msgstr "Happy Cat"
+
+msgid "(^･ω･^).keywords"
+msgstr "cat | happy | smile"
+
+msgid "( ̄(oo) ̄).name"
+msgstr "Pig"
+
+msgid "( ̄(oo) ̄).keywords"
+msgstr "pig | animal"
+
+msgid "( ・(ｴ)・ ).name"
+msgstr "Bear"
+
+msgid "( ・(ｴ)・ ).keywords"
+msgstr "bear | animal"
+
+msgid "ฅ(＾・ω・＾ฅ).name"
+msgstr "Kitty"
+
+msgid "ฅ(＾・ω・＾ฅ).keywords"
+msgstr "cat | kitty | nyaa"
+
+msgid "(U ᵕ U❁).name"
+msgstr "Bunny"
+
+msgid "(U ᵕ U❁).keywords"
+msgstr "bunny | rabbit | cute"
+
+msgid "(﹃ .).name"
+msgstr "Drooling / Sleepy"
+
+msgid "(﹃ .).keywords"
+msgstr "sleep | drool | tired"
+
+msgid "(u_u).name"
+msgstr "Sleepy"
+
+msgid "(u_u).keywords"
+msgstr "sleep | tired | zzz"
+
+msgid "(-_-)zzZ.name"
+msgstr "Sleeping"
+
+msgid "(-_-)zzZ.keywords"
+msgstr "sleep | zzz"
+
+msgid "(。-ω-)zzZ.name"
+msgstr "Fast Asleep"
+
+msgid "(。-ω-)zzZ.keywords"
+msgstr "sleep | deep sleep | ZZZ"
+
+msgid "(ノ°▽°)ノ⌒♪.name"
+msgstr "Singing"
+
+msgid "(ノ°▽°)ノ⌒♪.keywords"
+msgstr "music | sing | happy"
+
+msgid "ヾ(•ω•`)o.name"
+msgstr "Waving"
+
+msgid "ヾ(•ω•`)o.keywords"
+msgstr "wave | bye"
+
+msgid "(^_^)/~.name"
+msgstr "Waving Goodbye"
+
+msgid "(^_^)/~.keywords"
+msgstr "wave | bye"
+
+msgid "m(_ _)m.name"
+msgstr "Bowing"
+
+msgid "m(_ _)m.keywords"
+msgstr "bow | sorry | thank you"
+
+msgid "(・∀・).name"
+msgstr "Grinning"
+
+msgid "(・∀・).keywords"
+msgstr "smile | happy | grin"
+
+msgid "(´∀｀).name"
+msgstr "Carefree"
+
+msgid "(´∀｀).keywords"
+msgstr "carefree | relaxed"
+
+msgid "(´-ω-｀).name"
+msgstr "Somber"
+
+msgid "(´-ω-｀).keywords"
+msgstr "sad | quiet"
+
+msgid "(`・ω・´)ゞ.name"
+msgstr "Saluting"
+
+msgid "(`・ω・´)ゞ.keywords"
+msgstr "salute | roger"
+
+msgid "(ΦωΦ).name"
+msgstr "Excited Eyes"
+
+msgid "(ΦωΦ).keywords"
+msgstr "excited | eyes"
+
+msgid "w(°o°)w.name"
+msgstr "Amazed"
+
+msgid "w(°o°)w.keywords"
+msgstr "amazed | wow"
+
+msgid "(；一_一).name"
+msgstr "Unimpressed"
+
+msgid "(；一_一).keywords"
+msgstr "unimpressed | deadpan"
+
+msgid "(¬_¬).name"
+msgstr "Side Eye"
+
+msgid "(¬_¬).keywords"
+msgstr "side eye | suspicious"
+
+msgid "(○｀д´)ノシ.name"
+msgstr "Scram!"
+
+msgid "(○｀д´)ノシ.keywords"
+msgstr "angry | go away"
+
+msgid "φ(•ᴗ•○).name"
+msgstr "Writing"
+
+msgid "φ(•ᴗ•○).keywords"
+msgstr "writing | note"
+
+msgid "(ﾉ*°▽°)ﾉ.name"
+msgstr "Excited"
+
+msgid "(ﾉ*°▽°)ﾉ.keywords"
+msgstr "excited | happy"
+
+msgid "ヽ(´▽｀)/.name"
+msgstr "Delighted"
+
+msgid "ヽ(´▽｀)/.keywords"
+msgstr "happy | joy"
+
+msgid "(*>ω<*).name"
+msgstr "Embarrassed & Happy"
+
+msgid "(*>ω<*).keywords"
+msgstr "happy | shy"
+

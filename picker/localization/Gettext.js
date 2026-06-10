@@ -37,6 +37,11 @@ function englishLocaleWithZero() {
     return locale("en", { zero: "n = 0", one: "i = 1 and v = 0" })
 }
 
+/** Blank locale with no code — use as native when all real languages are loaded as documents. */
+function blankLocale() {
+    return locale("_", {})
+}
+
 function entryKey(context, id, pluralId) {
     return (context === null || context === undefined ? "" : context) + "\0" + id + "\0" + (pluralId === null || pluralId === undefined ? "" : pluralId)
 }
@@ -65,10 +70,17 @@ class Catalog {
 
     addPo(text) {
         const parsed = PoParser.parse(text)
+        if (this.documents.hasOwnProperty(parsed.language)) {
+            const doc = this.documents[parsed.language]
+            for (const e of parsed.entries) {
+                doc.entries.push(e)
+                doc.index[entryKey(e.context, e.id, e.pluralId)] = e
+            }
+            return doc.locale
+        }
         const loc = locale(parsed.language, parsed.pluralRules)
         const index = {}
-        for (let i = 0; i < parsed.entries.length; i++) {
-            const e = parsed.entries[i]
+        for (const e of parsed.entries) {
             index[entryKey(e.context, e.id, e.pluralId)] = e
         }
         this.documents[parsed.language] = { locale: loc, entries: parsed.entries, index: index }
@@ -93,10 +105,10 @@ class Catalog {
 
     selectLocaleOrNative(codes) {
         const list = codes || []
-        for (let i = 0; i < list.length; i++) {
-            if (this.supports(list[i])) {
-                this.selectLocale(list[i])
-                return list[i]
+        for (const code of list) {
+            if (this.supports(code)) {
+                this.selectLocale(code)
+                return code
             }
         }
         this.selectLocale(this.nativeLocale.code)
@@ -105,6 +117,20 @@ class Catalog {
 
     get selectedLocale() {
         return this.selected !== null ? this.selected.locale : this.nativeLocale
+    }
+
+    /** Look up a plain string msgid in the selected locale, falling back to the "en" document. */
+    get(id) {
+        if (this.selected !== null) {
+            const entry = this.selected.index[entryKey(null, id, null)]
+            if (entry !== undefined && entry.value) return entry.value
+        }
+        const enDoc = this.documents["en"]
+        if (enDoc !== undefined) {
+            const entry = enDoc.index[entryKey(null, id, null)]
+            if (entry !== undefined && entry.value) return entry.value
+        }
+        return ""
     }
 
     T(first) {

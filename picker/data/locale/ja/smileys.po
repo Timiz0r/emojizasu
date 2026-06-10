@@ -1,0 +1,1134 @@
+msgid ""
+msgstr ""
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "😀.name"
+msgstr "にっこり笑う"
+
+msgid "😀.keywords"
+msgstr "スマイル | ナイス | にっこり | にっこり笑う | ハッピー | 笑う | 笑顔 | 顔"
+
+msgid "😃.name"
+msgstr "わーい"
+
+msgid "😃.keywords"
+msgstr "スマイル | ハッピー | わーい | 口を開けた笑顔 | 笑顔 | 顔"
+
+msgid "😄.name"
+msgstr "笑顔"
+
+msgid "😄.keywords"
+msgstr "スマイル | ハッピー | わーい | 笑顔 | 顔"
+
+msgid "😁.name"
+msgstr "にやっと笑う"
+
+msgid "😁.keywords"
+msgstr "スマイル | ナイス | にやっと笑う | ハッピー | 笑う | 笑顔 | 顔"
+
+msgid "😆.name"
+msgstr "きゃー"
+
+msgid "😆.keywords"
+msgstr "あはは | うけるね | きゃー | スマイル | 嬉しい | 満足 | 笑 | 笑顔 | 顔"
+
+msgid "😅.name"
+msgstr "冷や汗笑顔"
+
+msgid "😅.keywords"
+msgstr "スマイル | とほほ | 冷や汗 | 冷や汗笑顔 | 汗 | 笑顔 | 顔"
+
+msgid "🤣.name"
+msgstr "笑い転げる"
+
+msgid "🤣.keywords"
+msgstr ""
+"あはは | うけるね | スマイル | 泣き笑い | 涙 | 爆笑 | 笑い転げる | 笑う | 笑顔 | 顔"
+" | "
+"爆笑 | ウケる | 草 | 笑える | 転がる"
+
+msgid "😂.name"
+msgstr "嬉し泣き"
+
+msgid "😂.keywords"
+msgstr ""
+"あはは | スマイル | 大笑い | 嬉し泣き | 泣き笑い | 涙 | 爆笑 | 笑う | 笑顔 | 顔"
+" | "
+"草 | ｗ | ｗｗｗ | 笑える | ウケる | 爆笑 | 大笑い"
+
+msgid "🙂.name"
+msgstr "微笑む"
+
+msgid "🙂.keywords"
+msgstr "スマイル | ハッピー | ほほえみ | 微笑み | 微笑む | 笑顔 | 顔"
+
+msgid "🙃.name"
+msgstr "さかさまの顔"
+
+msgid "🙃.keywords"
+msgstr "さかさま | さかさまの顔 | 笑顔 | 顔"
+
+msgid "🫠.name"
+msgstr "溶けている顔"
+
+msgid "🫠.keywords"
+msgstr ""
+"とろける | 暑い | 液体 | 溶けそう | 溶けている顔 | 溶ける | 顔"
+" | "
+"溶けてる | ダメだ | 死にそう | バテバテ | 崩れる"
+
+msgid "😉.name"
+msgstr "ウインク"
+
+msgid "😉.keywords"
+msgstr "ウィンク | ウインク | ウィンクする顔 | 顔"
+
+msgid "😊.name"
+msgstr "にこにこ"
+
+msgid "😊.keywords"
+msgstr ""
+"スマイル | にこにこ | 微笑み | 満足 | 目を細める | 頬を赤らめる | 顔"
+" | "
+"にこにこ | 笑顔 | 嬉しい | ほっこり | 微笑み"
+
+msgid "😇.name"
+msgstr "天使の輪がついた笑顔"
+
+msgid "😇.keywords"
+msgstr "スマイル | ハッピー | 天使の輪 | 天使の輪がついた笑顔 | 平和 | 笑顔 | 顔"
+
+msgid "🥰.name"
+msgstr "ハートの笑顔"
+
+msgid "🥰.keywords"
+msgstr ""
+"ハート | ハートの笑顔 | メロメロ | ラブ | 夢中 | 愛してる | 笑顔 | 顔"
+" | "
+"きゅん | かわいい | すき | 好き | 愛してる | 萌え"
+
+msgid "😍.name"
+msgstr "目がハートの笑顔"
+
+msgid "😍.keywords"
+msgstr ""
+"スマイル | ハート | ラブ | 大好き | 目がハートの笑顔 | 笑顔 | 顔"
+" | "
+"かわいい | 好き | ハートの目 | きゅん | 見惚れる"
+
+msgid "🤩.name"
+msgstr "目が星の笑顔"
+
+msgid "🤩.keywords"
+msgstr "スマイル | わーい | 星 | 目が星の笑顔 | 笑顔 | 顔"
+
+msgid "😘.name"
+msgstr "投げキッス"
+
+msgid "😘.keywords"
+msgstr "キス | ちゅっ | ハート | 投げキッス | 顔"
+
+msgid "😗.name"
+msgstr "キス"
+
+msgid "😗.keywords"
+msgstr "キス | ちゅっ | デート | 顔"
+
+msgid "☺️.name"
+msgstr "スマイリー"
+
+msgid "☺️.keywords"
+msgstr "スマイリー | スマイル | ハッピー | ほっ | 笑顔 | 顔"
+
+msgid "😚.name"
+msgstr "ちゅっ"
+
+msgid "😚.keywords"
+msgstr "キス | ちゅっ | デート | 目を閉じてキス | 目を閉じる | 顔"
+
+msgid "😙.name"
+msgstr "にっこりキス"
+
+msgid "😙.keywords"
+msgstr "キス | スマイル | ちゅっ | にっこりキス | 笑顔 | 顔"
+
+msgid "🥲.name"
+msgstr "嬉し涙の顔"
+
+msgid "🥲.keywords"
+msgstr "じーん | 嬉し涙の顔 | 感動 | 感激 | 泣く | 涙 | 顔"
+
+msgid "😋.name"
+msgstr "にこにこぺろり"
+
+msgid "😋.keywords"
+msgstr "うまい | おいしい | おいしそう | スマイル | にこにこぺろり | ぺろり | 笑顔 | 腹ぺこ | 顔"
+
+msgid "😛.name"
+msgstr "舌を出した顔"
+
+msgid "😛.keywords"
+msgstr "べー | べろ | 甘い | 舌 | 舌を出した顔 | 顔"
+
+msgid "😜.name"
+msgstr "あっかんべー"
+
+msgid "😜.keywords"
+msgstr "あっかんべー | ウィンク | ジョーク | べー | 冗談 | 舌 | 顔"
+
+msgid "🤪.name"
+msgstr "ふざけた顔"
+
+msgid "🤪.keywords"
+msgstr "おかしい | ジョーク | ふざけ | ふざけた顔 | 顔"
+
+msgid "😝.name"
+msgstr "目を閉じてべー"
+
+msgid "😝.keywords"
+msgstr "べー | べろ | わーい | 味見 | 目を閉じてべー | 舌 | 顔"
+
+msgid "🤑.name"
+msgstr "お金の顔"
+
+msgid "🤑.keywords"
+msgstr "お金 | お金の顔 | べー | べろ | 舌 | 顔"
+
+msgid "🤗.name"
+msgstr "ハグ"
+
+msgid "🤗.keywords"
+msgstr ""
+"スマイル | ハグ | 笑顔 | 顔"
+" | "
+"ハグ | 抱きしめる | 嬉しい | ぎゅっと"
+
+msgid "🤭.name"
+msgstr "口に手を当てた顔"
+
+msgid "🤭.keywords"
+msgstr "おっと | クスクス | スマイル | 内緒 | 口に手を当てた顔 | 笑顔 | 顔"
+
+msgid "🫢.name"
+msgstr "目を開けて口に手を当てた顔"
+
+msgid "🫢.keywords"
+msgstr "おそれ | おののき | びっくり | 目を開けて口に手を当てた顔 | 静かに | 顔 | 驚き"
+
+msgid "🫣.name"
+msgstr "指の間からのぞき見る顔"
+
+msgid "🫣.keywords"
+msgstr "こわごわ | ちらっ | のぞき見 | 指の間からのぞき見る顔 | 盗み見 | 顔"
+
+msgid "🤫.name"
+msgstr "しーっ"
+
+msgid "🤫.keywords"
+msgstr ""
+"しー | しーっ | シーッ | しっ | 静かに | 顔"
+" | "
+"シー | 内緒 | 秘密 | 静かに"
+
+msgid "🤔.name"
+msgstr "考える顔"
+
+msgid "🤔.keywords"
+msgstr ""
+"うーん | 考える | 考える顔 | 考え中 | 顎に手 | 顔"
+" | "
+"考え中 | うーん | 考える | どうかな | 検討"
+
+msgid "🫡.name"
+msgstr "敬礼する顔"
+
+msgid "🫡.keywords"
+msgstr ""
+"オーケー | 了解 | 敬礼 | 敬礼する顔 | 軍隊 | 顔"
+" | "
+"敬礼 | 了解 | 分かりました | ラジャー"
+
+msgid "🤐.name"
+msgstr "口チャック"
+
+msgid "🤐.keywords"
+msgstr "チャック | 内緒 | 口 | 口チャック | 秘密 | 顔"
+
+msgid "🤨.name"
+msgstr "眉を上げた顔"
+
+msgid "🤨.keywords"
+msgstr "不審 | 疑い | 眉を上げた顔 | 顔 | 驚き"
+
+msgid "😐.name"
+msgstr "ポーカーフェイス"
+
+msgid "😐.keywords"
+msgstr "ポーカーフェイス | 無表情 | 笑えない | 顔"
+
+msgid "😑.name"
+msgstr "無表情"
+
+msgid "😑.keywords"
+msgstr "ふーん | やきもち | 無感情 | 無表情 | 顔"
+
+msgid "😶.name"
+msgstr "口のない顔"
+
+msgid "😶.keywords"
+msgstr "だんまり | 口なし | 口のない顔 | 沈黙 | 無表情 | 無言 | 顔"
+
+msgid "🫥.name"
+msgstr "点線の顔"
+
+msgid "🫥.keywords"
+msgstr "どうでもいい | ふーん | 内向的 | 内気 | 憂鬱 | 点線の顔 | 落胆 | 顔"
+
+msgid "😶‍🌫️.name"
+msgstr "雲の中の顔"
+
+msgid "😶‍🌫️.keywords"
+msgstr "うわの空 | ぼんやり | 夢中 | 放心状態 | 雲の中の顔 | 顔"
+
+msgid "😏.name"
+msgstr "薄笑いをする顔"
+
+msgid "😏.keywords"
+msgstr ""
+"にやり | ふっ | 薄笑いをする顔 | 顔"
+" | "
+"ドヤ | ドヤ顔 | 得意げ | したり顔 | してやったり"
+
+msgid "😒.name"
+msgstr "しらけた"
+
+msgid "😒.keywords"
+msgstr ""
+"ジト目 | しらけ | しらけた | しらける | つまらない | やきもち | 不満 | 顔"
+" | "
+"うんざり | どうでも | めんどい | 冷める"
+
+msgid "🙄.name"
+msgstr "上を見る顔"
+
+msgid "🙄.keywords"
+msgstr "あきれた | うーん | 上を見る顔 | 上目 | 目をむく | 顔"
+
+msgid "😬.name"
+msgstr "しかめ面"
+
+msgid "😬.keywords"
+msgstr ""
+"いー | しかめっ面 | しかめ面 | しかめ顔 | 顔"
+" | "
+"引きつる | ぎこちない | ヤバい | 気まずい"
+
+msgid "😮‍💨.name"
+msgstr "息を吐く顔"
+
+msgid "😮‍💨.keywords"
+msgstr "あきらめ | ため息 | ほっとした | 安心 | 息を吐く顔 | 息切れ | 疲れた | 顔"
+
+msgid "🤥.name"
+msgstr "うそつきの顔"
+
+msgid "🤥.keywords"
+msgstr "うそつきの顔 | ピノキオの顔 | 嘘 | 嘘つき | 顔"
+
+msgid "🫨.name"
+msgstr "震えている顔"
+
+msgid "🫨.keywords"
+msgstr "ガーン | ショック | なんてこった | パニック | ビックリ | まいった | 地震 | 振動 | 震えている | 顔"
+
+msgid "🙂‍↔️.name"
+msgstr "首を横に振る"
+
+msgid "🙂‍↔️.keywords"
+msgstr "いいえ | 不賛成 | 顔 | 首を振る | 首を横に振る"
+
+msgid "🙂‍↕️.name"
+msgstr "首を縦に振る"
+
+msgid "🙂‍↕️.keywords"
+msgstr "はい | 頷く | 顔 | 首を振る | 首を縦に振る"
+
+msgid "😌.name"
+msgstr "ほっとした顔"
+
+msgid "😌.keywords"
+msgstr "ほっ | ほっとした顔 | 安心 | 顔"
+
+msgid "😔.name"
+msgstr "しょぼーん"
+
+msgid "😔.keywords"
+msgstr ""
+"がっかり | しょぼーん | しょんぼり | 悲しい | 考え込む顔 | 顔"
+" | "
+"悲しい | しょんぼり | 元気ない | つらい | 沈む"
+
+msgid "😪.name"
+msgstr "眠い"
+
+msgid "😪.keywords"
+msgstr "寝る | 疲れた | 眠い | 眠そうな顔 | 眠っている顔 | 眠る | 顔"
+
+msgid "🤤.name"
+msgstr "よだれを垂らした顔"
+
+msgid "🤤.keywords"
+msgstr "よだれ | よだれを垂らした顔 | 顔"
+
+msgid "😴.name"
+msgstr "寝る"
+
+msgid "😴.keywords"
+msgstr ""
+"zzz | おやすみ | グーグー | 寝る | 寝顔 | 眠い | 眠る | 顔"
+" | "
+"おやすみ | 眠い | zzz | 就寝 | 寝てる | ぐっすり"
+
+msgid "🫩.name"
+msgstr "目にクマがある顔"
+
+msgid "🫩.keywords"
+msgstr "クマ | 徹夜 | 疲れた | 眠い | 顔"
+
+msgid "😷.name"
+msgstr "マスク顔"
+
+msgid "😷.keywords"
+msgstr "ドクター | マスク | マスク顔 | 医師 | 歯科医 | 病気 | 花粉症 | 顔 | 風邪"
+
+msgid "🤒.name"
+msgstr "熱がある顔"
+
+msgid "🤒.keywords"
+msgstr "体温計 | 熱がある顔 | 熱を測る | 病気 | 顔 | 風邪"
+
+msgid "🤕.name"
+msgstr "包帯を巻いた顔"
+
+msgid "🤕.keywords"
+msgstr "ケガ | ケガしてる顔 | 包帯 | 包帯を巻いた顔 | 痛い | 顔"
+
+msgid "🤢.name"
+msgstr "吐き気を催している顔"
+
+msgid "🤢.keywords"
+msgstr "具合の悪い顔 | 吐きそう | 吐き気を催している顔 | 気持ち悪い | 病気 | 顔"
+
+msgid "🤮.name"
+msgstr "嘔吐する顔"
+
+msgid "🤮.keywords"
+msgstr "げろ | 吐く | 嘔吐する顔 | 気持ち悪い | 病気 | 顔"
+
+msgid "🤧.name"
+msgstr "くしゃみする顔"
+
+msgid "🤧.keywords"
+msgstr "くしゃみ | くしゃみする顔 | 花粉症 | 顔 | 風邪"
+
+msgid "🥵.name"
+msgstr "暑い顔"
+
+msgid "🥵.keywords"
+msgstr ""
+"暑い顔 | 暑さ | 死にそう | 汗 | 熱中症 | 発熱 | 舌を出した顔 | 赤い顔"
+" | "
+"暑い | 汗だく | 熱い | 辛い | ホット"
+
+msgid "🥶.name"
+msgstr "寒い顔"
+
+msgid "🥶.keywords"
+msgstr ""
+"しもやけ | つらら | 凍え | 寒い顔 | 寒さ | 氷点下 | 青 | 青い顔 | 顔"
+" | "
+"寒い | 凍える | 冷たい | 極寒"
+
+msgid "🥴.name"
+msgstr "ふらふらの顔"
+
+msgid "🥴.keywords"
+msgstr ""
+"うつろな目 | ふらふらの顔 | べろんべろん | ほろ酔い | めまい | 中毒"
+" | "
+"ふらふら | 酔っぱらい | グルグル | クラクラ"
+
+msgid "😵.name"
+msgstr "めまい"
+
+msgid "😵.keywords"
+msgstr "ふらふら | めまい | 疲れた | 病気 | 顔"
+
+msgid "😵‍💫.name"
+msgstr "目を回した顔"
+
+msgid "😵‍💫.keywords"
+msgstr "くらくら | ふらふら | めまい | 渦巻き | 目がぐるぐる | 目が回る | 目を回した顔"
+
+msgid "🤯.name"
+msgstr "頭爆発"
+
+msgid "🤯.keywords"
+msgstr "ショック | びっくり | ぼんっ | 爆発 | 頭爆発 | 顔 | 驚き"
+
+msgid "🤠.name"
+msgstr "カウボーイの顔"
+
+msgid "🤠.keywords"
+msgstr "カウガール | カウボーイ | カウボーイの顔 | 帽子 | 顔"
+
+msgid "🥳.name"
+msgstr "パーティーの顔"
+
+msgid "🥳.keywords"
+msgstr ""
+"おめでとう | お祝い | パーティー | パーティーの顔 | ハッピーバースデー | 帽子 | 笑顔 | 笛 | 誕生日"
+" | "
+"パーティー | 誕生日 | 祝い | わーい | パーリー"
+
+msgid "🥸.name"
+msgstr "変装した顔"
+
+msgid "🥸.keywords"
+msgstr "ひげ | メガネ | 仮装 | 口ひげ | 変装 | 変装した顔 | 顔"
+
+msgid "😎.name"
+msgstr "サングラスで笑顔"
+
+msgid "😎.keywords"
+msgstr ""
+"クール | サングラス | サングラスで笑顔 | スマイル | 眼鏡 | 笑顔 | 顔"
+" | "
+"かっこいい | クール | チャド | イケてる"
+
+msgid "🤓.name"
+msgstr "オタク"
+
+msgid "🤓.keywords"
+msgstr "エキスパート | オタク | ガリ勉 | マニア | メガネ | 優等生 | 利口 | 知的 | 秀才 | 顔"
+
+msgid "🧐.name"
+msgstr "モノクルを付けた顔"
+
+msgid "🧐.keywords"
+msgstr "メガネ | モノクルを付けた顔 | 上品 | 片眼鏡 | 考える | 顔"
+
+msgid "😕.name"
+msgstr "混乱"
+
+msgid "😕.keywords"
+msgstr "しかめ面 | ふーん | わからない | 困惑 | 混乱 | 顔"
+
+msgid "🫤.name"
+msgstr "口が斜めの顔"
+
+msgid "🫤.keywords"
+msgstr "不信 | 不満 | 口が斜めの顔 | 困惑 | 無気力 | 無関心 | 顔"
+
+msgid "😟.name"
+msgstr "悩む顔"
+
+msgid "😟.keywords"
+msgstr "困った | 心配 | 悩む顔 | 悲しい | 顔"
+
+msgid "🙁.name"
+msgstr "少し困った顔"
+
+msgid "🙁.keywords"
+msgstr "しかめ面 | 困った | 少し困った | 少し困った顔 | 顔"
+
+msgid "☹️.name"
+msgstr "困った顔"
+
+msgid "☹️.keywords"
+msgstr "しかめ面 | 困った | 困った顔 | 悲しい | 顔"
+
+msgid "😮.name"
+msgstr "口が開いた顔"
+
+msgid "😮.keywords"
+msgstr "へー | 信じられない | 共感 | 口が開いた顔 | 顔 | 驚き"
+
+msgid "😯.name"
+msgstr "ぽかーん"
+
+msgid "😯.keywords"
+msgstr "すごいね | びっくり | びっくり顔 | ぽかーん | 顔 | 驚き"
+
+msgid "😲.name"
+msgstr "びっくり"
+
+msgid "😲.keywords"
+msgstr "えーっ | びっくり | びっくりした顔 | まさか | 顔 | 驚き | 驚愕"
+
+msgid "😳.name"
+msgstr "赤面"
+
+msgid "😳.keywords"
+msgstr "えーっ | とまどい | 赤くなる | 赤面 | 顔 | 驚き"
+
+msgid "🫪.name"
+msgstr "ゆがんだ顔"
+
+msgid "🫪.keywords"
+msgstr "あぜん | ショック | ぼう然 | 不安 | 膨れた | 驚いた"
+
+msgid "🥺.name"
+msgstr "訴えるような顔"
+
+msgid "🥺.keywords"
+msgstr ""
+"お願い | 大きな目 | 子犬の目 | 悲しみ | 情け | 懇願 | 訴えるような顔 | 顔"
+" | "
+"ぴえん | ぴえんぴえん | うるうる | かわいそう | 悲しい | 涙目"
+
+msgid "🥹.name"
+msgstr "涙をこらえた顔"
+
+msgid "🥹.keywords"
+msgstr "うるうる | 嬉し泣き | 懇願 | 泣き顔 | 涙 | 涙をこらえた顔 | 顔"
+
+msgid "😦.name"
+msgstr "あきれ顔"
+
+msgid "😦.keywords"
+msgstr "あきれ顔 | しかめ面 | しかめ顔 | ぽかーん | 不本意 | 不満 | 口を開けた顔 | 呆然 | 顔 | 驚き"
+
+msgid "😧.name"
+msgstr "苦悩"
+
+msgid "😧.keywords"
+msgstr "困った顔 | 苦悩 | 苦悶 | 顔 | 驚き"
+
+msgid "😨.name"
+msgstr "青ざめ"
+
+msgid "😨.keywords"
+msgstr "がーん | 不安 | 怖い | 青ざめ | 青ざめた顔 | 顔"
+
+msgid "😰.name"
+msgstr "冷や汗青ざめ"
+
+msgid "😰.keywords"
+msgstr "冷や汗 | 冷や汗青ざめ | 寒い | 汗 | 青い顔 | 青ざめ | 顔"
+
+msgid "😥.name"
+msgstr "どうしよう"
+
+msgid "😥.keywords"
+msgstr "どうしよう | 困った | 汗 | 顔"
+
+msgid "😢.name"
+msgstr "泣き顔"
+
+msgid "😢.keywords"
+msgstr "ひどい | 寂しい | 悲しい | 泣き顔 | 泣く | 涙 | 顔"
+
+msgid "😭.name"
+msgstr "大泣き"
+
+msgid "😭.keywords"
+msgstr ""
+"号泣 | 号泣する顔 | 大泣き | 悲しい | 泣く | 涙 | 顔"
+" | "
+"泣いてる | 号泣 | つらい | 悲しい | しんどい | ぴえん"
+
+msgid "😱.name"
+msgstr "恐怖"
+
+msgid "😱.keywords"
+msgstr "がーん | ショック | 叫び | 叫んでいる顔 | 恐怖 | 顔 | 驚き"
+
+msgid "😖.name"
+msgstr "困惑した顔"
+
+msgid "😖.keywords"
+msgstr "困った | 困惑 | 困惑した顔 | 混乱 | 顔"
+
+msgid "😣.name"
+msgstr "我慢"
+
+msgid "😣.keywords"
+msgstr "我慢 | 我慢する顔 | 頭痛 | 顔"
+
+msgid "😞.name"
+msgstr "失望した顔"
+
+msgid "😞.keywords"
+msgstr "がっかり | がっくり | 失望した顔 | 悲しい | 残念 | 顔"
+
+msgid "😓.name"
+msgstr "冷や汗"
+
+msgid "😓.keywords"
+msgstr "さむけ | 冷や汗 | 汗 | 肝を冷やした | 頭痛 | 顔"
+
+msgid "😩.name"
+msgstr "あきらめ"
+
+msgid "😩.keywords"
+msgstr ""
+"あきらめ | へとへと | 泣き顔 | 疲れ | 腹ぺこ | 顔"
+" | "
+"疲れた | つらい | しんどい | もうダメ | くたくた"
+
+msgid "😫.name"
+msgstr "疲れた"
+
+msgid "😫.keywords"
+msgstr ""
+"くしゃみ | 疲れ | 疲れた | 疲れた顔 | 限界 | 顔"
+" | "
+"疲れた | しんどい | つらい | キツい | ヘトヘト"
+
+msgid "🥱.name"
+msgstr "あくびした顔"
+
+msgid "🥱.keywords"
+msgstr "あくびした顔 | おやすみ | ふあ～ | 疲れ | 眠い | 退屈 | 顔"
+
+msgid "😤.name"
+msgstr "勝ち誇った顔"
+
+msgid "😤.keywords"
+msgstr ""
+"ふんっ | 勝ち誇った顔 | 得意気 | 怒り | 顔 | 鼻息"
+" | "
+"ムキー | 怒り | フン | 自信満々 | 鼻息"
+
+msgid "😡.name"
+msgstr "ふくれっ面"
+
+msgid "😡.keywords"
+msgstr ""
+"かんかん | ふくれっ面 | ぷんぷん | 怒り | 激怒 | 赤い顔 | 顔"
+" | "
+"怒り | ムカつく | 怒る | 激怒 | 頭来た"
+
+msgid "😠.name"
+msgstr "ぷんぷん"
+
+msgid "😠.keywords"
+msgstr "ぷんぷん | 不満 | 怒った | 怒った顔 | 怒り | 顔"
+
+msgid "🤬.name"
+msgstr "ののしる"
+
+msgid "🤬.keywords"
+msgstr "シンボルが口にある顔 | ののしり | ののしる | 怒り | 悪口 | 検閲 | 顔"
+
+msgid "😈.name"
+msgstr "笑った悪魔"
+
+msgid "😈.keywords"
+msgstr ""
+"スマイル | デビル | 悪魔 | 笑った悪魔 | 笑顔 | 角 | 顔"
+" | "
+"悪魔 | イタズラ | ワルい | 邪悪 | チャオティック"
+
+msgid "👿.name"
+msgstr "怒った悪魔"
+
+msgid "👿.keywords"
+msgstr "かんかん | デビル | 怒った悪魔 | 悪魔 | 激怒 | 角 | 顔"
+
+msgid "💀.name"
+msgstr "ドクロ"
+
+msgid "💀.keywords"
+msgstr ""
+"スカル | ドクロ | 死 | 死者 | 頭蓋骨 | 顔 | 骸骨"
+" | "
+"ドクロ | 死ぬ | 死んだ | 終わった"
+
+msgid "☠️.name"
+msgstr "ドクロと骨"
+
+msgid "☠️.keywords"
+msgstr "スカル | ドクロ | ドクロと骨 | 死 | 顔 | 骨 | 骸骨"
+
+msgid "💩.name"
+msgstr "うんち"
+
+msgid "💩.keywords"
+msgstr ""
+"うんこ | うんち | 臭い | 顔"
+" | "
+"うんこ | くそ | クソ | うんち | 💩"
+
+msgid "🤡.name"
+msgstr "ピエロの顔"
+
+msgid "🤡.keywords"
+msgstr ""
+"ピエロ | ピエロの顔 | 道化師 | 顔"
+" | "
+"道化師 | アホ | ピエロ | バカ"
+
+msgid "👹.name"
+msgstr "鬼"
+
+msgid "👹.keywords"
+msgstr "お面 | なまはげ | 化け物 | 怖い | 顔 | 鬼"
+
+msgid "👺.name"
+msgstr "天狗"
+
+msgid "👺.keywords"
+msgstr "お面 | 天狗 | 怒り"
+
+msgid "👻.name"
+msgstr "お化け"
+
+msgid "👻.keywords"
+msgstr ""
+"お化け | ゴースト | ハロウィーン | ユーレイ | 幽霊 | 怖い"
+" | "
+"ゴースト | おばけ | 幽霊 | 無視する | 消えた"
+
+msgid "👽.name"
+msgstr "エイリアン"
+
+msgid "👽.keywords"
+msgstr "UFO | エイリアン | ユーフォー | 宇宙人 | 異星人 | 顔"
+
+msgid "👾.name"
+msgstr "インベーダー"
+
+msgid "👾.keywords"
+msgstr "インベーダー | エイリアン | ゲーム | スペースインベーダー | モンスター | 宇宙人 | 異星人"
+
+msgid "🤖.name"
+msgstr "ロボット"
+
+msgid "🤖.keywords"
+msgstr "ロボット | ロボットの顔 | 顔"
+
+msgid "😺.name"
+msgstr "にっこり笑う猫"
+
+msgid "😺.keywords"
+msgstr "スマイル | にっこり笑う猫 | 動物 | 猫 | 笑顔 | 顔"
+
+msgid "😸.name"
+msgstr "にやっと笑う猫"
+
+msgid "😸.keywords"
+msgstr "スマイル | にやっと笑う猫 | 動物 | 猫 | 笑う | 笑顔 | 顔"
+
+msgid "😹.name"
+msgstr "嬉し泣きする猫"
+
+msgid "😹.keywords"
+msgstr "スマイル | 動物 | 嬉し泣きする猫 | 涙 | 爆笑 | 猫 | 笑顔 | 顔"
+
+msgid "😻.name"
+msgstr "目がハートの猫"
+
+msgid "😻.keywords"
+msgstr "スマイル | ハート | 動物 | 猫 | 目がハートの猫 | 笑顔 | 顔"
+
+msgid "😼.name"
+msgstr "にやりとする猫"
+
+msgid "😼.keywords"
+msgstr "にやり | にやりとする猫 | ふっ | 動物 | 猫 | 顔"
+
+msgid "😽.name"
+msgstr "猫のキス"
+
+msgid "😽.keywords"
+msgstr "キス | ちゅっ | 動物 | 猫 | 猫のキス | 顔"
+
+msgid "🙀.name"
+msgstr "絶望する猫"
+
+msgid "🙀.keywords"
+msgstr "がーん | ショック | びっくり | 動物 | 猫 | 絶望する猫 | 顔"
+
+msgid "😿.name"
+msgstr "泣いている猫"
+
+msgid "😿.keywords"
+msgstr "動物 | 悲しい | 泣いている猫 | 泣く | 涙 | 猫 | 顔"
+
+msgid "😾.name"
+msgstr "不機嫌な猫"
+
+msgid "😾.keywords"
+msgstr "ぷんぷん | 不機嫌 | 不機嫌な猫 | 動物 | 猫 | 顔"
+
+msgid "🙈.name"
+msgstr "見ざる"
+
+msgid "🙈.keywords"
+msgstr "三猿 | 動物 | 猿 | 目隠し | 見ざる | 隠す"
+
+msgid "🙉.name"
+msgstr "聞かざる"
+
+msgid "🙉.keywords"
+msgstr "三猿 | 猿 | 秘密 | 聞かざる"
+
+msgid "🙊.name"
+msgstr "言わざる"
+
+msgid "🙊.keywords"
+msgstr "三猿 | 内緒 | 黙る | 猿 | 秘密 | 言わざる"
+
+msgid "💌.name"
+msgstr "ラブレター"
+
+msgid "💌.keywords"
+msgstr "ハート | バレンタインデー | ラブレター | 封筒 | 恋文 | 手紙"
+
+msgid "💘.name"
+msgstr "ハートに矢"
+
+msgid "💘.keywords"
+msgstr "キューピッド | ハート | ハートに矢 | 矢"
+
+msgid "💝.name"
+msgstr "ハートにリボン"
+
+msgid "💝.keywords"
+msgstr "ハート | ハートにリボン | バレンタインデー | リボン | 記念日"
+
+msgid "💖.name"
+msgstr "きらきらハート"
+
+msgid "💖.keywords"
+msgstr "きらきら | キラキラ | きらきらハート | ハート"
+
+msgid "💗.name"
+msgstr "大きくなるハート"
+
+msgid "💗.keywords"
+msgstr "ドキドキ | ときめき | ハート | 大きくなるハート"
+
+msgid "💓.name"
+msgstr "ドキドキするハート"
+
+msgid "💓.keywords"
+msgstr "ドキドキ | ドキドキするハート | ハート | 動悸 | 鼓動"
+
+msgid "💞.name"
+msgstr "回転するハート"
+
+msgid "💞.keywords"
+msgstr "かわいい | ハート | 回転するハート"
+
+msgid "💕.name"
+msgstr "2つのハート"
+
+msgid "💕.keywords"
+msgstr "2つのハート | デート | ハート | ラブ | 記念日"
+
+msgid "💟.name"
+msgstr "ハートデコ"
+
+msgid "💟.keywords"
+msgstr "ハート | ハートデコ | ハートデコレーション | 白いハート | 紫のハート"
+
+msgid "❣️.name"
+msgstr "ハートのびっくり"
+
+msgid "❣️.keywords"
+msgstr "エクスクラメーションマーク | ハート | ハートのびっくり | びっくりマーク"
+
+msgid "💔.name"
+msgstr "割れたハート"
+
+msgid "💔.keywords"
+msgstr "ハート | ハートブレイク | 別れ | 別れた | 割れたハート | 壊れたハート | 失恋"
+
+msgid "❤️‍🔥.name"
+msgstr "燃えるハート"
+
+msgid "❤️‍🔥.keywords"
+msgstr "ハート | 愛 | 火の付いた | 炎 | 燃えるハート | 聖なる心臓"
+
+msgid "❤️‍🩹.name"
+msgstr "包帯を巻いたハート"
+
+msgid "❤️‍🩹.keywords"
+msgstr "ケガ | ハート | 傷ついた | 傷心 | 包帯 | 包帯を巻いたハート"
+
+msgid "❤️.name"
+msgstr "赤いハート"
+
+msgid "❤️.keywords"
+msgstr ""
+"ハート | 愛 | 赤 | 赤いハート"
+" | "
+"ハート | 愛 | 好き | 愛してる | 恋"
+
+msgid "🩷.name"
+msgstr "ピンクのハート"
+
+msgid "🩷.keywords"
+msgstr "かわいい | スペシャル | ハート | ピンク | ピンクのハート | ラブ | 好き | 愛 | 愛してる | 気持ち"
+
+msgid "🧡.name"
+msgstr "オレンジのハート"
+
+msgid "🧡.keywords"
+msgstr "オレンジ | オレンジのハート | ハート"
+
+msgid "💛.name"
+msgstr "黄色のハート"
+
+msgid "💛.keywords"
+msgstr "ハート | 愛 | 黄色 | 黄色いハート | 黄色のハート"
+
+msgid "💚.name"
+msgstr "緑のハート"
+
+msgid "💚.keywords"
+msgstr "ハート | 緑 | 緑のハート"
+
+msgid "💙.name"
+msgstr "青いハート"
+
+msgid "💙.keywords"
+msgstr "ハート | 青 | 青いハート"
+
+msgid "🩵.name"
+msgstr "薄い青のハート"
+
+msgid "🩵.keywords"
+msgstr "かわいい | シアン | ティールブルー | ハート | ラブ | 好き | 愛 | 水色 | 空色 | 薄い青"
+
+msgid "💜.name"
+msgstr "紫のハート"
+
+msgid "💜.keywords"
+msgstr "ハート | 愛 | 紫 | 紫のハート"
+
+msgid "🤎.name"
+msgstr "茶色いハート"
+
+msgid "🤎.keywords"
+msgstr "ハート | 茶色 | 茶色いハート"
+
+msgid "🖤.name"
+msgstr "黒いハート"
+
+msgid "🖤.keywords"
+msgstr ""
+"ハート | 悪意 | 黒 | 黒いハート"
+" | "
+"黒ハート | ダーク | ゴス"
+
+msgid "🩶.name"
+msgstr "灰色のハート"
+
+msgid "🩶.keywords"
+msgstr "グレー | スレートグレー | ハート | ラブ | 好き | 愛 | 灰色 | 灰色のハート | 銀色"
+
+msgid "🤍.name"
+msgstr "白いハート"
+
+msgid "🤍.keywords"
+msgstr "ハート | 白 | 白いハート"
+
+msgid "💋.name"
+msgstr "キスマーク"
+
+msgid "💋.keywords"
+msgstr "キス | キスマーク | セクシー | ちゅっ | 唇"
+
+msgid "💯.name"
+msgstr "100点満点"
+
+msgid "💯.keywords"
+msgstr ""
+"100 | 100点 | 100点満点 | 全問正解 | 満点"
+" | "
+"100点 | パーフェクト | ガチ | 本当 | マジ"
+
+msgid "💢.name"
+msgstr "むかっ"
+
+msgid "💢.keywords"
+msgstr "＃ | マンガ | むかっ | 怒った | 怒り | 怒りマーク"
+
+msgid "🫯.name"
+msgstr "ボカスカ"
+
+msgid "🫯.keywords"
+msgstr "ケンカ | バトル | ボカスカ | 争い | 取っ組み合い | 喧嘩 | 土煙"
+
+msgid "💥.name"
+msgstr "衝突"
+
+msgid "💥.keywords"
+msgstr "どんっ | ぼんっ | マンガ | 爆発 | 衝撃 | 衝突"
+
+msgid "💫.name"
+msgstr "くらくら"
+
+msgid "💫.keywords"
+msgstr "きらきら | キラキラ | くらくら | 星 | 流れ星 | 目が回る"
+
+msgid "💦.name"
+msgstr "あせあせ"
+
+msgid "💦.keywords"
+msgstr "あせあせ | しずく | 水滴 | 汗"
+
+msgid "💨.name"
+msgstr "ダッシュ"
+
+msgid "💨.keywords"
+msgstr "ダッシュ | マンガ | 急ぐ | 急げ | 走る | 逃げる"
+
+msgid "🕳️.name"
+msgstr "穴"
+
+msgid "🕳️.keywords"
+msgstr "穴"
+
+msgid "💬.name"
+msgstr "会話の吹き出し"
+
+msgid "💬.keywords"
+msgstr "セリフ | トーク | マンガ | メッセージ | 会話 | 会話の吹き出し | 吹き出し"
+
+msgid "👁️‍🗨️.name"
+msgstr "吹き出しの目"
+
+msgid "👁️‍🗨️.keywords"
+msgstr "吹き出し | 吹き出しの目 | 目 | 目撃"
+
+msgid "🗨️.name"
+msgstr "吹き出し左"
+
+msgid "🗨️.keywords"
+msgstr "セリフ | 会話 | 吹き出し | 吹き出し左"
+
+msgid "🗯️.name"
+msgstr "怒りの吹き出し"
+
+msgid "🗯️.keywords"
+msgstr "吹き出し | 怒り | 怒りの吹き出し"
+
+msgid "💭.name"
+msgstr "雲形の吹き出し"
+
+msgid "💭.keywords"
+msgstr "マンガ | もくもく | 吹き出し | 空想 | 考え事 | 雲 | 雲形の吹き出し"
+
+msgid "💤.name"
+msgstr "グーグー"
+
+msgid "💤.keywords"
+msgstr "zzz | いびき | おやすみ | グーグー | マンガ | 寝る | 就寝中"

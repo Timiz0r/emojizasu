@@ -1,0 +1,810 @@
+msgid ""
+msgstr ""
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "🍇.name"
+msgstr "ぶどう"
+
+msgid "🍇.keywords"
+msgstr "グレープ | ぶどう | ブドウ | 果物"
+
+msgid "🍈.name"
+msgstr "メロン"
+
+msgid "🍈.keywords"
+msgstr "マスクメロン | メロン | 果物 | 野菜"
+
+msgid "🍉.name"
+msgstr "スイカ"
+
+msgid "🍉.keywords"
+msgstr "スイカ | 果物 | 野菜"
+
+msgid "🍊.name"
+msgstr "みかん"
+
+msgid "🍊.keywords"
+msgstr "オレンジ | ネクタリン | ビタミンＣ | みかん | 果物 | 柑橘類"
+
+msgid "🍋.name"
+msgstr "レモン"
+
+msgid "🍋.keywords"
+msgstr "レモン | 果物 | 柑橘類 | 酸っぱい"
+
+msgid "🍋‍🟩.name"
+msgstr "ライム"
+
+msgid "🍋‍🟩.keywords"
+msgstr "さわやか | トロピカル | フルーツ | マルガリータ | モヒート | ライム | 果物 | 柑橘類 | 緑 | 酸っぱい"
+
+msgid "🍌.name"
+msgstr "バナナ"
+
+msgid "🍌.keywords"
+msgstr "カリウム | バナナ | 果物"
+
+msgid "🍍.name"
+msgstr "パイナップル"
+
+msgid "🍍.keywords"
+msgstr "トロピカル | パイナップル | パイン | 果物"
+
+msgid "🥭.name"
+msgstr "マンゴー"
+
+msgid "🥭.keywords"
+msgstr "トロピカル | フルーツ | マンゴー | 果物 | 食べ物"
+
+msgid "🍎.name"
+msgstr "赤リンゴ"
+
+msgid "🍎.keywords"
+msgstr "アップル | りんご | 果物 | 赤リンゴ"
+
+msgid "🍏.name"
+msgstr "青リンゴ"
+
+msgid "🍏.keywords"
+msgstr "アップル | りんご | 果物 | 青リンゴ"
+
+msgid "🍐.name"
+msgstr "洋ナシ"
+
+msgid "🍐.keywords"
+msgstr "ナシ | 果物 | 洋ナシ | 西洋ナシ"
+
+msgid "🍑.name"
+msgstr "桃"
+
+msgid "🍑.keywords"
+msgstr "ピーチ | 果物 | 桃"
+
+msgid "🍒.name"
+msgstr "さくらんぼ"
+
+msgid "🍒.keywords"
+msgstr "さくらんぼ | チェリー | 果物"
+
+msgid "🍓.name"
+msgstr "いちご"
+
+msgid "🍓.keywords"
+msgstr "いちご | ストロベリー | 果物 | 苺"
+
+msgid "🫐.name"
+msgstr "ブルーベリー"
+
+msgid "🫐.keywords"
+msgstr "ビルベリー | ブルーベリー | ベリー | 果物 | 食べ物"
+
+msgid "🥝.name"
+msgstr "キウイフルーツ"
+
+msgid "🥝.keywords"
+msgstr "キウイ | キウイフルーツ | 果物"
+
+msgid "🍅.name"
+msgstr "トマト"
+
+msgid "🍅.keywords"
+msgstr "トマト | 果物 | 野菜"
+
+msgid "🫒.name"
+msgstr "オリーブ"
+
+msgid "🫒.keywords"
+msgstr "オリーブ | 実 | 果実 | 食べ物"
+
+msgid "🥥.name"
+msgstr "ココナツ"
+
+msgid "🥥.keywords"
+msgstr "ココナツ | ココナッツ | ヤシの実 | 果物"
+
+msgid "🥑.name"
+msgstr "アボカド"
+
+msgid "🥑.keywords"
+msgstr "アボカド | 果物 | 野菜"
+
+msgid "🍆.name"
+msgstr "ナス"
+
+msgid "🍆.keywords"
+msgstr "ナス | 野菜"
+
+msgid "🥔.name"
+msgstr "ジャガイモ"
+
+msgid "🥔.keywords"
+msgstr "イモ | じゃがいも | ジャガイモ | ポテト | 野菜"
+
+msgid "🥕.name"
+msgstr "人参"
+
+msgid "🥕.keywords"
+msgstr "ニンジン | 人参 | 野菜"
+
+msgid "🌽.name"
+msgstr "とうもろこし"
+
+msgid "🌽.keywords"
+msgstr "コーン | とうもろこし | トウモロコシ | 野菜"
+
+msgid "🌶️.name"
+msgstr "とうがらし"
+
+msgid "🌶️.keywords"
+msgstr "とうがらし | 辛い | 野菜 | 香辛料"
+
+msgid "🫑.name"
+msgstr "赤ピーマン"
+
+msgid "🫑.keywords"
+msgstr "とうがらし | パプリカ | ピーマン | 赤ピーマン | 野菜 | 青ピーマン | 食べ物"
+
+msgid "🥒.name"
+msgstr "キュウリ"
+
+msgid "🥒.keywords"
+msgstr "キュウリ | ピクルス | 漬け物 | 野菜"
+
+msgid "🥬.name"
+msgstr "葉野菜"
+
+msgid "🥬.keywords"
+msgstr "キャベツ | ケール | サラダ | チンゲン菜 | レタス | 葉野菜"
+
+msgid "🥦.name"
+msgstr "ブロッコリー"
+
+msgid "🥦.keywords"
+msgstr "ブロッコリー | 野菜"
+
+msgid "🧄.name"
+msgstr "ニンニク"
+
+msgid "🧄.keywords"
+msgstr "ガーリック | におい | ニンニク | 薬味 | 野菜 | 香り"
+
+msgid "🧅.name"
+msgstr "タマネギ"
+
+msgid "🧅.keywords"
+msgstr "タマネギ | ねぎ | 玉ねぎ | 薬味 | 野菜"
+
+msgid "🥜.name"
+msgstr "ピーナッツ"
+
+msgid "🥜.keywords"
+msgstr "ナッツ | ピーナッツ | 落花生 | 野菜"
+
+msgid "🫘.name"
+msgstr "豆"
+
+msgid "🫘.keywords"
+msgstr "キドニービーンズ | ビーンズ | レッドキドニー | 小豆 | 豆 | 赤インゲン豆 | 金時豆 | 食べ物"
+
+msgid "🌰.name"
+msgstr "くり"
+
+msgid "🌰.keywords"
+msgstr "くり | 栗 | 野菜"
+
+msgid "🫚.name"
+msgstr "ショウガ"
+
+msgid "🫚.keywords"
+msgstr "ショウガ | ジンジャー | スパイス | ハーブ | 生姜 | 薬味 | 薬草"
+
+msgid "🫛.name"
+msgstr "エンドウ豆"
+
+msgid "🫛.keywords"
+msgstr "エンドウ豆 | グリーンピース | さや | 大豆 | 枝豆 | 豆 | 野菜"
+
+msgid "🍄‍🟫.name"
+msgstr "きのこ"
+
+msgid "🍄‍🟫.keywords"
+msgstr "きのこ | キノコ | しいたけ | トリュフ | ブラウンマッシュルーム | ポートベロー | マッシュルーム | 椎茸 | 茸 | 菌類"
+
+msgid "🫜.name"
+msgstr "根菜"
+
+msgid "🫜.keywords"
+msgstr "カブ | ビーツ | 庭 | 根 | 野菜"
+
+msgid "🍞.name"
+msgstr "食パン"
+
+msgid "🍞.keywords"
+msgstr "パン | ベーカリー | 小麦 | 食パン"
+
+msgid "🥐.name"
+msgstr "クロワッサン"
+
+msgid "🥐.keywords"
+msgstr "クロワッサン | パン | フランス | ベーカリー"
+
+msgid "🥖.name"
+msgstr "バゲット"
+
+msgid "🥖.keywords"
+msgstr "バゲット | パン | フランスパン | ベーカリー"
+
+msgid "🫓.name"
+msgstr "フラットブレッド"
+
+msgid "🫓.keywords"
+msgstr "アレパ | ナン | パン | ピタパン | フラットブレッド | ラバシ | 食べ物"
+
+msgid "🥨.name"
+msgstr "プレッツェル"
+
+msgid "🥨.keywords"
+msgstr "ねじり | パン | プレッツェル"
+
+msgid "🥯.name"
+msgstr "ベーグル"
+
+msgid "🥯.keywords"
+msgstr "クリームチーズ | パン | パン屋 | ベーカリー | ベーグル | 朝食"
+
+msgid "🥞.name"
+msgstr "パンケーキ"
+
+msgid "🥞.keywords"
+msgstr "パンケーキ | ホットケーキ"
+
+msgid "🧇.name"
+msgstr "ワッフル"
+
+msgid "🧇.keywords"
+msgstr "ふんわり | ワッフル | 朝食 | 焼き菓子"
+
+msgid "🧀.name"
+msgstr "チーズ"
+
+msgid "🧀.keywords"
+msgstr "チーズ"
+
+msgid "🍖.name"
+msgstr "骨付き肉"
+
+msgid "🍖.keywords"
+msgstr "もも肉 | 肉 | 骨 | 骨付き肉"
+
+msgid "🍗.name"
+msgstr "鶏もも肉"
+
+msgid "🍗.keywords"
+msgstr "チキン | もも肉 | 肉 | 骨 | 骨付き肉 | 鶏もも肉"
+
+msgid "🥩.name"
+msgstr "ステーキ肉"
+
+msgid "🥩.keywords"
+msgstr "ステーキ | ステーキ肉 | ビーフ | ポーク | ラム | 肉 | 赤身肉"
+
+msgid "🥓.name"
+msgstr "ベーコン"
+
+msgid "🥓.keywords"
+msgstr "ベーコン | 肉"
+
+msgid "🍔.name"
+msgstr "ハンバーガー"
+
+msgid "🍔.keywords"
+msgstr "バーガー | ハンバーガー | ファストフード"
+
+msgid "🍟.name"
+msgstr "フライドポテト"
+
+msgid "🍟.keywords"
+msgstr "ファストフード | フライドポテト | フレンチフライ | ポテト | ポテトフライ"
+
+msgid "🍕.name"
+msgstr "ピザ"
+
+msgid "🍕.keywords"
+msgstr "チーズ | ピザ | ピッツァ | ペパロニ"
+
+msgid "🌭.name"
+msgstr "ホットドッグ"
+
+msgid "🌭.keywords"
+msgstr "ソーセージ | フランクフルト | ホットドッグ"
+
+msgid "🥪.name"
+msgstr "サンドイッチ"
+
+msgid "🥪.keywords"
+msgstr "サンドイッチ | パン"
+
+msgid "🌮.name"
+msgstr "タコス"
+
+msgid "🌮.keywords"
+msgstr "タコス | メキシカン | メキシコ料理"
+
+msgid "🌯.name"
+msgstr "ブリトー"
+
+msgid "🌯.keywords"
+msgstr "ソフトタコス | ブリトー | メキシカン | メキシコ料理 | ラップサンド"
+
+msgid "🫔.name"
+msgstr "タマル"
+
+msgid "🫔.keywords"
+msgstr "タマル | タマレス | ちまき | パモーニャ | メキシカン | 食べ物"
+
+msgid "🥙.name"
+msgstr "ケバブサンド"
+
+msgid "🥙.keywords"
+msgstr "ケバブ | ケバブサンド | ピタパン | ラップサンド"
+
+msgid "🧆.name"
+msgstr "ファラフェル"
+
+msgid "🧆.keywords"
+msgstr "コロッケ | ヒヨコマメ | ファラフェル | 肉団子"
+
+msgid "🥚.name"
+msgstr "卵"
+
+msgid "🥚.keywords"
+msgstr "卵"
+
+msgid "🍳.name"
+msgstr "料理"
+
+msgid "🍳.keywords"
+msgstr "フライパン | レストラン | 卵 | 料理 | 朝食 | 目玉焼き"
+
+msgid "🥘.name"
+msgstr "パエリア"
+
+msgid "🥘.keywords"
+msgstr "シーフード | パエリア | パエリア鍋"
+
+msgid "🍲.name"
+msgstr "なべ"
+
+msgid "🍲.keywords"
+msgstr "シチュー | スープ | なべ | 煮物 | 煮込み"
+
+msgid "🫕.name"
+msgstr "フォンデュ"
+
+msgid "🫕.keywords"
+msgstr "スイス | チーズ | チーズフォンデュ | チョコ | フォンデュ | 溶かす | 鍋 | 食べ物"
+
+msgid "🥣.name"
+msgstr "ボウルとスプーン"
+
+msgid "🥣.keywords"
+msgstr "オートミール | おかゆ | シリアル | ボウルとスプーン | 朝食 | 粥"
+
+msgid "🥗.name"
+msgstr "グリーンサラダ"
+
+msgid "🥗.keywords"
+msgstr "グリーン | グリーンサラダ | サラダ"
+
+msgid "🍿.name"
+msgstr "ポップコーン"
+
+msgid "🍿.keywords"
+msgstr "お菓子 | ポップコーン"
+
+msgid "🧈.name"
+msgstr "バター"
+
+msgid "🧈.keywords"
+msgstr "バター | 乳製品"
+
+msgid "🧂.name"
+msgstr "塩"
+
+msgid "🧂.keywords"
+msgstr ""
+"しょっぱい | 塩 | 振りかけ容器 | 薬味 | 調味料"
+" | "
+"塩 | 塩辛い | ソルティ | 冷たい"
+
+msgid "🥫.name"
+msgstr "缶詰"
+
+msgid "🥫.keywords"
+msgstr "缶 | 缶詰 | 非常食"
+
+msgid "🍱.name"
+msgstr "弁当"
+
+msgid "🍱.keywords"
+msgstr "幕の内 | 弁当 | 弁当箱 | 駅弁"
+
+msgid "🍘.name"
+msgstr "せんべい"
+
+msgid "🍘.keywords"
+msgstr "お菓子 | せんべい"
+
+msgid "🍙.name"
+msgstr "おにぎり"
+
+msgid "🍙.keywords"
+msgstr ""
+"おにぎり | おむすび | 和食 | 米"
+" | "
+"おにぎり | おむすび | 海苔 | 具"
+
+msgid "🍚.name"
+msgstr "ごはん"
+
+msgid "🍚.keywords"
+msgstr "ごはん | ライス | 米"
+
+msgid "🍛.name"
+msgstr "カレーライス"
+
+msgid "🍛.keywords"
+msgstr "カレー | カレーライス | ライス"
+
+msgid "🍜.name"
+msgstr "ラーメン"
+
+msgid "🍜.keywords"
+msgstr ""
+"スープ | どんぶり | ヌードル | ラーメン | 熱々 | 箸 | 麺"
+" | "
+"ラーメン | 麺 | うどん | そば | ヌードル"
+
+msgid "🍝.name"
+msgstr "スパゲッティ"
+
+msgid "🍝.keywords"
+msgstr "イタリア料理 | スパゲッティ | スパゲッティー | スパゲティ | パスタ | ミートソース"
+
+msgid "🍠.name"
+msgstr "焼き芋"
+
+msgid "🍠.keywords"
+msgstr "サツマイモ | 焼き芋 | 芋"
+
+msgid "🍢.name"
+msgstr "おでん"
+
+msgid "🍢.keywords"
+msgstr "おでん | 串 | 練り物"
+
+msgid "🍣.name"
+msgstr "すし"
+
+msgid "🍣.keywords"
+msgstr ""
+"お寿司 | すし | 寿司"
+" | "
+"寿司 | すし | 日本食 | 刺身 | ワサビ"
+
+msgid "🍤.name"
+msgstr "エビフライ"
+
+msgid "🍤.keywords"
+msgstr "エビ | エビフライ | エビ天 | フライ | 天ぷら"
+
+msgid "🍥.name"
+msgstr "なると"
+
+msgid "🍥.keywords"
+msgstr "なると | 渦巻き | 練り物"
+
+msgid "🥮.name"
+msgstr "月餅"
+
+msgid "🥮.keywords"
+msgstr "お祝い | 中秋節 | 中華菓子 | 月餅 | 秋"
+
+msgid "🍡.name"
+msgstr "だんご"
+
+msgid "🍡.keywords"
+msgstr ""
+"お団子 | だんご | デザート | 串 | 和菓子"
+" | "
+"だんご | 和菓子 | 串 | 甘い"
+
+msgid "🥟.name"
+msgstr "点心"
+
+msgid "🥟.keywords"
+msgstr "ギョーザ | ぎょうざ | 点心 | 肉まん | 餃子"
+
+msgid "🥠.name"
+msgstr "フォーチュンクッキー"
+
+msgid "🥠.keywords"
+msgstr "おみくじ | フォーチュンクッキー"
+
+msgid "🥡.name"
+msgstr "テイクアウト弁当"
+
+msgid "🥡.keywords"
+msgstr "テイクアウト弁当 | デリバリー | 中華 | 弁当 | 持ち帰り | 箸"
+
+msgid "🍦.name"
+msgstr "ソフトクリーム"
+
+msgid "🍦.keywords"
+msgstr "アイス | スイーツ | ソフト | ソフトクリーム | デザート"
+
+msgid "🍧.name"
+msgstr "かき氷"
+
+msgid "🍧.keywords"
+msgstr "アイス | かき氷 | シェイブアイス | スイーツ | デザート | 氷"
+
+msgid "🍨.name"
+msgstr "アイスクリーム"
+
+msgid "🍨.keywords"
+msgstr "アイス | アイスクリーム | スイーツ | デザート"
+
+msgid "🍩.name"
+msgstr "ドーナツ"
+
+msgid "🍩.keywords"
+msgstr "お菓子 | スイーツ | デザート | ドーナツ"
+
+msgid "🍪.name"
+msgstr "クッキー"
+
+msgid "🍪.keywords"
+msgstr "お菓子 | クッキー | スイーツ | チョコレートチップ | デザート"
+
+msgid "🎂.name"
+msgstr "バースデーケーキ"
+
+msgid "🎂.keywords"
+msgstr "お祝い | お菓子 | ケーキ | スイーツ | バースデー | バースデーケーキ | ハッピーバースデー | 誕生日"
+
+msgid "🍰.name"
+msgstr "ショートケーキ"
+
+msgid "🍰.keywords"
+msgstr "お菓子 | ケーキ | ショートケーキ | スイーツ | デザート"
+
+msgid "🧁.name"
+msgstr "カップケーキ"
+
+msgid "🧁.keywords"
+msgstr "おやつ | お菓子 | カップケーキ | ケーキ | スイーツ | ベーカリー | 砂糖"
+
+msgid "🥧.name"
+msgstr "パイ"
+
+msgid "🥧.keywords"
+msgstr "アップルパイ | お菓子 | タルト | パイ | パンプキンパイ | ミートパイ"
+
+msgid "🍫.name"
+msgstr "チョコレート"
+
+msgid "🍫.keywords"
+msgstr "お菓子 | スイーツ | チョコ | チョコレート | デザート | 板チョコ"
+
+msgid "🍬.name"
+msgstr "キャンディ"
+
+msgid "🍬.keywords"
+msgstr "あめ | お菓子 | キャンディ | 虫歯"
+
+msgid "🍭.name"
+msgstr "ぺろぺろキャンディ"
+
+msgid "🍭.keywords"
+msgstr "あめ | お菓子 | キャンディ | ぺろぺろキャンディ | 棒付きキャンディ"
+
+msgid "🍮.name"
+msgstr "プリン"
+
+msgid "🍮.keywords"
+msgstr "お菓子 | カスタード | スイーツ | デザート | プリン"
+
+msgid "🍯.name"
+msgstr "はちみつ"
+
+msgid "🍯.keywords"
+msgstr "はちみつ | ハチミツ | ハニー | プーさん | 壺 | 甘い"
+
+msgid "🍼.name"
+msgstr "ほにゅう瓶"
+
+msgid "🍼.keywords"
+msgstr "ほにゅう瓶 | ミルク | 哺乳瓶 | 新生児 | 赤ちゃん"
+
+msgid "🥛.name"
+msgstr "牛乳入りのコップ"
+
+msgid "🥛.keywords"
+msgstr "グラス | コップ | ミルク | 牛乳 | 牛乳入りのコップ"
+
+msgid "☕.name"
+msgstr "温かい飲み物"
+
+msgid "☕.keywords"
+msgstr "カフェ | カフェイン | コーヒー | ホットドリンク | 温かい飲み物 | 紅茶 | 飲み物"
+
+msgid "🫖.name"
+msgstr "ティーポット"
+
+msgid "🫖.keywords"
+msgstr "お茶 | ティーポット | 急須 | 茶器 | 飲み物"
+
+msgid "🍵.name"
+msgstr "湯飲み"
+
+msgid "🍵.keywords"
+msgstr ""
+"お茶 | 湯飲み | 緑茶 | 茶碗 | 飲み物"
+" | "
+"お茶 | 抹茶 | 緑茶 | ティー"
+
+msgid "🍶.name"
+msgstr "徳利"
+
+msgid "🍶.keywords"
+msgstr "徳利 | 日本酒 | 猪口 | 酒"
+
+msgid "🍾.name"
+msgstr "シャンパン"
+
+msgid "🍾.keywords"
+msgstr "コルク | シャンパン | シャンペン | スパークリングワイン | スプマンテ | バー | ボトル | 泡 | 飲み物"
+
+msgid "🍷.name"
+msgstr "ワイングラス"
+
+msgid "🍷.keywords"
+msgstr "アルコール | お酒 | グラス | バー | ワイン | ワイングラス"
+
+msgid "🍸.name"
+msgstr "カクテルグラス"
+
+msgid "🍸.keywords"
+msgstr "アルコール | お酒 | カクテル | カクテルグラス | グラス | クラブ | バー | マティーニ"
+
+msgid "🍹.name"
+msgstr "トロピカルドリンク"
+
+msgid "🍹.keywords"
+msgstr "アルコール | お酒 | カクテル | トロピカル | トロピカルドリンク | バー | マイタイ"
+
+msgid "🍺.name"
+msgstr "ビールジョッキ"
+
+msgid "🍺.keywords"
+msgstr "アルコール | オクトーバーフェスト | お酒 | ジョッキ | バー | ビール | ビールジョッキ | 居酒屋"
+
+msgid "🍻.name"
+msgstr "ビールで乾杯"
+
+msgid "🍻.keywords"
+msgstr "アルコール | ジョッキ | バー | ビール | ビールで乾杯 | 乾杯 | 宴会"
+
+msgid "🥂.name"
+msgstr "グラスで乾杯"
+
+msgid "🥂.keywords"
+msgstr "グラス | グラスで乾杯 | シャンパン | シャンペン | スパークリングワイン | スプマンテ | 乾杯 | 祝杯"
+
+msgid "🥃.name"
+msgstr "タンブラーグラス"
+
+msgid "🥃.keywords"
+msgstr "ウィスキー | ウイスキー | グラス | ショット | スコッチ | タンブラー | タンブラーグラス"
+
+msgid "🫗.name"
+msgstr "コップから注ぐ"
+
+msgid "🫗.keywords"
+msgstr "ガラス | コップから注ぐ | こぼす | 水 | 液体 | 飲み物"
+
+msgid "🥤.name"
+msgstr "ストローカップ"
+
+msgid "🥤.keywords"
+msgstr "コップ | ジュース | ストローカップ | ソーダ | ソフトドリンク | 水"
+
+msgid "🧋.name"
+msgstr "タピオカドリンク"
+
+msgid "🧋.keywords"
+msgstr "お茶 | タピオカ | タピオカドリンク | ドリンク | バブルティー | ミルクティー | 飲み物"
+
+msgid "🧃.name"
+msgstr "紙パック飲料"
+
+msgid "🧃.keywords"
+msgstr "ジュース | ストロー | ドリンク | 紙パック飲料 | 飲み物"
+
+msgid "🧉.name"
+msgstr "マテ茶"
+
+msgid "🧉.keywords"
+msgstr "お茶 | ドリンク | マテ茶 | 飲み物"
+
+msgid "🧊.name"
+msgstr "角氷"
+
+msgid "🧊.keywords"
+msgstr "冷たい | 氷 | 氷山 | 角氷"
+
+msgid "🥢.name"
+msgstr "はし"
+
+msgid "🥢.keywords"
+msgstr "おはし | はし | 箸"
+
+msgid "🍽️.name"
+msgstr "ナイフとフォークと皿"
+
+msgid "🍽️.keywords"
+msgstr "お皿 | ディナー | ナイフ | ナイフとフォークと皿 | フォーク | 皿 | 食器"
+
+msgid "🍴.name"
+msgstr "ナイフとフォーク"
+
+msgid "🍴.keywords"
+msgstr "カトラリー | ごちそう | ディナー | ナイフ | ナイフとフォーク | フォーク | レストラン | 朝食 | 食事 | 食器"
+
+msgid "🥄.name"
+msgstr "スプーン"
+
+msgid "🥄.keywords"
+msgstr "カトラリー | スプーン | 食器"
+
+msgid "🔪.name"
+msgstr "包丁"
+
+msgid "🔪.keywords"
+msgstr "ナイフ | 凶器 | 包丁 | 料理 | 調理器具"
+
+msgid "🫙.name"
+msgstr "瓶"
+
+msgid "🫙.keywords"
+msgstr "ジャー | びん | 保存 | 容器 | 瓶 | 空 | 空き瓶 | 調味料"
+
+msgid "🏺.name"
+msgstr "壺"
+
+msgid "🏺.keywords"
+msgstr "かめ | 壺 | 星座 | 水瓶"

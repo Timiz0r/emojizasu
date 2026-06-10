@@ -1,0 +1,975 @@
+msgid ""
+msgstr ""
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "🐵.name"
+msgstr "サルの顔"
+
+msgid "🐵.keywords"
+msgstr "サル | サルの顔 | 動物 | 猿 | 顔"
+
+msgid "🐒.name"
+msgstr "サル"
+
+msgid "🐒.keywords"
+msgstr "サル | 動物 | 猿"
+
+msgid "🦍.name"
+msgstr "ゴリラ"
+
+msgid "🦍.keywords"
+msgstr "ゴリラ | 動物 | 顔"
+
+msgid "🦧.name"
+msgstr "オランウータン"
+
+msgid "🦧.keywords"
+msgstr "オランウータン | サル | 動物 | 森の人 | 猿"
+
+msgid "🐶.name"
+msgstr "イヌの顔"
+
+msgid "🐶.keywords"
+msgstr "イヌ | イヌの顔 | ペット | 動物 | 子犬 | 犬 | 顔"
+
+msgid "🐕.name"
+msgstr "イヌ"
+
+msgid "🐕.keywords"
+msgstr "イヌ | ペット | 動物 | 犬"
+
+msgid "🦮.name"
+msgstr "盲導犬"
+
+msgid "🦮.keywords"
+msgstr "アクセシビリティ | 犬 | 盲導犬 | 視覚 | 補助 | 補助犬 | 障がい"
+
+msgid "🐕‍🦺.name"
+msgstr "介助犬"
+
+msgid "🐕‍🦺.keywords"
+msgstr "アクセシビリティ | サービス | 介助犬 | 犬 | 補助"
+
+msgid "🐩.name"
+msgstr "プードル"
+
+msgid "🐩.keywords"
+msgstr "プードル | ペット | 動物 | 犬"
+
+msgid "🐺.name"
+msgstr "オオカミの顔"
+
+msgid "🐺.keywords"
+msgstr "オオカミ | オオカミの顔 | 動物 | 狼 | 顔"
+
+msgid "🦊.name"
+msgstr "キツネの顔"
+
+msgid "🦊.keywords"
+msgstr "キツネ | キツネの顔 | 動物 | 狐 | 顔"
+
+msgid "🦝.name"
+msgstr "アライグマ"
+
+msgid "🦝.keywords"
+msgstr "アライグマ | ずる賢い | 動物 | 好奇心 | 詮索好き"
+
+msgid "🐱.name"
+msgstr "ネコの顔"
+
+msgid "🐱.keywords"
+msgstr "ネコ | ネコの顔 | ペット | 動物 | 子猫 | 猫 | 顔"
+
+msgid "🐈.name"
+msgstr "ネコ"
+
+msgid "🐈.keywords"
+msgstr "ネコ | ペット | 動物 | 猫"
+
+msgid "🐈‍⬛.name"
+msgstr "黒猫"
+
+msgid "🐈‍⬛.keywords"
+msgstr "ネコ | 不吉 | 動物 | 猫 | 黒 | 黒猫"
+
+msgid "🦁.name"
+msgstr "ライオンの顔"
+
+msgid "🦁.keywords"
+msgstr "しし座 | ライオン | ライオンの顔 | 動物 | 星座 | 顔"
+
+msgid "🐯.name"
+msgstr "トラの顔"
+
+msgid "🐯.keywords"
+msgstr "トラ | トラの顔 | 動物 | 虎 | 顔"
+
+msgid "🐅.name"
+msgstr "トラ"
+
+msgid "🐅.keywords"
+msgstr "タイガー | トラ | 動物 | 肉食動物 | 虎"
+
+msgid "🐆.name"
+msgstr "ヒョウ"
+
+msgid "🐆.keywords"
+msgstr "ヒョウ | 動物 | 肉食動物"
+
+msgid "🐴.name"
+msgstr "馬の顔"
+
+msgid "🐴.keywords"
+msgstr "ウマ | 動物 | 顔 | 馬 | 馬の顔"
+
+msgid "🫎.name"
+msgstr "ヘラジカ"
+
+msgid "🫎.keywords"
+msgstr "エルク | ヘラジカ | ムース | 動物 | 哺乳類 | 枝角 | 鹿"
+
+msgid "🫏.name"
+msgstr "ロバ"
+
+msgid "🫏.keywords"
+msgstr "ケッテイ | ラバ | ロバ | 動物 | 哺乳類 | 馬"
+
+msgid "🐎.name"
+msgstr "馬"
+
+msgid "🐎.keywords"
+msgstr "ウマ | ダービー | 乗馬 | 動物 | 家畜 | 競走馬 | 競馬 | 馬"
+
+msgid "🦄.name"
+msgstr "ユニコーンの顔"
+
+msgid "🦄.keywords"
+msgstr "ユニコーン | ユニコーンの顔 | 一角獣 | 動物 | 顔"
+
+msgid "🦓.name"
+msgstr "シマウマ"
+
+msgid "🦓.keywords"
+msgstr "シマウマ | しましま | ゼブラ | 動物 | 縞"
+
+msgid "🦌.name"
+msgstr "シカ"
+
+msgid "🦌.keywords"
+msgstr "シカ | 動物 | 顔 | 鹿"
+
+msgid "🦬.name"
+msgstr "バイソン"
+
+msgid "🦬.keywords"
+msgstr "バイソン | バッファロー | 動物 | 牛 | 群れ | 野牛"
+
+msgid "🐮.name"
+msgstr "牛の顔"
+
+msgid "🐮.keywords"
+msgstr "ウシ | 動物 | 牛 | 牛の顔 | 顔"
+
+msgid "🐂.name"
+msgstr "牡牛"
+
+msgid "🐂.keywords"
+msgstr "ウシ | おうし座 | 動物 | 星座 | 牛 | 牡牛"
+
+msgid "🐃.name"
+msgstr "水牛"
+
+msgid "🐃.keywords"
+msgstr "バッファロー | 動物 | 水牛 | 牛"
+
+msgid "🐄.name"
+msgstr "牝牛"
+
+msgid "🐄.keywords"
+msgstr "ウシ | 乳牛 | 動物 | 家畜 | 牛 | 牝牛"
+
+msgid "🐷.name"
+msgstr "ブタの顔"
+
+msgid "🐷.keywords"
+msgstr "ブタ | ブタの顔 | 動物 | 豚 | 顔"
+
+msgid "🐖.name"
+msgstr "ブタ"
+
+msgid "🐖.keywords"
+msgstr "ブタ | ポーク | 動物 | 家畜 | 豚"
+
+msgid "🐗.name"
+msgstr "イノシシ"
+
+msgid "🐗.keywords"
+msgstr "イノシシ | 動物 | 猪 | 顔"
+
+msgid "🐽.name"
+msgstr "ブタ鼻"
+
+msgid "🐽.keywords"
+msgstr "ブタ | ブタ鼻 | 動物 | 豚 | 顔 | 鼻"
+
+msgid "🐏.name"
+msgstr "牡羊"
+
+msgid "🐏.keywords"
+msgstr "おひつじ座 | ヒツジ | 動物 | 星座 | 牡羊 | 羊"
+
+msgid "🐑.name"
+msgstr "羊"
+
+msgid "🐑.keywords"
+msgstr "ウール | ヒツジ | 動物 | 家畜 | 羊 | 羊毛"
+
+msgid "🐐.name"
+msgstr "山羊"
+
+msgid "🐐.keywords"
+msgstr ""
+"ヤギ | やぎ座 | 動物 | 家畜 | 山羊 | 星座"
+" | "
+"ヤギ | 最高 | レジェンド | GOAT"
+
+msgid "🐪.name"
+msgstr "ラクダ"
+
+msgid "🐪.keywords"
+msgstr "コブ | ヒトコブラクダ | ラクダ | 動物 | 砂漠"
+
+msgid "🐫.name"
+msgstr "フタコブラクダ"
+
+msgid "🐫.keywords"
+msgstr "コブ | フタコブ | フタコブラクダ | ラクダ | 動物 | 砂漠"
+
+msgid "🦙.name"
+msgstr "ラマ"
+
+msgid "🦙.keywords"
+msgstr "アルパカ | ウール | グアナコ | ビクーナ | ラマ | 動物 | 羊毛"
+
+msgid "🦒.name"
+msgstr "キリン"
+
+msgid "🦒.keywords"
+msgstr "キリン | 動物"
+
+msgid "🐘.name"
+msgstr "ゾウ"
+
+msgid "🐘.keywords"
+msgstr "ゾウ | 動物 | 象"
+
+msgid "🦣.name"
+msgstr "マンモス"
+
+msgid "🦣.keywords"
+msgstr "マンモス | 動物 | 巨大 | 牙 | 絶滅"
+
+msgid "🦏.name"
+msgstr "サイ"
+
+msgid "🦏.keywords"
+msgstr "サイ | 動物 | 顔"
+
+msgid "🦛.name"
+msgstr "カバ"
+
+msgid "🦛.keywords"
+msgstr "カバ | 動物"
+
+msgid "🐭.name"
+msgstr "ネズミの顔"
+
+msgid "🐭.keywords"
+msgstr "ねずみ | ネズミ | ネズミの顔 | 動物 | 顔"
+
+msgid "🐁.name"
+msgstr "ハツカネズミ"
+
+msgid "🐁.keywords"
+msgstr "ねずみ | ネズミ | ハツカネズミ | マウス | 動物"
+
+msgid "🐀.name"
+msgstr "ネズミ"
+
+msgid "🐀.keywords"
+msgstr "ねずみ | ネズミ | ラット | 動物"
+
+msgid "🐹.name"
+msgstr "ハムスターの顔"
+
+msgid "🐹.keywords"
+msgstr "ネズミ | ハムスター | ハムスターの顔 | ペット | 動物 | 顔"
+
+msgid "🐰.name"
+msgstr "ウサギの顔"
+
+msgid "🐰.keywords"
+msgstr "うさぎ | ウサギ | ウサギの顔 | ペット | 動物 | 顔"
+
+msgid "🐇.name"
+msgstr "ウサギ"
+
+msgid "🐇.keywords"
+msgstr "うさぎ | ウサギ | ペット | 動物"
+
+msgid "🐿️.name"
+msgstr "リス"
+
+msgid "🐿️.keywords"
+msgstr "シマリス | りす | リス | 動物"
+
+msgid "🦫.name"
+msgstr "ビーバー"
+
+msgid "🦫.keywords"
+msgstr "ダム作り | ビーバー | 動物"
+
+msgid "🦔.name"
+msgstr "ハリネズミ"
+
+msgid "🦔.keywords"
+msgstr "とげ | はりねずみ | ハリネズミ | ヤマアラシ | 動物"
+
+msgid "🦇.name"
+msgstr "コウモリ"
+
+msgid "🦇.keywords"
+msgstr "こうもり | コウモリ | バンパイア | 動物 | 吸血鬼"
+
+msgid "🐻.name"
+msgstr "クマの顔"
+
+msgid "🐻.keywords"
+msgstr "くま | クマ | クマの顔 | 動物 | 熊 | 顔"
+
+msgid "🐻‍❄️.name"
+msgstr "シロクマ"
+
+msgid "🐻‍❄️.keywords"
+msgstr "クマ | シロクマ | ホッキョクグマ | 動物 | 北極 | 白"
+
+msgid "🐨.name"
+msgstr "コアラ"
+
+msgid "🐨.keywords"
+msgstr "コアラ | 動物 | 顔"
+
+msgid "🐼.name"
+msgstr "パンダの顔"
+
+msgid "🐼.keywords"
+msgstr "パンダ | パンダの顔 | 動物 | 顔"
+
+msgid "🦥.name"
+msgstr "ナマケモノ"
+
+msgid "🦥.keywords"
+msgstr "ナマケモノ | のんびり | ものぐさ | 動物"
+
+msgid "🦦.name"
+msgstr "カワウソ"
+
+msgid "🦦.keywords"
+msgstr "カワウソ | ラッコ | 動物 | 遊び好き | 魚を食べる"
+
+msgid "🦨.name"
+msgstr "スカンク"
+
+msgid "🦨.keywords"
+msgstr "スカンク | 動物 | 悪臭"
+
+msgid "🦘.name"
+msgstr "カンガルー"
+
+msgid "🦘.keywords"
+msgstr "オーストラリア | カンガルー | ジャンプ | ジョーイ | 動物 | 有袋類"
+
+msgid "🦡.name"
+msgstr "アナグマ"
+
+msgid "🦡.keywords"
+msgstr "アナグマ | ミツアナグマ | ラーテル | 動物"
+
+msgid "🐾.name"
+msgstr "肉球"
+
+msgid "🐾.keywords"
+msgstr "動物 | 犬 | 猫 | 肉球 | 足跡"
+
+msgid "🦃.name"
+msgstr "七面鳥"
+
+msgid "🦃.keywords"
+msgstr "ターキー | 七面鳥 | 動物 | 鳥"
+
+msgid "🐔.name"
+msgstr "にわとり"
+
+msgid "🐔.keywords"
+msgstr "にわとり | ニワトリ | 動物 | 顔 | 鳥"
+
+msgid "🐓.name"
+msgstr "おんどり"
+
+msgid "🐓.keywords"
+msgstr "おんどり | にわとり | ニワトリ | 動物 | 鳥"
+
+msgid "🐣.name"
+msgstr "卵からかえったひよこ"
+
+msgid "🐣.keywords"
+msgstr "ひな | ひよこ | 動物 | 卵 | 卵からかえったひよこ | 顔 | 鳥"
+
+msgid "🐤.name"
+msgstr "ひよこ"
+
+msgid "🐤.keywords"
+msgstr "ひな | ひよこ | 動物 | 横を向いているひよこ | 顔 | 鳥"
+
+msgid "🐥.name"
+msgstr "前を向いているひよこ"
+
+msgid "🐥.keywords"
+msgstr "ひな | ひよこ | 前を向いているひよこ | 動物 | 鳥"
+
+msgid "🐦.name"
+msgstr "鳥"
+
+msgid "🐦.keywords"
+msgstr "動物 | 顔 | 鳥"
+
+msgid "🐧.name"
+msgstr "ペンギン"
+
+msgid "🐧.keywords"
+msgstr "ペンギン | 動物 | 顔 | 鳥"
+
+msgid "🕊️.name"
+msgstr "ハト"
+
+msgid "🕊️.keywords"
+msgstr "ハト | 動物 | 平和 | 鳥 | 鳩"
+
+msgid "🦅.name"
+msgstr "ワシ"
+
+msgid "🦅.keywords"
+msgstr "イーグル | ワシ | 動物 | 鳥"
+
+msgid "🦆.name"
+msgstr "カモ"
+
+msgid "🦆.keywords"
+msgstr "カモ | 動物 | 鳥"
+
+msgid "🦢.name"
+msgstr "白鳥"
+
+msgid "🦢.keywords"
+msgstr "ひな | みにくいアヒルの子 | 動物 | 白鳥 | 鳥"
+
+msgid "🦉.name"
+msgstr "フクロウ"
+
+msgid "🦉.keywords"
+msgstr "フクロウ | ミミズク | 動物 | 鳥"
+
+msgid "🦤.name"
+msgstr "ドードー"
+
+msgid "🦤.keywords"
+msgstr "ドードー | モーリシャス島 | 絶滅 | 飛べない鳥 | 鳥"
+
+msgid "🪶.name"
+msgstr "羽"
+
+msgid "🪶.keywords"
+msgstr "羽 | 羽根 | 羽毛 | 軽い | 飛ぶ | 鳥"
+
+msgid "🦩.name"
+msgstr "フラミンゴ"
+
+msgid "🦩.keywords"
+msgstr "ピンク色 | フラミンゴ | 動物 | 派手 | 熱帯 | 鳥"
+
+msgid "🦚.name"
+msgstr "クジャク"
+
+msgid "🦚.keywords"
+msgstr "クジャク | ピーコック | 孔雀 | 派手 | 鳥"
+
+msgid "🦜.name"
+msgstr "オウム"
+
+msgid "🦜.keywords"
+msgstr "オウム | しゃべる | 動物 | 海賊 | 鳥"
+
+msgid "🪽.name"
+msgstr "翼"
+
+msgid "🪽.keywords"
+msgstr "天使 | 天国 | 神話 | 空 | 羽 | 翼 | 飛び立つ | 飛ぶ | 飛行 | 鳥"
+
+msgid "🐦‍⬛.name"
+msgstr "黒い鳥"
+
+msgid "🐦‍⬛.keywords"
+msgstr "カーカー | カラス | くちばし | コクチョウ | ミヤマガラス | ワタリガラス | 烏 | 鳥 | 鳥類 | 黒"
+
+msgid "🪿.name"
+msgstr "ガチョウ"
+
+msgid "🪿.keywords"
+msgstr "アヒル | ガーガー | ガチョウ | まぬけ | 鳥 | 鳥類"
+
+msgid "🐦‍🔥.name"
+msgstr "フェニックス"
+
+msgid "🐦‍🔥.keywords"
+msgstr "ファンタジー | フェニックス | 不死鳥 | 再生 | 復活 | 火の鳥 | 生まれ変わり | 神話 | 転生 | 輪廻"
+
+msgid "🐸.name"
+msgstr "カエルの顔"
+
+msgid "🐸.keywords"
+msgstr "カエル | カエルの顔 | 動物 | 顔"
+
+msgid "🐊.name"
+msgstr "ワニ"
+
+msgid "🐊.keywords"
+msgstr "クロコダイル | ワニ | 動物 | 爬虫類"
+
+msgid "🐢.name"
+msgstr "カメ"
+
+msgid "🐢.keywords"
+msgstr "カメ | 亀 | 動物 | 爬虫類"
+
+msgid "🦎.name"
+msgstr "トカゲ"
+
+msgid "🦎.keywords"
+msgstr "トカゲ | ヤモリ | 動物 | 爬虫類"
+
+msgid "🐍.name"
+msgstr "ヘビ"
+
+msgid "🐍.keywords"
+msgstr "ヘビ | へびつかい座 | 動物 | 星座 | 毒 | 爬虫類"
+
+msgid "🐲.name"
+msgstr "ドラゴンの顔"
+
+msgid "🐲.keywords"
+msgstr "ドラゴン | ドラゴンの顔 | 動物 | 竜 | 顔 | 龍"
+
+msgid "🐉.name"
+msgstr "ドラゴン"
+
+msgid "🐉.keywords"
+msgstr "ドラゴン | 動物 | 竜 | 龍"
+
+msgid "🦕.name"
+msgstr "草食恐竜"
+
+msgid "🦕.keywords"
+msgstr "ディプロドクス | ブラキオサウルス | ブロントサウルス | 恐竜 | 竜脚類 | 草食恐竜"
+
+msgid "🦖.name"
+msgstr "ティラノサウルス"
+
+msgid "🦖.keywords"
+msgstr "ティラノサウルス | 恐竜"
+
+msgid "🐳.name"
+msgstr "潮吹きクジラ"
+
+msgid "🐳.keywords"
+msgstr "クジラ | 動物 | 潮吹き | 潮吹きクジラ"
+
+msgid "🐋.name"
+msgstr "クジラ"
+
+msgid "🐋.keywords"
+msgstr "クジラ | 動物"
+
+msgid "🐬.name"
+msgstr "イルカ"
+
+msgid "🐬.keywords"
+msgstr "イルカ | ドルフィン | 動物"
+
+msgid "🫍.name"
+msgstr "シャチ"
+
+msgid "🫍.keywords"
+msgstr "クジラ | 海 | 海洋"
+
+msgid "🦭.name"
+msgstr "アザラシ"
+
+msgid "🦭.keywords"
+msgstr "アザラシ | アシカ | オットセイ | トド | 動物 | 海獣"
+
+msgid "🐟.name"
+msgstr "魚"
+
+msgid "🐟.keywords"
+msgstr "うお座 | フィッシング | 動物 | 星座 | 釣り | 魚"
+
+msgid "🐠.name"
+msgstr "熱帯魚"
+
+msgid "🐠.keywords"
+msgstr "動物 | 熱帯魚 | 魚"
+
+msgid "🐡.name"
+msgstr "フグ"
+
+msgid "🐡.keywords"
+msgstr "フグ | 動物 | 魚"
+
+msgid "🦈.name"
+msgstr "サメ"
+
+msgid "🦈.keywords"
+msgstr "サメ | 動物 | 魚"
+
+msgid "🐙.name"
+msgstr "タコ"
+
+msgid "🐙.keywords"
+msgstr "オクトパス | タコ | 動物 | 軟体動物"
+
+msgid "🐚.name"
+msgstr "巻き貝"
+
+msgid "🐚.keywords"
+msgstr "動物 | 巻き貝 | 貝 | 貝殻"
+
+msgid "🪸.name"
+msgstr "サンゴ"
+
+msgid "🪸.keywords"
+msgstr "サンゴ | 気候変動 | 海 | 珊瑚礁"
+
+msgid "🪼.name"
+msgstr "クラゲ"
+
+msgid "🪼.keywords"
+msgstr "クラゲ | プランクトン | 刺す | 毒 | 水族館 | 海 | 海洋生物 | 無脊椎動物 | 触手 | 針"
+
+msgid "🦀.name"
+msgstr "カニ"
+
+msgid "🦀.keywords"
+msgstr "カニ | 動物 | 星座"
+
+msgid "🦞.name"
+msgstr "ザリガニ"
+
+msgid "🦞.keywords"
+msgstr "ザリガニ | シーフード | はさみ | ビスク | レッドロブスター | ロブスター | 動物"
+
+msgid "🦐.name"
+msgstr "エビ"
+
+msgid "🦐.keywords"
+msgstr "エビ | シーフード | シュリンプ | 動物 | 小エビ"
+
+msgid "🦑.name"
+msgstr "イカ"
+
+msgid "🦑.keywords"
+msgstr "イカ | シーフード | 動物 | 軟体動物"
+
+msgid "🦪.name"
+msgstr "牡蠣"
+
+msgid "🦪.keywords"
+msgstr "オイスター | カキ | シーフード | ダイビング | 牡蠣 | 生ガキ | 真珠 | 貝 | 魚介"
+
+msgid "🐌.name"
+msgstr "かたつむり"
+
+msgid "🐌.keywords"
+msgstr "エスカルゴ | かたつむり | カタツムリ | でんでん虫 | 虫"
+
+msgid "🦋.name"
+msgstr "チョウ"
+
+msgid "🦋.keywords"
+msgstr ""
+"チョウ | バタフライ | 昆虫 | 虫 | 蝶"
+" | "
+"蝶 | ちょうちょ | 変身 | 変化 | 綺麗"
+
+msgid "🐛.name"
+msgstr "毛虫"
+
+msgid "🐛.keywords"
+msgstr "イモムシ | 毛虫 | 芋虫 | 虫"
+
+msgid "🐜.name"
+msgstr "アリ"
+
+msgid "🐜.keywords"
+msgstr "アリ | 昆虫 | 虫"
+
+msgid "🐝.name"
+msgstr "ミツバチ"
+
+msgid "🐝.keywords"
+msgstr "ハチ | ミツバチ | 虫 | 蜂"
+
+msgid "🪲.name"
+msgstr "カブトムシ"
+
+msgid "🪲.keywords"
+msgstr "カブトムシ | つの | 昆虫 | 虫"
+
+msgid "🐞.name"
+msgstr "テントウムシ"
+
+msgid "🐞.keywords"
+msgstr "テントウムシ | てんとう虫 | 虫"
+
+msgid "🦗.name"
+msgstr "バッタ"
+
+msgid "🦗.keywords"
+msgstr "コオロギ | バッタ | 昆虫 | 直翅目 | 虫"
+
+msgid "🪳.name"
+msgstr "ゴキブリ"
+
+msgid "🪳.keywords"
+msgstr "ゴキブリ | 害虫 | 虫"
+
+msgid "🕷️.name"
+msgstr "クモ"
+
+msgid "🕷️.keywords"
+msgstr "クモ | スパイダー | 虫"
+
+msgid "🕸️.name"
+msgstr "クモの巣"
+
+msgid "🕸️.keywords"
+msgstr "ウェブ | クモ | クモの巣 | スパイダー"
+
+msgid "🦂.name"
+msgstr "サソリ"
+
+msgid "🦂.keywords"
+msgstr "サソリ | さそり座 | 星座 | 虫"
+
+msgid "🦟.name"
+msgstr "蚊"
+
+msgid "🦟.keywords"
+msgstr "ウイルス | マラリア | 刺す | 熱 | 病気 | 虫 | 蚊"
+
+msgid "🪰.name"
+msgstr "ハエ"
+
+msgid "🪰.keywords"
+msgstr "ハエ | 不潔 | 害虫 | 病原菌 | 虫"
+
+msgid "🪱.name"
+msgstr "ミミズ"
+
+msgid "🪱.keywords"
+msgstr "ミミズ | 寄生虫 | 虫"
+
+msgid "🦠.name"
+msgstr "微生物"
+
+msgid "🦠.keywords"
+msgstr "アメーバ | ウイルス | バクテリア | 微生物 | 科学 | 細菌"
+
+msgid "💐.name"
+msgstr "花束"
+
+msgid "💐.keywords"
+msgstr "ブーケ | 植物 | 花 | 花束"
+
+msgid "🌸.name"
+msgstr "桜"
+
+msgid "🌸.keywords"
+msgstr ""
+"サクラ | 桜 | 植物 | 花 | 開花"
+" | "
+"桜 | さくら | 春 | 花見 | ハナミ"
+
+msgid "💮.name"
+msgstr "大変よくできました"
+
+msgid "💮.keywords"
+msgstr "はなまる | よくできました | 大変よくできました | 花"
+
+msgid "🪷.name"
+msgstr "ハスの花"
+
+msgid "🪷.keywords"
+msgstr "ハスの花 | ヒンドゥー教 | 仏教 | 極楽 | 清浄 | 花"
+
+msgid "🏵️.name"
+msgstr "花飾り"
+
+msgid "🏵️.keywords"
+msgstr "植物 | 花 | 花飾り"
+
+msgid "🌹.name"
+msgstr "バラ"
+
+msgid "🌹.keywords"
+msgstr "バラ | ローズ | 植物 | 花 | 薔薇 | 赤いバラ"
+
+msgid "🥀.name"
+msgstr "しおれた花"
+
+msgid "🥀.keywords"
+msgstr "しおれた | しおれた花 | 花"
+
+msgid "🌺.name"
+msgstr "ハイビスカス"
+
+msgid "🌺.keywords"
+msgstr "ハイビスカス | 植物 | 花"
+
+msgid "🌻.name"
+msgstr "ヒマワリ"
+
+msgid "🌻.keywords"
+msgstr "ひまわり | ヒマワリ | 花"
+
+msgid "🌼.name"
+msgstr "開花"
+
+msgid "🌼.keywords"
+msgstr "キンポウゲ | 咲いた花 | 植物 | 花 | 開花"
+
+msgid "🌷.name"
+msgstr "チューリップ"
+
+msgid "🌷.keywords"
+msgstr "チューリップ | 植物 | 花 | 開花"
+
+msgid "🪻.name"
+msgstr "ヒヤシンス"
+
+msgid "🪻.keywords"
+msgstr "スミレ色 | ヒヤシンス | ブルーボネット | ライラック | ラベンダー | 植物 | 紫色 | 花 | 青紫"
+
+msgid "🌱.name"
+msgstr "新芽"
+
+msgid "🌱.keywords"
+msgstr "双葉 | 新芽 | 芽"
+
+msgid "🪴.name"
+msgstr "鉢植え"
+
+msgid "🪴.keywords"
+msgstr "ベランダ | 植木鉢 | 植物 | 水やり | 緑 | 苗 | 観葉植物 | 鉢植え"
+
+msgid "🌲.name"
+msgstr "常緑樹"
+
+msgid "🌲.keywords"
+msgstr "常緑樹 | 木 | 森"
+
+msgid "🌳.name"
+msgstr "落葉樹"
+
+msgid "🌳.keywords"
+msgstr "木 | 森 | 落葉樹"
+
+msgid "🌴.name"
+msgstr "ヤシの木"
+
+msgid "🌴.keywords"
+msgstr "ビーチ | ヤシ | ヤシの木 | 木 | 熱帯"
+
+msgid "🌵.name"
+msgstr "サボテン"
+
+msgid "🌵.keywords"
+msgstr "サボテン | 植物 | 砂漠"
+
+msgid "🌾.name"
+msgstr "稲"
+
+msgid "🌾.keywords"
+msgstr "ススキ | 稲 | 稲穂 | 穀物 | 米 | 草"
+
+msgid "🌿.name"
+msgstr "ハーブ"
+
+msgid "🌿.keywords"
+msgstr "ハーブ | 草 | 葉 | 薬草 | 香草"
+
+msgid "☘️.name"
+msgstr "クローバー"
+
+msgid "☘️.keywords"
+msgstr "クローバー | 植物 | 草 | 葉"
+
+msgid "🍀.name"
+msgstr "四つ葉のクローバー"
+
+msgid "🍀.keywords"
+msgstr "4 | クローバー | 四つ葉のクローバー | 植物 | 草 | 葉"
+
+msgid "🍁.name"
+msgstr "かえで"
+
+msgid "🍁.keywords"
+msgstr "かえで | カエデ | もみじ | 紅葉 | 落ち葉 | 葉"
+
+msgid "🍂.name"
+msgstr "落ち葉"
+
+msgid "🍂.keywords"
+msgstr "木の葉 | 枯れ葉 | 落ち葉 | 葉 | 葉っぱ"
+
+msgid "🍃.name"
+msgstr "風に揺れる葉"
+
+msgid "🍃.keywords"
+msgstr "木の葉 | 落ち葉 | 葉 | 葉っぱ | 風 | 風に揺れる葉"
+
+msgid "🪹.name"
+msgstr "空っぽの巣"
+
+msgid "🪹.keywords"
+msgstr "営巣 | 巣 | 巣作り | 空っぽの巣"
+
+msgid "🪺.name"
+msgstr "鳥の卵と巣"
+
+msgid "🪺.keywords"
+msgstr "卵 | 営巣 | 巣 | 巣作り | 鳥の卵と巣 | 鳥の巣"
+
+msgid "🍄.name"
+msgstr "キノコ"
+
+msgid "🍄.keywords"
+msgstr "きのこ | キノコ | マッシュルーム | 毒 | 菌類 | 野菜"
+
+msgid "🪾.name"
+msgstr "枯れ木"
+
+msgid "🪾.keywords"
+msgstr "不毛 | 冬 | 干ばつ | 葉のない木"

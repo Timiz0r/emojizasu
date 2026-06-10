@@ -1,0 +1,525 @@
+msgid ""
+msgstr ""
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "🎃.name"
+msgstr "ハロウィンかぼちゃ"
+
+msgid "🎃.keywords"
+msgstr "かぼちゃ | ハロウィーン | ハロウィン | ハロウィンかぼちゃ"
+
+msgid "🎄.name"
+msgstr "クリスマスツリー"
+
+msgid "🎄.keywords"
+msgstr "クリスマス | クリスマスイブ | クリスマスツリー | ツリー"
+
+msgid "🎆.name"
+msgstr "打ち上げ花火"
+
+msgid "🎆.keywords"
+msgstr "お祭り | どーん | 打ち上げ花火 | 花火 | 花火大会"
+
+msgid "🎇.name"
+msgstr "線香花火"
+
+msgid "🎇.keywords"
+msgstr "お祭り | 火花 | 線香花火 | 花火"
+
+msgid "🧨.name"
+msgstr "爆竹"
+
+msgid "🧨.keywords"
+msgstr "ダイナマイト | 火花 | 火薬 | 爆発 | 爆発物 | 爆竹 | 爆薬 | 花火"
+
+msgid "✨.name"
+msgstr "きらきら"
+
+msgid "✨.keywords"
+msgstr ""
+"きらきら | キラキラ | スター | ぴかぴか | 星"
+" | "
+"キラキラ | ピカピカ | エモい | 輝く | キラ"
+
+msgid "🎈.name"
+msgstr "風船"
+
+msgid "🎈.keywords"
+msgstr "バルーン | 風船"
+
+msgid "🎉.name"
+msgstr "クラッカー"
+
+msgid "🎉.keywords"
+msgstr ""
+"お祝い | クラッカー | パーティー | パーティークラッカー | 誕生日"
+" | "
+"おめでとう | パーティー | 祝い | わーい | 乾杯"
+
+msgid "🎊.name"
+msgstr "くす玉"
+
+msgid "🎊.keywords"
+msgstr "お祝い | くす玉 | パーティー | 紙吹雪"
+
+msgid "🎋.name"
+msgstr "七夕"
+
+msgid "🎋.keywords"
+msgstr "七夕 | 和 | 日本 | 短冊 | 笹飾り"
+
+msgid "🎍.name"
+msgstr "門松"
+
+msgid "🎍.keywords"
+msgstr "お祝い | 和 | 日本 | 正月 | 竹 | 門松"
+
+msgid "🎎.name"
+msgstr "ひな祭り"
+
+msgid "🎎.keywords"
+msgstr "おだいり様 | おひな様 | お祝い | ひな人形 | ひな祭り | 人形 | 和 | 日本"
+
+msgid "🎏.name"
+msgstr "こいのぼり"
+
+msgid "🎏.keywords"
+msgstr "お祝い | こいのぼり | 子供の日"
+
+msgid "🎐.name"
+msgstr "風鈴"
+
+msgid "🎐.keywords"
+msgstr "夏 | 鈴 | 風 | 風鈴"
+
+msgid "🎑.name"
+msgstr "月見"
+
+msgid "🎑.keywords"
+msgstr "ススキ | 十五夜 | 団子 | 月 | 月見"
+
+msgid "🧧.name"
+msgstr "赤い封筒"
+
+msgid "🧧.keywords"
+msgstr "お年玉 | お金 | ご祝儀 | 幸運 | 紅包 | 赤い封筒"
+
+msgid "🎀.name"
+msgstr "リボン"
+
+msgid "🎀.keywords"
+msgstr "お祝い | リボン"
+
+msgid "🎁.name"
+msgstr "プレゼント"
+
+msgid "🎁.keywords"
+msgstr "お祝い | ギフト | プレゼント | リボン | 箱"
+
+msgid "🎗️.name"
+msgstr "リマインダーリボン"
+
+msgid "🎗️.keywords"
+msgstr "お祝い | リボン | リマインダー | リマインダーリボン"
+
+msgid "🎟️.name"
+msgstr "入場券"
+
+msgid "🎟️.keywords"
+msgstr "チケット | 入場パス | 入場券 | 半券"
+
+msgid "🎫.name"
+msgstr "チケット"
+
+msgid "🎫.keywords"
+msgstr "チケット | 入場券 | 切符 | 半券"
+
+msgid "🎖️.name"
+msgstr "勲章"
+
+msgid "🎖️.keywords"
+msgstr "お祝い | メダル | 勲章 | 表彰"
+
+msgid "🏆.name"
+msgstr "トロフィー"
+
+msgid "🏆.keywords"
+msgstr "チャンピオン | トロフィー | 優勝 | 優勝カップ | 表彰 | 賞杯"
+
+msgid "🏅.name"
+msgstr "メダル"
+
+msgid "🏅.keywords"
+msgstr "スポーツ | メダル | 優勝 | 表彰 | 金 | 金メダル"
+
+msgid "🥇.name"
+msgstr "金メダル"
+
+msgid "🥇.keywords"
+msgstr "1位 | ゴールド | メダル | 優勝 | 金 | 金メダル"
+
+msgid "🥈.name"
+msgstr "銀メダル"
+
+msgid "🥈.keywords"
+msgstr "2位 | シルバー | メダル | 銀 | 銀メダル"
+
+msgid "🥉.name"
+msgstr "銅メダル"
+
+msgid "🥉.keywords"
+msgstr "3位 | ブロンズ | メダル | 銅 | 銅メダル"
+
+msgid "⚽.name"
+msgstr "サッカー"
+
+msgid "⚽.keywords"
+msgstr "サッカー | サッカーボール | スポーツ | ボール"
+
+msgid "⚾.name"
+msgstr "野球"
+
+msgid "⚾.keywords"
+msgstr "スポーツ | ボール | 野球"
+
+msgid "🥎.name"
+msgstr "ソフトボール"
+
+msgid "🥎.keywords"
+msgstr "スポーツ | ソフトボール | ボール | 下手投げ"
+
+msgid "🏀.name"
+msgstr "バスケットボール"
+
+msgid "🏀.keywords"
+msgstr "スポーツ | バスケ | バスケットボール | ボール"
+
+msgid "🏐.name"
+msgstr "バレーボール"
+
+msgid "🏐.keywords"
+msgstr "スポーツ | バレー | バレーボール | ボール"
+
+msgid "🏈.name"
+msgstr "アメフト"
+
+msgid "🏈.keywords"
+msgstr "アメフト | アメリカンフットボール | スポーツ | フットボール | ボール"
+
+msgid "🏉.name"
+msgstr "ラグビー"
+
+msgid "🏉.keywords"
+msgstr "スポーツ | ボール | ラグビー | ラグビーボール"
+
+msgid "🎾.name"
+msgstr "テニス"
+
+msgid "🎾.keywords"
+msgstr "スポーツ | テニス | テニスボール | ボール | ラケット"
+
+msgid "🥏.name"
+msgstr "フリスビー"
+
+msgid "🥏.keywords"
+msgstr "アルティメット | フライングディスク | フリスビー | 円盤"
+
+msgid "🎳.name"
+msgstr "ボウリング"
+
+msgid "🎳.keywords"
+msgstr "ストライク | スポーツ | ボール | ボウリング | 球"
+
+msgid "🏏.name"
+msgstr "クリケット"
+
+msgid "🏏.keywords"
+msgstr "クリケット | スポーツ | バット | ボール"
+
+msgid "🏑.name"
+msgstr "ホッケー"
+
+msgid "🏑.keywords"
+msgstr "スティック | スポーツ | フィールドホッケー | ボール | ホッケー"
+
+msgid "🏒.name"
+msgstr "アイスホッケー"
+
+msgid "🏒.keywords"
+msgstr "アイスホッケー | スティック | スポーツ | パック | ホッケー"
+
+msgid "🥍.name"
+msgstr "ラクロス"
+
+msgid "🥍.keywords"
+msgstr "ゴール | スティック | スポーツ | ボール | ラクロス"
+
+msgid "🏓.name"
+msgstr "卓球"
+
+msgid "🏓.keywords"
+msgstr "スポーツ | ピンポン | ボール | ラケット | 卓球"
+
+msgid "🏸.name"
+msgstr "バドミントン"
+
+msgid "🏸.keywords"
+msgstr "シャトル | スポーツ | バドミントン | ラケット"
+
+msgid "🥊.name"
+msgstr "ボクシング"
+
+msgid "🥊.keywords"
+msgstr "グローブ | スポーツ | ボクシング | ボクシンググローブ"
+
+msgid "🥋.name"
+msgstr "武道"
+
+msgid "🥋.keywords"
+msgstr "スポーツ | テコンドー | 柔道 | 格闘技 | 武道 | 空手 | 道着"
+
+msgid "🥅.name"
+msgstr "ゴールネット"
+
+msgid "🥅.keywords"
+msgstr "ゴール | ゴールネット | スポーツ | ネット"
+
+msgid "⛳.name"
+msgstr "ゴルフ"
+
+msgid "⛳.keywords"
+msgstr "ゴルフ | スポーツ | フラグ | フラッグ | ホール | 旗"
+
+msgid "⛸️.name"
+msgstr "アイススケート"
+
+msgid "⛸️.keywords"
+msgstr "アイススケート | スケート | スポーツ | フィギュアスケート"
+
+msgid "🎣.name"
+msgstr "釣り"
+
+msgid "🎣.keywords"
+msgstr "スポーツ | フィッシング | 釣り | 釣り竿 | 魚"
+
+msgid "🤿.name"
+msgstr "ダイビング マスク"
+
+msgid "🤿.keywords"
+msgstr "シュノーケリング | スキューバ | スポーツ | ダイビング | マスク"
+
+msgid "🎽.name"
+msgstr "長距離走"
+
+msgid "🎽.keywords"
+msgstr "スポーツ | たすき | ランニング | ランニングシャツ | 長距離走 | 駅伝"
+
+msgid "🎿.name"
+msgstr "スキー"
+
+msgid "🎿.keywords"
+msgstr "スキー | ストック | スポーツ | 板 | 雪"
+
+msgid "🛷.name"
+msgstr "そり競技"
+
+msgid "🛷.keywords"
+msgstr "スケルトン | スポーツ | そり | そり競技 | トボガン | ボブスレー | リュージュ"
+
+msgid "🥌.name"
+msgstr "カーリング"
+
+msgid "🥌.keywords"
+msgstr "カーリング | ゲーム | ストーン | スポーツ | 試合"
+
+msgid "🎯.name"
+msgstr "的"
+
+msgid "🎯.keywords"
+msgstr "スポーツ | ダーツ | ブルズアイ | 当たり | 的 | 的中"
+
+msgid "🪀.name"
+msgstr "ヨーヨー"
+
+msgid "🪀.keywords"
+msgstr "おもちゃ | ヨーヨー | 上下 | 回転 | 玩具"
+
+msgid "🪁.name"
+msgstr "たこ"
+
+msgid "🪁.keywords"
+msgstr "おもちゃ | カイト | たこ | 凧揚げ | 玩具"
+
+msgid "🔫.name"
+msgstr "水鉄砲"
+
+msgid "🔫.keywords"
+msgstr "ピストル | リボルバー | 拳銃 | 武器 | 水鉄砲 | 銃"
+
+msgid "🎱.name"
+msgstr "ビリヤード"
+
+msgid "🎱.keywords"
+msgstr "エイトボール | スポーツ | ビリヤード | ボール | 玉突き"
+
+msgid "🔮.name"
+msgstr "水晶玉"
+
+msgid "🔮.keywords"
+msgstr "クリスタル | 占い | 水晶 | 水晶玉 | 水晶球 | 玉 | 運命 | 魔法"
+
+msgid "🪄.name"
+msgstr "魔法の杖"
+
+msgid "🪄.keywords"
+msgstr "つえ | マジック | 手品 | 杖 | 魔法 | 魔法の杖 | 魔術 | 魔術師"
+
+msgid "🎮.name"
+msgstr "テレビゲーム"
+
+msgid "🎮.keywords"
+msgstr "ゲーム | コントローラ | テレビゲーム | ビデオゲーム"
+
+msgid "🕹️.name"
+msgstr "ジョイスティック"
+
+msgid "🕹️.keywords"
+msgstr "ゲーム | コントローラ | ジョイスティック | スティック | テレビゲーム | ビデオゲーム"
+
+msgid "🎰.name"
+msgstr "スロットマシン"
+
+msgid "🎰.keywords"
+msgstr "カジノ | ギャンブル | ゲーム | スリーセブン | スロット | スロットマシン"
+
+msgid "🎲.name"
+msgstr "サイコロ"
+
+msgid "🎲.keywords"
+msgstr "ゲーム | サイコロ | ダイス"
+
+msgid "🧩.name"
+msgstr "ジグソーパズル"
+
+msgid "🧩.keywords"
+msgstr "ジグソーパズル | パズル | ピース | 組み合わせ | 鍵"
+
+msgid "🧸.name"
+msgstr "テディベア"
+
+msgid "🧸.keywords"
+msgstr "おもちゃ | くま | テディベア | ぬいぐるみ | 玩具"
+
+msgid "🪅.name"
+msgstr "ピニャータ"
+
+msgid "🪅.keywords"
+msgstr "お祝い | パーティー | ピニャータ | メキシコ | 人形 | 誕生日"
+
+msgid "🪩.name"
+msgstr "ミラーボール"
+
+msgid "🪩.keywords"
+msgstr "キラキラ | ダンス | ディスコ | パーティー | ミラーボール"
+
+msgid "🪆.name"
+msgstr "マトリョーシカ"
+
+msgid "🪆.keywords"
+msgstr "マトリョーシカ | ロシア | 人形 | 入れ子"
+
+msgid "♠️.name"
+msgstr "スペード"
+
+msgid "♠️.keywords"
+msgstr "カード | スペード | トランプ"
+
+msgid "♥️.name"
+msgstr "ハート"
+
+msgid "♥️.keywords"
+msgstr "カード | トランプ | ハート"
+
+msgid "♦️.name"
+msgstr "ダイヤ"
+
+msgid "♦️.keywords"
+msgstr "カード | ダイア | ダイヤ | トランプ"
+
+msgid "♣️.name"
+msgstr "クラブ"
+
+msgid "♣️.keywords"
+msgstr "カード | クラブ | クローバー | トランプ"
+
+msgid "♟️.name"
+msgstr "チェスの駒"
+
+msgid "♟️.keywords"
+msgstr "チェス | チェスの駒 | 捨て駒 | 駒"
+
+msgid "🃏.name"
+msgstr "ジョーカー"
+
+msgid "🃏.keywords"
+msgstr "カード | ジジ | ジョーカー | トランプ | ババ"
+
+msgid "🀄.name"
+msgstr "麻雀"
+
+msgid "🀄.keywords"
+msgstr ""
+"ゲーム | 中 | 牌 | 麻雀 | 麻雀牌"
+" | "
+"麻雀 | マージャン | 中 | ゲーム"
+
+msgid "🎴.name"
+msgstr "花札"
+
+msgid "🎴.keywords"
+msgstr "カード | ゲーム | 花札"
+
+msgid "🎭.name"
+msgstr "舞台芸術"
+
+msgid "🎭.keywords"
+msgstr "仮面 | 俳優 | 劇場 | 女優 | 役者 | 演劇 | 演芸 | 舞台芸術 | 芸術"
+
+msgid "🖼️.name"
+msgstr "絵画"
+
+msgid "🖼️.keywords"
+msgstr "アート | 絵 | 絵画 | 美術館 | 芸術 | 額"
+
+msgid "🎨.name"
+msgstr "絵の具パレット"
+
+msgid "🎨.keywords"
+msgstr "パレット | 画家 | 絵 | 絵の具パレット | 絵画 | 美術館 | 芸術"
+
+msgid "🧵.name"
+msgstr "糸"
+
+msgid "🧵.keywords"
+msgstr "ソーイング | ひも | 糸 | 糸巻き | 縫い針 | 裁縫"
+
+msgid "🪡.name"
+msgstr "縫い針"
+
+msgid "🪡.keywords"
+msgstr "ステッチ | 刺繍 | 糸 | 縫い針 | 縫う | 裁縫 | 針"
+
+msgid "🧶.name"
+msgstr "毛糸"
+
+msgid "🧶.keywords"
+msgstr "かぎ針 | ニット | 毛糸 | 毛糸玉 | 編み物"
+
+msgid "🪢.name"
+msgstr "結び目"
+
+msgid "🪢.keywords"
+msgstr "ねじれ | ノット | ひも | ロープ | 結び目 | 綱"

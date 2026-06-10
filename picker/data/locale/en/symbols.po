@@ -1,0 +1,1353 @@
+msgid ""
+msgstr ""
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "🏧.name"
+msgstr "ATM sign"
+
+msgid "🏧.keywords"
+msgstr "ATM | automated | bank | cash | money | sign | teller"
+
+msgid "🚮.name"
+msgstr "litter in bin sign"
+
+msgid "🚮.keywords"
+msgstr "bin | litter | litterbin | sign"
+
+msgid "🚰.name"
+msgstr "potable water"
+
+msgid "🚰.keywords"
+msgstr "drinking | potable | water"
+
+msgid "♿.name"
+msgstr "wheelchair symbol"
+
+msgid "♿.keywords"
+msgstr "access | handicap | symbol | wheelchair"
+
+msgid "🚹.name"
+msgstr "men’s room"
+
+msgid "🚹.keywords"
+msgstr "bathroom | lavatory | man | men’s | restroom | room | toilet | WC"
+
+msgid "🚺.name"
+msgstr "women’s room"
+
+msgid "🚺.keywords"
+msgstr "bathroom | lavatory | restroom | room | toilet | WC | woman | women’s"
+
+msgid "🚻.name"
+msgstr "restroom"
+
+msgid "🚻.keywords"
+msgstr "bathroom | lavatory | restroom | toilet | WC"
+
+msgid "🚼.name"
+msgstr "baby symbol"
+
+msgid "🚼.keywords"
+msgstr "baby | changing | symbol"
+
+msgid "🚾.name"
+msgstr "water closet"
+
+msgid "🚾.keywords"
+msgstr "bathroom | closet | lavatory | restroom | toilet | water | WC"
+
+msgid "🛂.name"
+msgstr "passport control"
+
+msgid "🛂.keywords"
+msgstr "control | passport"
+
+msgid "🛃.name"
+msgstr "customs"
+
+msgid "🛃.keywords"
+msgstr "customs | packing"
+
+msgid "🛄.name"
+msgstr "baggage claim"
+
+msgid "🛄.keywords"
+msgstr "arrived | baggage | bags | case | checked | claim | journey | packing | plane | ready | travel | trip"
+
+msgid "🛅.name"
+msgstr "left luggage"
+
+msgid "🛅.keywords"
+msgstr "baggage | case | left | locker | luggage"
+
+msgid "⚠️.name"
+msgstr "warning"
+
+msgid "⚠️.keywords"
+msgstr "caution | warning"
+
+msgid "🚸.name"
+msgstr "children crossing"
+
+msgid "🚸.keywords"
+msgstr "child | children | crossing | pedestrian | traffic"
+
+msgid "⛔.name"
+msgstr "no entry"
+
+msgid "⛔.keywords"
+msgstr "do | entry | fail | forbidden | no | not | pass | prohibited | traffic"
+
+msgid "🚫.name"
+msgstr "prohibited"
+
+msgid "🚫.keywords"
+msgstr "entry | forbidden | no | not | prohibited | smoke"
+
+msgid "🚳.name"
+msgstr "no bicycles"
+
+msgid "🚳.keywords"
+msgstr "bicycle | bicycles | bike | forbidden | no | not | prohibited"
+
+msgid "🚭.name"
+msgstr "no smoking"
+
+msgid "🚭.keywords"
+msgstr "forbidden | no | not | prohibited | smoke | smoking"
+
+msgid "🚯.name"
+msgstr "no littering"
+
+msgid "🚯.keywords"
+msgstr "forbidden | litter | littering | no | not | prohibited"
+
+msgid "🚱.name"
+msgstr "non-potable water"
+
+msgid "🚱.keywords"
+msgstr "dry | non-drinking | non-potable | prohibited | water"
+
+msgid "🚷.name"
+msgstr "no pedestrians"
+
+msgid "🚷.keywords"
+msgstr "forbidden | no | not | pedestrian | pedestrians | prohibited"
+
+msgid "📵.name"
+msgstr "no mobile phones"
+
+msgid "📵.keywords"
+msgstr "cell | forbidden | mobile | no | not | phone | phones | prohibited | telephone"
+
+msgid "🔞.name"
+msgstr "no one under eighteen"
+
+msgid "🔞.keywords"
+msgstr "18 | age | eighteen | forbidden | no | not | one | prohibited | restriction | underage"
+
+msgid "☢️.name"
+msgstr "radioactive"
+
+msgid "☢️.keywords"
+msgstr "radioactive | sign"
+
+msgid "☣️.name"
+msgstr "biohazard"
+
+msgid "☣️.keywords"
+msgstr "biohazard | sign"
+
+msgid "⬆️.name"
+msgstr "up arrow"
+
+msgid "⬆️.keywords"
+msgstr "arrow | cardinal | direction | north | up"
+
+msgid "↗️.name"
+msgstr "up-right arrow"
+
+msgid "↗️.keywords"
+msgstr "arrow | direction | intercardinal | northeast | up-right"
+
+msgid "➡️.name"
+msgstr "right arrow"
+
+msgid "➡️.keywords"
+msgstr "arrow | cardinal | direction | east | right"
+
+msgid "↘️.name"
+msgstr "down-right arrow"
+
+msgid "↘️.keywords"
+msgstr "arrow | direction | down-right | intercardinal | southeast"
+
+msgid "⬇️.name"
+msgstr "down arrow"
+
+msgid "⬇️.keywords"
+msgstr "arrow | cardinal | direction | down | south"
+
+msgid "↙️.name"
+msgstr "down-left arrow"
+
+msgid "↙️.keywords"
+msgstr "arrow | direction | down-left | intercardinal | southwest"
+
+msgid "⬅️.name"
+msgstr "left arrow"
+
+msgid "⬅️.keywords"
+msgstr "arrow | cardinal | direction | left | west"
+
+msgid "↖️.name"
+msgstr "up-left arrow"
+
+msgid "↖️.keywords"
+msgstr "arrow | direction | intercardinal | northwest | up-left"
+
+msgid "↕️.name"
+msgstr "up-down arrow"
+
+msgid "↕️.keywords"
+msgstr "arrow | up-down"
+
+msgid "↔️.name"
+msgstr "left-right arrow"
+
+msgid "↔️.keywords"
+msgstr "arrow | left-right"
+
+msgid "↩️.name"
+msgstr "right arrow curving left"
+
+msgid "↩️.keywords"
+msgstr "arrow | curving | left | right"
+
+msgid "↪️.name"
+msgstr "left arrow curving right"
+
+msgid "↪️.keywords"
+msgstr "arrow | curving | left | right"
+
+msgid "⤴️.name"
+msgstr "right arrow curving up"
+
+msgid "⤴️.keywords"
+msgstr "arrow | curving | right | up"
+
+msgid "⤵️.name"
+msgstr "right arrow curving down"
+
+msgid "⤵️.keywords"
+msgstr "arrow | curving | down | right"
+
+msgid "🔃.name"
+msgstr "clockwise vertical arrows"
+
+msgid "🔃.keywords"
+msgstr "arrow | arrows | clockwise | refresh | reload | vertical"
+
+msgid "🔄.name"
+msgstr "counterclockwise arrows button"
+
+msgid "🔄.keywords"
+msgstr "again | anticlockwise | arrow | arrows | button | counterclockwise | deja | refresh | rewindershins | vu"
+
+msgid "🔙.name"
+msgstr "BACK arrow"
+
+msgid "🔙.keywords"
+msgstr "arrow | BACK"
+
+msgid "🔚.name"
+msgstr "END arrow"
+
+msgid "🔚.keywords"
+msgstr "arrow | END"
+
+msgid "🔛.name"
+msgstr "ON! arrow"
+
+msgid "🔛.keywords"
+msgstr "arrow | mark | ON!"
+
+msgid "🔜.name"
+msgstr "SOON arrow"
+
+msgid "🔜.keywords"
+msgstr "arrow | brb | omw | SOON"
+
+msgid "🔝.name"
+msgstr "TOP arrow"
+
+msgid "🔝.keywords"
+msgstr "arrow | homie | TOP | up"
+
+msgid "🛐.name"
+msgstr "place of worship"
+
+msgid "🛐.keywords"
+msgstr "place | pray | religion | worship"
+
+msgid "⚛️.name"
+msgstr "atom symbol"
+
+msgid "⚛️.keywords"
+msgstr "atheist | atom | symbol"
+
+msgid "🕉️.name"
+msgstr "om"
+
+msgid "🕉️.keywords"
+msgstr "Hindu | om | religion"
+
+msgid "✡️.name"
+msgstr "star of David"
+
+msgid "✡️.keywords"
+msgstr "David | Jew | Jewish | judaism | religion | star"
+
+msgid "☸️.name"
+msgstr "wheel of dharma"
+
+msgid "☸️.keywords"
+msgstr "Buddhist | dharma | religion | wheel"
+
+msgid "☯️.name"
+msgstr "yin yang"
+
+msgid "☯️.keywords"
+msgstr "difficult | lives | religion | tao | taoist | total | yang | yin | yinyang"
+
+msgid "✝️.name"
+msgstr "latin cross"
+
+msgid "✝️.keywords"
+msgstr "christ | Christian | cross | latin | religion"
+
+msgid "☦️.name"
+msgstr "orthodox cross"
+
+msgid "☦️.keywords"
+msgstr "Christian | cross | orthodox | religion"
+
+msgid "☪️.name"
+msgstr "star and crescent"
+
+msgid "☪️.keywords"
+msgstr "crescent | islam | Muslim | ramadan | religion | star"
+
+msgid "☮️.name"
+msgstr "peace symbol"
+
+msgid "☮️.keywords"
+msgstr "healing | peace | peaceful | symbol"
+
+msgid "🕎.name"
+msgstr "menorah"
+
+msgid "🕎.keywords"
+msgstr "candelabrum | candlestick | hanukkah | jewish | judaism | menorah | religion"
+
+msgid "🔯.name"
+msgstr "dotted six-pointed star"
+
+msgid "🔯.keywords"
+msgstr "dotted | fortune | jewish | judaism | six-pointed | star"
+
+msgid "🪯.name"
+msgstr "khanda"
+
+msgid "🪯.keywords"
+msgstr "Deg | Fateh | Khalsa | Khanda | religion | Sikh | Sikhism | Tegh"
+
+msgid "♈.name"
+msgstr "Aries"
+
+msgid "♈.keywords"
+msgstr "Aries | horoscope | ram | zodiac"
+
+msgid "♉.name"
+msgstr "Taurus"
+
+msgid "♉.keywords"
+msgstr "bull | horoscope | ox | Taurus | zodiac"
+
+msgid "♊.name"
+msgstr "Gemini"
+
+msgid "♊.keywords"
+msgstr "Gemini | horoscope | twins | zodiac"
+
+msgid "♋.name"
+msgstr "Cancer"
+
+msgid "♋.keywords"
+msgstr "Cancer | crab | horoscope | zodiac"
+
+msgid "♌.name"
+msgstr "Leo"
+
+msgid "♌.keywords"
+msgstr "horoscope | Leo | lion | zodiac"
+
+msgid "♍.name"
+msgstr "Virgo"
+
+msgid "♍.keywords"
+msgstr "horoscope | Virgo | zodiac"
+
+msgid "♎.name"
+msgstr "Libra"
+
+msgid "♎.keywords"
+msgstr "balance | horoscope | justice | Libra | scales | zodiac"
+
+msgid "♏.name"
+msgstr "Scorpio"
+
+msgid "♏.keywords"
+msgstr "horoscope | Scorpio | scorpion | Scorpius | zodiac"
+
+msgid "♐.name"
+msgstr "Sagittarius"
+
+msgid "♐.keywords"
+msgstr "archer | horoscope | Sagittarius | zodiac"
+
+msgid "♑.name"
+msgstr "Capricorn"
+
+msgid "♑.keywords"
+msgstr "Capricorn | goat | horoscope | zodiac"
+
+msgid "♒.name"
+msgstr "Aquarius"
+
+msgid "♒.keywords"
+msgstr "Aquarius | bearer | horoscope | water | zodiac"
+
+msgid "♓.name"
+msgstr "Pisces"
+
+msgid "♓.keywords"
+msgstr "fish | horoscope | Pisces | zodiac"
+
+msgid "⛎.name"
+msgstr "Ophiuchus"
+
+msgid "⛎.keywords"
+msgstr "bearer | Ophiuchus | serpent | snake | zodiac"
+
+msgid "🔀.name"
+msgstr "shuffle tracks button"
+
+msgid "🔀.keywords"
+msgstr "arrow | button | crossed | shuffle | tracks"
+
+msgid "🔁.name"
+msgstr "repeat button"
+
+msgid "🔁.keywords"
+msgstr "arrow | button | clockwise | repeat"
+
+msgid "🔂.name"
+msgstr "repeat single button"
+
+msgid "🔂.keywords"
+msgstr "arrow | button | clockwise | once | repeat | single"
+
+msgid "▶️.name"
+msgstr "play button"
+
+msgid "▶️.keywords"
+msgstr "arrow | button | play | right | triangle"
+
+msgid "⏩.name"
+msgstr "fast-forward button"
+
+msgid "⏩.keywords"
+msgstr "arrow | button | double | fast | fast-forward | forward"
+
+msgid "⏭️.name"
+msgstr "next track button"
+
+msgid "⏭️.keywords"
+msgstr "arrow | button | next | scene | track | triangle"
+
+msgid "⏯️.name"
+msgstr "play or pause button"
+
+msgid "⏯️.keywords"
+msgstr "arrow | button | pause | play | right | triangle"
+
+msgid "◀️.name"
+msgstr "reverse button"
+
+msgid "◀️.keywords"
+msgstr "arrow | button | left | reverse | triangle"
+
+msgid "⏪.name"
+msgstr "fast reverse button"
+
+msgid "⏪.keywords"
+msgstr "arrow | button | double | fast | reverse | rewind"
+
+msgid "⏮️.name"
+msgstr "last track button"
+
+msgid "⏮️.keywords"
+msgstr "arrow | button | last | previous | scene | track | triangle"
+
+msgid "🔼.name"
+msgstr "upwards button"
+
+msgid "🔼.keywords"
+msgstr "arrow | button | red | up | upwards"
+
+msgid "⏫.name"
+msgstr "fast up button"
+
+msgid "⏫.keywords"
+msgstr "arrow | button | double | fast | up"
+
+msgid "🔽.name"
+msgstr "downwards button"
+
+msgid "🔽.keywords"
+msgstr "arrow | button | down | downwards | red"
+
+msgid "⏬.name"
+msgstr "fast down button"
+
+msgid "⏬.keywords"
+msgstr "arrow | button | double | down | fast"
+
+msgid "⏸️.name"
+msgstr "pause button"
+
+msgid "⏸️.keywords"
+msgstr "bar | button | double | pause | vertical"
+
+msgid "⏹️.name"
+msgstr "stop button"
+
+msgid "⏹️.keywords"
+msgstr "button | square | stop"
+
+msgid "⏺️.name"
+msgstr "record button"
+
+msgid "⏺️.keywords"
+msgstr "button | circle | record"
+
+msgid "⏏️.name"
+msgstr "eject button"
+
+msgid "⏏️.keywords"
+msgstr "button | eject"
+
+msgid "🎦.name"
+msgstr "cinema"
+
+msgid "🎦.keywords"
+msgstr "camera | cinema | film | movie"
+
+msgid "🔅.name"
+msgstr "dim button"
+
+msgid "🔅.keywords"
+msgstr "brightness | button | dim | low"
+
+msgid "🔆.name"
+msgstr "bright button"
+
+msgid "🔆.keywords"
+msgstr "bright | brightness | button | light"
+
+msgid "📶.name"
+msgstr "antenna bars"
+
+msgid "📶.keywords"
+msgstr "antenna | bar | bars | cell | communication | mobile | phone | signal | telephone"
+
+msgid "🛜.name"
+msgstr "wireless"
+
+msgid "🛜.keywords"
+msgstr "broadband | computer | connectivity | hotspot | internet | network | router | smartphone | wi-fi | wifi | wireless | wlan"
+
+msgid "📳.name"
+msgstr "vibration mode"
+
+msgid "📳.keywords"
+msgstr "cell | communication | mobile | mode | phone | telephone | vibration"
+
+msgid "📴.name"
+msgstr "mobile phone off"
+
+msgid "📴.keywords"
+msgstr "cell | mobile | off | phone | telephone"
+
+msgid "♀️.name"
+msgstr "female sign"
+
+msgid "♀️.keywords"
+msgstr "female | sign | woman"
+
+msgid "♂️.name"
+msgstr "male sign"
+
+msgid "♂️.keywords"
+msgstr "male | man | sign"
+
+msgid "⚧️.name"
+msgstr "transgender symbol"
+
+msgid "⚧️.keywords"
+msgstr "symbol | transgender"
+
+msgid "✖️.name"
+msgstr "multiply"
+
+msgid "✖️.keywords"
+msgstr "× | cancel | multiplication | multiply | sign | x"
+
+msgid "➕.name"
+msgstr "plus"
+
+msgid "➕.keywords"
+msgstr "+ | plus"
+
+msgid "➖.name"
+msgstr "minus"
+
+msgid "➖.keywords"
+msgstr "- | − | heavy | math | minus | sign"
+
+msgid "➗.name"
+msgstr "divide"
+
+msgid "➗.keywords"
+msgstr "÷ | divide | division | heavy | math | sign"
+
+msgid "🟰.name"
+msgstr "heavy equals sign"
+
+msgid "🟰.keywords"
+msgstr "answer | equal | equality | equals | heavy | math | sign"
+
+msgid "♾️.name"
+msgstr "infinity"
+
+msgid "♾️.keywords"
+msgstr "forever | infinity | unbounded | universal"
+
+msgid "‼️.name"
+msgstr "double exclamation mark"
+
+msgid "‼️.keywords"
+msgstr "! | !! | bangbang | double | exclamation | mark | punctuation"
+
+msgid "⁉️.name"
+msgstr "exclamation question mark"
+
+msgid "⁉️.keywords"
+msgstr "! | !? | ? | exclamation | interrobang | mark | punctuation | question"
+
+msgid "❓.name"
+msgstr "red question mark"
+
+msgid "❓.keywords"
+msgstr "? | mark | punctuation | question | red"
+
+msgid "❔.name"
+msgstr "white question mark"
+
+msgid "❔.keywords"
+msgstr "? | mark | outlined | punctuation | question | white"
+
+msgid "❕.name"
+msgstr "white exclamation mark"
+
+msgid "❕.keywords"
+msgstr "! | exclamation | mark | outlined | punctuation | white"
+
+msgid "❗.name"
+msgstr "red exclamation mark"
+
+msgid "❗.keywords"
+msgstr "! | exclamation | mark | punctuation | red"
+
+msgid "〰️.name"
+msgstr "wavy dash"
+
+msgid "〰️.keywords"
+msgstr "dash | punctuation | wavy"
+
+msgid "💱.name"
+msgstr "currency exchange"
+
+msgid "💱.keywords"
+msgstr "bank | currency | exchange | money"
+
+msgid "💲.name"
+msgstr "heavy dollar sign"
+
+msgid "💲.keywords"
+msgstr "billion | cash | charge | currency | dollar | heavy | million | money | pay | sign"
+
+msgid "⚕️.name"
+msgstr "medical symbol"
+
+msgid "⚕️.keywords"
+msgstr "aesculapius | medical | medicine | staff | symbol"
+
+msgid "♻️.name"
+msgstr "recycling symbol"
+
+msgid "♻️.keywords"
+msgstr "recycle | recycling | symbol"
+
+msgid "⚜️.name"
+msgstr "fleur-de-lis"
+
+msgid "⚜️.keywords"
+msgstr "fleur-de-lis | knights"
+
+msgid "🔱.name"
+msgstr "trident emblem"
+
+msgid "🔱.keywords"
+msgstr "anchor | emblem | poseidon | ship | tool | trident"
+
+msgid "📛.name"
+msgstr "name badge"
+
+msgid "📛.keywords"
+msgstr "badge | name"
+
+msgid "🔰.name"
+msgstr "Japanese symbol for beginner"
+
+msgid "🔰.keywords"
+msgstr "beginner | chevron | green | Japanese | leaf | symbol | tool | yellow"
+
+msgid "⭕.name"
+msgstr "hollow red circle"
+
+msgid "⭕.keywords"
+msgstr "circle | heavy | hollow | large | o | red"
+
+msgid "✅.name"
+msgstr "check mark button"
+
+msgid "✅.keywords"
+msgstr "✓ | button | check | checked | checkmark | complete | completed | done | fixed | mark | tick"
+
+msgid "☑️.name"
+msgstr "check box with check"
+
+msgid "☑️.keywords"
+msgstr "✓ | ballot | box | check | checked | done | off | tick"
+
+msgid "✔️.name"
+msgstr "check mark"
+
+msgid "✔️.keywords"
+msgstr "✓ | check | checked | checkmark | done | heavy | mark | tick"
+
+msgid "❌.name"
+msgstr "cross mark"
+
+msgid "❌.keywords"
+msgstr "× | cancel | cross | mark | multiplication | multiply | x"
+
+msgid "❎.name"
+msgstr "cross mark button"
+
+msgid "❎.keywords"
+msgstr "× | button | cross | mark | multiplication | multiply | square | x"
+
+msgid "➰.name"
+msgstr "curly loop"
+
+msgid "➰.keywords"
+msgstr "curl | curly | loop"
+
+msgid "➿.name"
+msgstr "double curly loop"
+
+msgid "➿.keywords"
+msgstr "curl | curly | double | loop"
+
+msgid "〽️.name"
+msgstr "part alternation mark"
+
+msgid "〽️.keywords"
+msgstr "alternation | mark | part"
+
+msgid "✳️.name"
+msgstr "eight-spoked asterisk"
+
+msgid "✳️.keywords"
+msgstr "* | asterisk | eight-spoked"
+
+msgid "✴️.name"
+msgstr "eight-pointed star"
+
+msgid "✴️.keywords"
+msgstr "* | eight-pointed | star"
+
+msgid "❇️.name"
+msgstr "sparkle"
+
+msgid "❇️.keywords"
+msgstr "* | sparkle"
+
+msgid "©️.name"
+msgstr "copyright"
+
+msgid "©️.keywords"
+msgstr "C | copyright"
+
+msgid "®️.name"
+msgstr "registered"
+
+msgid "®️.keywords"
+msgstr "R | registered"
+
+msgid "™️.name"
+msgstr "trade mark"
+
+msgid "™️.keywords"
+msgstr "mark | TM | trade | trademark"
+
+msgid "🫟.name"
+msgstr "splatter"
+
+msgid "🫟.keywords"
+msgstr "drip | holi | ink | liquid | mess | paint | spill | splatter | stain"
+
+msgid "#️⃣.name"
+msgstr "keycap: #"
+
+msgid "#️⃣.keywords"
+msgstr "keycap"
+
+msgid "*️⃣.name"
+msgstr "keycap: *"
+
+msgid "*️⃣.keywords"
+msgstr "keycap"
+
+msgid "0️⃣.name"
+msgstr "keycap: 0"
+
+msgid "0️⃣.keywords"
+msgstr "keycap"
+
+msgid "1️⃣.name"
+msgstr "keycap: 1"
+
+msgid "1️⃣.keywords"
+msgstr "keycap"
+
+msgid "2️⃣.name"
+msgstr "keycap: 2"
+
+msgid "2️⃣.keywords"
+msgstr "keycap"
+
+msgid "3️⃣.name"
+msgstr "keycap: 3"
+
+msgid "3️⃣.keywords"
+msgstr "keycap"
+
+msgid "4️⃣.name"
+msgstr "keycap: 4"
+
+msgid "4️⃣.keywords"
+msgstr "keycap"
+
+msgid "5️⃣.name"
+msgstr "keycap: 5"
+
+msgid "5️⃣.keywords"
+msgstr "keycap"
+
+msgid "6️⃣.name"
+msgstr "keycap: 6"
+
+msgid "6️⃣.keywords"
+msgstr "keycap"
+
+msgid "7️⃣.name"
+msgstr "keycap: 7"
+
+msgid "7️⃣.keywords"
+msgstr "keycap"
+
+msgid "8️⃣.name"
+msgstr "keycap: 8"
+
+msgid "8️⃣.keywords"
+msgstr "keycap"
+
+msgid "9️⃣.name"
+msgstr "keycap: 9"
+
+msgid "9️⃣.keywords"
+msgstr "keycap"
+
+msgid "🔟.name"
+msgstr "keycap: 10"
+
+msgid "🔟.keywords"
+msgstr "keycap"
+
+msgid "🔠.name"
+msgstr "input latin uppercase"
+
+msgid "🔠.keywords"
+msgstr "ABCD | input | latin | letters | uppercase"
+
+msgid "🔡.name"
+msgstr "input latin lowercase"
+
+msgid "🔡.keywords"
+msgstr "abcd | input | latin | letters | lowercase"
+
+msgid "🔢.name"
+msgstr "input numbers"
+
+msgid "🔢.keywords"
+msgstr "1234 | input | numbers"
+
+msgid "🔣.name"
+msgstr "input symbols"
+
+msgid "🔣.keywords"
+msgstr "& | % | ♪ | 〒 | input | symbols"
+
+msgid "🔤.name"
+msgstr "input latin letters"
+
+msgid "🔤.keywords"
+msgstr "abc | alphabet | input | latin | letters"
+
+msgid "🅰️.name"
+msgstr "A button (blood type)"
+
+msgid "🅰️.keywords"
+msgstr "blood | button | type"
+
+msgid "🆎.name"
+msgstr "AB button (blood type)"
+
+msgid "🆎.keywords"
+msgstr "AB | blood | button | type"
+
+msgid "🅱️.name"
+msgstr "B button (blood type)"
+
+msgid "🅱️.keywords"
+msgstr "B | blood | button | type"
+
+msgid "🆑.name"
+msgstr "CL button"
+
+msgid "🆑.keywords"
+msgstr "button | CL"
+
+msgid "🆒.name"
+msgstr "COOL button"
+
+msgid "🆒.keywords"
+msgstr "button | COOL"
+
+msgid "🆓.name"
+msgstr "FREE button"
+
+msgid "🆓.keywords"
+msgstr "button | FREE"
+
+msgid "ℹ️.name"
+msgstr "information"
+
+msgid "ℹ️.keywords"
+msgstr "I | information"
+
+msgid "🆔.name"
+msgstr "ID button"
+
+msgid "🆔.keywords"
+msgstr "button | ID | identity"
+
+msgid "Ⓜ️.name"
+msgstr "circled M"
+
+msgid "Ⓜ️.keywords"
+msgstr "circle | circled | M"
+
+msgid "🆕.name"
+msgstr "NEW button"
+
+msgid "🆕.keywords"
+msgstr "button | NEW"
+
+msgid "🆖.name"
+msgstr "NG button"
+
+msgid "🆖.keywords"
+msgstr "button | NG"
+
+msgid "🅾️.name"
+msgstr "O button (blood type)"
+
+msgid "🅾️.keywords"
+msgstr "blood | button | O | type"
+
+msgid "🆗.name"
+msgstr "OK button"
+
+msgid "🆗.keywords"
+msgstr "button | OK | okay"
+
+msgid "🅿️.name"
+msgstr "P button"
+
+msgid "🅿️.keywords"
+msgstr "button | P | parking"
+
+msgid "🆘.name"
+msgstr "SOS button"
+
+msgid "🆘.keywords"
+msgstr "button | help | SOS"
+
+msgid "🆙.name"
+msgstr "UP! button"
+
+msgid "🆙.keywords"
+msgstr "button | mark | UP | UP!"
+
+msgid "🆚.name"
+msgstr "VS button"
+
+msgid "🆚.keywords"
+msgstr "button | versus | VS"
+
+msgid "🈁.name"
+msgstr "Japanese “here” button"
+
+msgid "🈁.keywords"
+msgstr "button | here | Japanese | katakana"
+
+msgid "🈂️.name"
+msgstr "Japanese “service charge” button"
+
+msgid "🈂️.keywords"
+msgstr "button | charge | Japanese | katakana | service"
+
+msgid "🈷️.name"
+msgstr "Japanese “monthly amount” button"
+
+msgid "🈷️.keywords"
+msgstr "amount | button | ideograph | Japanese | monthly"
+
+msgid "🈶.name"
+msgstr "Japanese “not free of charge” button"
+
+msgid "🈶.keywords"
+msgstr "button | charge | free | ideograph | Japanese | not"
+
+msgid "🈯.name"
+msgstr "Japanese “reserved” button"
+
+msgid "🈯.keywords"
+msgstr "button | ideograph | Japanese | reserved"
+
+msgid "🉐.name"
+msgstr "Japanese “bargain” button"
+
+msgid "🉐.keywords"
+msgstr ""
+"bargain | button | ideograph | Japanese"
+" | "
+"bargain | japanese | tokubetsu | special"
+
+msgid "🈹.name"
+msgstr "Japanese “discount” button"
+
+msgid "🈹.keywords"
+msgstr "button | discount | ideograph | Japanese"
+
+msgid "🈚.name"
+msgstr "Japanese “free of charge” button"
+
+msgid "🈚.keywords"
+msgstr "button | charge | free | ideograph | Japanese"
+
+msgid "🈲.name"
+msgstr "Japanese “prohibited” button"
+
+msgid "🈲.keywords"
+msgstr "button | ideograph | Japanese | prohibited"
+
+msgid "🉑.name"
+msgstr "Japanese “acceptable” button"
+
+msgid "🉑.keywords"
+msgstr "acceptable | button | ideograph | Japanese"
+
+msgid "🈸.name"
+msgstr "Japanese “application” button"
+
+msgid "🈸.keywords"
+msgstr "application | button | ideograph | Japanese"
+
+msgid "🈴.name"
+msgstr "Japanese “passing grade” button"
+
+msgid "🈴.keywords"
+msgstr "button | grade | ideograph | Japanese | passing"
+
+msgid "🈳.name"
+msgstr "Japanese “vacancy” button"
+
+msgid "🈳.keywords"
+msgstr "button | ideograph | Japanese | vacancy"
+
+msgid "㊗️.name"
+msgstr "Japanese “congratulations” button"
+
+msgid "㊗️.keywords"
+msgstr "button | congratulations | ideograph | Japanese"
+
+msgid "㊙️.name"
+msgstr "Japanese “secret” button"
+
+msgid "㊙️.keywords"
+msgstr "button | ideograph | Japanese | secret"
+
+msgid "🈺.name"
+msgstr "Japanese “open for business” button"
+
+msgid "🈺.keywords"
+msgstr "business | button | ideograph | Japanese | open"
+
+msgid "🈵.name"
+msgstr "Japanese “no vacancy” button"
+
+msgid "🈵.keywords"
+msgstr "button | ideograph | Japanese | no | vacancy"
+
+msgid "🔴.name"
+msgstr "red circle"
+
+msgid "🔴.keywords"
+msgstr "circle | geometric | red"
+
+msgid "🟠.name"
+msgstr "orange circle"
+
+msgid "🟠.keywords"
+msgstr "circle | orange"
+
+msgid "🟡.name"
+msgstr "yellow circle"
+
+msgid "🟡.keywords"
+msgstr "circle | yellow"
+
+msgid "🟢.name"
+msgstr "green circle"
+
+msgid "🟢.keywords"
+msgstr "circle | green"
+
+msgid "🔵.name"
+msgstr "blue circle"
+
+msgid "🔵.keywords"
+msgstr "blue | circle | geometric"
+
+msgid "🟣.name"
+msgstr "purple circle"
+
+msgid "🟣.keywords"
+msgstr "circle | purple"
+
+msgid "🟤.name"
+msgstr "brown circle"
+
+msgid "🟤.keywords"
+msgstr "brown | circle"
+
+msgid "⚫.name"
+msgstr "black circle"
+
+msgid "⚫.keywords"
+msgstr "black | circle | geometric"
+
+msgid "⚪.name"
+msgstr "white circle"
+
+msgid "⚪.keywords"
+msgstr "circle | geometric | white"
+
+msgid "🟥.name"
+msgstr "red square"
+
+msgid "🟥.keywords"
+msgstr "card | penalty | red | square"
+
+msgid "🟧.name"
+msgstr "orange square"
+
+msgid "🟧.keywords"
+msgstr "orange | square"
+
+msgid "🟨.name"
+msgstr "yellow square"
+
+msgid "🟨.keywords"
+msgstr "card | penalty | square | yellow"
+
+msgid "🟩.name"
+msgstr "green square"
+
+msgid "🟩.keywords"
+msgstr "green | square"
+
+msgid "🟦.name"
+msgstr "blue square"
+
+msgid "🟦.keywords"
+msgstr "blue | square"
+
+msgid "🟪.name"
+msgstr "purple square"
+
+msgid "🟪.keywords"
+msgstr "purple | square"
+
+msgid "🟫.name"
+msgstr "brown square"
+
+msgid "🟫.keywords"
+msgstr "brown | square"
+
+msgid "⬛.name"
+msgstr "black large square"
+
+msgid "⬛.keywords"
+msgstr "black | geometric | large | square"
+
+msgid "⬜.name"
+msgstr "white large square"
+
+msgid "⬜.keywords"
+msgstr "geometric | large | square | white"
+
+msgid "◼️.name"
+msgstr "black medium square"
+
+msgid "◼️.keywords"
+msgstr "black | geometric | medium | square"
+
+msgid "◻️.name"
+msgstr "white medium square"
+
+msgid "◻️.keywords"
+msgstr "geometric | medium | square | white"
+
+msgid "◾.name"
+msgstr "black medium-small square"
+
+msgid "◾.keywords"
+msgstr "black | geometric | medium-small | square"
+
+msgid "◽.name"
+msgstr "white medium-small square"
+
+msgid "◽.keywords"
+msgstr "geometric | medium-small | square | white"
+
+msgid "▪️.name"
+msgstr "black small square"
+
+msgid "▪️.keywords"
+msgstr "black | geometric | small | square"
+
+msgid "▫️.name"
+msgstr "white small square"
+
+msgid "▫️.keywords"
+msgstr "geometric | small | square | white"
+
+msgid "🔶.name"
+msgstr "large orange diamond"
+
+msgid "🔶.keywords"
+msgstr "diamond | geometric | large | orange"
+
+msgid "🔷.name"
+msgstr "large blue diamond"
+
+msgid "🔷.keywords"
+msgstr "blue | diamond | geometric | large"
+
+msgid "🔸.name"
+msgstr "small orange diamond"
+
+msgid "🔸.keywords"
+msgstr "diamond | geometric | orange | small"
+
+msgid "🔹.name"
+msgstr "small blue diamond"
+
+msgid "🔹.keywords"
+msgstr "blue | diamond | geometric | small"
+
+msgid "🔺.name"
+msgstr "red triangle pointed up"
+
+msgid "🔺.keywords"
+msgstr "geometric | pointed | red | triangle | up"
+
+msgid "🔻.name"
+msgstr "red triangle pointed down"
+
+msgid "🔻.keywords"
+msgstr "down | geometric | pointed | red | triangle"
+
+msgid "💠.name"
+msgstr "diamond with a dot"
+
+msgid "💠.keywords"
+msgstr "comic | diamond | dot | geometric"
+
+msgid "🔘.name"
+msgstr "radio button"
+
+msgid "🔘.keywords"
+msgstr "button | geometric | radio"
+
+msgid "🔳.name"
+msgstr "white square button"
+
+msgid "🔳.keywords"
+msgstr "button | geometric | outlined | square | white"
+
+msgid "🔲.name"
+msgstr "black square button"
+
+msgid "🔲.keywords"
+msgstr "black | button | geometric | square"

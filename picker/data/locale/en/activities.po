@@ -1,0 +1,525 @@
+msgid ""
+msgstr ""
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "🎃.name"
+msgstr "jack-o-lantern"
+
+msgid "🎃.keywords"
+msgstr "celebration | halloween | jack | jack-o-lantern | lantern | pumpkin"
+
+msgid "🎄.name"
+msgstr "Christmas tree"
+
+msgid "🎄.keywords"
+msgstr "celebration | Christmas | tree"
+
+msgid "🎆.name"
+msgstr "fireworks"
+
+msgid "🎆.keywords"
+msgstr "boom | celebration | entertainment | fireworks | yolo"
+
+msgid "🎇.name"
+msgstr "sparkler"
+
+msgid "🎇.keywords"
+msgstr "boom | celebration | fireworks | sparkle | sparkler"
+
+msgid "🧨.name"
+msgstr "firecracker"
+
+msgid "🧨.keywords"
+msgstr "dynamite | explosive | fire | firecracker | fireworks | light | pop | popping | spark"
+
+msgid "✨.name"
+msgstr "sparkles"
+
+msgid "✨.keywords"
+msgstr ""
+"* | magic | sparkle | sparkles | star"
+" | "
+"sparkle | magic | vibe | aesthetic | shiny | glitter"
+
+msgid "🎈.name"
+msgstr "balloon"
+
+msgid "🎈.keywords"
+msgstr "balloon | birthday | celebrate | celebration"
+
+msgid "🎉.name"
+msgstr "party popper"
+
+msgid "🎉.keywords"
+msgstr ""
+"awesome | birthday | celebrate | celebration | excited | hooray | party | popper | tada | woohoo"
+" | "
+"party | celebrate | congrats | yay | woohoo | hype"
+
+msgid "🎊.name"
+msgstr "confetti ball"
+
+msgid "🎊.keywords"
+msgstr "ball | celebrate | celebration | confetti | party | woohoo"
+
+msgid "🎋.name"
+msgstr "tanabata tree"
+
+msgid "🎋.keywords"
+msgstr "banner | celebration | Japanese | tanabata | tree"
+
+msgid "🎍.name"
+msgstr "pine decoration"
+
+msgid "🎍.keywords"
+msgstr "bamboo | celebration | decoration | Japanese | pine | plant"
+
+msgid "🎎.name"
+msgstr "Japanese dolls"
+
+msgid "🎎.keywords"
+msgstr "celebration | doll | dolls | festival | Japanese"
+
+msgid "🎏.name"
+msgstr "carp streamer"
+
+msgid "🎏.keywords"
+msgstr "carp | celebration | streamer"
+
+msgid "🎐.name"
+msgstr "wind chime"
+
+msgid "🎐.keywords"
+msgstr "bell | celebration | chime | wind"
+
+msgid "🎑.name"
+msgstr "moon viewing ceremony"
+
+msgid "🎑.keywords"
+msgstr "celebration | ceremony | moon | viewing"
+
+msgid "🧧.name"
+msgstr "red envelope"
+
+msgid "🧧.keywords"
+msgstr "envelope | gift | good | hóngbāo | lai | luck | money | red | see"
+
+msgid "🎀.name"
+msgstr "ribbon"
+
+msgid "🎀.keywords"
+msgstr "celebration | ribbon"
+
+msgid "🎁.name"
+msgstr "wrapped gift"
+
+msgid "🎁.keywords"
+msgstr "birthday | bow | box | celebration | christmas | gift | present | surprise | wrapped"
+
+msgid "🎗️.name"
+msgstr "reminder ribbon"
+
+msgid "🎗️.keywords"
+msgstr "celebration | reminder | ribbon"
+
+msgid "🎟️.name"
+msgstr "admission tickets"
+
+msgid "🎟️.keywords"
+msgstr "admission | ticket | tickets"
+
+msgid "🎫.name"
+msgstr "ticket"
+
+msgid "🎫.keywords"
+msgstr "admission | stub | ticket"
+
+msgid "🎖️.name"
+msgstr "military medal"
+
+msgid "🎖️.keywords"
+msgstr "award | celebration | medal | military"
+
+msgid "🏆.name"
+msgstr "trophy"
+
+msgid "🏆.keywords"
+msgstr "champion | champs | prize | slay | sport | trophy | victory | win | winning"
+
+msgid "🏅.name"
+msgstr "sports medal"
+
+msgid "🏅.keywords"
+msgstr "award | gold | medal | sports | winner"
+
+msgid "🥇.name"
+msgstr "1st place medal"
+
+msgid "🥇.keywords"
+msgstr "1st | first | gold | medal | place"
+
+msgid "🥈.name"
+msgstr "2nd place medal"
+
+msgid "🥈.keywords"
+msgstr "2nd | medal | place | second | silver"
+
+msgid "🥉.name"
+msgstr "3rd place medal"
+
+msgid "🥉.keywords"
+msgstr "3rd | bronze | medal | place | third"
+
+msgid "⚽.name"
+msgstr "soccer ball"
+
+msgid "⚽.keywords"
+msgstr "ball | football | futbol | soccer | sport"
+
+msgid "⚾.name"
+msgstr "baseball"
+
+msgid "⚾.keywords"
+msgstr "ball | baseball | sport"
+
+msgid "🥎.name"
+msgstr "softball"
+
+msgid "🥎.keywords"
+msgstr "ball | glove | softball | sports | underarm"
+
+msgid "🏀.name"
+msgstr "basketball"
+
+msgid "🏀.keywords"
+msgstr "ball | basketball | hoop | sport"
+
+msgid "🏐.name"
+msgstr "volleyball"
+
+msgid "🏐.keywords"
+msgstr "ball | game | volleyball"
+
+msgid "🏈.name"
+msgstr "american football"
+
+msgid "🏈.keywords"
+msgstr "american | ball | bowl | football | sport | super"
+
+msgid "🏉.name"
+msgstr "rugby football"
+
+msgid "🏉.keywords"
+msgstr "ball | football | rugby | sport"
+
+msgid "🎾.name"
+msgstr "tennis"
+
+msgid "🎾.keywords"
+msgstr "ball | racquet | sport | tennis"
+
+msgid "🥏.name"
+msgstr "flying disc"
+
+msgid "🥏.keywords"
+msgstr "disc | flying | ultimate"
+
+msgid "🎳.name"
+msgstr "bowling"
+
+msgid "🎳.keywords"
+msgstr "ball | bowling | game | sport | strike"
+
+msgid "🏏.name"
+msgstr "cricket game"
+
+msgid "🏏.keywords"
+msgstr "ball | bat | cricket | game"
+
+msgid "🏑.name"
+msgstr "field hockey"
+
+msgid "🏑.keywords"
+msgstr "ball | field | game | hockey | stick"
+
+msgid "🏒.name"
+msgstr "ice hockey"
+
+msgid "🏒.keywords"
+msgstr "game | hockey | ice | puck | stick"
+
+msgid "🥍.name"
+msgstr "lacrosse"
+
+msgid "🥍.keywords"
+msgstr "ball | goal | lacrosse | sports | stick"
+
+msgid "🏓.name"
+msgstr "ping pong"
+
+msgid "🏓.keywords"
+msgstr "ball | bat | game | paddle | ping | pingpong | pong | table | tennis"
+
+msgid "🏸.name"
+msgstr "badminton"
+
+msgid "🏸.keywords"
+msgstr "badminton | birdie | game | racquet | shuttlecock"
+
+msgid "🥊.name"
+msgstr "boxing glove"
+
+msgid "🥊.keywords"
+msgstr "boxing | glove"
+
+msgid "🥋.name"
+msgstr "martial arts uniform"
+
+msgid "🥋.keywords"
+msgstr "arts | judo | karate | martial | taekwondo | uniform"
+
+msgid "🥅.name"
+msgstr "goal net"
+
+msgid "🥅.keywords"
+msgstr "goal | net"
+
+msgid "⛳.name"
+msgstr "flag in hole"
+
+msgid "⛳.keywords"
+msgstr "flag | golf | hole | sport"
+
+msgid "⛸️.name"
+msgstr "ice skate"
+
+msgid "⛸️.keywords"
+msgstr "ice | skate | skating"
+
+msgid "🎣.name"
+msgstr "fishing pole"
+
+msgid "🎣.keywords"
+msgstr "entertainment | fish | fishing | pole | sport"
+
+msgid "🤿.name"
+msgstr "diving mask"
+
+msgid "🤿.keywords"
+msgstr "diving | mask | scuba | snorkeling"
+
+msgid "🎽.name"
+msgstr "running shirt"
+
+msgid "🎽.keywords"
+msgstr "athletics | running | sash | shirt"
+
+msgid "🎿.name"
+msgstr "skis"
+
+msgid "🎿.keywords"
+msgstr "ski | skis | snow | sport"
+
+msgid "🛷.name"
+msgstr "sled"
+
+msgid "🛷.keywords"
+msgstr "luge | sled | sledge | sleigh | snow | toboggan"
+
+msgid "🥌.name"
+msgstr "curling stone"
+
+msgid "🥌.keywords"
+msgstr "curling | game | rock | stone"
+
+msgid "🎯.name"
+msgstr "bullseye"
+
+msgid "🎯.keywords"
+msgstr "bull | bullseye | dart | direct | entertainment | game | hit | target"
+
+msgid "🪀.name"
+msgstr "yo-yo"
+
+msgid "🪀.keywords"
+msgstr "fluctuate | toy | yo-yo"
+
+msgid "🪁.name"
+msgstr "kite"
+
+msgid "🪁.keywords"
+msgstr "fly | kite | soar"
+
+msgid "🔫.name"
+msgstr "water pistol"
+
+msgid "🔫.keywords"
+msgstr "gun | handgun | pistol | revolver | tool | water | weapon"
+
+msgid "🎱.name"
+msgstr "pool 8 ball"
+
+msgid "🎱.keywords"
+msgstr "8 | 8ball | ball | billiard | eight | game | pool"
+
+msgid "🔮.name"
+msgstr "crystal ball"
+
+msgid "🔮.keywords"
+msgstr "ball | crystal | fairy | fairytale | fantasy | fortune | future | magic | tale | tool"
+
+msgid "🪄.name"
+msgstr "magic wand"
+
+msgid "🪄.keywords"
+msgstr "magic | magician | wand | witch | wizard"
+
+msgid "🎮.name"
+msgstr "video game"
+
+msgid "🎮.keywords"
+msgstr "controller | entertainment | game | video"
+
+msgid "🕹️.name"
+msgstr "joystick"
+
+msgid "🕹️.keywords"
+msgstr "game | joystick | video | videogame"
+
+msgid "🎰.name"
+msgstr "slot machine"
+
+msgid "🎰.keywords"
+msgstr "casino | gamble | gambling | game | machine | slot | slots"
+
+msgid "🎲.name"
+msgstr "game die"
+
+msgid "🎲.keywords"
+msgstr "dice | die | entertainment | game"
+
+msgid "🧩.name"
+msgstr "puzzle piece"
+
+msgid "🧩.keywords"
+msgstr "clue | interlocking | jigsaw | piece | puzzle"
+
+msgid "🧸.name"
+msgstr "teddy bear"
+
+msgid "🧸.keywords"
+msgstr "bear | plaything | plush | stuffed | teddy | toy"
+
+msgid "🪅.name"
+msgstr "piñata"
+
+msgid "🪅.keywords"
+msgstr "candy | celebrate | celebration | cinco | de | festive | mayo | party | pinada | pinata | piñata"
+
+msgid "🪩.name"
+msgstr "mirror ball"
+
+msgid "🪩.keywords"
+msgstr "ball | dance | disco | glitter | mirror | party"
+
+msgid "🪆.name"
+msgstr "nesting dolls"
+
+msgid "🪆.keywords"
+msgstr "babooshka | baboushka | babushka | doll | dolls | matryoshka | nesting | russia"
+
+msgid "♠️.name"
+msgstr "spade suit"
+
+msgid "♠️.keywords"
+msgstr "card | game | spade | suit"
+
+msgid "♥️.name"
+msgstr "heart suit"
+
+msgid "♥️.keywords"
+msgstr "card | emotion | game | heart | hearts | suit"
+
+msgid "♦️.name"
+msgstr "diamond suit"
+
+msgid "♦️.keywords"
+msgstr "card | diamond | game | suit"
+
+msgid "♣️.name"
+msgstr "club suit"
+
+msgid "♣️.keywords"
+msgstr "card | club | clubs | game | suit"
+
+msgid "♟️.name"
+msgstr "chess pawn"
+
+msgid "♟️.keywords"
+msgstr "chess | dupe | expendable | pawn"
+
+msgid "🃏.name"
+msgstr "joker"
+
+msgid "🃏.keywords"
+msgstr "card | game | joker | wildcard"
+
+msgid "🀄.name"
+msgstr "mahjong red dragon"
+
+msgid "🀄.keywords"
+msgstr ""
+"dragon | game | mahjong | red"
+" | "
+"mahjong | game | tile | red dragon"
+
+msgid "🎴.name"
+msgstr "flower playing cards"
+
+msgid "🎴.keywords"
+msgstr "card | cards | flower | game | Japanese | playing"
+
+msgid "🎭.name"
+msgstr "performing arts"
+
+msgid "🎭.keywords"
+msgstr "actor | actress | art | arts | entertainment | mask | performing | theater | theatre | thespian"
+
+msgid "🖼️.name"
+msgstr "framed picture"
+
+msgid "🖼️.keywords"
+msgstr "art | frame | framed | museum | painting | picture"
+
+msgid "🎨.name"
+msgstr "artist palette"
+
+msgid "🎨.keywords"
+msgstr "art | artist | artsy | arty | colorful | creative | entertainment | museum | painter | painting | palette"
+
+msgid "🧵.name"
+msgstr "thread"
+
+msgid "🧵.keywords"
+msgstr "needle | sewing | spool | string | thread"
+
+msgid "🪡.name"
+msgstr "sewing needle"
+
+msgid "🪡.keywords"
+msgstr "embroidery | needle | sew | sewing | stitches | sutures | tailoring | thread"
+
+msgid "🧶.name"
+msgstr "yarn"
+
+msgid "🧶.keywords"
+msgstr "ball | crochet | knit | yarn"
+
+msgid "🪢.name"
+msgstr "knot"
+
+msgid "🪢.keywords"
+msgstr "cord | knot | rope | tangled | tie | twine | twist"

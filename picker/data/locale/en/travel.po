@@ -1,0 +1,1344 @@
+msgid ""
+msgstr ""
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "🌍.name"
+msgstr "globe showing Europe-Africa"
+
+msgid "🌍.keywords"
+msgstr "Africa | earth | Europe | Europe-Africa | globe | showing | world"
+
+msgid "🌎.name"
+msgstr "globe showing Americas"
+
+msgid "🌎.keywords"
+msgstr "Americas | earth | globe | showing | world"
+
+msgid "🌏.name"
+msgstr "globe showing Asia-Australia"
+
+msgid "🌏.keywords"
+msgstr "Asia | Asia-Australia | Australia | earth | globe | showing | world"
+
+msgid "🌐.name"
+msgstr "globe with meridians"
+
+msgid "🌐.keywords"
+msgstr "earth | globe | internet | meridians | web | world | worldwide"
+
+msgid "🗺️.name"
+msgstr "world map"
+
+msgid "🗺️.keywords"
+msgstr "map | world"
+
+msgid "🗾.name"
+msgstr "map of Japan"
+
+msgid "🗾.keywords"
+msgstr ""
+"Japan | map"
+" | "
+"japan | japanese map | nippon"
+
+msgid "🧭.name"
+msgstr "compass"
+
+msgid "🧭.keywords"
+msgstr "compass | direction | magnetic | navigation | orienteering"
+
+msgid "🏔️.name"
+msgstr "snow-capped mountain"
+
+msgid "🏔️.keywords"
+msgstr "cold | mountain | snow | snow-capped"
+
+msgid "⛰️.name"
+msgstr "mountain"
+
+msgid "⛰️.keywords"
+msgstr "mountain"
+
+msgid "🛘.name"
+msgstr "landslide"
+
+msgid "🛘.keywords"
+msgstr "avalanche | danger | disaster | earthquake | mountain | mudslide | rocks"
+
+msgid "🌋.name"
+msgstr "volcano"
+
+msgid "🌋.keywords"
+msgstr "eruption | mountain | nature | volcano"
+
+msgid "🗻.name"
+msgstr "mount fuji"
+
+msgid "🗻.keywords"
+msgstr "fuji | mount | mountain | nature"
+
+msgid "🏕️.name"
+msgstr "camping"
+
+msgid "🏕️.keywords"
+msgstr "camping"
+
+msgid "🏖️.name"
+msgstr "beach with umbrella"
+
+msgid "🏖️.keywords"
+msgstr "beach | umbrella"
+
+msgid "🏜️.name"
+msgstr "desert"
+
+msgid "🏜️.keywords"
+msgstr "desert"
+
+msgid "🏝️.name"
+msgstr "desert island"
+
+msgid "🏝️.keywords"
+msgstr "desert | island"
+
+msgid "🏞️.name"
+msgstr "national park"
+
+msgid "🏞️.keywords"
+msgstr "national | park"
+
+msgid "🏟️.name"
+msgstr "stadium"
+
+msgid "🏟️.keywords"
+msgstr "stadium"
+
+msgid "🏛️.name"
+msgstr "classical building"
+
+msgid "🏛️.keywords"
+msgstr "building | classical"
+
+msgid "🏗️.name"
+msgstr "building construction"
+
+msgid "🏗️.keywords"
+msgstr "building | construction | crane"
+
+msgid "🧱.name"
+msgstr "brick"
+
+msgid "🧱.keywords"
+msgstr "brick | bricks | clay | mortar | wall"
+
+msgid "🪨.name"
+msgstr "rock"
+
+msgid "🪨.keywords"
+msgstr "boulder | heavy | rock | solid | stone | tough"
+
+msgid "🪵.name"
+msgstr "wood"
+
+msgid "🪵.keywords"
+msgstr "log | lumber | timber | wood"
+
+msgid "🛖.name"
+msgstr "hut"
+
+msgid "🛖.keywords"
+msgstr "home | house | hut | roundhouse | shelter | yurt"
+
+msgid "🏘️.name"
+msgstr "houses"
+
+msgid "🏘️.keywords"
+msgstr "house | houses"
+
+msgid "🏚️.name"
+msgstr "derelict house"
+
+msgid "🏚️.keywords"
+msgstr "derelict | home | house"
+
+msgid "🏠.name"
+msgstr "house"
+
+msgid "🏠.keywords"
+msgstr "building | country | heart | home | house | ranch | settle | simple | suburban | suburbia | where"
+
+msgid "🏡.name"
+msgstr "house with garden"
+
+msgid "🏡.keywords"
+msgstr "building | country | garden | heart | home | house | ranch | settle | simple | suburban | suburbia | where"
+
+msgid "🏢.name"
+msgstr "office building"
+
+msgid "🏢.keywords"
+msgstr "building | city | cubical | job | office"
+
+msgid "🏣.name"
+msgstr "Japanese post office"
+
+msgid "🏣.keywords"
+msgstr "building | Japanese | office | post"
+
+msgid "🏤.name"
+msgstr "post office"
+
+msgid "🏤.keywords"
+msgstr "building | European | office | post"
+
+msgid "🏥.name"
+msgstr "hospital"
+
+msgid "🏥.keywords"
+msgstr "building | doctor | hospital | medicine"
+
+msgid "🏦.name"
+msgstr "bank"
+
+msgid "🏦.keywords"
+msgstr "bank | building"
+
+msgid "🏨.name"
+msgstr "hotel"
+
+msgid "🏨.keywords"
+msgstr "building | hotel"
+
+msgid "🏩.name"
+msgstr "love hotel"
+
+msgid "🏩.keywords"
+msgstr "building | hotel | love"
+
+msgid "🏪.name"
+msgstr "convenience store"
+
+msgid "🏪.keywords"
+msgstr "24 | building | convenience | hours | store"
+
+msgid "🏫.name"
+msgstr "school"
+
+msgid "🏫.keywords"
+msgstr "building | school"
+
+msgid "🏬.name"
+msgstr "department store"
+
+msgid "🏬.keywords"
+msgstr "building | department | store"
+
+msgid "🏭.name"
+msgstr "factory"
+
+msgid "🏭.keywords"
+msgstr "building | factory"
+
+msgid "🏯.name"
+msgstr "Japanese castle"
+
+msgid "🏯.keywords"
+msgstr ""
+"building | castle | Japanese"
+" | "
+"japanese castle | samurai | feudal | history"
+
+msgid "🏰.name"
+msgstr "castle"
+
+msgid "🏰.keywords"
+msgstr "building | castle | European"
+
+msgid "💒.name"
+msgstr "wedding"
+
+msgid "💒.keywords"
+msgstr "chapel | hitched | nuptials | romance | wedding"
+
+msgid "🗼.name"
+msgstr "Tokyo tower"
+
+msgid "🗼.keywords"
+msgstr "Tokyo | tower"
+
+msgid "🗽.name"
+msgstr "Statue of Liberty"
+
+msgid "🗽.keywords"
+msgstr "liberty | Liberty | new | ny | nyc | statue | Statue | york"
+
+msgid "⛪.name"
+msgstr "church"
+
+msgid "⛪.keywords"
+msgstr "bless | chapel | Christian | church | cross | religion"
+
+msgid "🕌.name"
+msgstr "mosque"
+
+msgid "🕌.keywords"
+msgstr "islam | masjid | mosque | Muslim | religion"
+
+msgid "🛕.name"
+msgstr "hindu temple"
+
+msgid "🛕.keywords"
+msgstr "hindu | temple"
+
+msgid "🕍.name"
+msgstr "synagogue"
+
+msgid "🕍.keywords"
+msgstr "Jew | Jewish | judaism | religion | synagogue | temple"
+
+msgid "⛩️.name"
+msgstr "shinto shrine"
+
+msgid "⛩️.keywords"
+msgstr ""
+"religion | shinto | shrine"
+" | "
+"shrine | japan | torii | shinto | temple"
+
+msgid "🕋.name"
+msgstr "kaaba"
+
+msgid "🕋.keywords"
+msgstr "hajj | islam | kaaba | Muslim | religion | umrah"
+
+msgid "⛲.name"
+msgstr "fountain"
+
+msgid "⛲.keywords"
+msgstr "fountain"
+
+msgid "⛺.name"
+msgstr "tent"
+
+msgid "⛺.keywords"
+msgstr "camping | tent"
+
+msgid "🌁.name"
+msgstr "foggy"
+
+msgid "🌁.keywords"
+msgstr "fog | foggy"
+
+msgid "🌃.name"
+msgstr "night with stars"
+
+msgid "🌃.keywords"
+msgstr "night | star | stars"
+
+msgid "🏙️.name"
+msgstr "cityscape"
+
+msgid "🏙️.keywords"
+msgstr "city | cityscape"
+
+msgid "🌄.name"
+msgstr "sunrise over mountains"
+
+msgid "🌄.keywords"
+msgstr "morning | mountains | over | sun | sunrise"
+
+msgid "🌅.name"
+msgstr "sunrise"
+
+msgid "🌅.keywords"
+msgstr "morning | nature | sun | sunrise"
+
+msgid "🌆.name"
+msgstr "cityscape at dusk"
+
+msgid "🌆.keywords"
+msgstr "at | building | city | cityscape | dusk | evening | landscape | sun | sunset"
+
+msgid "🌇.name"
+msgstr "sunset"
+
+msgid "🌇.keywords"
+msgstr "building | dusk | sun | sunset"
+
+msgid "🌉.name"
+msgstr "bridge at night"
+
+msgid "🌉.keywords"
+msgstr "at | bridge | night"
+
+msgid "♨️.name"
+msgstr "hot springs"
+
+msgid "♨️.keywords"
+msgstr "hot | hotsprings | springs | steaming"
+
+msgid "🎠.name"
+msgstr "carousel horse"
+
+msgid "🎠.keywords"
+msgstr "carousel | entertainment | horse"
+
+msgid "🛝.name"
+msgstr "playground slide"
+
+msgid "🛝.keywords"
+msgstr "amusement | park | play | playground | playing | slide | sliding | theme"
+
+msgid "🎡.name"
+msgstr "ferris wheel"
+
+msgid "🎡.keywords"
+msgstr "amusement | ferris | park | theme | wheel"
+
+msgid "🎢.name"
+msgstr "roller coaster"
+
+msgid "🎢.keywords"
+msgstr "amusement | coaster | park | roller | theme"
+
+msgid "💈.name"
+msgstr "barber pole"
+
+msgid "💈.keywords"
+msgstr "barber | cut | fresh | haircut | pole | shave"
+
+msgid "🎪.name"
+msgstr "circus tent"
+
+msgid "🎪.keywords"
+msgstr "circus | tent"
+
+msgid "🚂.name"
+msgstr "locomotive"
+
+msgid "🚂.keywords"
+msgstr "caboose | engine | locomotive | railway | steam | train | trains | travel"
+
+msgid "🚃.name"
+msgstr "railway car"
+
+msgid "🚃.keywords"
+msgstr "car | electric | railway | train | tram | travel | trolleybus"
+
+msgid "🚄.name"
+msgstr "high-speed train"
+
+msgid "🚄.keywords"
+msgstr "high-speed | railway | shinkansen | speed | train"
+
+msgid "🚅.name"
+msgstr "bullet train"
+
+msgid "🚅.keywords"
+msgstr "bullet | high-speed | nose | railway | shinkansen | speed | train | travel"
+
+msgid "🚆.name"
+msgstr "train"
+
+msgid "🚆.keywords"
+msgstr "arrived | choo | railway | train"
+
+msgid "🚇.name"
+msgstr "metro"
+
+msgid "🚇.keywords"
+msgstr "metro | subway | travel"
+
+msgid "🚈.name"
+msgstr "light rail"
+
+msgid "🚈.keywords"
+msgstr "arrived | light | monorail | rail | railway"
+
+msgid "🚉.name"
+msgstr "station"
+
+msgid "🚉.keywords"
+msgstr "railway | station | train"
+
+msgid "🚊.name"
+msgstr "tram"
+
+msgid "🚊.keywords"
+msgstr "tram | trolleybus"
+
+msgid "🚝.name"
+msgstr "monorail"
+
+msgid "🚝.keywords"
+msgstr "monorail | vehicle"
+
+msgid "🚞.name"
+msgstr "mountain railway"
+
+msgid "🚞.keywords"
+msgstr "car | mountain | railway | trip"
+
+msgid "🚋.name"
+msgstr "tram car"
+
+msgid "🚋.keywords"
+msgstr "bus | car | tram | trolley | trolleybus"
+
+msgid "🚌.name"
+msgstr "bus"
+
+msgid "🚌.keywords"
+msgstr "bus | school | vehicle"
+
+msgid "🚍.name"
+msgstr "oncoming bus"
+
+msgid "🚍.keywords"
+msgstr "bus | cars | oncoming"
+
+msgid "🚎.name"
+msgstr "trolleybus"
+
+msgid "🚎.keywords"
+msgstr "bus | tram | trolley | trolleybus"
+
+msgid "🚐.name"
+msgstr "minibus"
+
+msgid "🚐.keywords"
+msgstr "bus | drive | minibus | van | vehicle"
+
+msgid "🚑.name"
+msgstr "ambulance"
+
+msgid "🚑.keywords"
+msgstr "ambulance | emergency | vehicle"
+
+msgid "🚒.name"
+msgstr "fire engine"
+
+msgid "🚒.keywords"
+msgstr "engine | fire | truck"
+
+msgid "🚓.name"
+msgstr "police car"
+
+msgid "🚓.keywords"
+msgstr "5–0 | car | cops | patrol | police"
+
+msgid "🚔.name"
+msgstr "oncoming police car"
+
+msgid "🚔.keywords"
+msgstr "car | oncoming | police"
+
+msgid "🚕.name"
+msgstr "taxi"
+
+msgid "🚕.keywords"
+msgstr "cab | cabbie | car | drive | taxi | vehicle | yellow"
+
+msgid "🚖.name"
+msgstr "oncoming taxi"
+
+msgid "🚖.keywords"
+msgstr "cab | cabbie | cars | drove | hail | oncoming | taxi | yellow"
+
+msgid "🚗.name"
+msgstr "automobile"
+
+msgid "🚗.keywords"
+msgstr "automobile | car | driving | vehicle"
+
+msgid "🚘.name"
+msgstr "oncoming automobile"
+
+msgid "🚘.keywords"
+msgstr "automobile | car | cars | drove | oncoming | vehicle"
+
+msgid "🚙.name"
+msgstr "sport utility vehicle"
+
+msgid "🚙.keywords"
+msgstr "car | drive | recreational | sport | sportutility | utility | vehicle"
+
+msgid "🛻.name"
+msgstr "pickup truck"
+
+msgid "🛻.keywords"
+msgstr "automobile | car | flatbed | pick-up | pickup | transportation | truck"
+
+msgid "🚚.name"
+msgstr "delivery truck"
+
+msgid "🚚.keywords"
+msgstr "car | delivery | drive | truck | vehicle"
+
+msgid "🚛.name"
+msgstr "articulated lorry"
+
+msgid "🚛.keywords"
+msgstr "articulated | car | drive | lorry | move | semi | truck | vehicle"
+
+msgid "🚜.name"
+msgstr "tractor"
+
+msgid "🚜.keywords"
+msgstr "tractor | vehicle"
+
+msgid "🏎️.name"
+msgstr "racing car"
+
+msgid "🏎️.keywords"
+msgstr "car | racing | zoom"
+
+msgid "🏍️.name"
+msgstr "motorcycle"
+
+msgid "🏍️.keywords"
+msgstr "motorcycle | racing"
+
+msgid "🛵.name"
+msgstr "motor scooter"
+
+msgid "🛵.keywords"
+msgstr "motor | scooter"
+
+msgid "🦽.name"
+msgstr "manual wheelchair"
+
+msgid "🦽.keywords"
+msgstr "accessibility | manual | wheelchair"
+
+msgid "🦼.name"
+msgstr "motorized wheelchair"
+
+msgid "🦼.keywords"
+msgstr "accessibility | motorized | wheelchair"
+
+msgid "🛺.name"
+msgstr "auto rickshaw"
+
+msgid "🛺.keywords"
+msgstr "auto | rickshaw | tuk"
+
+msgid "🚲.name"
+msgstr "bicycle"
+
+msgid "🚲.keywords"
+msgstr "bicycle | bike | class | cycle | cycling | cyclist | gang | ride | spin | spinning"
+
+msgid "🛴.name"
+msgstr "kick scooter"
+
+msgid "🛴.keywords"
+msgstr "kick | scooter"
+
+msgid "🛹.name"
+msgstr "skateboard"
+
+msgid "🛹.keywords"
+msgstr "board | skate | skateboard | skater | wheels"
+
+msgid "🛼.name"
+msgstr "roller skate"
+
+msgid "🛼.keywords"
+msgstr "blades | roller | skate | skates | sport"
+
+msgid "🚏.name"
+msgstr "bus stop"
+
+msgid "🚏.keywords"
+msgstr "bus | busstop | stop"
+
+msgid "🛣️.name"
+msgstr "motorway"
+
+msgid "🛣️.keywords"
+msgstr "highway | motorway | road"
+
+msgid "🛤️.name"
+msgstr "railway track"
+
+msgid "🛤️.keywords"
+msgstr "railway | track | train"
+
+msgid "🛢️.name"
+msgstr "oil drum"
+
+msgid "🛢️.keywords"
+msgstr "drum | oil"
+
+msgid "⛽.name"
+msgstr "fuel pump"
+
+msgid "⛽.keywords"
+msgstr "diesel | fuel | fuelpump | gas | gasoline | pump | station"
+
+msgid "🛞.name"
+msgstr "wheel"
+
+msgid "🛞.keywords"
+msgstr "car | circle | tire | turn | vehicle | wheel"
+
+msgid "🚨.name"
+msgstr "police car light"
+
+msgid "🚨.keywords"
+msgstr "alarm | alert | beacon | car | emergency | light | police | revolving | siren"
+
+msgid "🚥.name"
+msgstr "horizontal traffic light"
+
+msgid "🚥.keywords"
+msgstr "horizontal | intersection | light | signal | stop | stoplight | traffic"
+
+msgid "🚦.name"
+msgstr "vertical traffic light"
+
+msgid "🚦.keywords"
+msgstr "drove | intersection | light | signal | stop | stoplight | traffic | vertical"
+
+msgid "🛑.name"
+msgstr "stop sign"
+
+msgid "🛑.keywords"
+msgstr "octagonal | sign | stop"
+
+msgid "🚧.name"
+msgstr "construction"
+
+msgid "🚧.keywords"
+msgstr "barrier | construction"
+
+msgid "⚓.name"
+msgstr "anchor"
+
+msgid "⚓.keywords"
+msgstr "anchor | ship | tool"
+
+msgid "🛟.name"
+msgstr "ring buoy"
+
+msgid "🛟.keywords"
+msgstr "buoy | float | life | lifesaver | preserver | rescue | ring | safety | save | saver | swim"
+
+msgid "⛵.name"
+msgstr "sailboat"
+
+msgid "⛵.keywords"
+msgstr "boat | resort | sailboat | sailing | sea | yacht"
+
+msgid "🛶.name"
+msgstr "canoe"
+
+msgid "🛶.keywords"
+msgstr "boat | canoe"
+
+msgid "🚤.name"
+msgstr "speedboat"
+
+msgid "🚤.keywords"
+msgstr "billionaire | boat | lake | luxury | millionaire | speedboat | summer | travel"
+
+msgid "🛳️.name"
+msgstr "passenger ship"
+
+msgid "🛳️.keywords"
+msgstr "passenger | ship"
+
+msgid "⛴️.name"
+msgstr "ferry"
+
+msgid "⛴️.keywords"
+msgstr "boat | ferry | passenger"
+
+msgid "🛥️.name"
+msgstr "motor boat"
+
+msgid "🛥️.keywords"
+msgstr "boat | motor | motorboat"
+
+msgid "🚢.name"
+msgstr "ship"
+
+msgid "🚢.keywords"
+msgstr "boat | passenger | ship | travel"
+
+msgid "✈️.name"
+msgstr "airplane"
+
+msgid "✈️.keywords"
+msgstr "aeroplane | airplane | fly | flying | jet | plane | travel"
+
+msgid "🛩️.name"
+msgstr "small airplane"
+
+msgid "🛩️.keywords"
+msgstr "aeroplane | airplane | plane | small"
+
+msgid "🛫.name"
+msgstr "airplane departure"
+
+msgid "🛫.keywords"
+msgstr "aeroplane | airplane | check-in | departure | departures | plane"
+
+msgid "🛬.name"
+msgstr "airplane arrival"
+
+msgid "🛬.keywords"
+msgstr "aeroplane | airplane | arrival | arrivals | arriving | landing | plane"
+
+msgid "🪂.name"
+msgstr "parachute"
+
+msgid "🪂.keywords"
+msgstr "hang-glide | parachute | parasail | skydive"
+
+msgid "💺.name"
+msgstr "seat"
+
+msgid "💺.keywords"
+msgstr "chair | seat"
+
+msgid "🚁.name"
+msgstr "helicopter"
+
+msgid "🚁.keywords"
+msgstr "copter | helicopter | roflcopter | travel | vehicle"
+
+msgid "🚟.name"
+msgstr "suspension railway"
+
+msgid "🚟.keywords"
+msgstr "railway | suspension"
+
+msgid "🚠.name"
+msgstr "mountain cableway"
+
+msgid "🚠.keywords"
+msgstr "cable | cableway | gondola | lift | mountain | ski"
+
+msgid "🚡.name"
+msgstr "aerial tramway"
+
+msgid "🚡.keywords"
+msgstr "aerial | cable | car | gondola | ropeway | tramway"
+
+msgid "🛰️.name"
+msgstr "satellite"
+
+msgid "🛰️.keywords"
+msgstr "satellite | space"
+
+msgid "🚀.name"
+msgstr "rocket"
+
+msgid "🚀.keywords"
+msgstr "launch | rocket | rockets | space | travel"
+
+msgid "🛸.name"
+msgstr "flying saucer"
+
+msgid "🛸.keywords"
+msgstr "aliens | extra | flying | saucer | terrestrial | UFO"
+
+msgid "🛎️.name"
+msgstr "bellhop bell"
+
+msgid "🛎️.keywords"
+msgstr "bell | bellhop | hotel"
+
+msgid "🧳.name"
+msgstr "luggage"
+
+msgid "🧳.keywords"
+msgstr "bag | luggage | packing | roller | suitcase | travel"
+
+msgid "⌛.name"
+msgstr "hourglass done"
+
+msgid "⌛.keywords"
+msgstr "done | hourglass | sand | time | timer"
+
+msgid "⏳.name"
+msgstr "hourglass not done"
+
+msgid "⏳.keywords"
+msgstr "done | flowing | hourglass | hours | not | sand | timer | waiting | yolo"
+
+msgid "⌚.name"
+msgstr "watch"
+
+msgid "⌚.keywords"
+msgstr "clock | time | watch"
+
+msgid "⏰.name"
+msgstr "alarm clock"
+
+msgid "⏰.keywords"
+msgstr "alarm | clock | hours | hrs | late | time | waiting"
+
+msgid "⏱️.name"
+msgstr "stopwatch"
+
+msgid "⏱️.keywords"
+msgstr "clock | stopwatch | time"
+
+msgid "⏲️.name"
+msgstr "timer clock"
+
+msgid "⏲️.keywords"
+msgstr "clock | timer"
+
+msgid "🕰️.name"
+msgstr "mantelpiece clock"
+
+msgid "🕰️.keywords"
+msgstr "clock | mantelpiece | time"
+
+msgid "🕛.name"
+msgstr "twelve o’clock"
+
+msgid "🕛.keywords"
+msgstr "12 | 12:00 | clock | o’clock | time | twelve"
+
+msgid "🕧.name"
+msgstr "twelve-thirty"
+
+msgid "🕧.keywords"
+msgstr "12 | 12:30 | 30 | clock | thirty | time | twelve | twelve-thirty"
+
+msgid "🕐.name"
+msgstr "one o’clock"
+
+msgid "🕐.keywords"
+msgstr "1 | 1:00 | clock | o’clock | one | time"
+
+msgid "🕜.name"
+msgstr "one-thirty"
+
+msgid "🕜.keywords"
+msgstr "1 | 1:30 | 30 | clock | one | one-thirty | thirty | time"
+
+msgid "🕑.name"
+msgstr "two o’clock"
+
+msgid "🕑.keywords"
+msgstr "2 | 2:00 | clock | o’clock | time | two"
+
+msgid "🕝.name"
+msgstr "two-thirty"
+
+msgid "🕝.keywords"
+msgstr "2 | 2:30 | 30 | clock | thirty | time | two | two-thirty"
+
+msgid "🕒.name"
+msgstr "three o’clock"
+
+msgid "🕒.keywords"
+msgstr "3 | 3:00 | clock | o’clock | three | time"
+
+msgid "🕞.name"
+msgstr "three-thirty"
+
+msgid "🕞.keywords"
+msgstr "3 | 3:30 | 30 | clock | thirty | three | three-thirty | time"
+
+msgid "🕓.name"
+msgstr "four o’clock"
+
+msgid "🕓.keywords"
+msgstr "4 | 4:00 | clock | four | o’clock | time"
+
+msgid "🕟.name"
+msgstr "four-thirty"
+
+msgid "🕟.keywords"
+msgstr "30 | 4 | 4:30 | clock | four | four-thirty | thirty | time"
+
+msgid "🕔.name"
+msgstr "five o’clock"
+
+msgid "🕔.keywords"
+msgstr "5 | 5:00 | clock | five | o’clock | time"
+
+msgid "🕠.name"
+msgstr "five-thirty"
+
+msgid "🕠.keywords"
+msgstr "30 | 5 | 5:30 | clock | five | five-thirty | thirty | time"
+
+msgid "🕕.name"
+msgstr "six o’clock"
+
+msgid "🕕.keywords"
+msgstr "6 | 6:00 | clock | o’clock | six | time"
+
+msgid "🕡.name"
+msgstr "six-thirty"
+
+msgid "🕡.keywords"
+msgstr "30 | 6 | 6:30 | clock | six | six-thirty | thirty"
+
+msgid "🕖.name"
+msgstr "seven o’clock"
+
+msgid "🕖.keywords"
+msgstr "0 | 7 | 7:00 | clock | o’clock | seven"
+
+msgid "🕢.name"
+msgstr "seven-thirty"
+
+msgid "🕢.keywords"
+msgstr "30 | 7 | 7:30 | clock | seven | seven-thirty | thirty"
+
+msgid "🕗.name"
+msgstr "eight o’clock"
+
+msgid "🕗.keywords"
+msgstr "8 | 8:00 | clock | eight | o’clock | time"
+
+msgid "🕣.name"
+msgstr "eight-thirty"
+
+msgid "🕣.keywords"
+msgstr "30 | 8 | 8:30 | clock | eight | eight-thirty | thirty | time"
+
+msgid "🕘.name"
+msgstr "nine o’clock"
+
+msgid "🕘.keywords"
+msgstr "9 | 9:00 | clock | nine | o’clock | time"
+
+msgid "🕤.name"
+msgstr "nine-thirty"
+
+msgid "🕤.keywords"
+msgstr "30 | 9 | 9:30 | clock | nine | nine-thirty | thirty | time"
+
+msgid "🕙.name"
+msgstr "ten o’clock"
+
+msgid "🕙.keywords"
+msgstr "0 | 10 | 10:00 | clock | o’clock | ten"
+
+msgid "🕥.name"
+msgstr "ten-thirty"
+
+msgid "🕥.keywords"
+msgstr "10 | 10:30 | 30 | clock | ten | ten-thirty | thirty | time"
+
+msgid "🕚.name"
+msgstr "eleven o’clock"
+
+msgid "🕚.keywords"
+msgstr "11 | 11:00 | clock | eleven | o’clock | time"
+
+msgid "🕦.name"
+msgstr "eleven-thirty"
+
+msgid "🕦.keywords"
+msgstr "11 | 11:30 | 30 | clock | eleven | eleven-thirty | thirty | time"
+
+msgid "🌑.name"
+msgstr "new moon"
+
+msgid "🌑.keywords"
+msgstr "dark | moon | new | space"
+
+msgid "🌒.name"
+msgstr "waxing crescent moon"
+
+msgid "🌒.keywords"
+msgstr "crescent | dreams | moon | space | waxing"
+
+msgid "🌓.name"
+msgstr "first quarter moon"
+
+msgid "🌓.keywords"
+msgstr "first | moon | quarter | space"
+
+msgid "🌔.name"
+msgstr "waxing gibbous moon"
+
+msgid "🌔.keywords"
+msgstr "gibbous | moon | space | waxing"
+
+msgid "🌕.name"
+msgstr "full moon"
+
+msgid "🌕.keywords"
+msgstr "full | moon | space"
+
+msgid "🌖.name"
+msgstr "waning gibbous moon"
+
+msgid "🌖.keywords"
+msgstr "gibbous | moon | space | waning"
+
+msgid "🌗.name"
+msgstr "last quarter moon"
+
+msgid "🌗.keywords"
+msgstr "last | moon | quarter | space"
+
+msgid "🌘.name"
+msgstr "waning crescent moon"
+
+msgid "🌘.keywords"
+msgstr "crescent | moon | space | waning"
+
+msgid "🌙.name"
+msgstr "crescent moon"
+
+msgid "🌙.keywords"
+msgstr ""
+"crescent | moon | ramadan | space"
+" | "
+"moon | night | crescent | nighttime | goodnight"
+
+msgid "🌚.name"
+msgstr "new moon face"
+
+msgid "🌚.keywords"
+msgstr "face | moon | new | space"
+
+msgid "🌛.name"
+msgstr "first quarter moon face"
+
+msgid "🌛.keywords"
+msgstr "face | first | moon | quarter | space"
+
+msgid "🌜.name"
+msgstr "last quarter moon face"
+
+msgid "🌜.keywords"
+msgstr "dreams | face | last | moon | quarter"
+
+msgid "🌡️.name"
+msgstr "thermometer"
+
+msgid "🌡️.keywords"
+msgstr "thermometer | weather"
+
+msgid "☀️.name"
+msgstr "sun"
+
+msgid "☀️.keywords"
+msgstr "bright | rays | space | sun | sunny | weather"
+
+msgid "🌝.name"
+msgstr "full moon face"
+
+msgid "🌝.keywords"
+msgstr "bright | face | full | moon"
+
+msgid "🌞.name"
+msgstr "sun with face"
+
+msgid "🌞.keywords"
+msgstr "beach | bright | day | face | heat | shine | sun | sunny | sunshine | weather"
+
+msgid "🪐.name"
+msgstr "ringed planet"
+
+msgid "🪐.keywords"
+msgstr "planet | ringed | saturn | saturnine"
+
+msgid "⭐.name"
+msgstr "star"
+
+msgid "⭐.keywords"
+msgstr ""
+"astronomy | medium | star | stars | white"
+" | "
+"star | stars | favorite | wish | rate"
+
+msgid "🌟.name"
+msgstr "glowing star"
+
+msgid "🌟.keywords"
+msgstr "glittery | glow | glowing | night | shining | sparkle | star | win"
+
+msgid "🌠.name"
+msgstr "shooting star"
+
+msgid "🌠.keywords"
+msgstr "falling | night | shooting | space | star"
+
+msgid "🌌.name"
+msgstr "milky way"
+
+msgid "🌌.keywords"
+msgstr "milky | space | way"
+
+msgid "☁️.name"
+msgstr "cloud"
+
+msgid "☁️.keywords"
+msgstr "cloud | weather"
+
+msgid "⛅.name"
+msgstr "sun behind cloud"
+
+msgid "⛅.keywords"
+msgstr "behind | cloud | cloudy | sun | weather"
+
+msgid "⛈️.name"
+msgstr "cloud with lightning and rain"
+
+msgid "⛈️.keywords"
+msgstr "cloud | lightning | rain | thunder | thunderstorm"
+
+msgid "🌤️.name"
+msgstr "sun behind small cloud"
+
+msgid "🌤️.keywords"
+msgstr "behind | cloud | sun | weather"
+
+msgid "🌥️.name"
+msgstr "sun behind large cloud"
+
+msgid "🌥️.keywords"
+msgstr "behind | cloud | sun | weather"
+
+msgid "🌦️.name"
+msgstr "sun behind rain cloud"
+
+msgid "🌦️.keywords"
+msgstr "behind | cloud | rain | sun | weather"
+
+msgid "🌧️.name"
+msgstr "cloud with rain"
+
+msgid "🌧️.keywords"
+msgstr "cloud | rain | weather"
+
+msgid "🌨️.name"
+msgstr "cloud with snow"
+
+msgid "🌨️.keywords"
+msgstr "cloud | cold | snow | weather"
+
+msgid "🌩️.name"
+msgstr "cloud with lightning"
+
+msgid "🌩️.keywords"
+msgstr "cloud | lightning | weather"
+
+msgid "🌪️.name"
+msgstr "tornado"
+
+msgid "🌪️.keywords"
+msgstr "cloud | tornado | weather | whirlwind"
+
+msgid "🌫️.name"
+msgstr "fog"
+
+msgid "🌫️.keywords"
+msgstr "cloud | fog | weather"
+
+msgid "🌬️.name"
+msgstr "wind face"
+
+msgid "🌬️.keywords"
+msgstr "blow | cloud | face | wind"
+
+msgid "🌀.name"
+msgstr "cyclone"
+
+msgid "🌀.keywords"
+msgstr "cyclone | dizzy | hurricane | twister | typhoon | weather"
+
+msgid "🌈.name"
+msgstr "rainbow"
+
+msgid "🌈.keywords"
+msgstr "gay | genderqueer | glbt | glbtq | lesbian | lgbt | lgbtq | lgbtqia | nature | pride | queer | rain | rainbow | trans | transgender | weather"
+
+msgid "🌂.name"
+msgstr "closed umbrella"
+
+msgid "🌂.keywords"
+msgstr "closed | clothing | rain | umbrella"
+
+msgid "☂️.name"
+msgstr "umbrella"
+
+msgid "☂️.keywords"
+msgstr "clothing | rain | umbrella"
+
+msgid "☔.name"
+msgstr "umbrella with rain drops"
+
+msgid "☔.keywords"
+msgstr "clothing | drop | drops | rain | umbrella | weather"
+
+msgid "⛱️.name"
+msgstr "umbrella on ground"
+
+msgid "⛱️.keywords"
+msgstr "ground | rain | sun | umbrella"
+
+msgid "⚡.name"
+msgstr "high voltage"
+
+msgid "⚡.keywords"
+msgstr ""
+"danger | electric | electricity | high | lightning | nature | thunder | thunderbolt | voltage | zap"
+" | "
+"lightning | fast | energy | zap | electric | power"
+
+msgid "❄️.name"
+msgstr "snowflake"
+
+msgid "❄️.keywords"
+msgstr "cold | snow | snowflake | weather"
+
+msgid "☃️.name"
+msgstr "snowman"
+
+msgid "☃️.keywords"
+msgstr "cold | man | snow | snowman"
+
+msgid "⛄.name"
+msgstr "snowman without snow"
+
+msgid "⛄.keywords"
+msgstr "cold | man | snow | snowman"
+
+msgid "☄️.name"
+msgstr "comet"
+
+msgid "☄️.keywords"
+msgstr "comet | space"
+
+msgid "🔥.name"
+msgstr "fire"
+
+msgid "🔥.keywords"
+msgstr ""
+"af | burn | fire | flame | hot | lit | litaf | tool"
+" | "
+"fire | lit | hot | flame | fiery | bussin"
+
+msgid "💧.name"
+msgstr "droplet"
+
+msgid "💧.keywords"
+msgstr "cold | comic | drop | droplet | nature | sad | sweat | tear | water | weather"
+
+msgid "🌊.name"
+msgstr "water wave"
+
+msgid "🌊.keywords"
+msgstr ""
+"nature | ocean | surf | surfer | surfing | water | wave"
+" | "
+"wave | ocean | sea | surf | tsunami"

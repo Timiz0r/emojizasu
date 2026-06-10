@@ -1,0 +1,72 @@
+msgid ""
+msgstr ""
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "category.recent"
+msgstr "Recently Used"
+
+msgid "category.recent.emoji"
+msgstr "🕐"
+
+msgid "category.smileys"
+msgstr "Smileys & Emotion"
+
+msgid "category.smileys.emoji"
+msgstr "😀"
+
+msgid "category.people"
+msgstr "People & Body"
+
+msgid "category.people.emoji"
+msgstr "👋"
+
+msgid "category.animals"
+msgstr "Animals & Nature"
+
+msgid "category.animals.emoji"
+msgstr "🐵"
+
+msgid "category.food"
+msgstr "Food & Drink"
+
+msgid "category.food.emoji"
+msgstr "🍇"
+
+msgid "category.travel"
+msgstr "Travel & Places"
+
+msgid "category.travel.emoji"
+msgstr "🌍"
+
+msgid "category.activities"
+msgstr "Activities"
+
+msgid "category.activities.emoji"
+msgstr "🎃"
+
+msgid "category.objects"
+msgstr "Objects"
+
+msgid "category.objects.emoji"
+msgstr "👓"
+
+msgid "category.symbols"
+msgstr "Symbols"
+
+msgid "category.symbols.emoji"
+msgstr "🏧"
+
+msgid "category.flags"
+msgstr "Flags"
+
+msgid "category.flags.emoji"
+msgstr "🏁"
+
+msgid "category.kaomoji"
+msgstr "Kaomoji"
+
+msgid "category.kaomoji.emoji"
+msgstr "(^▽^)"

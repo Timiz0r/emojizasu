@@ -1,0 +1,810 @@
+msgid ""
+msgstr ""
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "🍇.name"
+msgstr "grapes"
+
+msgid "🍇.keywords"
+msgstr "Dionysus | fruit | grape | grapes"
+
+msgid "🍈.name"
+msgstr "melon"
+
+msgid "🍈.keywords"
+msgstr "cantaloupe | fruit | melon"
+
+msgid "🍉.name"
+msgstr "watermelon"
+
+msgid "🍉.keywords"
+msgstr "fruit | watermelon"
+
+msgid "🍊.name"
+msgstr "tangerine"
+
+msgid "🍊.keywords"
+msgstr "c | citrus | fruit | nectarine | orange | tangerine | vitamin"
+
+msgid "🍋.name"
+msgstr "lemon"
+
+msgid "🍋.keywords"
+msgstr "citrus | fruit | lemon | sour"
+
+msgid "🍋‍🟩.name"
+msgstr "lime"
+
+msgid "🍋‍🟩.keywords"
+msgstr "acidity | citrus | cocktail | fruit | garnish | key | lime | margarita | mojito | refreshing | salsa | sour | tangy | tequila | tropical | zest"
+
+msgid "🍌.name"
+msgstr "banana"
+
+msgid "🍌.keywords"
+msgstr "banana | fruit | potassium"
+
+msgid "🍍.name"
+msgstr "pineapple"
+
+msgid "🍍.keywords"
+msgstr "colada | fruit | pina | pineapple | tropical"
+
+msgid "🥭.name"
+msgstr "mango"
+
+msgid "🥭.keywords"
+msgstr "food | fruit | mango | tropical"
+
+msgid "🍎.name"
+msgstr "red apple"
+
+msgid "🍎.keywords"
+msgstr "apple | diet | food | fruit | health | red | ripe"
+
+msgid "🍏.name"
+msgstr "green apple"
+
+msgid "🍏.keywords"
+msgstr "apple | fruit | green"
+
+msgid "🍐.name"
+msgstr "pear"
+
+msgid "🍐.keywords"
+msgstr "fruit | pear"
+
+msgid "🍑.name"
+msgstr "peach"
+
+msgid "🍑.keywords"
+msgstr "fruit | peach"
+
+msgid "🍒.name"
+msgstr "cherries"
+
+msgid "🍒.keywords"
+msgstr "berries | cherries | cherry | fruit | red"
+
+msgid "🍓.name"
+msgstr "strawberry"
+
+msgid "🍓.keywords"
+msgstr "berry | fruit | strawberry"
+
+msgid "🫐.name"
+msgstr "blueberries"
+
+msgid "🫐.keywords"
+msgstr "berries | berry | bilberry | blue | blueberries | blueberry | food | fruit"
+
+msgid "🥝.name"
+msgstr "kiwi fruit"
+
+msgid "🥝.keywords"
+msgstr "food | fruit | kiwi"
+
+msgid "🍅.name"
+msgstr "tomato"
+
+msgid "🍅.keywords"
+msgstr "food | fruit | tomato | vegetable"
+
+msgid "🫒.name"
+msgstr "olive"
+
+msgid "🫒.keywords"
+msgstr "food | olive"
+
+msgid "🥥.name"
+msgstr "coconut"
+
+msgid "🥥.keywords"
+msgstr "coconut | colada | palm | piña"
+
+msgid "🥑.name"
+msgstr "avocado"
+
+msgid "🥑.keywords"
+msgstr "avocado | food | fruit"
+
+msgid "🍆.name"
+msgstr "eggplant"
+
+msgid "🍆.keywords"
+msgstr "aubergine | eggplant | vegetable"
+
+msgid "🥔.name"
+msgstr "potato"
+
+msgid "🥔.keywords"
+msgstr "food | potato | vegetable"
+
+msgid "🥕.name"
+msgstr "carrot"
+
+msgid "🥕.keywords"
+msgstr "carrot | food | vegetable"
+
+msgid "🌽.name"
+msgstr "ear of corn"
+
+msgid "🌽.keywords"
+msgstr "corn | crops | ear | farm | maize | maze"
+
+msgid "🌶️.name"
+msgstr "hot pepper"
+
+msgid "🌶️.keywords"
+msgstr "hot | pepper"
+
+msgid "🫑.name"
+msgstr "bell pepper"
+
+msgid "🫑.keywords"
+msgstr "bell | capsicum | food | pepper | vegetable"
+
+msgid "🥒.name"
+msgstr "cucumber"
+
+msgid "🥒.keywords"
+msgstr "cucumber | food | pickle | vegetable"
+
+msgid "🥬.name"
+msgstr "leafy green"
+
+msgid "🥬.keywords"
+msgstr "bok | burgers | cabbage | choy | green | kale | leafy | lettuce | salad"
+
+msgid "🥦.name"
+msgstr "broccoli"
+
+msgid "🥦.keywords"
+msgstr "broccoli | cabbage | wild"
+
+msgid "🧄.name"
+msgstr "garlic"
+
+msgid "🧄.keywords"
+msgstr "flavoring | garlic"
+
+msgid "🧅.name"
+msgstr "onion"
+
+msgid "🧅.keywords"
+msgstr "flavoring | onion"
+
+msgid "🥜.name"
+msgstr "peanuts"
+
+msgid "🥜.keywords"
+msgstr "food | nut | peanut | peanuts | vegetable"
+
+msgid "🫘.name"
+msgstr "beans"
+
+msgid "🫘.keywords"
+msgstr "beans | food | kidney | legume | small"
+
+msgid "🌰.name"
+msgstr "chestnut"
+
+msgid "🌰.keywords"
+msgstr "almond | chestnut | plant"
+
+msgid "🫚.name"
+msgstr "ginger root"
+
+msgid "🫚.keywords"
+msgstr "beer | ginger | health | herb | natural | root | spice"
+
+msgid "🫛.name"
+msgstr "pea pod"
+
+msgid "🫛.keywords"
+msgstr "beans | beanstalk | edamame | legume | pea | pod | soybean | vegetable | veggie"
+
+msgid "🍄‍🟫.name"
+msgstr "brown mushroom"
+
+msgid "🍄‍🟫.keywords"
+msgstr "food | fungi | fungus | mushroom | nature | pizza | portobello | shiitake | shroom | spore | sprout | toppings | truffle | vegetable | vegetarian | veggie"
+
+msgid "🫜.name"
+msgstr "root vegetable"
+
+msgid "🫜.keywords"
+msgstr "beet | food | garden | radish | root | salad | turnip | vegetable | vegetarian"
+
+msgid "🍞.name"
+msgstr "bread"
+
+msgid "🍞.keywords"
+msgstr "bread | carbs | food | grain | loaf | restaurant | toast | wheat"
+
+msgid "🥐.name"
+msgstr "croissant"
+
+msgid "🥐.keywords"
+msgstr "bread | breakfast | crescent | croissant | food | french | roll"
+
+msgid "🥖.name"
+msgstr "baguette bread"
+
+msgid "🥖.keywords"
+msgstr "baguette | bread | food | french"
+
+msgid "🫓.name"
+msgstr "flatbread"
+
+msgid "🫓.keywords"
+msgstr "arepa | bread | flatbread | food | gordita | lavash | naan | pita"
+
+msgid "🥨.name"
+msgstr "pretzel"
+
+msgid "🥨.keywords"
+msgstr "convoluted | pretzel | twisted"
+
+msgid "🥯.name"
+msgstr "bagel"
+
+msgid "🥯.keywords"
+msgstr "bagel | bakery | bread | breakfast | schmear"
+
+msgid "🥞.name"
+msgstr "pancakes"
+
+msgid "🥞.keywords"
+msgstr "breakfast | crêpe | food | hotcake | pancake | pancakes"
+
+msgid "🧇.name"
+msgstr "waffle"
+
+msgid "🧇.keywords"
+msgstr "breakfast | indecisive | iron | waffle"
+
+msgid "🧀.name"
+msgstr "cheese wedge"
+
+msgid "🧀.keywords"
+msgstr "cheese | wedge"
+
+msgid "🍖.name"
+msgstr "meat on bone"
+
+msgid "🍖.keywords"
+msgstr "bone | meat"
+
+msgid "🍗.name"
+msgstr "poultry leg"
+
+msgid "🍗.keywords"
+msgstr "bone | chicken | drumstick | hungry | leg | poultry | turkey"
+
+msgid "🥩.name"
+msgstr "cut of meat"
+
+msgid "🥩.keywords"
+msgstr "chop | cut | lambchop | meat | porkchop | red | steak"
+
+msgid "🥓.name"
+msgstr "bacon"
+
+msgid "🥓.keywords"
+msgstr "bacon | breakfast | food | meat"
+
+msgid "🍔.name"
+msgstr "hamburger"
+
+msgid "🍔.keywords"
+msgstr "burger | eat | fast | food | hamburger | hungry"
+
+msgid "🍟.name"
+msgstr "french fries"
+
+msgid "🍟.keywords"
+msgstr "fast | food | french | fries"
+
+msgid "🍕.name"
+msgstr "pizza"
+
+msgid "🍕.keywords"
+msgstr "cheese | food | hungry | pepperoni | pizza | slice"
+
+msgid "🌭.name"
+msgstr "hot dog"
+
+msgid "🌭.keywords"
+msgstr "dog | frankfurter | hot | hotdog | sausage"
+
+msgid "🥪.name"
+msgstr "sandwich"
+
+msgid "🥪.keywords"
+msgstr "bread | sandwich"
+
+msgid "🌮.name"
+msgstr "taco"
+
+msgid "🌮.keywords"
+msgstr "mexican | taco"
+
+msgid "🌯.name"
+msgstr "burrito"
+
+msgid "🌯.keywords"
+msgstr "burrito | mexican | wrap"
+
+msgid "🫔.name"
+msgstr "tamale"
+
+msgid "🫔.keywords"
+msgstr "food | mexican | pamonha | tamale | wrapped"
+
+msgid "🥙.name"
+msgstr "stuffed flatbread"
+
+msgid "🥙.keywords"
+msgstr "falafel | flatbread | food | gyro | kebab | stuffed"
+
+msgid "🧆.name"
+msgstr "falafel"
+
+msgid "🧆.keywords"
+msgstr "chickpea | falafel | meatball"
+
+msgid "🥚.name"
+msgstr "egg"
+
+msgid "🥚.keywords"
+msgstr "breakfast | egg | food"
+
+msgid "🍳.name"
+msgstr "cooking"
+
+msgid "🍳.keywords"
+msgstr "breakfast | cooking | easy | egg | fry | frying | over | pan | restaurant | side | sunny | up"
+
+msgid "🥘.name"
+msgstr "shallow pan of food"
+
+msgid "🥘.keywords"
+msgstr "casserole | food | paella | pan | shallow"
+
+msgid "🍲.name"
+msgstr "pot of food"
+
+msgid "🍲.keywords"
+msgstr "food | pot | soup | stew"
+
+msgid "🫕.name"
+msgstr "fondue"
+
+msgid "🫕.keywords"
+msgstr "cheese | chocolate | fondue | food | melted | pot | ski"
+
+msgid "🥣.name"
+msgstr "bowl with spoon"
+
+msgid "🥣.keywords"
+msgstr "bowl | breakfast | cereal | congee | oatmeal | porridge | spoon"
+
+msgid "🥗.name"
+msgstr "green salad"
+
+msgid "🥗.keywords"
+msgstr "food | green | salad"
+
+msgid "🍿.name"
+msgstr "popcorn"
+
+msgid "🍿.keywords"
+msgstr "corn | movie | pop | popcorn"
+
+msgid "🧈.name"
+msgstr "butter"
+
+msgid "🧈.keywords"
+msgstr "butter | dairy"
+
+msgid "🧂.name"
+msgstr "salt"
+
+msgid "🧂.keywords"
+msgstr ""
+"condiment | flavor | mad | salt | salty | shaker | taste | upset"
+" | "
+"salt | salty | petty | bitter | extra | shade"
+
+msgid "🥫.name"
+msgstr "canned food"
+
+msgid "🥫.keywords"
+msgstr "can | canned | food"
+
+msgid "🍱.name"
+msgstr "bento box"
+
+msgid "🍱.keywords"
+msgstr "bento | box | food"
+
+msgid "🍘.name"
+msgstr "rice cracker"
+
+msgid "🍘.keywords"
+msgstr "cracker | food | rice"
+
+msgid "🍙.name"
+msgstr "rice ball"
+
+msgid "🍙.keywords"
+msgstr ""
+"ball | food | Japanese | rice"
+" | "
+"rice ball | onigiri | japanese snack | riceball"
+
+msgid "🍚.name"
+msgstr "cooked rice"
+
+msgid "🍚.keywords"
+msgstr "cooked | food | rice"
+
+msgid "🍛.name"
+msgstr "curry rice"
+
+msgid "🍛.keywords"
+msgstr "curry | food | rice"
+
+msgid "🍜.name"
+msgstr "steaming bowl"
+
+msgid "🍜.keywords"
+msgstr ""
+"bowl | chopsticks | food | noodle | pho | ramen | soup | steaming"
+" | "
+"ramen | noodles | japanese food | noodle soup"
+
+msgid "🍝.name"
+msgstr "spaghetti"
+
+msgid "🍝.keywords"
+msgstr "food | meatballs | pasta | restaurant | spaghetti"
+
+msgid "🍠.name"
+msgstr "roasted sweet potato"
+
+msgid "🍠.keywords"
+msgstr "food | potato | roasted | sweet"
+
+msgid "🍢.name"
+msgstr "oden"
+
+msgid "🍢.keywords"
+msgstr "food | kebab | oden | restaurant | seafood | skewer | stick"
+
+msgid "🍣.name"
+msgstr "sushi"
+
+msgid "🍣.keywords"
+msgstr ""
+"food | sushi"
+" | "
+"sushi | japanese food | raw fish | wasabi"
+
+msgid "🍤.name"
+msgstr "fried shrimp"
+
+msgid "🍤.keywords"
+msgstr "fried | prawn | shrimp | tempura"
+
+msgid "🍥.name"
+msgstr "fish cake with swirl"
+
+msgid "🍥.keywords"
+msgstr "cake | fish | food | pastry | restaurant | swirl"
+
+msgid "🥮.name"
+msgstr "moon cake"
+
+msgid "🥮.keywords"
+msgstr "autumn | cake | festival | moon | yuèbǐng"
+
+msgid "🍡.name"
+msgstr "dango"
+
+msgid "🍡.keywords"
+msgstr ""
+"dango | dessert | Japanese | skewer | stick | sweet"
+" | "
+"dango | japanese sweets | skewer | mochi"
+
+msgid "🥟.name"
+msgstr "dumpling"
+
+msgid "🥟.keywords"
+msgstr "dumpling | empanada | gyōza | jiaozi | pierogi | potsticker"
+
+msgid "🥠.name"
+msgstr "fortune cookie"
+
+msgid "🥠.keywords"
+msgstr "cookie | fortune | prophecy"
+
+msgid "🥡.name"
+msgstr "takeout box"
+
+msgid "🥡.keywords"
+msgstr "box | chopsticks | delivery | food | oyster | pail | takeout"
+
+msgid "🍦.name"
+msgstr "soft ice cream"
+
+msgid "🍦.keywords"
+msgstr "cream | dessert | food | ice | icecream | restaurant | serve | soft | sweet"
+
+msgid "🍧.name"
+msgstr "shaved ice"
+
+msgid "🍧.keywords"
+msgstr "dessert | ice | restaurant | shaved | sweet"
+
+msgid "🍨.name"
+msgstr "ice cream"
+
+msgid "🍨.keywords"
+msgstr "cream | dessert | food | ice | restaurant | sweet"
+
+msgid "🍩.name"
+msgstr "doughnut"
+
+msgid "🍩.keywords"
+msgstr "breakfast | dessert | donut | doughnut | food | sweet"
+
+msgid "🍪.name"
+msgstr "cookie"
+
+msgid "🍪.keywords"
+msgstr "chip | chocolate | cookie | dessert | sweet"
+
+msgid "🎂.name"
+msgstr "birthday cake"
+
+msgid "🎂.keywords"
+msgstr "bday | birthday | cake | celebration | dessert | happy | pastry | sweet"
+
+msgid "🍰.name"
+msgstr "shortcake"
+
+msgid "🍰.keywords"
+msgstr "cake | dessert | pastry | shortcake | slice | sweet"
+
+msgid "🧁.name"
+msgstr "cupcake"
+
+msgid "🧁.keywords"
+msgstr "bakery | cupcake | dessert | sprinkles | sugar | sweet | treat"
+
+msgid "🥧.name"
+msgstr "pie"
+
+msgid "🥧.keywords"
+msgstr "apple | filling | fruit | meat | pastry | pie | pumpkin | slice"
+
+msgid "🍫.name"
+msgstr "chocolate bar"
+
+msgid "🍫.keywords"
+msgstr "bar | candy | chocolate | dessert | halloween | sweet | tooth"
+
+msgid "🍬.name"
+msgstr "candy"
+
+msgid "🍬.keywords"
+msgstr "candy | cavities | dessert | halloween | restaurant | sweet | tooth | wrapper"
+
+msgid "🍭.name"
+msgstr "lollipop"
+
+msgid "🍭.keywords"
+msgstr "candy | dessert | food | lollipop | restaurant | sweet"
+
+msgid "🍮.name"
+msgstr "custard"
+
+msgid "🍮.keywords"
+msgstr "custard | dessert | pudding | sweet"
+
+msgid "🍯.name"
+msgstr "honey pot"
+
+msgid "🍯.keywords"
+msgstr "barrel | bear | food | honey | honeypot | jar | pot | sweet"
+
+msgid "🍼.name"
+msgstr "baby bottle"
+
+msgid "🍼.keywords"
+msgstr "babies | baby | birth | born | bottle | drink | infant | milk | newborn"
+
+msgid "🥛.name"
+msgstr "glass of milk"
+
+msgid "🥛.keywords"
+msgstr "drink | glass | milk"
+
+msgid "☕.name"
+msgstr "hot beverage"
+
+msgid "☕.keywords"
+msgstr "beverage | cafe | caffeine | chai | coffee | drink | hot | morning | steaming | tea"
+
+msgid "🫖.name"
+msgstr "teapot"
+
+msgid "🫖.keywords"
+msgstr "brew | drink | food | pot | tea | teapot"
+
+msgid "🍵.name"
+msgstr "teacup without handle"
+
+msgid "🍵.keywords"
+msgstr ""
+"beverage | cup | drink | handle | oolong | tea | teacup"
+" | "
+"tea | drama | gossip | spill the tea | matcha | green tea"
+
+msgid "🍶.name"
+msgstr "sake"
+
+msgid "🍶.keywords"
+msgstr "bar | beverage | bottle | cup | drink | restaurant | sake"
+
+msgid "🍾.name"
+msgstr "bottle with popping cork"
+
+msgid "🍾.keywords"
+msgstr "bar | bottle | cork | drink | popping"
+
+msgid "🍷.name"
+msgstr "wine glass"
+
+msgid "🍷.keywords"
+msgstr "alcohol | bar | beverage | booze | club | drink | drinking | drinks | glass | restaurant | wine"
+
+msgid "🍸.name"
+msgstr "cocktail glass"
+
+msgid "🍸.keywords"
+msgstr "alcohol | bar | booze | club | cocktail | drink | drinking | drinks | glass | mad | martini | men"
+
+msgid "🍹.name"
+msgstr "tropical drink"
+
+msgid "🍹.keywords"
+msgstr "alcohol | bar | booze | club | cocktail | drink | drinking | drinks | drunk | mai | party | tai | tropical | tropics"
+
+msgid "🍺.name"
+msgstr "beer mug"
+
+msgid "🍺.keywords"
+msgstr "alcohol | ale | bar | beer | booze | drink | drinking | drinks | mug | octoberfest | oktoberfest | pint | stein | summer"
+
+msgid "🍻.name"
+msgstr "clinking beer mugs"
+
+msgid "🍻.keywords"
+msgstr "alcohol | bar | beer | booze | bottoms | cheers | clink | clinking | drinking | drinks | mugs"
+
+msgid "🥂.name"
+msgstr "clinking glasses"
+
+msgid "🥂.keywords"
+msgstr "celebrate | clink | clinking | drink | glass | glasses"
+
+msgid "🥃.name"
+msgstr "tumbler glass"
+
+msgid "🥃.keywords"
+msgstr "glass | liquor | scotch | shot | tumbler | whiskey | whisky"
+
+msgid "🫗.name"
+msgstr "pouring liquid"
+
+msgid "🫗.keywords"
+msgstr "accident | drink | empty | glass | liquid | oops | pour | pouring | spill | water"
+
+msgid "🥤.name"
+msgstr "cup with straw"
+
+msgid "🥤.keywords"
+msgstr "cup | drink | juice | malt | soda | soft | straw | water"
+
+msgid "🧋.name"
+msgstr "bubble tea"
+
+msgid "🧋.keywords"
+msgstr "boba | bubble | food | milk | pearl | tea"
+
+msgid "🧃.name"
+msgstr "beverage box"
+
+msgid "🧃.keywords"
+msgstr "beverage | box | juice | straw | sweet"
+
+msgid "🧉.name"
+msgstr "mate"
+
+msgid "🧉.keywords"
+msgstr "drink | mate"
+
+msgid "🧊.name"
+msgstr "ice"
+
+msgid "🧊.keywords"
+msgstr "cold | cube | ice | iceberg"
+
+msgid "🥢.name"
+msgstr "chopsticks"
+
+msgid "🥢.keywords"
+msgstr "chopsticks | hashi | jeotgarak | kuaizi"
+
+msgid "🍽️.name"
+msgstr "fork and knife with plate"
+
+msgid "🍽️.keywords"
+msgstr "cooking | dinner | eat | fork | knife | plate"
+
+msgid "🍴.name"
+msgstr "fork and knife"
+
+msgid "🍴.keywords"
+msgstr "breakfast | breaky | cooking | cutlery | delicious | dinner | eat | feed | food | fork | hungry | knife | lunch | restaurant | yum | yummy"
+
+msgid "🥄.name"
+msgstr "spoon"
+
+msgid "🥄.keywords"
+msgstr "eat | spoon | tableware"
+
+msgid "🔪.name"
+msgstr "kitchen knife"
+
+msgid "🔪.keywords"
+msgstr "chef | cooking | hocho | kitchen | knife | tool | weapon"
+
+msgid "🫙.name"
+msgstr "jar"
+
+msgid "🫙.keywords"
+msgstr "condiment | container | empty | jar | nothing | sauce | store"
+
+msgid "🏺.name"
+msgstr "amphora"
+
+msgid "🏺.keywords"
+msgstr "amphora | Aquarius | cooking | drink | jug | tool | weapon | zodiac"

@@ -181,7 +181,7 @@ PanelWindow {
         property bool everConnected: false
         parser: SplitParser {
             splitMarker: "\n"
-            onRead: function(line) { panel.handleKeyLine(line) }
+            onRead: line => panel.handleKeyLine(line)
         }
         onConnectionStateChanged: {
             DebugLog.event("socket", "connected=" + connected
@@ -194,7 +194,7 @@ PanelWindow {
                 window.keyChannelDown = true
             }
         }
-        onError: function(err) {
+        onError: err => {
             console.warn("emojizasu: cannot reach key socket (" + err + ")")
             if (window.visible && !window.focusable) window.keyChannelDown = true
         }
@@ -209,10 +209,10 @@ PanelWindow {
         forceFocusable: window.forceFocusable
         keyChannelDown: window.keyChannelDown
 
-        onEmojiSelected: function(emoji) { window.commit(emoji) }
+        onEmojiSelected: emoji => window.commit(emoji)
         onCloseRequested: window.visible = false
-        onMoveWindowRequested: function(dx, dy) { window.nudge(dx, dy) }
-        onResizeRequested: function(w, h) { window.resize(w, h) }
+        onMoveWindowRequested: (dx, dy) => window.nudge(dx, dy)
+        onResizeRequested: (w, h) => window.resize(w, h)
         onXChanged: window.queueSaveGeometry()
         onYChanged: window.queueSaveGeometry()
     }

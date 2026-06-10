@@ -1,0 +1,1353 @@
+msgid ""
+msgstr ""
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "🏧.name"
+msgstr "ATM"
+
+msgid "🏧.keywords"
+msgstr "ATM | 現金自動預け払い機 | 銀行"
+
+msgid "🚮.name"
+msgstr "ゴミ箱"
+
+msgid "🚮.keywords"
+msgstr "くずかご | ゴミ捨て | ごみ箱 | ゴミ箱"
+
+msgid "🚰.name"
+msgstr "飲料水"
+
+msgid "🚰.keywords"
+msgstr "水 | 水道 | 飲み水 | 飲料水"
+
+msgid "♿.name"
+msgstr "車椅子"
+
+msgid "♿.keywords"
+msgstr "バリアフリー | バリヤフリー | 車椅子"
+
+msgid "🚹.name"
+msgstr "男子トイレ"
+
+msgid "🚹.keywords"
+msgstr "WC | お手洗い | トイレ | 化粧室 | 男子トイレ | 男性"
+
+msgid "🚺.name"
+msgstr "女子トイレ"
+
+msgid "🚺.keywords"
+msgstr "WC | お手洗い | トイレ | 化粧室 | 女子トイレ | 女性"
+
+msgid "🚻.name"
+msgstr "トイレ"
+
+msgid "🚻.keywords"
+msgstr "WC | お手洗い | トイレ | 化粧室"
+
+msgid "🚼.name"
+msgstr "ベビーマーク"
+
+msgid "🚼.keywords"
+msgstr "ベビー | ベビーシート | 赤ちゃん | 赤ん坊"
+
+msgid "🚾.name"
+msgstr "WC"
+
+msgid "🚾.keywords"
+msgstr "WC | お手洗い | トイレ | 化粧室"
+
+msgid "🛂.name"
+msgstr "出入国審査"
+
+msgid "🛂.keywords"
+msgstr "パスポートコントロール | 入出国 | 出入国 | 出入国審査"
+
+msgid "🛃.name"
+msgstr "税関"
+
+msgid "🛃.keywords"
+msgstr "税関 | 通関"
+
+msgid "🛄.name"
+msgstr "手荷物受取"
+
+msgid "🛄.keywords"
+msgstr "スーツケース | バゲッジクレーム | 手荷物 | 手荷物受取 | 預け入れ荷物"
+
+msgid "🛅.name"
+msgstr "手荷物預かり"
+
+msgid "🛅.keywords"
+msgstr "コインロッカー | スーツケース | ロッカー | 手荷物 | 手荷物預かり"
+
+msgid "⚠️.name"
+msgstr "警告"
+
+msgid "⚠️.keywords"
+msgstr "標識 | 注意 | 警告"
+
+msgid "🚸.name"
+msgstr "児童横断"
+
+msgid "🚸.keywords"
+msgstr "児童横断 | 子供 | 学校、幼稚園、保育所等あり | 標識 | 通学路"
+
+msgid "⛔.name"
+msgstr "車両進入禁止"
+
+msgid "⛔.keywords"
+msgstr "標識 | 禁止 | 規制 | 車両進入禁止 | 進入禁止 | 道路"
+
+msgid "🚫.name"
+msgstr "車両通行止め"
+
+msgid "🚫.keywords"
+msgstr "標識 | 禁止 | 規制 | 車両通行止め | 通行止め | 道路"
+
+msgid "🚳.name"
+msgstr "自転車禁止"
+
+msgid "🚳.keywords"
+msgstr "標識 | 禁止 | 自転車 | 自転車禁止 | 規制 | 道路"
+
+msgid "🚭.name"
+msgstr "禁煙"
+
+msgid "🚭.keywords"
+msgstr "タバコ | 煙草 | 禁止 | 禁煙"
+
+msgid "🚯.name"
+msgstr "ポイ捨て禁止"
+
+msgid "🚯.keywords"
+msgstr "ごみ | ゴミ | ゴミ捨て禁止 | ポイ捨て禁止 | 禁止"
+
+msgid "🚱.name"
+msgstr "飲用不可"
+
+msgid "🚱.keywords"
+msgstr "禁止 | 飲めない水 | 飲用不可 | 飲用禁止"
+
+msgid "🚷.name"
+msgstr "歩行者立入禁止"
+
+msgid "🚷.keywords"
+msgstr "標識 | 歩行者立入禁止 | 禁止 | 規制 | 道路"
+
+msgid "📵.name"
+msgstr "携帯電話禁止"
+
+msgid "📵.keywords"
+msgstr "スマートフォン禁止 | スマホ禁止 | 携帯禁止 | 携帯電話禁止"
+
+msgid "🔞.name"
+msgstr "18歳未満禁止"
+
+msgid "🔞.keywords"
+msgstr "18歳未満禁止 | 18禁 | 年齢制限 | 未成年 | 禁止"
+
+msgid "☢️.name"
+msgstr "放射能"
+
+msgid "☢️.keywords"
+msgstr "危険 | 放射性 | 放射線 | 放射能"
+
+msgid "☣️.name"
+msgstr "バイオハザード"
+
+msgid "☣️.keywords"
+msgstr "バイオハザード | 危険 | 有害物質"
+
+msgid "⬆️.name"
+msgstr "上矢印"
+
+msgid "⬆️.keywords"
+msgstr "上 | 上矢印 | 北 | 矢印"
+
+msgid "↗️.name"
+msgstr "右上矢印"
+
+msgid "↗️.keywords"
+msgstr "北東 | 右上 | 右上矢印 | 矢印"
+
+msgid "➡️.name"
+msgstr "右矢印"
+
+msgid "➡️.keywords"
+msgstr "右 | 右矢印 | 東 | 矢印"
+
+msgid "↘️.name"
+msgstr "右下矢印"
+
+msgid "↘️.keywords"
+msgstr "南東 | 右下 | 右下矢印 | 矢印"
+
+msgid "⬇️.name"
+msgstr "下矢印"
+
+msgid "⬇️.keywords"
+msgstr "下 | 下矢印 | 南 | 矢印"
+
+msgid "↙️.name"
+msgstr "左下矢印"
+
+msgid "↙️.keywords"
+msgstr "南西 | 左下 | 左下矢印 | 矢印"
+
+msgid "⬅️.name"
+msgstr "左矢印"
+
+msgid "⬅️.keywords"
+msgstr "左 | 左矢印 | 矢印 | 西"
+
+msgid "↖️.name"
+msgstr "左上矢印"
+
+msgid "↖️.keywords"
+msgstr "北西 | 左上 | 左上矢印 | 矢印"
+
+msgid "↕️.name"
+msgstr "上下矢印"
+
+msgid "↕️.keywords"
+msgstr "上下 | 上下矢印 | 矢印"
+
+msgid "↔️.name"
+msgstr "左右矢印"
+
+msgid "↔️.keywords"
+msgstr "左右 | 左右矢印 | 矢印"
+
+msgid "↩️.name"
+msgstr "右カーブ矢印"
+
+msgid "↩️.keywords"
+msgstr "カーブ | 右カーブ矢印 | 左 | 曲線 | 矢印"
+
+msgid "↪️.name"
+msgstr "左カーブ矢印"
+
+msgid "↪️.keywords"
+msgstr "カーブ | 右 | 左カーブ矢印 | 曲線 | 矢印"
+
+msgid "⤴️.name"
+msgstr "上カーブ矢印"
+
+msgid "⤴️.keywords"
+msgstr "カーブ | 上 | 上カーブ矢印 | 曲線 | 矢印"
+
+msgid "⤵️.name"
+msgstr "下カーブ矢印"
+
+msgid "⤵️.keywords"
+msgstr "カーブ | 下 | 下カーブ矢印 | 曲線 | 矢印"
+
+msgid "🔃.name"
+msgstr "右回り縦矢印"
+
+msgid "🔃.keywords"
+msgstr "リロード | 再読み込み | 右回り | 右回り縦矢印 | 時計回り | 矢印"
+
+msgid "🔄.name"
+msgstr "左回り矢印"
+
+msgid "🔄.keywords"
+msgstr "リピート | 反時計回り | 左回り矢印 | 更新 | 矢印 | 繰り返し | 逆回り"
+
+msgid "🔙.name"
+msgstr "BACK矢印"
+
+msgid "🔙.keywords"
+msgstr "BACK | BACK矢印 | バック | 戻る | 矢印"
+
+msgid "🔚.name"
+msgstr "END矢印"
+
+msgid "🔚.keywords"
+msgstr "END | END矢印 | エンド | 矢印 | 終わり"
+
+msgid "🔛.name"
+msgstr "ON矢印"
+
+msgid "🔛.keywords"
+msgstr "ON | ON矢印 | オン | 矢印"
+
+msgid "🔜.name"
+msgstr "SOON矢印"
+
+msgid "🔜.keywords"
+msgstr "SOON | SOON矢印 | すぐ | 矢印"
+
+msgid "🔝.name"
+msgstr "TOP矢印"
+
+msgid "🔝.keywords"
+msgstr "TOP | TOP矢印 | トップ | 上 | 矢印"
+
+msgid "🛐.name"
+msgstr "礼拝所"
+
+msgid "🛐.keywords"
+msgstr "宗教 | 礼拝 | 礼拝所 | 祈り"
+
+msgid "⚛️.name"
+msgstr "原子のシンボル"
+
+msgid "⚛️.keywords"
+msgstr "元素 | 分子 | 原子 | 原子のシンボル | 無神論"
+
+msgid "🕉️.name"
+msgstr "オーム"
+
+msgid "🕉️.keywords"
+msgstr "オーム | ヒンズー教 | ヒンドゥー教 | 宗教"
+
+msgid "✡️.name"
+msgstr "ダビデの星"
+
+msgid "✡️.keywords"
+msgstr "ダビデの星 | ユダヤ教 | 六芒星 | 宗教 | 星"
+
+msgid "☸️.name"
+msgstr "法輪"
+
+msgid "☸️.keywords"
+msgstr "仏教 | 宗教 | 法輪 | 転法輪"
+
+msgid "☯️.name"
+msgstr "陰陽"
+
+msgid "☯️.keywords"
+msgstr "インヤン | 宗教 | 道教 | 陰陽"
+
+msgid "✝️.name"
+msgstr "十字架"
+
+msgid "✝️.keywords"
+msgstr "キリスト教 | クロス | ラテン十字 | 十字架 | 宗教"
+
+msgid "☦️.name"
+msgstr "八端十字架"
+
+msgid "☦️.keywords"
+msgstr "キリスト教 | 八端十字架 | 十字架 | 宗教"
+
+msgid "☪️.name"
+msgstr "星と三日月"
+
+msgid "☪️.keywords"
+msgstr "イスラム教 | ムスリム | 三日月 | 宗教 | 星 | 星と三日月"
+
+msgid "☮️.name"
+msgstr "ピースマーク"
+
+msgid "☮️.keywords"
+msgstr "ピースマーク | 平和 | 平和のシンボル"
+
+msgid "🕎.name"
+msgstr "メノーラー"
+
+msgid "🕎.keywords"
+msgstr "ハヌカー | メノーラー | メノラー | ユダヤ教 | 宗教 | 燭台"
+
+msgid "🔯.name"
+msgstr "六芒星"
+
+msgid "🔯.keywords"
+msgstr "ダビデ | ユダヤ教 | 六芒星 | 六角星 | 占い | 星"
+
+msgid "🪯.name"
+msgstr "カンダ"
+
+msgid "🪯.keywords"
+msgstr "カルサ | カンダ | シーク教 | シーク教徒 | シク教 | 信仰 | 剣 | 宗教"
+
+msgid "♈.name"
+msgstr "おひつじ座"
+
+msgid "♈.keywords"
+msgstr "おひつじ座 | 星座 | 牡羊座"
+
+msgid "♉.name"
+msgstr "おうし座"
+
+msgid "♉.keywords"
+msgstr "おうし座 | 星座 | 牡牛座"
+
+msgid "♊.name"
+msgstr "ふたご座"
+
+msgid "♊.keywords"
+msgstr "ふたご座 | 双子座 | 星座"
+
+msgid "♋.name"
+msgstr "かに座"
+
+msgid "♋.keywords"
+msgstr "かに座 | 星座 | 蟹座"
+
+msgid "♌.name"
+msgstr "しし座"
+
+msgid "♌.keywords"
+msgstr "しし座 | 星座 | 獅子座"
+
+msgid "♍.name"
+msgstr "おとめ座"
+
+msgid "♍.keywords"
+msgstr "おとめ座 | 乙女座 | 星座"
+
+msgid "♎.name"
+msgstr "てんびん座"
+
+msgid "♎.keywords"
+msgstr "てんびん座 | 天秤座 | 星座"
+
+msgid "♏.name"
+msgstr "さそり座"
+
+msgid "♏.keywords"
+msgstr "さそり座 | 星座 | 蠍座"
+
+msgid "♐.name"
+msgstr "いて座"
+
+msgid "♐.keywords"
+msgstr "いて座 | 射手座 | 星座"
+
+msgid "♑.name"
+msgstr "やぎ座"
+
+msgid "♑.keywords"
+msgstr "やぎ座 | 山羊座 | 星座"
+
+msgid "♒.name"
+msgstr "みずがめ座"
+
+msgid "♒.keywords"
+msgstr "みずがめ座 | 星座 | 水瓶座"
+
+msgid "♓.name"
+msgstr "うお座"
+
+msgid "♓.keywords"
+msgstr "うお座 | 星座 | 魚座"
+
+msgid "⛎.name"
+msgstr "へびつかい座"
+
+msgid "⛎.keywords"
+msgstr "へびつかい座 | 星座 | 蛇遣座"
+
+msgid "🔀.name"
+msgstr "シャッフルボタン"
+
+msgid "🔀.keywords"
+msgstr "シャッフル | シャッフルボタン | ボタン | 交差 | 矢印"
+
+msgid "🔁.name"
+msgstr "リピートボタン"
+
+msgid "🔁.keywords"
+msgstr "ボタン | リピート | リピートボタン | 全曲 | 時計回り | 矢印 | 繰り返し"
+
+msgid "🔂.name"
+msgstr "1曲リピートボタン"
+
+msgid "🔂.keywords"
+msgstr "1曲リピートボタン | ボタン | リピート | 時計回り | 矢印 | 繰り返し"
+
+msgid "▶️.name"
+msgstr "再生ボタン"
+
+msgid "▶️.keywords"
+msgstr "プレイ | ボタン | 再生 | 再生ボタン | 矢印"
+
+msgid "⏩.name"
+msgstr "早送りボタン"
+
+msgid "⏩.keywords"
+msgstr "ボタン | 倍速 | 早送り | 早送りボタン | 矢印"
+
+msgid "⏭️.name"
+msgstr "次の曲ボタン"
+
+msgid "⏭️.keywords"
+msgstr "ボタン | 次のシーン | 次のトラック | 次の曲ボタン | 矢印"
+
+msgid "⏯️.name"
+msgstr "再生／一時停止ボタン"
+
+msgid "⏯️.keywords"
+msgstr "ボタン | 一時停止 | 再生 | 再生／一時停止ボタン | 矢印"
+
+msgid "◀️.name"
+msgstr "逆再生ボタン"
+
+msgid "◀️.keywords"
+msgstr "ボタン | 巻き戻し | 矢印 | 逆再生 | 逆再生ボタン"
+
+msgid "⏪.name"
+msgstr "早戻しボタン"
+
+msgid "⏪.keywords"
+msgstr "倍速 | 巻き戻し | 戻る | 早戻し | 早戻しボタン | 矢印"
+
+msgid "⏮️.name"
+msgstr "前の曲ボタン"
+
+msgid "⏮️.keywords"
+msgstr "ボタン | 前のシーン | 前のトラック | 前の曲ボタン | 矢印"
+
+msgid "🔼.name"
+msgstr "上ボタン"
+
+msgid "🔼.keywords"
+msgstr "ボタン | 上 | 上ボタン | 矢印"
+
+msgid "⏫.name"
+msgstr "高速上ボタン"
+
+msgid "⏫.keywords"
+msgstr "ボタン | 上 | 二重 | 矢印 | 高速上ボタン"
+
+msgid "🔽.name"
+msgstr "下ボタン"
+
+msgid "🔽.keywords"
+msgstr "ボタン | 下 | 下ボタン | 矢印"
+
+msgid "⏬.name"
+msgstr "高速下ボタン"
+
+msgid "⏬.keywords"
+msgstr "ボタン | 下 | 二重 | 矢印 | 高速下ボタン"
+
+msgid "⏸️.name"
+msgstr "一時停止ボタン"
+
+msgid "⏸️.keywords"
+msgstr "ポーズ | ボタン | 一時停止 | 一時停止ボタン"
+
+msgid "⏹️.name"
+msgstr "停止ボタン"
+
+msgid "⏹️.keywords"
+msgstr "ストップ | ボタン | 停止 | 停止ボタン | 四角"
+
+msgid "⏺️.name"
+msgstr "録音録画ボタン"
+
+msgid "⏺️.keywords"
+msgstr "ボタン | 丸 | 録画 | 録音 | 録音録画ボタン"
+
+msgid "⏏️.name"
+msgstr "取り出しボタン"
+
+msgid "⏏️.keywords"
+msgstr "イジェクト | ボタン | 取り出し | 取り出しボタン"
+
+msgid "🎦.name"
+msgstr "映画"
+
+msgid "🎦.keywords"
+msgstr "カメラ | 動画 | 映画 | 映画館"
+
+msgid "🔅.name"
+msgstr "低輝度"
+
+msgid "🔅.keywords"
+msgstr "ブライトネス | 低輝度 | 明るさ | 暗い | 輝度"
+
+msgid "🔆.name"
+msgstr "高輝度"
+
+msgid "🔆.keywords"
+msgstr "ブライトネス | 明るい | 明るさ | 輝度 | 高輝度"
+
+msgid "📶.name"
+msgstr "アンテナマーク"
+
+msgid "📶.keywords"
+msgstr "アンテナマーク | スマートフォン | スマホ | 圏内 | 携帯電話 | 電波"
+
+msgid "🛜.name"
+msgstr "Wi-Fi"
+
+msgid "🛜.keywords"
+msgstr "Wi-Fi | インターネット | スマホ | ネットワーク | ブロードバンド | ホットスポット | 接続 | 無線 | 無線LAN | 電波"
+
+msgid "📳.name"
+msgstr "マナーモード"
+
+msgid "📳.keywords"
+msgstr "スマートフォン | スマホ | マナーモード | 携帯 | 携帯電話"
+
+msgid "📴.name"
+msgstr "携帯電話電源オフ"
+
+msgid "📴.keywords"
+msgstr "オフ | スマートフォン | スマホ | 携帯電話 | 携帯電話電源オフ | 電源オフ"
+
+msgid "♀️.name"
+msgstr "女性のマーク"
+
+msgid "♀️.keywords"
+msgstr "シンボル | 女 | 女性 | 女性のマーク"
+
+msgid "♂️.name"
+msgstr "男性のマーク"
+
+msgid "♂️.keywords"
+msgstr "シンボル | 男 | 男性 | 男性のマーク"
+
+msgid "⚧️.name"
+msgstr "トランスジェンダーのマーク"
+
+msgid "⚧️.keywords"
+msgstr "LGBT | TG | シンボル | トランスジェンダーのマーク | 性別"
+
+msgid "✖️.name"
+msgstr "掛け算"
+
+msgid "✖️.keywords"
+msgstr "キャンセル | バツ | ペケ | 乗算 | 掛け算 | 記号"
+
+msgid "➕.name"
+msgstr "プラス"
+
+msgid "➕.keywords"
+msgstr "+ | プラス | 加算 | 記号 | 足し算 | 足す"
+
+msgid "➖.name"
+msgstr "マイナス"
+
+msgid "➖.keywords"
+msgstr "- | マイナス | 引き算 | 引く | 減算 | 計算 | 記号"
+
+msgid "➗.name"
+msgstr "割り算"
+
+msgid "➗.keywords"
+msgstr "/ | 割り算 | 割る | 記号 | 除算"
+
+msgid "🟰.name"
+msgstr "太字の等号"
+
+msgid "🟰.keywords"
+msgstr "イコール | 太字の等号 | 数学 | 等しい | 等号"
+
+msgid "♾️.name"
+msgstr "無限大"
+
+msgid "♾️.keywords"
+msgstr "万物 | 永遠 | 無限 | 無限大"
+
+msgid "‼️.name"
+msgstr "二重感嘆符"
+
+msgid "‼️.keywords"
+msgstr "! | エクスクラメーションマーク | びっくりマーク | 二重感嘆符 | 感嘆符 | 約物 | 記号"
+
+msgid "⁉️.name"
+msgstr "感嘆符疑問符"
+
+msgid "⁉️.keywords"
+msgstr "! | !? | ? | はてなマーク | びっくりマーク | 感嘆符疑問符 | 記号"
+
+msgid "❓.name"
+msgstr "赤い疑問符"
+
+msgid "❓.keywords"
+msgstr "? | クエスチョンマーク | はてなマーク | 疑問符 | 約物 | 記号 | 赤い疑問符"
+
+msgid "❔.name"
+msgstr "白い疑問符"
+
+msgid "❔.keywords"
+msgstr "? | クエスチョンマーク | はてなマーク | 疑問符 | 白い疑問符 | 約物 | 記号"
+
+msgid "❕.name"
+msgstr "白い感嘆符"
+
+msgid "❕.keywords"
+msgstr "! | エクスクラメーションマーク | びっくりマーク | 疑問符 | 白い感嘆符 | 約物 | 記号"
+
+msgid "❗.name"
+msgstr "赤い感嘆符"
+
+msgid "❗.keywords"
+msgstr "! | エクスクラメーションマーク | びっくりマーク | 感嘆符 | 約物 | 記号 | 赤い感嘆符"
+
+msgid "〰️.name"
+msgstr "波線"
+
+msgid "〰️.keywords"
+msgstr "波 | 波線 | 約物 | 記号"
+
+msgid "💱.name"
+msgstr "外貨両替"
+
+msgid "💱.keywords"
+msgstr "お金 | ドル | ドル円 | 両替 | 円 | 円ドル | 外貨両替 | 通貨"
+
+msgid "💲.name"
+msgstr "ドル記号"
+
+msgid "💲.keywords"
+msgstr "お金 | ドル | ドル記号 | 通貨"
+
+msgid "⚕️.name"
+msgstr "医療のシンボル"
+
+msgid "⚕️.keywords"
+msgstr "アスクレピオスの杖 | 医療 | 医療のシンボル | 医者 | 治療"
+
+msgid "♻️.name"
+msgstr "リサイクルマーク"
+
+msgid "♻️.keywords"
+msgstr "リサイクル | リサイクルマーク | 再利用 | 再生"
+
+msgid "⚜️.name"
+msgstr "フルール・ド・リス"
+
+msgid "⚜️.keywords"
+msgstr "エンブレム | フランス王家 | フルール・ド・リス | ユリ | 紋章"
+
+msgid "🔱.name"
+msgstr "トライデント"
+
+msgid "🔱.keywords"
+msgstr "エンブレム | トライデント | 三つ又 | 海"
+
+msgid "📛.name"
+msgstr "名札"
+
+msgid "📛.keywords"
+msgstr "バッジ | 保育園 | 保育所 | 名札 | 幼稚園"
+
+msgid "🔰.name"
+msgstr "初心者マーク"
+
+msgid "🔰.keywords"
+msgstr "初心者 | 初心者マーク | 若葉マーク"
+
+msgid "⭕.name"
+msgstr "太い丸"
+
+msgid "⭕.keywords"
+msgstr "円 | 太い丸 | 記号 | 赤い丸 | 輪"
+
+msgid "✅.name"
+msgstr "白抜きのチェック"
+
+msgid "✅.keywords"
+msgstr "チェック | チェックマーク | 済 | 白抜きのチェック | 記号"
+
+msgid "☑️.name"
+msgstr "チェックボックス"
+
+msgid "☑️.keywords"
+msgstr "チェック | チェックボックス | チェックマーク | 済 | 記号"
+
+msgid "✔️.name"
+msgstr "太字のチェック"
+
+msgid "✔️.keywords"
+msgstr "チェック | チェックマーク | 太字のチェック | 済 | 記号"
+
+msgid "❌.name"
+msgstr "バツ"
+
+msgid "❌.keywords"
+msgstr "キャンセル | バツ | ペケ | 乗算 | 掛け算 | 記号"
+
+msgid "❎.name"
+msgstr "白抜きのバツ"
+
+msgid "❎.keywords"
+msgstr "キャンセル | バツ | ペケ | 乗算 | 掛け算 | 白抜きのバツ | 記号"
+
+msgid "➰.name"
+msgstr "ループ"
+
+msgid "➰.keywords"
+msgstr "ループ | 記号 | 輪っか | 長音"
+
+msgid "➿.name"
+msgstr "ダブルループ"
+
+msgid "➿.keywords"
+msgstr "ダブルループ | フリーダイヤル | ループ | 記号 | 輪っか"
+
+msgid "〽️.name"
+msgstr "いおりてん"
+
+msgid "〽️.keywords"
+msgstr "いおりてん | 庵点 | 歌記号 | 約物 | 記号"
+
+msgid "✳️.name"
+msgstr "八角アスタリスク"
+
+msgid "✳️.keywords"
+msgstr "アスタリスク | 八角アスタリスク | 約物 | 記号"
+
+msgid "✴️.name"
+msgstr "八角星"
+
+msgid "✴️.keywords"
+msgstr "八角星 | 星 | 約物 | 記号"
+
+msgid "❇️.name"
+msgstr "スパークル"
+
+msgid "❇️.keywords"
+msgstr "アスタリスク | キラキラ | スパークル | 約物 | 記号"
+
+msgid "©️.name"
+msgstr "著作権マーク"
+
+msgid "©️.keywords"
+msgstr "Cマーク | コピーライト | 著作権 | 著作権マーク | 記号"
+
+msgid "®️.name"
+msgstr "登録商標マーク"
+
+msgid "®️.keywords"
+msgstr "Rマーク | 登録商標 | 登録商標マーク | 記号"
+
+msgid "™️.name"
+msgstr "商標マーク"
+
+msgid "™️.keywords"
+msgstr "TMマーク | トレードマーク | 商標 | 商標マーク | 記号"
+
+msgid "🫟.name"
+msgstr "飛び散ったペンキ"
+
+msgid "🫟.keywords"
+msgstr "しぶき | スプラッシュ | ペンキ | 飛び散り | 飛沫"
+
+msgid "#️⃣.name"
+msgstr "囲み数字: #"
+
+msgid "#️⃣.keywords"
+msgstr "囲み数字"
+
+msgid "*️⃣.name"
+msgstr "囲み数字: *"
+
+msgid "*️⃣.keywords"
+msgstr "囲み数字"
+
+msgid "0️⃣.name"
+msgstr "囲み数字: 0"
+
+msgid "0️⃣.keywords"
+msgstr "囲み数字"
+
+msgid "1️⃣.name"
+msgstr "囲み数字: 1"
+
+msgid "1️⃣.keywords"
+msgstr "囲み数字"
+
+msgid "2️⃣.name"
+msgstr "囲み数字: 2"
+
+msgid "2️⃣.keywords"
+msgstr "囲み数字"
+
+msgid "3️⃣.name"
+msgstr "囲み数字: 3"
+
+msgid "3️⃣.keywords"
+msgstr "囲み数字"
+
+msgid "4️⃣.name"
+msgstr "囲み数字: 4"
+
+msgid "4️⃣.keywords"
+msgstr "囲み数字"
+
+msgid "5️⃣.name"
+msgstr "囲み数字: 5"
+
+msgid "5️⃣.keywords"
+msgstr "囲み数字"
+
+msgid "6️⃣.name"
+msgstr "囲み数字: 6"
+
+msgid "6️⃣.keywords"
+msgstr "囲み数字"
+
+msgid "7️⃣.name"
+msgstr "囲み数字: 7"
+
+msgid "7️⃣.keywords"
+msgstr "囲み数字"
+
+msgid "8️⃣.name"
+msgstr "囲み数字: 8"
+
+msgid "8️⃣.keywords"
+msgstr "囲み数字"
+
+msgid "9️⃣.name"
+msgstr "囲み数字: 9"
+
+msgid "9️⃣.keywords"
+msgstr "囲み数字"
+
+msgid "🔟.name"
+msgstr "囲み数字: 10"
+
+msgid "🔟.keywords"
+msgstr "囲み数字"
+
+msgid "🔠.name"
+msgstr "英大文字の入力"
+
+msgid "🔠.keywords"
+msgstr "ABCD | アルファベット | ローマ字 | 入力 | 大文字 | 英大文字の入力 | 英字"
+
+msgid "🔡.name"
+msgstr "英小文字の入力"
+
+msgid "🔡.keywords"
+msgstr "abcd | アルファベット | ローマ字 | 入力 | 小文字 | 英字 | 英小文字の入力"
+
+msgid "🔢.name"
+msgstr "数字の入力"
+
+msgid "🔢.keywords"
+msgstr "1234 | 入力 | 数字 | 数字の入力"
+
+msgid "🔣.name"
+msgstr "記号の入力"
+
+msgid "🔣.keywords"
+msgstr "〒♪&% | 入力 | 記号 | 記号の入力"
+
+msgid "🔤.name"
+msgstr "英字の入力"
+
+msgid "🔤.keywords"
+msgstr "abc | アルファベット | ローマ字 | 入力 | 英字 | 英字の入力"
+
+msgid "🅰️.name"
+msgstr "血液型A型"
+
+msgid "🅰️.keywords"
+msgstr "A型 | 血液型 | 血液型A型"
+
+msgid "🆎.name"
+msgstr "血液型AB型"
+
+msgid "🆎.keywords"
+msgstr "AB型 | 血液型 | 血液型AB型"
+
+msgid "🅱️.name"
+msgstr "血液型B型"
+
+msgid "🅱️.keywords"
+msgstr "B型 | 血液型 | 血液型B型"
+
+msgid "🆑.name"
+msgstr "CLマーク"
+
+msgid "🆑.keywords"
+msgstr "CL | CLマーク | クリア"
+
+msgid "🆒.name"
+msgstr "COOLマーク"
+
+msgid "🆒.keywords"
+msgstr "COOL | COOLマーク | クール"
+
+msgid "🆓.name"
+msgstr "FREEマーク"
+
+msgid "🆓.keywords"
+msgstr "FREEマーク | タダ | フリー | 無料"
+
+msgid "ℹ️.name"
+msgstr "iマーク"
+
+msgid "ℹ️.keywords"
+msgstr "i | iマーク | インフォメーション | 情報 | 案内所"
+
+msgid "🆔.name"
+msgstr "IDマーク"
+
+msgid "🆔.keywords"
+msgstr "ID | IDマーク | アイディー"
+
+msgid "Ⓜ️.name"
+msgstr "丸いMマーク"
+
+msgid "Ⓜ️.keywords"
+msgstr "M | 丸 | 丸いMマーク"
+
+msgid "🆕.name"
+msgstr "NEWマーク"
+
+msgid "🆕.keywords"
+msgstr "NEW | NEWマーク | 新 | 新しい"
+
+msgid "🆖.name"
+msgstr "NGマーク"
+
+msgid "🆖.keywords"
+msgstr "NG | NGマーク | エヌジー | ボツ"
+
+msgid "🅾️.name"
+msgstr "血液型O型"
+
+msgid "🅾️.keywords"
+msgstr "O型 | 血液型 | 血液型O型"
+
+msgid "🆗.name"
+msgstr "OKマーク"
+
+msgid "🆗.keywords"
+msgstr "OK | OKマーク | オーケー | オッケー"
+
+msgid "🅿️.name"
+msgstr "Pマーク"
+
+msgid "🅿️.keywords"
+msgstr "P | Pマーク | パーキング | 駐車場"
+
+msgid "🆘.name"
+msgstr "SOSマーク"
+
+msgid "🆘.keywords"
+msgstr "SOS | SOSマーク | エスオーエス | 助けて"
+
+msgid "🆙.name"
+msgstr "UPマーク"
+
+msgid "🆙.keywords"
+msgstr "UP | UPマーク | アップ | 更新"
+
+msgid "🆚.name"
+msgstr "VSマーク"
+
+msgid "🆚.keywords"
+msgstr "VSマーク | ヴァーサス | ヴィエス | バーサス | ブイエス | 対"
+
+msgid "🈁.name"
+msgstr "ココのマーク"
+
+msgid "🈁.keywords"
+msgstr "ここ | ココ | ココのマーク"
+
+msgid "🈂️.name"
+msgstr "サのマーク"
+
+msgid "🈂️.keywords"
+msgstr "サ | サービス料 | サのマーク"
+
+msgid "🈷️.name"
+msgstr "月マーク"
+
+msgid "🈷️.keywords"
+msgstr "月 | 月マーク | 月極 | 月額"
+
+msgid "🈶.name"
+msgstr "有マーク"
+
+msgid "🈶.keywords"
+msgstr "有 | 有マーク | 有料 | 有限"
+
+msgid "🈯.name"
+msgstr "指マーク"
+
+msgid "🈯.keywords"
+msgstr "指 | 指マーク | 指定席"
+
+msgid "🉐.name"
+msgstr "マル得"
+
+msgid "🉐.keywords"
+msgstr ""
+"お得 | バーゲン | マル得 | 得"
+" | "
+"得 | 特 | お得 | スペシャル"
+
+msgid "🈹.name"
+msgstr "割マーク"
+
+msgid "🈹.keywords"
+msgstr "ディスカウント | 割 | 割マーク | 割引"
+
+msgid "🈚.name"
+msgstr "無マーク"
+
+msgid "🈚.keywords"
+msgstr "タダ | 無 | 無マーク | 無料"
+
+msgid "🈲.name"
+msgstr "禁マーク"
+
+msgid "🈲.keywords"
+msgstr "厳禁 | 禁 | 禁マーク | 禁止"
+
+msgid "🉑.name"
+msgstr "可マーク"
+
+msgid "🉑.keywords"
+msgstr "可 | 可マーク | 可能 | 許可"
+
+msgid "🈸.name"
+msgstr "申マーク"
+
+msgid "🈸.keywords"
+msgstr "申 | 申し込み | 申マーク | 申請"
+
+msgid "🈴.name"
+msgstr "合マーク"
+
+msgid "🈴.keywords"
+msgstr "合 | 合マーク | 合格"
+
+msgid "🈳.name"
+msgstr "空マーク"
+
+msgid "🈳.keywords"
+msgstr "空 | 空き | 空マーク | 空室 | 空席"
+
+msgid "㊗️.name"
+msgstr "祝マーク"
+
+msgid "㊗️.keywords"
+msgstr "おめでとう | お祝い | 祝 | 祝マーク"
+
+msgid "㊙️.name"
+msgstr "マル秘"
+
+msgid "㊙️.keywords"
+msgstr "マル秘 | 極秘 | 社外秘 | 秘 | 秘密"
+
+msgid "🈺.name"
+msgstr "営マーク"
+
+msgid "🈺.keywords"
+msgstr "営 | 営マーク | 営業中 | 営業日"
+
+msgid "🈵.name"
+msgstr "満マーク"
+
+msgid "🈵.keywords"
+msgstr "満マーク | 満員 | 満室 | 満席 | 満車"
+
+msgid "🔴.name"
+msgstr "赤い丸"
+
+msgid "🔴.keywords"
+msgstr "丸 | 丸いボタン | 赤 | 赤い丸"
+
+msgid "🟠.name"
+msgstr "オレンジの丸"
+
+msgid "🟠.keywords"
+msgstr "オレンジ | オレンジの丸 | 丸 | 丸いボタン"
+
+msgid "🟡.name"
+msgstr "黄色い丸"
+
+msgid "🟡.keywords"
+msgstr "丸 | 丸いボタン | 黄色 | 黄色い丸"
+
+msgid "🟢.name"
+msgstr "緑の丸"
+
+msgid "🟢.keywords"
+msgstr "丸 | 丸いボタン | 緑 | 緑の丸"
+
+msgid "🔵.name"
+msgstr "青い丸"
+
+msgid "🔵.keywords"
+msgstr "丸 | 丸いボタン | 青 | 青い丸"
+
+msgid "🟣.name"
+msgstr "紫の丸"
+
+msgid "🟣.keywords"
+msgstr "丸 | 丸いボタン | 紫 | 紫の丸"
+
+msgid "🟤.name"
+msgstr "茶色の丸"
+
+msgid "🟤.keywords"
+msgstr "丸 | 丸いボタン | 茶色 | 茶色の丸"
+
+msgid "⚫.name"
+msgstr "黒い丸"
+
+msgid "⚫.keywords"
+msgstr "丸 | 丸いボタン | 黒 | 黒い丸 | 黒丸"
+
+msgid "⚪.name"
+msgstr "白い丸"
+
+msgid "⚪.keywords"
+msgstr "丸 | 丸いボタン | 白 | 白い丸"
+
+msgid "🟥.name"
+msgstr "赤い四角"
+
+msgid "🟥.keywords"
+msgstr "四角 | 正方形 | 赤 | 赤い四角"
+
+msgid "🟧.name"
+msgstr "オレンジの四角"
+
+msgid "🟧.keywords"
+msgstr "オレンジ | オレンジの四角 | 四角 | 正方形"
+
+msgid "🟨.name"
+msgstr "黄色い四角"
+
+msgid "🟨.keywords"
+msgstr "四角 | 正方形 | 黄色 | 黄色い四角"
+
+msgid "🟩.name"
+msgstr "緑の四角"
+
+msgid "🟩.keywords"
+msgstr "四角 | 正方形 | 緑 | 緑の四角"
+
+msgid "🟦.name"
+msgstr "青い四角"
+
+msgid "🟦.keywords"
+msgstr "四角 | 正方形 | 青 | 青い四角"
+
+msgid "🟪.name"
+msgstr "紫の四角"
+
+msgid "🟪.keywords"
+msgstr "四角 | 正方形 | 紫 | 紫の四角"
+
+msgid "🟫.name"
+msgstr "茶色い四角"
+
+msgid "🟫.keywords"
+msgstr "四角 | 正方形 | 茶色 | 茶色い四角"
+
+msgid "⬛.name"
+msgstr "黒四角特大"
+
+msgid "⬛.keywords"
+msgstr "四角 | 正方形 | 黒 | 黒四角特大"
+
+msgid "⬜.name"
+msgstr "白四角特大"
+
+msgid "⬜.keywords"
+msgstr "四角 | 正方形 | 白 | 白四角特大"
+
+msgid "◼️.name"
+msgstr "黒四角大"
+
+msgid "◼️.keywords"
+msgstr "四角 | 正方形 | 黒 | 黒四角大"
+
+msgid "◻️.name"
+msgstr "白四角大"
+
+msgid "◻️.keywords"
+msgstr "四角 | 正方形 | 白 | 白四角大"
+
+msgid "◾.name"
+msgstr "黒四角中"
+
+msgid "◾.keywords"
+msgstr "四角 | 正方形 | 黒 | 黒四角中"
+
+msgid "◽.name"
+msgstr "白四角中"
+
+msgid "◽.keywords"
+msgstr "四角 | 正方形 | 白 | 白四角中"
+
+msgid "▪️.name"
+msgstr "黒四角小"
+
+msgid "▪️.keywords"
+msgstr "四角 | 正方形 | 黒 | 黒四角小"
+
+msgid "▫️.name"
+msgstr "白四角小"
+
+msgid "▫️.keywords"
+msgstr "四角 | 正方形 | 白 | 白四角小"
+
+msgid "🔶.name"
+msgstr "大きいオレンジのひし形"
+
+msgid "🔶.keywords"
+msgstr "オレンジ | ダイア | ダイヤ | ひし形 | 四角 | 大きいオレンジのひし形"
+
+msgid "🔷.name"
+msgstr "大きい青のひし形"
+
+msgid "🔷.keywords"
+msgstr "ダイア | ダイヤ | ひし形 | 四角 | 大きい青のひし形 | 青"
+
+msgid "🔸.name"
+msgstr "小さいオレンジのひし形"
+
+msgid "🔸.keywords"
+msgstr "オレンジ | ダイア | ダイヤ | ひし形 | 四角 | 小さいオレンジのひし形"
+
+msgid "🔹.name"
+msgstr "小さい青のひし形"
+
+msgid "🔹.keywords"
+msgstr "ダイア | ダイヤ | ひし形 | 四角 | 小さい青のひし形 | 青"
+
+msgid "🔺.name"
+msgstr "赤い上三角"
+
+msgid "🔺.keywords"
+msgstr "三角 | 上 | 赤 | 赤い上三角"
+
+msgid "🔻.name"
+msgstr "赤い下三角"
+
+msgid "🔻.keywords"
+msgstr "三角 | 下 | 赤 | 赤い下三角"
+
+msgid "💠.name"
+msgstr "ドット付きひし形"
+
+msgid "💠.keywords"
+msgstr "ダイア | ダイヤ | ドット付きひし形 | ひし形"
+
+msgid "🔘.name"
+msgstr "ラジオボタン"
+
+msgid "🔘.keywords"
+msgstr "ボタン | ラジオボタン | 二重丸"
+
+msgid "🔳.name"
+msgstr "白枠四角"
+
+msgid "🔳.keywords"
+msgstr "ボタン | 四角ボタン | 正方形 | 白枠四角"
+
+msgid "🔲.name"
+msgstr "黒枠四角"
+
+msgid "🔲.keywords"
+msgstr "ボタン | 四角ボタン | 正方形 | 黒枠四角"

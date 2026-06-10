@@ -1,0 +1,1629 @@
+msgid ""
+msgstr ""
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "🏁.name"
+msgstr "チェッカーフラッグ"
+
+msgid "🏁.keywords"
+msgstr "スポーツ | チェッカーフラッグ | フラグ | フラッグ | レーシング | レース | 勝利 | 旗"
+
+msgid "🚩.name"
+msgstr "三角の旗"
+
+msgid "🚩.keywords"
+msgstr "ゴルフ | スポーツ | フラグ | フラッグ | 三角の旗 | 建築 | 旗"
+
+msgid "🎌.name"
+msgstr "祝日の旗"
+
+msgid "🎌.keywords"
+msgstr ""
+"フラグ | フラッグ | 交差した旗 | 旗 | 日の丸 | 日本 | 祝日 | 祝日の旗"
+" | "
+"日本の旗 | 日章旗 | 祭り | お祝い"
+
+msgid "🏴.name"
+msgstr "黒旗"
+
+msgid "🏴.keywords"
+msgstr "フラグ | フラッグ | 旗 | 黒 | 黒旗"
+
+msgid "🏳️.name"
+msgstr "白旗"
+
+msgid "🏳️.keywords"
+msgstr "フラグ | フラッグ | 旗 | 白 | 白旗"
+
+msgid "🏳️‍🌈.name"
+msgstr "レインボーフラッグ"
+
+msgid "🏳️‍🌈.keywords"
+msgstr "GLBT | LGBT | LGBTQ | LGBTQIA | ゲイ | トランスジェンダー | バイセクシュアル | プライド | フラグ | レズビアン | 虹色の旗"
+
+msgid "🏳️‍⚧️.name"
+msgstr "トランスジェンダーフラッグ"
+
+msgid "🏳️‍⚧️.keywords"
+msgstr "LGBT | TG | トランスジェンダー | トランスジェンダーフラッグ | フラグ | フラッグ | 旗"
+
+msgid "🏴‍☠️.name"
+msgstr "海賊旗"
+
+msgid "🏴‍☠️.keywords"
+msgstr "ジョリー・ロジャー | 宝物 | 海賊 | 海賊旗 | 略奪"
+
+msgid "🇦🇨.name"
+msgstr "旗: アセンション島"
+
+msgid "🇦🇨.keywords"
+msgstr "旗"
+
+msgid "🇦🇩.name"
+msgstr "旗: アンドラ"
+
+msgid "🇦🇩.keywords"
+msgstr "旗"
+
+msgid "🇦🇪.name"
+msgstr "旗: アラブ首長国連邦"
+
+msgid "🇦🇪.keywords"
+msgstr "旗"
+
+msgid "🇦🇫.name"
+msgstr "旗: アフガニスタン"
+
+msgid "🇦🇫.keywords"
+msgstr "旗"
+
+msgid "🇦🇬.name"
+msgstr "旗: アンティグア・バーブーダ"
+
+msgid "🇦🇬.keywords"
+msgstr "旗"
+
+msgid "🇦🇮.name"
+msgstr "旗: アンギラ"
+
+msgid "🇦🇮.keywords"
+msgstr "旗"
+
+msgid "🇦🇱.name"
+msgstr "旗: アルバニア"
+
+msgid "🇦🇱.keywords"
+msgstr "旗"
+
+msgid "🇦🇲.name"
+msgstr "旗: アルメニア"
+
+msgid "🇦🇲.keywords"
+msgstr "旗"
+
+msgid "🇦🇴.name"
+msgstr "旗: アンゴラ"
+
+msgid "🇦🇴.keywords"
+msgstr "旗"
+
+msgid "🇦🇶.name"
+msgstr "旗: 南極"
+
+msgid "🇦🇶.keywords"
+msgstr "旗"
+
+msgid "🇦🇷.name"
+msgstr "旗: アルゼンチン"
+
+msgid "🇦🇷.keywords"
+msgstr "旗"
+
+msgid "🇦🇸.name"
+msgstr "旗: 米領サモア"
+
+msgid "🇦🇸.keywords"
+msgstr "旗"
+
+msgid "🇦🇹.name"
+msgstr "旗: オーストリア"
+
+msgid "🇦🇹.keywords"
+msgstr "旗"
+
+msgid "🇦🇺.name"
+msgstr "旗: オーストラリア"
+
+msgid "🇦🇺.keywords"
+msgstr "旗"
+
+msgid "🇦🇼.name"
+msgstr "旗: アルバ"
+
+msgid "🇦🇼.keywords"
+msgstr "旗"
+
+msgid "🇦🇽.name"
+msgstr "旗: オーランド諸島"
+
+msgid "🇦🇽.keywords"
+msgstr "旗"
+
+msgid "🇦🇿.name"
+msgstr "旗: アゼルバイジャン"
+
+msgid "🇦🇿.keywords"
+msgstr "旗"
+
+msgid "🇧🇦.name"
+msgstr "旗: ボスニア・ヘルツェゴビナ"
+
+msgid "🇧🇦.keywords"
+msgstr "旗"
+
+msgid "🇧🇧.name"
+msgstr "旗: バルバドス"
+
+msgid "🇧🇧.keywords"
+msgstr "旗"
+
+msgid "🇧🇩.name"
+msgstr "旗: バングラデシュ"
+
+msgid "🇧🇩.keywords"
+msgstr "旗"
+
+msgid "🇧🇪.name"
+msgstr "旗: ベルギー"
+
+msgid "🇧🇪.keywords"
+msgstr "旗"
+
+msgid "🇧🇫.name"
+msgstr "旗: ブルキナファソ"
+
+msgid "🇧🇫.keywords"
+msgstr "旗"
+
+msgid "🇧🇬.name"
+msgstr "旗: ブルガリア"
+
+msgid "🇧🇬.keywords"
+msgstr "旗"
+
+msgid "🇧🇭.name"
+msgstr "旗: バーレーン"
+
+msgid "🇧🇭.keywords"
+msgstr "旗"
+
+msgid "🇧🇮.name"
+msgstr "旗: ブルンジ"
+
+msgid "🇧🇮.keywords"
+msgstr "旗"
+
+msgid "🇧🇯.name"
+msgstr "旗: ベナン"
+
+msgid "🇧🇯.keywords"
+msgstr "旗"
+
+msgid "🇧🇱.name"
+msgstr "旗: サン・バルテルミー"
+
+msgid "🇧🇱.keywords"
+msgstr "旗"
+
+msgid "🇧🇲.name"
+msgstr "旗: バミューダ"
+
+msgid "🇧🇲.keywords"
+msgstr "旗"
+
+msgid "🇧🇳.name"
+msgstr "旗: ブルネイ"
+
+msgid "🇧🇳.keywords"
+msgstr "旗"
+
+msgid "🇧🇴.name"
+msgstr "旗: ボリビア"
+
+msgid "🇧🇴.keywords"
+msgstr "旗"
+
+msgid "🇧🇶.name"
+msgstr "旗: オランダ領カリブ"
+
+msgid "🇧🇶.keywords"
+msgstr "旗"
+
+msgid "🇧🇷.name"
+msgstr "旗: ブラジル"
+
+msgid "🇧🇷.keywords"
+msgstr "旗"
+
+msgid "🇧🇸.name"
+msgstr "旗: バハマ"
+
+msgid "🇧🇸.keywords"
+msgstr "旗"
+
+msgid "🇧🇹.name"
+msgstr "旗: ブータン"
+
+msgid "🇧🇹.keywords"
+msgstr "旗"
+
+msgid "🇧🇻.name"
+msgstr "旗: ブーベ島"
+
+msgid "🇧🇻.keywords"
+msgstr "旗"
+
+msgid "🇧🇼.name"
+msgstr "旗: ボツワナ"
+
+msgid "🇧🇼.keywords"
+msgstr "旗"
+
+msgid "🇧🇾.name"
+msgstr "旗: ベラルーシ"
+
+msgid "🇧🇾.keywords"
+msgstr "旗"
+
+msgid "🇧🇿.name"
+msgstr "旗: ベリーズ"
+
+msgid "🇧🇿.keywords"
+msgstr "旗"
+
+msgid "🇨🇦.name"
+msgstr "旗: カナダ"
+
+msgid "🇨🇦.keywords"
+msgstr "旗"
+
+msgid "🇨🇨.name"
+msgstr "旗: ココス(キーリング)諸島"
+
+msgid "🇨🇨.keywords"
+msgstr "旗"
+
+msgid "🇨🇩.name"
+msgstr "旗: コンゴ民主共和国(キンシャサ)"
+
+msgid "🇨🇩.keywords"
+msgstr "旗"
+
+msgid "🇨🇫.name"
+msgstr "旗: 中央アフリカ共和国"
+
+msgid "🇨🇫.keywords"
+msgstr "旗"
+
+msgid "🇨🇬.name"
+msgstr "旗: コンゴ共和国(ブラザビル)"
+
+msgid "🇨🇬.keywords"
+msgstr "旗"
+
+msgid "🇨🇭.name"
+msgstr "旗: スイス"
+
+msgid "🇨🇭.keywords"
+msgstr "旗"
+
+msgid "🇨🇮.name"
+msgstr "旗: コートジボワール"
+
+msgid "🇨🇮.keywords"
+msgstr "旗"
+
+msgid "🇨🇰.name"
+msgstr "旗: クック諸島"
+
+msgid "🇨🇰.keywords"
+msgstr "旗"
+
+msgid "🇨🇱.name"
+msgstr "旗: チリ"
+
+msgid "🇨🇱.keywords"
+msgstr "旗"
+
+msgid "🇨🇲.name"
+msgstr "旗: カメルーン"
+
+msgid "🇨🇲.keywords"
+msgstr "旗"
+
+msgid "🇨🇳.name"
+msgstr "旗: 中国"
+
+msgid "🇨🇳.keywords"
+msgstr "旗"
+
+msgid "🇨🇴.name"
+msgstr "旗: コロンビア"
+
+msgid "🇨🇴.keywords"
+msgstr "旗"
+
+msgid "🇨🇵.name"
+msgstr "旗: クリッパートン島"
+
+msgid "🇨🇵.keywords"
+msgstr "旗"
+
+msgid "🇨🇶.name"
+msgstr "旗: サーク島"
+
+msgid "🇨🇶.keywords"
+msgstr "旗"
+
+msgid "🇨🇷.name"
+msgstr "旗: コスタリカ"
+
+msgid "🇨🇷.keywords"
+msgstr "旗"
+
+msgid "🇨🇺.name"
+msgstr "旗: キューバ"
+
+msgid "🇨🇺.keywords"
+msgstr "旗"
+
+msgid "🇨🇻.name"
+msgstr "旗: カーボベルデ"
+
+msgid "🇨🇻.keywords"
+msgstr "旗"
+
+msgid "🇨🇼.name"
+msgstr "旗: キュラソー"
+
+msgid "🇨🇼.keywords"
+msgstr "旗"
+
+msgid "🇨🇽.name"
+msgstr "旗: クリスマス島"
+
+msgid "🇨🇽.keywords"
+msgstr "旗"
+
+msgid "🇨🇾.name"
+msgstr "旗: キプロス"
+
+msgid "🇨🇾.keywords"
+msgstr "旗"
+
+msgid "🇨🇿.name"
+msgstr "旗: チェコ"
+
+msgid "🇨🇿.keywords"
+msgstr "旗"
+
+msgid "🇩🇪.name"
+msgstr "旗: ドイツ"
+
+msgid "🇩🇪.keywords"
+msgstr "旗"
+
+msgid "🇩🇬.name"
+msgstr "旗: ディエゴガルシア島"
+
+msgid "🇩🇬.keywords"
+msgstr "旗"
+
+msgid "🇩🇯.name"
+msgstr "旗: ジブチ"
+
+msgid "🇩🇯.keywords"
+msgstr "旗"
+
+msgid "🇩🇰.name"
+msgstr "旗: デンマーク"
+
+msgid "🇩🇰.keywords"
+msgstr "旗"
+
+msgid "🇩🇲.name"
+msgstr "旗: ドミニカ国"
+
+msgid "🇩🇲.keywords"
+msgstr "旗"
+
+msgid "🇩🇴.name"
+msgstr "旗: ドミニカ共和国"
+
+msgid "🇩🇴.keywords"
+msgstr "旗"
+
+msgid "🇩🇿.name"
+msgstr "旗: アルジェリア"
+
+msgid "🇩🇿.keywords"
+msgstr "旗"
+
+msgid "🇪🇦.name"
+msgstr "旗: セウタ・メリリャ"
+
+msgid "🇪🇦.keywords"
+msgstr "旗"
+
+msgid "🇪🇨.name"
+msgstr "旗: エクアドル"
+
+msgid "🇪🇨.keywords"
+msgstr "旗"
+
+msgid "🇪🇪.name"
+msgstr "旗: エストニア"
+
+msgid "🇪🇪.keywords"
+msgstr "旗"
+
+msgid "🇪🇬.name"
+msgstr "旗: エジプト"
+
+msgid "🇪🇬.keywords"
+msgstr "旗"
+
+msgid "🇪🇭.name"
+msgstr "旗: 西サハラ"
+
+msgid "🇪🇭.keywords"
+msgstr "旗"
+
+msgid "🇪🇷.name"
+msgstr "旗: エリトリア"
+
+msgid "🇪🇷.keywords"
+msgstr "旗"
+
+msgid "🇪🇸.name"
+msgstr "旗: スペイン"
+
+msgid "🇪🇸.keywords"
+msgstr "旗"
+
+msgid "🇪🇹.name"
+msgstr "旗: エチオピア"
+
+msgid "🇪🇹.keywords"
+msgstr "旗"
+
+msgid "🇪🇺.name"
+msgstr "旗: 欧州連合"
+
+msgid "🇪🇺.keywords"
+msgstr "旗"
+
+msgid "🇫🇮.name"
+msgstr "旗: フィンランド"
+
+msgid "🇫🇮.keywords"
+msgstr "旗"
+
+msgid "🇫🇯.name"
+msgstr "旗: フィジー"
+
+msgid "🇫🇯.keywords"
+msgstr "旗"
+
+msgid "🇫🇰.name"
+msgstr "旗: フォークランド諸島"
+
+msgid "🇫🇰.keywords"
+msgstr "旗"
+
+msgid "🇫🇲.name"
+msgstr "旗: ミクロネシア連邦"
+
+msgid "🇫🇲.keywords"
+msgstr "旗"
+
+msgid "🇫🇴.name"
+msgstr "旗: フェロー諸島"
+
+msgid "🇫🇴.keywords"
+msgstr "旗"
+
+msgid "🇫🇷.name"
+msgstr "旗: フランス"
+
+msgid "🇫🇷.keywords"
+msgstr "旗"
+
+msgid "🇬🇦.name"
+msgstr "旗: ガボン"
+
+msgid "🇬🇦.keywords"
+msgstr "旗"
+
+msgid "🇬🇧.name"
+msgstr "旗: イギリス"
+
+msgid "🇬🇧.keywords"
+msgstr "旗"
+
+msgid "🇬🇩.name"
+msgstr "旗: グレナダ"
+
+msgid "🇬🇩.keywords"
+msgstr "旗"
+
+msgid "🇬🇪.name"
+msgstr "旗: ジョージア"
+
+msgid "🇬🇪.keywords"
+msgstr "旗"
+
+msgid "🇬🇫.name"
+msgstr "旗: 仏領ギアナ"
+
+msgid "🇬🇫.keywords"
+msgstr "旗"
+
+msgid "🇬🇬.name"
+msgstr "旗: ガーンジー"
+
+msgid "🇬🇬.keywords"
+msgstr "旗"
+
+msgid "🇬🇭.name"
+msgstr "旗: ガーナ"
+
+msgid "🇬🇭.keywords"
+msgstr "旗"
+
+msgid "🇬🇮.name"
+msgstr "旗: ジブラルタル"
+
+msgid "🇬🇮.keywords"
+msgstr "旗"
+
+msgid "🇬🇱.name"
+msgstr "旗: グリーンランド"
+
+msgid "🇬🇱.keywords"
+msgstr "旗"
+
+msgid "🇬🇲.name"
+msgstr "旗: ガンビア"
+
+msgid "🇬🇲.keywords"
+msgstr "旗"
+
+msgid "🇬🇳.name"
+msgstr "旗: ギニア"
+
+msgid "🇬🇳.keywords"
+msgstr "旗"
+
+msgid "🇬🇵.name"
+msgstr "旗: グアドループ"
+
+msgid "🇬🇵.keywords"
+msgstr "旗"
+
+msgid "🇬🇶.name"
+msgstr "旗: 赤道ギニア"
+
+msgid "🇬🇶.keywords"
+msgstr "旗"
+
+msgid "🇬🇷.name"
+msgstr "旗: ギリシャ"
+
+msgid "🇬🇷.keywords"
+msgstr "旗"
+
+msgid "🇬🇸.name"
+msgstr "旗: サウスジョージア・サウスサンドウィッチ諸島"
+
+msgid "🇬🇸.keywords"
+msgstr "旗"
+
+msgid "🇬🇹.name"
+msgstr "旗: グアテマラ"
+
+msgid "🇬🇹.keywords"
+msgstr "旗"
+
+msgid "🇬🇺.name"
+msgstr "旗: グアム"
+
+msgid "🇬🇺.keywords"
+msgstr "旗"
+
+msgid "🇬🇼.name"
+msgstr "旗: ギニアビサウ"
+
+msgid "🇬🇼.keywords"
+msgstr "旗"
+
+msgid "🇬🇾.name"
+msgstr "旗: ガイアナ"
+
+msgid "🇬🇾.keywords"
+msgstr "旗"
+
+msgid "🇭🇰.name"
+msgstr "旗: 中華人民共和国香港特別行政区"
+
+msgid "🇭🇰.keywords"
+msgstr "旗"
+
+msgid "🇭🇲.name"
+msgstr "旗: ハード島・マクドナルド諸島"
+
+msgid "🇭🇲.keywords"
+msgstr "旗"
+
+msgid "🇭🇳.name"
+msgstr "旗: ホンジュラス"
+
+msgid "🇭🇳.keywords"
+msgstr "旗"
+
+msgid "🇭🇷.name"
+msgstr "旗: クロアチア"
+
+msgid "🇭🇷.keywords"
+msgstr "旗"
+
+msgid "🇭🇹.name"
+msgstr "旗: ハイチ"
+
+msgid "🇭🇹.keywords"
+msgstr "旗"
+
+msgid "🇭🇺.name"
+msgstr "旗: ハンガリー"
+
+msgid "🇭🇺.keywords"
+msgstr "旗"
+
+msgid "🇮🇨.name"
+msgstr "旗: カナリア諸島"
+
+msgid "🇮🇨.keywords"
+msgstr "旗"
+
+msgid "🇮🇩.name"
+msgstr "旗: インドネシア"
+
+msgid "🇮🇩.keywords"
+msgstr "旗"
+
+msgid "🇮🇪.name"
+msgstr "旗: アイルランド"
+
+msgid "🇮🇪.keywords"
+msgstr "旗"
+
+msgid "🇮🇱.name"
+msgstr "旗: イスラエル"
+
+msgid "🇮🇱.keywords"
+msgstr "旗"
+
+msgid "🇮🇲.name"
+msgstr "旗: マン島"
+
+msgid "🇮🇲.keywords"
+msgstr "旗"
+
+msgid "🇮🇳.name"
+msgstr "旗: インド"
+
+msgid "🇮🇳.keywords"
+msgstr "旗"
+
+msgid "🇮🇴.name"
+msgstr "旗: 英領インド洋地域"
+
+msgid "🇮🇴.keywords"
+msgstr "旗"
+
+msgid "🇮🇶.name"
+msgstr "旗: イラク"
+
+msgid "🇮🇶.keywords"
+msgstr "旗"
+
+msgid "🇮🇷.name"
+msgstr "旗: イラン"
+
+msgid "🇮🇷.keywords"
+msgstr "旗"
+
+msgid "🇮🇸.name"
+msgstr "旗: アイスランド"
+
+msgid "🇮🇸.keywords"
+msgstr "旗"
+
+msgid "🇮🇹.name"
+msgstr "旗: イタリア"
+
+msgid "🇮🇹.keywords"
+msgstr "旗"
+
+msgid "🇯🇪.name"
+msgstr "旗: ジャージー"
+
+msgid "🇯🇪.keywords"
+msgstr "旗"
+
+msgid "🇯🇲.name"
+msgstr "旗: ジャマイカ"
+
+msgid "🇯🇲.keywords"
+msgstr "旗"
+
+msgid "🇯🇴.name"
+msgstr "旗: ヨルダン"
+
+msgid "🇯🇴.keywords"
+msgstr "旗"
+
+msgid "🇯🇵.name"
+msgstr "旗: 日本"
+
+msgid "🇯🇵.keywords"
+msgstr "旗"
+
+msgid "🇰🇪.name"
+msgstr "旗: ケニア"
+
+msgid "🇰🇪.keywords"
+msgstr "旗"
+
+msgid "🇰🇬.name"
+msgstr "旗: キルギス"
+
+msgid "🇰🇬.keywords"
+msgstr "旗"
+
+msgid "🇰🇭.name"
+msgstr "旗: カンボジア"
+
+msgid "🇰🇭.keywords"
+msgstr "旗"
+
+msgid "🇰🇮.name"
+msgstr "旗: キリバス"
+
+msgid "🇰🇮.keywords"
+msgstr "旗"
+
+msgid "🇰🇲.name"
+msgstr "旗: コモロ"
+
+msgid "🇰🇲.keywords"
+msgstr "旗"
+
+msgid "🇰🇳.name"
+msgstr "旗: セントクリストファー・ネーヴィス"
+
+msgid "🇰🇳.keywords"
+msgstr "旗"
+
+msgid "🇰🇵.name"
+msgstr "旗: 北朝鮮"
+
+msgid "🇰🇵.keywords"
+msgstr "旗"
+
+msgid "🇰🇷.name"
+msgstr "旗: 韓国"
+
+msgid "🇰🇷.keywords"
+msgstr "旗"
+
+msgid "🇰🇼.name"
+msgstr "旗: クウェート"
+
+msgid "🇰🇼.keywords"
+msgstr "旗"
+
+msgid "🇰🇾.name"
+msgstr "旗: ケイマン諸島"
+
+msgid "🇰🇾.keywords"
+msgstr "旗"
+
+msgid "🇰🇿.name"
+msgstr "旗: カザフスタン"
+
+msgid "🇰🇿.keywords"
+msgstr "旗"
+
+msgid "🇱🇦.name"
+msgstr "旗: ラオス"
+
+msgid "🇱🇦.keywords"
+msgstr "旗"
+
+msgid "🇱🇧.name"
+msgstr "旗: レバノン"
+
+msgid "🇱🇧.keywords"
+msgstr "旗"
+
+msgid "🇱🇨.name"
+msgstr "旗: セントルシア"
+
+msgid "🇱🇨.keywords"
+msgstr "旗"
+
+msgid "🇱🇮.name"
+msgstr "旗: リヒテンシュタイン"
+
+msgid "🇱🇮.keywords"
+msgstr "旗"
+
+msgid "🇱🇰.name"
+msgstr "旗: スリランカ"
+
+msgid "🇱🇰.keywords"
+msgstr "旗"
+
+msgid "🇱🇷.name"
+msgstr "旗: リベリア"
+
+msgid "🇱🇷.keywords"
+msgstr "旗"
+
+msgid "🇱🇸.name"
+msgstr "旗: レソト"
+
+msgid "🇱🇸.keywords"
+msgstr "旗"
+
+msgid "🇱🇹.name"
+msgstr "旗: リトアニア"
+
+msgid "🇱🇹.keywords"
+msgstr "旗"
+
+msgid "🇱🇺.name"
+msgstr "旗: ルクセンブルク"
+
+msgid "🇱🇺.keywords"
+msgstr "旗"
+
+msgid "🇱🇻.name"
+msgstr "旗: ラトビア"
+
+msgid "🇱🇻.keywords"
+msgstr "旗"
+
+msgid "🇱🇾.name"
+msgstr "旗: リビア"
+
+msgid "🇱🇾.keywords"
+msgstr "旗"
+
+msgid "🇲🇦.name"
+msgstr "旗: モロッコ"
+
+msgid "🇲🇦.keywords"
+msgstr "旗"
+
+msgid "🇲🇨.name"
+msgstr "旗: モナコ"
+
+msgid "🇲🇨.keywords"
+msgstr "旗"
+
+msgid "🇲🇩.name"
+msgstr "旗: モルドバ"
+
+msgid "🇲🇩.keywords"
+msgstr "旗"
+
+msgid "🇲🇪.name"
+msgstr "旗: モンテネグロ"
+
+msgid "🇲🇪.keywords"
+msgstr "旗"
+
+msgid "🇲🇫.name"
+msgstr "旗: サン・マルタン"
+
+msgid "🇲🇫.keywords"
+msgstr "旗"
+
+msgid "🇲🇬.name"
+msgstr "旗: マダガスカル"
+
+msgid "🇲🇬.keywords"
+msgstr "旗"
+
+msgid "🇲🇭.name"
+msgstr "旗: マーシャル諸島"
+
+msgid "🇲🇭.keywords"
+msgstr "旗"
+
+msgid "🇲🇰.name"
+msgstr "旗: 北マケドニア"
+
+msgid "🇲🇰.keywords"
+msgstr "旗"
+
+msgid "🇲🇱.name"
+msgstr "旗: マリ"
+
+msgid "🇲🇱.keywords"
+msgstr "旗"
+
+msgid "🇲🇲.name"
+msgstr "旗: ミャンマー (ビルマ)"
+
+msgid "🇲🇲.keywords"
+msgstr "旗"
+
+msgid "🇲🇳.name"
+msgstr "旗: モンゴル"
+
+msgid "🇲🇳.keywords"
+msgstr "旗"
+
+msgid "🇲🇴.name"
+msgstr "旗: 中華人民共和国マカオ特別行政区"
+
+msgid "🇲🇴.keywords"
+msgstr "旗"
+
+msgid "🇲🇵.name"
+msgstr "旗: 北マリアナ諸島"
+
+msgid "🇲🇵.keywords"
+msgstr "旗"
+
+msgid "🇲🇶.name"
+msgstr "旗: マルティニーク"
+
+msgid "🇲🇶.keywords"
+msgstr "旗"
+
+msgid "🇲🇷.name"
+msgstr "旗: モーリタニア"
+
+msgid "🇲🇷.keywords"
+msgstr "旗"
+
+msgid "🇲🇸.name"
+msgstr "旗: モントセラト"
+
+msgid "🇲🇸.keywords"
+msgstr "旗"
+
+msgid "🇲🇹.name"
+msgstr "旗: マルタ"
+
+msgid "🇲🇹.keywords"
+msgstr "旗"
+
+msgid "🇲🇺.name"
+msgstr "旗: モーリシャス"
+
+msgid "🇲🇺.keywords"
+msgstr "旗"
+
+msgid "🇲🇻.name"
+msgstr "旗: モルディブ"
+
+msgid "🇲🇻.keywords"
+msgstr "旗"
+
+msgid "🇲🇼.name"
+msgstr "旗: マラウイ"
+
+msgid "🇲🇼.keywords"
+msgstr "旗"
+
+msgid "🇲🇽.name"
+msgstr "旗: メキシコ"
+
+msgid "🇲🇽.keywords"
+msgstr "旗"
+
+msgid "🇲🇾.name"
+msgstr "旗: マレーシア"
+
+msgid "🇲🇾.keywords"
+msgstr "旗"
+
+msgid "🇲🇿.name"
+msgstr "旗: モザンビーク"
+
+msgid "🇲🇿.keywords"
+msgstr "旗"
+
+msgid "🇳🇦.name"
+msgstr "旗: ナミビア"
+
+msgid "🇳🇦.keywords"
+msgstr "旗"
+
+msgid "🇳🇨.name"
+msgstr "旗: ニューカレドニア"
+
+msgid "🇳🇨.keywords"
+msgstr "旗"
+
+msgid "🇳🇪.name"
+msgstr "旗: ニジェール"
+
+msgid "🇳🇪.keywords"
+msgstr "旗"
+
+msgid "🇳🇫.name"
+msgstr "旗: ノーフォーク島"
+
+msgid "🇳🇫.keywords"
+msgstr "旗"
+
+msgid "🇳🇬.name"
+msgstr "旗: ナイジェリア"
+
+msgid "🇳🇬.keywords"
+msgstr "旗"
+
+msgid "🇳🇮.name"
+msgstr "旗: ニカラグア"
+
+msgid "🇳🇮.keywords"
+msgstr "旗"
+
+msgid "🇳🇱.name"
+msgstr "旗: オランダ"
+
+msgid "🇳🇱.keywords"
+msgstr "旗"
+
+msgid "🇳🇴.name"
+msgstr "旗: ノルウェー"
+
+msgid "🇳🇴.keywords"
+msgstr "旗"
+
+msgid "🇳🇵.name"
+msgstr "旗: ネパール"
+
+msgid "🇳🇵.keywords"
+msgstr "旗"
+
+msgid "🇳🇷.name"
+msgstr "旗: ナウル"
+
+msgid "🇳🇷.keywords"
+msgstr "旗"
+
+msgid "🇳🇺.name"
+msgstr "旗: ニウエ"
+
+msgid "🇳🇺.keywords"
+msgstr "旗"
+
+msgid "🇳🇿.name"
+msgstr "旗: ニュージーランド"
+
+msgid "🇳🇿.keywords"
+msgstr "旗"
+
+msgid "🇴🇲.name"
+msgstr "旗: オマーン"
+
+msgid "🇴🇲.keywords"
+msgstr "旗"
+
+msgid "🇵🇦.name"
+msgstr "旗: パナマ"
+
+msgid "🇵🇦.keywords"
+msgstr "旗"
+
+msgid "🇵🇪.name"
+msgstr "旗: ペルー"
+
+msgid "🇵🇪.keywords"
+msgstr "旗"
+
+msgid "🇵🇫.name"
+msgstr "旗: 仏領ポリネシア"
+
+msgid "🇵🇫.keywords"
+msgstr "旗"
+
+msgid "🇵🇬.name"
+msgstr "旗: パプアニューギニア"
+
+msgid "🇵🇬.keywords"
+msgstr "旗"
+
+msgid "🇵🇭.name"
+msgstr "旗: フィリピン"
+
+msgid "🇵🇭.keywords"
+msgstr "旗"
+
+msgid "🇵🇰.name"
+msgstr "旗: パキスタン"
+
+msgid "🇵🇰.keywords"
+msgstr "旗"
+
+msgid "🇵🇱.name"
+msgstr "旗: ポーランド"
+
+msgid "🇵🇱.keywords"
+msgstr "旗"
+
+msgid "🇵🇲.name"
+msgstr "旗: サンピエール島・ミクロン島"
+
+msgid "🇵🇲.keywords"
+msgstr "旗"
+
+msgid "🇵🇳.name"
+msgstr "旗: ピトケアン諸島"
+
+msgid "🇵🇳.keywords"
+msgstr "旗"
+
+msgid "🇵🇷.name"
+msgstr "旗: プエルトリコ"
+
+msgid "🇵🇷.keywords"
+msgstr "旗"
+
+msgid "🇵🇸.name"
+msgstr "旗: パレスチナ自治区"
+
+msgid "🇵🇸.keywords"
+msgstr "旗"
+
+msgid "🇵🇹.name"
+msgstr "旗: ポルトガル"
+
+msgid "🇵🇹.keywords"
+msgstr "旗"
+
+msgid "🇵🇼.name"
+msgstr "旗: パラオ"
+
+msgid "🇵🇼.keywords"
+msgstr "旗"
+
+msgid "🇵🇾.name"
+msgstr "旗: パラグアイ"
+
+msgid "🇵🇾.keywords"
+msgstr "旗"
+
+msgid "🇶🇦.name"
+msgstr "旗: カタール"
+
+msgid "🇶🇦.keywords"
+msgstr "旗"
+
+msgid "🇷🇪.name"
+msgstr "旗: レユニオン"
+
+msgid "🇷🇪.keywords"
+msgstr "旗"
+
+msgid "🇷🇴.name"
+msgstr "旗: ルーマニア"
+
+msgid "🇷🇴.keywords"
+msgstr "旗"
+
+msgid "🇷🇸.name"
+msgstr "旗: セルビア"
+
+msgid "🇷🇸.keywords"
+msgstr "旗"
+
+msgid "🇷🇺.name"
+msgstr "旗: ロシア"
+
+msgid "🇷🇺.keywords"
+msgstr "旗"
+
+msgid "🇷🇼.name"
+msgstr "旗: ルワンダ"
+
+msgid "🇷🇼.keywords"
+msgstr "旗"
+
+msgid "🇸🇦.name"
+msgstr "旗: サウジアラビア"
+
+msgid "🇸🇦.keywords"
+msgstr "旗"
+
+msgid "🇸🇧.name"
+msgstr "旗: ソロモン諸島"
+
+msgid "🇸🇧.keywords"
+msgstr "旗"
+
+msgid "🇸🇨.name"
+msgstr "旗: セーシェル"
+
+msgid "🇸🇨.keywords"
+msgstr "旗"
+
+msgid "🇸🇩.name"
+msgstr "旗: スーダン"
+
+msgid "🇸🇩.keywords"
+msgstr "旗"
+
+msgid "🇸🇪.name"
+msgstr "旗: スウェーデン"
+
+msgid "🇸🇪.keywords"
+msgstr "旗"
+
+msgid "🇸🇬.name"
+msgstr "旗: シンガポール"
+
+msgid "🇸🇬.keywords"
+msgstr "旗"
+
+msgid "🇸🇭.name"
+msgstr "旗: セントヘレナ"
+
+msgid "🇸🇭.keywords"
+msgstr "旗"
+
+msgid "🇸🇮.name"
+msgstr "旗: スロベニア"
+
+msgid "🇸🇮.keywords"
+msgstr "旗"
+
+msgid "🇸🇯.name"
+msgstr "旗: スバールバル諸島・ヤンマイエン島"
+
+msgid "🇸🇯.keywords"
+msgstr "旗"
+
+msgid "🇸🇰.name"
+msgstr "旗: スロバキア"
+
+msgid "🇸🇰.keywords"
+msgstr "旗"
+
+msgid "🇸🇱.name"
+msgstr "旗: シエラレオネ"
+
+msgid "🇸🇱.keywords"
+msgstr "旗"
+
+msgid "🇸🇲.name"
+msgstr "旗: サンマリノ"
+
+msgid "🇸🇲.keywords"
+msgstr "旗"
+
+msgid "🇸🇳.name"
+msgstr "旗: セネガル"
+
+msgid "🇸🇳.keywords"
+msgstr "旗"
+
+msgid "🇸🇴.name"
+msgstr "旗: ソマリア"
+
+msgid "🇸🇴.keywords"
+msgstr "旗"
+
+msgid "🇸🇷.name"
+msgstr "旗: スリナム"
+
+msgid "🇸🇷.keywords"
+msgstr "旗"
+
+msgid "🇸🇸.name"
+msgstr "旗: 南スーダン"
+
+msgid "🇸🇸.keywords"
+msgstr "旗"
+
+msgid "🇸🇹.name"
+msgstr "旗: サントメ・プリンシペ"
+
+msgid "🇸🇹.keywords"
+msgstr "旗"
+
+msgid "🇸🇻.name"
+msgstr "旗: エルサルバドル"
+
+msgid "🇸🇻.keywords"
+msgstr "旗"
+
+msgid "🇸🇽.name"
+msgstr "旗: シント・マールテン"
+
+msgid "🇸🇽.keywords"
+msgstr "旗"
+
+msgid "🇸🇾.name"
+msgstr "旗: シリア"
+
+msgid "🇸🇾.keywords"
+msgstr "旗"
+
+msgid "🇸🇿.name"
+msgstr "旗: エスワティニ"
+
+msgid "🇸🇿.keywords"
+msgstr "旗"
+
+msgid "🇹🇦.name"
+msgstr "旗: トリスタン・ダ・クーニャ"
+
+msgid "🇹🇦.keywords"
+msgstr "旗"
+
+msgid "🇹🇨.name"
+msgstr "旗: タークス・カイコス諸島"
+
+msgid "🇹🇨.keywords"
+msgstr "旗"
+
+msgid "🇹🇩.name"
+msgstr "旗: チャド"
+
+msgid "🇹🇩.keywords"
+msgstr "旗"
+
+msgid "🇹🇫.name"
+msgstr "旗: 仏領極南諸島"
+
+msgid "🇹🇫.keywords"
+msgstr "旗"
+
+msgid "🇹🇬.name"
+msgstr "旗: トーゴ"
+
+msgid "🇹🇬.keywords"
+msgstr "旗"
+
+msgid "🇹🇭.name"
+msgstr "旗: タイ"
+
+msgid "🇹🇭.keywords"
+msgstr "旗"
+
+msgid "🇹🇯.name"
+msgstr "旗: タジキスタン"
+
+msgid "🇹🇯.keywords"
+msgstr "旗"
+
+msgid "🇹🇰.name"
+msgstr "旗: トケラウ"
+
+msgid "🇹🇰.keywords"
+msgstr "旗"
+
+msgid "🇹🇱.name"
+msgstr "旗: 東ティモール"
+
+msgid "🇹🇱.keywords"
+msgstr "旗"
+
+msgid "🇹🇲.name"
+msgstr "旗: トルクメニスタン"
+
+msgid "🇹🇲.keywords"
+msgstr "旗"
+
+msgid "🇹🇳.name"
+msgstr "旗: チュニジア"
+
+msgid "🇹🇳.keywords"
+msgstr "旗"
+
+msgid "🇹🇴.name"
+msgstr "旗: トンガ"
+
+msgid "🇹🇴.keywords"
+msgstr "旗"
+
+msgid "🇹🇷.name"
+msgstr "旗: トルコ"
+
+msgid "🇹🇷.keywords"
+msgstr "旗"
+
+msgid "🇹🇹.name"
+msgstr "旗: トリニダード・トバゴ"
+
+msgid "🇹🇹.keywords"
+msgstr "旗"
+
+msgid "🇹🇻.name"
+msgstr "旗: ツバル"
+
+msgid "🇹🇻.keywords"
+msgstr "旗"
+
+msgid "🇹🇼.name"
+msgstr "旗: 台湾"
+
+msgid "🇹🇼.keywords"
+msgstr "旗"
+
+msgid "🇹🇿.name"
+msgstr "旗: タンザニア"
+
+msgid "🇹🇿.keywords"
+msgstr "旗"
+
+msgid "🇺🇦.name"
+msgstr "旗: ウクライナ"
+
+msgid "🇺🇦.keywords"
+msgstr "旗"
+
+msgid "🇺🇬.name"
+msgstr "旗: ウガンダ"
+
+msgid "🇺🇬.keywords"
+msgstr "旗"
+
+msgid "🇺🇲.name"
+msgstr "旗: 合衆国領有小離島"
+
+msgid "🇺🇲.keywords"
+msgstr "旗"
+
+msgid "🇺🇳.name"
+msgstr "旗: 国際連合"
+
+msgid "🇺🇳.keywords"
+msgstr "旗"
+
+msgid "🇺🇸.name"
+msgstr "旗: アメリカ合衆国"
+
+msgid "🇺🇸.keywords"
+msgstr "旗"
+
+msgid "🇺🇾.name"
+msgstr "旗: ウルグアイ"
+
+msgid "🇺🇾.keywords"
+msgstr "旗"
+
+msgid "🇺🇿.name"
+msgstr "旗: ウズベキスタン"
+
+msgid "🇺🇿.keywords"
+msgstr "旗"
+
+msgid "🇻🇦.name"
+msgstr "旗: バチカン市国"
+
+msgid "🇻🇦.keywords"
+msgstr "旗"
+
+msgid "🇻🇨.name"
+msgstr "旗: セントビンセント及びグレナディーン諸島"
+
+msgid "🇻🇨.keywords"
+msgstr "旗"
+
+msgid "🇻🇪.name"
+msgstr "旗: ベネズエラ"
+
+msgid "🇻🇪.keywords"
+msgstr "旗"
+
+msgid "🇻🇬.name"
+msgstr "旗: 英領ヴァージン諸島"
+
+msgid "🇻🇬.keywords"
+msgstr "旗"
+
+msgid "🇻🇮.name"
+msgstr "旗: 米領ヴァージン諸島"
+
+msgid "🇻🇮.keywords"
+msgstr "旗"
+
+msgid "🇻🇳.name"
+msgstr "旗: ベトナム"
+
+msgid "🇻🇳.keywords"
+msgstr "旗"
+
+msgid "🇻🇺.name"
+msgstr "旗: バヌアツ"
+
+msgid "🇻🇺.keywords"
+msgstr "旗"
+
+msgid "🇼🇫.name"
+msgstr "旗: ウォリス・フツナ"
+
+msgid "🇼🇫.keywords"
+msgstr "旗"
+
+msgid "🇼🇸.name"
+msgstr "旗: サモア"
+
+msgid "🇼🇸.keywords"
+msgstr "旗"
+
+msgid "🇽🇰.name"
+msgstr "旗: コソボ"
+
+msgid "🇽🇰.keywords"
+msgstr "旗"
+
+msgid "🇾🇪.name"
+msgstr "旗: イエメン"
+
+msgid "🇾🇪.keywords"
+msgstr "旗"
+
+msgid "🇾🇹.name"
+msgstr "旗: マヨット"
+
+msgid "🇾🇹.keywords"
+msgstr "旗"
+
+msgid "🇿🇦.name"
+msgstr "旗: 南アフリカ"
+
+msgid "🇿🇦.keywords"
+msgstr "旗"
+
+msgid "🇿🇲.name"
+msgstr "旗: ザンビア"
+
+msgid "🇿🇲.keywords"
+msgstr "旗"
+
+msgid "🇿🇼.name"
+msgstr "旗: ジンバブエ"
+
+msgid "🇿🇼.keywords"
+msgstr "旗"
+
+msgid "🏴󠁧󠁢󠁥󠁮󠁧󠁿.name"
+msgstr "旗: イングランド"
+
+msgid "🏴󠁧󠁢󠁥󠁮󠁧󠁿.keywords"
+msgstr "旗"
+
+msgid "🏴󠁧󠁢󠁳󠁣󠁴󠁿.name"
+msgstr "旗: スコットランド"
+
+msgid "🏴󠁧󠁢󠁳󠁣󠁴󠁿.keywords"
+msgstr "旗"
+
+msgid "🏴󠁧󠁢󠁷󠁬󠁳󠁿.name"
+msgstr "旗: ウェールズ"
+
+msgid "🏴󠁧󠁢󠁷󠁬󠁳󠁿.keywords"
+msgstr "旗"

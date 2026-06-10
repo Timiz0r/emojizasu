@@ -1,0 +1,1629 @@
+msgid ""
+msgstr ""
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "🏁.name"
+msgstr "chequered flag"
+
+msgid "🏁.keywords"
+msgstr "checkered | chequered | finish | flag | flags | game | race | racing | sport | win"
+
+msgid "🚩.name"
+msgstr "triangular flag"
+
+msgid "🚩.keywords"
+msgstr "construction | flag | golf | post | triangular"
+
+msgid "🎌.name"
+msgstr "crossed flags"
+
+msgid "🎌.keywords"
+msgstr ""
+"celebration | cross | crossed | flags | Japanese"
+" | "
+"japanese flags | japan | celebration"
+
+msgid "🏴.name"
+msgstr "black flag"
+
+msgid "🏴.keywords"
+msgstr "black | flag | waving"
+
+msgid "🏳️.name"
+msgstr "white flag"
+
+msgid "🏳️.keywords"
+msgstr "flag | waving | white"
+
+msgid "🏳️‍🌈.name"
+msgstr "rainbow flag"
+
+msgid "🏳️‍🌈.keywords"
+msgstr "bisexual | flag | gay | genderqueer | glbt | glbtq | lesbian | lgbt | lgbtq | lgbtqia | pride | queer | rainbow | trans | transgender"
+
+msgid "🏳️‍⚧️.name"
+msgstr "transgender flag"
+
+msgid "🏳️‍⚧️.keywords"
+msgstr "blue | flag | light | pink | transgender | white"
+
+msgid "🏴‍☠️.name"
+msgstr "pirate flag"
+
+msgid "🏴‍☠️.keywords"
+msgstr "flag | Jolly | pirate | plunder | Roger | treasure"
+
+msgid "🇦🇨.name"
+msgstr "flag: Ascension Island"
+
+msgid "🇦🇨.keywords"
+msgstr "flag"
+
+msgid "🇦🇩.name"
+msgstr "flag: Andorra"
+
+msgid "🇦🇩.keywords"
+msgstr "flag"
+
+msgid "🇦🇪.name"
+msgstr "flag: United Arab Emirates"
+
+msgid "🇦🇪.keywords"
+msgstr "flag"
+
+msgid "🇦🇫.name"
+msgstr "flag: Afghanistan"
+
+msgid "🇦🇫.keywords"
+msgstr "flag"
+
+msgid "🇦🇬.name"
+msgstr "flag: Antigua & Barbuda"
+
+msgid "🇦🇬.keywords"
+msgstr "flag"
+
+msgid "🇦🇮.name"
+msgstr "flag: Anguilla"
+
+msgid "🇦🇮.keywords"
+msgstr "flag"
+
+msgid "🇦🇱.name"
+msgstr "flag: Albania"
+
+msgid "🇦🇱.keywords"
+msgstr "flag"
+
+msgid "🇦🇲.name"
+msgstr "flag: Armenia"
+
+msgid "🇦🇲.keywords"
+msgstr "flag"
+
+msgid "🇦🇴.name"
+msgstr "flag: Angola"
+
+msgid "🇦🇴.keywords"
+msgstr "flag"
+
+msgid "🇦🇶.name"
+msgstr "flag: Antarctica"
+
+msgid "🇦🇶.keywords"
+msgstr "flag"
+
+msgid "🇦🇷.name"
+msgstr "flag: Argentina"
+
+msgid "🇦🇷.keywords"
+msgstr "flag"
+
+msgid "🇦🇸.name"
+msgstr "flag: American Samoa"
+
+msgid "🇦🇸.keywords"
+msgstr "flag"
+
+msgid "🇦🇹.name"
+msgstr "flag: Austria"
+
+msgid "🇦🇹.keywords"
+msgstr "flag"
+
+msgid "🇦🇺.name"
+msgstr "flag: Australia"
+
+msgid "🇦🇺.keywords"
+msgstr "flag"
+
+msgid "🇦🇼.name"
+msgstr "flag: Aruba"
+
+msgid "🇦🇼.keywords"
+msgstr "flag"
+
+msgid "🇦🇽.name"
+msgstr "flag: Åland Islands"
+
+msgid "🇦🇽.keywords"
+msgstr "flag"
+
+msgid "🇦🇿.name"
+msgstr "flag: Azerbaijan"
+
+msgid "🇦🇿.keywords"
+msgstr "flag"
+
+msgid "🇧🇦.name"
+msgstr "flag: Bosnia & Herzegovina"
+
+msgid "🇧🇦.keywords"
+msgstr "flag"
+
+msgid "🇧🇧.name"
+msgstr "flag: Barbados"
+
+msgid "🇧🇧.keywords"
+msgstr "flag"
+
+msgid "🇧🇩.name"
+msgstr "flag: Bangladesh"
+
+msgid "🇧🇩.keywords"
+msgstr "flag"
+
+msgid "🇧🇪.name"
+msgstr "flag: Belgium"
+
+msgid "🇧🇪.keywords"
+msgstr "flag"
+
+msgid "🇧🇫.name"
+msgstr "flag: Burkina Faso"
+
+msgid "🇧🇫.keywords"
+msgstr "flag"
+
+msgid "🇧🇬.name"
+msgstr "flag: Bulgaria"
+
+msgid "🇧🇬.keywords"
+msgstr "flag"
+
+msgid "🇧🇭.name"
+msgstr "flag: Bahrain"
+
+msgid "🇧🇭.keywords"
+msgstr "flag"
+
+msgid "🇧🇮.name"
+msgstr "flag: Burundi"
+
+msgid "🇧🇮.keywords"
+msgstr "flag"
+
+msgid "🇧🇯.name"
+msgstr "flag: Benin"
+
+msgid "🇧🇯.keywords"
+msgstr "flag"
+
+msgid "🇧🇱.name"
+msgstr "flag: St. Barthélemy"
+
+msgid "🇧🇱.keywords"
+msgstr "flag"
+
+msgid "🇧🇲.name"
+msgstr "flag: Bermuda"
+
+msgid "🇧🇲.keywords"
+msgstr "flag"
+
+msgid "🇧🇳.name"
+msgstr "flag: Brunei"
+
+msgid "🇧🇳.keywords"
+msgstr "flag"
+
+msgid "🇧🇴.name"
+msgstr "flag: Bolivia"
+
+msgid "🇧🇴.keywords"
+msgstr "flag"
+
+msgid "🇧🇶.name"
+msgstr "flag: Caribbean Netherlands"
+
+msgid "🇧🇶.keywords"
+msgstr "flag"
+
+msgid "🇧🇷.name"
+msgstr "flag: Brazil"
+
+msgid "🇧🇷.keywords"
+msgstr "flag"
+
+msgid "🇧🇸.name"
+msgstr "flag: Bahamas"
+
+msgid "🇧🇸.keywords"
+msgstr "flag"
+
+msgid "🇧🇹.name"
+msgstr "flag: Bhutan"
+
+msgid "🇧🇹.keywords"
+msgstr "flag"
+
+msgid "🇧🇻.name"
+msgstr "flag: Bouvet Island"
+
+msgid "🇧🇻.keywords"
+msgstr "flag"
+
+msgid "🇧🇼.name"
+msgstr "flag: Botswana"
+
+msgid "🇧🇼.keywords"
+msgstr "flag"
+
+msgid "🇧🇾.name"
+msgstr "flag: Belarus"
+
+msgid "🇧🇾.keywords"
+msgstr "flag"
+
+msgid "🇧🇿.name"
+msgstr "flag: Belize"
+
+msgid "🇧🇿.keywords"
+msgstr "flag"
+
+msgid "🇨🇦.name"
+msgstr "flag: Canada"
+
+msgid "🇨🇦.keywords"
+msgstr "flag"
+
+msgid "🇨🇨.name"
+msgstr "flag: Cocos (Keeling) Islands"
+
+msgid "🇨🇨.keywords"
+msgstr "flag"
+
+msgid "🇨🇩.name"
+msgstr "flag: Congo - Kinshasa"
+
+msgid "🇨🇩.keywords"
+msgstr "flag"
+
+msgid "🇨🇫.name"
+msgstr "flag: Central African Republic"
+
+msgid "🇨🇫.keywords"
+msgstr "flag"
+
+msgid "🇨🇬.name"
+msgstr "flag: Congo - Brazzaville"
+
+msgid "🇨🇬.keywords"
+msgstr "flag"
+
+msgid "🇨🇭.name"
+msgstr "flag: Switzerland"
+
+msgid "🇨🇭.keywords"
+msgstr "flag"
+
+msgid "🇨🇮.name"
+msgstr "flag: Côte d’Ivoire"
+
+msgid "🇨🇮.keywords"
+msgstr "flag"
+
+msgid "🇨🇰.name"
+msgstr "flag: Cook Islands"
+
+msgid "🇨🇰.keywords"
+msgstr "flag"
+
+msgid "🇨🇱.name"
+msgstr "flag: Chile"
+
+msgid "🇨🇱.keywords"
+msgstr "flag"
+
+msgid "🇨🇲.name"
+msgstr "flag: Cameroon"
+
+msgid "🇨🇲.keywords"
+msgstr "flag"
+
+msgid "🇨🇳.name"
+msgstr "flag: China"
+
+msgid "🇨🇳.keywords"
+msgstr "flag"
+
+msgid "🇨🇴.name"
+msgstr "flag: Colombia"
+
+msgid "🇨🇴.keywords"
+msgstr "flag"
+
+msgid "🇨🇵.name"
+msgstr "flag: Clipperton Island"
+
+msgid "🇨🇵.keywords"
+msgstr "flag"
+
+msgid "🇨🇶.name"
+msgstr "flag: Sark"
+
+msgid "🇨🇶.keywords"
+msgstr "flag"
+
+msgid "🇨🇷.name"
+msgstr "flag: Costa Rica"
+
+msgid "🇨🇷.keywords"
+msgstr "flag"
+
+msgid "🇨🇺.name"
+msgstr "flag: Cuba"
+
+msgid "🇨🇺.keywords"
+msgstr "flag"
+
+msgid "🇨🇻.name"
+msgstr "flag: Cape Verde"
+
+msgid "🇨🇻.keywords"
+msgstr "flag"
+
+msgid "🇨🇼.name"
+msgstr "flag: Curaçao"
+
+msgid "🇨🇼.keywords"
+msgstr "flag"
+
+msgid "🇨🇽.name"
+msgstr "flag: Christmas Island"
+
+msgid "🇨🇽.keywords"
+msgstr "flag"
+
+msgid "🇨🇾.name"
+msgstr "flag: Cyprus"
+
+msgid "🇨🇾.keywords"
+msgstr "flag"
+
+msgid "🇨🇿.name"
+msgstr "flag: Czechia"
+
+msgid "🇨🇿.keywords"
+msgstr "flag"
+
+msgid "🇩🇪.name"
+msgstr "flag: Germany"
+
+msgid "🇩🇪.keywords"
+msgstr "flag"
+
+msgid "🇩🇬.name"
+msgstr "flag: Diego Garcia"
+
+msgid "🇩🇬.keywords"
+msgstr "flag"
+
+msgid "🇩🇯.name"
+msgstr "flag: Djibouti"
+
+msgid "🇩🇯.keywords"
+msgstr "flag"
+
+msgid "🇩🇰.name"
+msgstr "flag: Denmark"
+
+msgid "🇩🇰.keywords"
+msgstr "flag"
+
+msgid "🇩🇲.name"
+msgstr "flag: Dominica"
+
+msgid "🇩🇲.keywords"
+msgstr "flag"
+
+msgid "🇩🇴.name"
+msgstr "flag: Dominican Republic"
+
+msgid "🇩🇴.keywords"
+msgstr "flag"
+
+msgid "🇩🇿.name"
+msgstr "flag: Algeria"
+
+msgid "🇩🇿.keywords"
+msgstr "flag"
+
+msgid "🇪🇦.name"
+msgstr "flag: Ceuta & Melilla"
+
+msgid "🇪🇦.keywords"
+msgstr "flag"
+
+msgid "🇪🇨.name"
+msgstr "flag: Ecuador"
+
+msgid "🇪🇨.keywords"
+msgstr "flag"
+
+msgid "🇪🇪.name"
+msgstr "flag: Estonia"
+
+msgid "🇪🇪.keywords"
+msgstr "flag"
+
+msgid "🇪🇬.name"
+msgstr "flag: Egypt"
+
+msgid "🇪🇬.keywords"
+msgstr "flag"
+
+msgid "🇪🇭.name"
+msgstr "flag: Western Sahara"
+
+msgid "🇪🇭.keywords"
+msgstr "flag"
+
+msgid "🇪🇷.name"
+msgstr "flag: Eritrea"
+
+msgid "🇪🇷.keywords"
+msgstr "flag"
+
+msgid "🇪🇸.name"
+msgstr "flag: Spain"
+
+msgid "🇪🇸.keywords"
+msgstr "flag"
+
+msgid "🇪🇹.name"
+msgstr "flag: Ethiopia"
+
+msgid "🇪🇹.keywords"
+msgstr "flag"
+
+msgid "🇪🇺.name"
+msgstr "flag: European Union"
+
+msgid "🇪🇺.keywords"
+msgstr "flag"
+
+msgid "🇫🇮.name"
+msgstr "flag: Finland"
+
+msgid "🇫🇮.keywords"
+msgstr "flag"
+
+msgid "🇫🇯.name"
+msgstr "flag: Fiji"
+
+msgid "🇫🇯.keywords"
+msgstr "flag"
+
+msgid "🇫🇰.name"
+msgstr "flag: Falkland Islands"
+
+msgid "🇫🇰.keywords"
+msgstr "flag"
+
+msgid "🇫🇲.name"
+msgstr "flag: Micronesia"
+
+msgid "🇫🇲.keywords"
+msgstr "flag"
+
+msgid "🇫🇴.name"
+msgstr "flag: Faroe Islands"
+
+msgid "🇫🇴.keywords"
+msgstr "flag"
+
+msgid "🇫🇷.name"
+msgstr "flag: France"
+
+msgid "🇫🇷.keywords"
+msgstr "flag"
+
+msgid "🇬🇦.name"
+msgstr "flag: Gabon"
+
+msgid "🇬🇦.keywords"
+msgstr "flag"
+
+msgid "🇬🇧.name"
+msgstr "flag: United Kingdom"
+
+msgid "🇬🇧.keywords"
+msgstr "flag"
+
+msgid "🇬🇩.name"
+msgstr "flag: Grenada"
+
+msgid "🇬🇩.keywords"
+msgstr "flag"
+
+msgid "🇬🇪.name"
+msgstr "flag: Georgia"
+
+msgid "🇬🇪.keywords"
+msgstr "flag"
+
+msgid "🇬🇫.name"
+msgstr "flag: French Guiana"
+
+msgid "🇬🇫.keywords"
+msgstr "flag"
+
+msgid "🇬🇬.name"
+msgstr "flag: Guernsey"
+
+msgid "🇬🇬.keywords"
+msgstr "flag"
+
+msgid "🇬🇭.name"
+msgstr "flag: Ghana"
+
+msgid "🇬🇭.keywords"
+msgstr "flag"
+
+msgid "🇬🇮.name"
+msgstr "flag: Gibraltar"
+
+msgid "🇬🇮.keywords"
+msgstr "flag"
+
+msgid "🇬🇱.name"
+msgstr "flag: Greenland"
+
+msgid "🇬🇱.keywords"
+msgstr "flag"
+
+msgid "🇬🇲.name"
+msgstr "flag: Gambia"
+
+msgid "🇬🇲.keywords"
+msgstr "flag"
+
+msgid "🇬🇳.name"
+msgstr "flag: Guinea"
+
+msgid "🇬🇳.keywords"
+msgstr "flag"
+
+msgid "🇬🇵.name"
+msgstr "flag: Guadeloupe"
+
+msgid "🇬🇵.keywords"
+msgstr "flag"
+
+msgid "🇬🇶.name"
+msgstr "flag: Equatorial Guinea"
+
+msgid "🇬🇶.keywords"
+msgstr "flag"
+
+msgid "🇬🇷.name"
+msgstr "flag: Greece"
+
+msgid "🇬🇷.keywords"
+msgstr "flag"
+
+msgid "🇬🇸.name"
+msgstr "flag: South Georgia & South Sandwich Islands"
+
+msgid "🇬🇸.keywords"
+msgstr "flag"
+
+msgid "🇬🇹.name"
+msgstr "flag: Guatemala"
+
+msgid "🇬🇹.keywords"
+msgstr "flag"
+
+msgid "🇬🇺.name"
+msgstr "flag: Guam"
+
+msgid "🇬🇺.keywords"
+msgstr "flag"
+
+msgid "🇬🇼.name"
+msgstr "flag: Guinea-Bissau"
+
+msgid "🇬🇼.keywords"
+msgstr "flag"
+
+msgid "🇬🇾.name"
+msgstr "flag: Guyana"
+
+msgid "🇬🇾.keywords"
+msgstr "flag"
+
+msgid "🇭🇰.name"
+msgstr "flag: Hong Kong SAR China"
+
+msgid "🇭🇰.keywords"
+msgstr "flag"
+
+msgid "🇭🇲.name"
+msgstr "flag: Heard & McDonald Islands"
+
+msgid "🇭🇲.keywords"
+msgstr "flag"
+
+msgid "🇭🇳.name"
+msgstr "flag: Honduras"
+
+msgid "🇭🇳.keywords"
+msgstr "flag"
+
+msgid "🇭🇷.name"
+msgstr "flag: Croatia"
+
+msgid "🇭🇷.keywords"
+msgstr "flag"
+
+msgid "🇭🇹.name"
+msgstr "flag: Haiti"
+
+msgid "🇭🇹.keywords"
+msgstr "flag"
+
+msgid "🇭🇺.name"
+msgstr "flag: Hungary"
+
+msgid "🇭🇺.keywords"
+msgstr "flag"
+
+msgid "🇮🇨.name"
+msgstr "flag: Canary Islands"
+
+msgid "🇮🇨.keywords"
+msgstr "flag"
+
+msgid "🇮🇩.name"
+msgstr "flag: Indonesia"
+
+msgid "🇮🇩.keywords"
+msgstr "flag"
+
+msgid "🇮🇪.name"
+msgstr "flag: Ireland"
+
+msgid "🇮🇪.keywords"
+msgstr "flag"
+
+msgid "🇮🇱.name"
+msgstr "flag: Israel"
+
+msgid "🇮🇱.keywords"
+msgstr "flag"
+
+msgid "🇮🇲.name"
+msgstr "flag: Isle of Man"
+
+msgid "🇮🇲.keywords"
+msgstr "flag"
+
+msgid "🇮🇳.name"
+msgstr "flag: India"
+
+msgid "🇮🇳.keywords"
+msgstr "flag"
+
+msgid "🇮🇴.name"
+msgstr "flag: British Indian Ocean Territory"
+
+msgid "🇮🇴.keywords"
+msgstr "flag"
+
+msgid "🇮🇶.name"
+msgstr "flag: Iraq"
+
+msgid "🇮🇶.keywords"
+msgstr "flag"
+
+msgid "🇮🇷.name"
+msgstr "flag: Iran"
+
+msgid "🇮🇷.keywords"
+msgstr "flag"
+
+msgid "🇮🇸.name"
+msgstr "flag: Iceland"
+
+msgid "🇮🇸.keywords"
+msgstr "flag"
+
+msgid "🇮🇹.name"
+msgstr "flag: Italy"
+
+msgid "🇮🇹.keywords"
+msgstr "flag"
+
+msgid "🇯🇪.name"
+msgstr "flag: Jersey"
+
+msgid "🇯🇪.keywords"
+msgstr "flag"
+
+msgid "🇯🇲.name"
+msgstr "flag: Jamaica"
+
+msgid "🇯🇲.keywords"
+msgstr "flag"
+
+msgid "🇯🇴.name"
+msgstr "flag: Jordan"
+
+msgid "🇯🇴.keywords"
+msgstr "flag"
+
+msgid "🇯🇵.name"
+msgstr "flag: Japan"
+
+msgid "🇯🇵.keywords"
+msgstr "flag"
+
+msgid "🇰🇪.name"
+msgstr "flag: Kenya"
+
+msgid "🇰🇪.keywords"
+msgstr "flag"
+
+msgid "🇰🇬.name"
+msgstr "flag: Kyrgyzstan"
+
+msgid "🇰🇬.keywords"
+msgstr "flag"
+
+msgid "🇰🇭.name"
+msgstr "flag: Cambodia"
+
+msgid "🇰🇭.keywords"
+msgstr "flag"
+
+msgid "🇰🇮.name"
+msgstr "flag: Kiribati"
+
+msgid "🇰🇮.keywords"
+msgstr "flag"
+
+msgid "🇰🇲.name"
+msgstr "flag: Comoros"
+
+msgid "🇰🇲.keywords"
+msgstr "flag"
+
+msgid "🇰🇳.name"
+msgstr "flag: St. Kitts & Nevis"
+
+msgid "🇰🇳.keywords"
+msgstr "flag"
+
+msgid "🇰🇵.name"
+msgstr "flag: North Korea"
+
+msgid "🇰🇵.keywords"
+msgstr "flag"
+
+msgid "🇰🇷.name"
+msgstr "flag: South Korea"
+
+msgid "🇰🇷.keywords"
+msgstr "flag"
+
+msgid "🇰🇼.name"
+msgstr "flag: Kuwait"
+
+msgid "🇰🇼.keywords"
+msgstr "flag"
+
+msgid "🇰🇾.name"
+msgstr "flag: Cayman Islands"
+
+msgid "🇰🇾.keywords"
+msgstr "flag"
+
+msgid "🇰🇿.name"
+msgstr "flag: Kazakhstan"
+
+msgid "🇰🇿.keywords"
+msgstr "flag"
+
+msgid "🇱🇦.name"
+msgstr "flag: Laos"
+
+msgid "🇱🇦.keywords"
+msgstr "flag"
+
+msgid "🇱🇧.name"
+msgstr "flag: Lebanon"
+
+msgid "🇱🇧.keywords"
+msgstr "flag"
+
+msgid "🇱🇨.name"
+msgstr "flag: St. Lucia"
+
+msgid "🇱🇨.keywords"
+msgstr "flag"
+
+msgid "🇱🇮.name"
+msgstr "flag: Liechtenstein"
+
+msgid "🇱🇮.keywords"
+msgstr "flag"
+
+msgid "🇱🇰.name"
+msgstr "flag: Sri Lanka"
+
+msgid "🇱🇰.keywords"
+msgstr "flag"
+
+msgid "🇱🇷.name"
+msgstr "flag: Liberia"
+
+msgid "🇱🇷.keywords"
+msgstr "flag"
+
+msgid "🇱🇸.name"
+msgstr "flag: Lesotho"
+
+msgid "🇱🇸.keywords"
+msgstr "flag"
+
+msgid "🇱🇹.name"
+msgstr "flag: Lithuania"
+
+msgid "🇱🇹.keywords"
+msgstr "flag"
+
+msgid "🇱🇺.name"
+msgstr "flag: Luxembourg"
+
+msgid "🇱🇺.keywords"
+msgstr "flag"
+
+msgid "🇱🇻.name"
+msgstr "flag: Latvia"
+
+msgid "🇱🇻.keywords"
+msgstr "flag"
+
+msgid "🇱🇾.name"
+msgstr "flag: Libya"
+
+msgid "🇱🇾.keywords"
+msgstr "flag"
+
+msgid "🇲🇦.name"
+msgstr "flag: Morocco"
+
+msgid "🇲🇦.keywords"
+msgstr "flag"
+
+msgid "🇲🇨.name"
+msgstr "flag: Monaco"
+
+msgid "🇲🇨.keywords"
+msgstr "flag"
+
+msgid "🇲🇩.name"
+msgstr "flag: Moldova"
+
+msgid "🇲🇩.keywords"
+msgstr "flag"
+
+msgid "🇲🇪.name"
+msgstr "flag: Montenegro"
+
+msgid "🇲🇪.keywords"
+msgstr "flag"
+
+msgid "🇲🇫.name"
+msgstr "flag: St. Martin"
+
+msgid "🇲🇫.keywords"
+msgstr "flag"
+
+msgid "🇲🇬.name"
+msgstr "flag: Madagascar"
+
+msgid "🇲🇬.keywords"
+msgstr "flag"
+
+msgid "🇲🇭.name"
+msgstr "flag: Marshall Islands"
+
+msgid "🇲🇭.keywords"
+msgstr "flag"
+
+msgid "🇲🇰.name"
+msgstr "flag: North Macedonia"
+
+msgid "🇲🇰.keywords"
+msgstr "flag"
+
+msgid "🇲🇱.name"
+msgstr "flag: Mali"
+
+msgid "🇲🇱.keywords"
+msgstr "flag"
+
+msgid "🇲🇲.name"
+msgstr "flag: Myanmar (Burma)"
+
+msgid "🇲🇲.keywords"
+msgstr "flag"
+
+msgid "🇲🇳.name"
+msgstr "flag: Mongolia"
+
+msgid "🇲🇳.keywords"
+msgstr "flag"
+
+msgid "🇲🇴.name"
+msgstr "flag: Macao SAR China"
+
+msgid "🇲🇴.keywords"
+msgstr "flag"
+
+msgid "🇲🇵.name"
+msgstr "flag: Northern Mariana Islands"
+
+msgid "🇲🇵.keywords"
+msgstr "flag"
+
+msgid "🇲🇶.name"
+msgstr "flag: Martinique"
+
+msgid "🇲🇶.keywords"
+msgstr "flag"
+
+msgid "🇲🇷.name"
+msgstr "flag: Mauritania"
+
+msgid "🇲🇷.keywords"
+msgstr "flag"
+
+msgid "🇲🇸.name"
+msgstr "flag: Montserrat"
+
+msgid "🇲🇸.keywords"
+msgstr "flag"
+
+msgid "🇲🇹.name"
+msgstr "flag: Malta"
+
+msgid "🇲🇹.keywords"
+msgstr "flag"
+
+msgid "🇲🇺.name"
+msgstr "flag: Mauritius"
+
+msgid "🇲🇺.keywords"
+msgstr "flag"
+
+msgid "🇲🇻.name"
+msgstr "flag: Maldives"
+
+msgid "🇲🇻.keywords"
+msgstr "flag"
+
+msgid "🇲🇼.name"
+msgstr "flag: Malawi"
+
+msgid "🇲🇼.keywords"
+msgstr "flag"
+
+msgid "🇲🇽.name"
+msgstr "flag: Mexico"
+
+msgid "🇲🇽.keywords"
+msgstr "flag"
+
+msgid "🇲🇾.name"
+msgstr "flag: Malaysia"
+
+msgid "🇲🇾.keywords"
+msgstr "flag"
+
+msgid "🇲🇿.name"
+msgstr "flag: Mozambique"
+
+msgid "🇲🇿.keywords"
+msgstr "flag"
+
+msgid "🇳🇦.name"
+msgstr "flag: Namibia"
+
+msgid "🇳🇦.keywords"
+msgstr "flag"
+
+msgid "🇳🇨.name"
+msgstr "flag: New Caledonia"
+
+msgid "🇳🇨.keywords"
+msgstr "flag"
+
+msgid "🇳🇪.name"
+msgstr "flag: Niger"
+
+msgid "🇳🇪.keywords"
+msgstr "flag"
+
+msgid "🇳🇫.name"
+msgstr "flag: Norfolk Island"
+
+msgid "🇳🇫.keywords"
+msgstr "flag"
+
+msgid "🇳🇬.name"
+msgstr "flag: Nigeria"
+
+msgid "🇳🇬.keywords"
+msgstr "flag"
+
+msgid "🇳🇮.name"
+msgstr "flag: Nicaragua"
+
+msgid "🇳🇮.keywords"
+msgstr "flag"
+
+msgid "🇳🇱.name"
+msgstr "flag: Netherlands"
+
+msgid "🇳🇱.keywords"
+msgstr "flag"
+
+msgid "🇳🇴.name"
+msgstr "flag: Norway"
+
+msgid "🇳🇴.keywords"
+msgstr "flag"
+
+msgid "🇳🇵.name"
+msgstr "flag: Nepal"
+
+msgid "🇳🇵.keywords"
+msgstr "flag"
+
+msgid "🇳🇷.name"
+msgstr "flag: Nauru"
+
+msgid "🇳🇷.keywords"
+msgstr "flag"
+
+msgid "🇳🇺.name"
+msgstr "flag: Niue"
+
+msgid "🇳🇺.keywords"
+msgstr "flag"
+
+msgid "🇳🇿.name"
+msgstr "flag: New Zealand"
+
+msgid "🇳🇿.keywords"
+msgstr "flag"
+
+msgid "🇴🇲.name"
+msgstr "flag: Oman"
+
+msgid "🇴🇲.keywords"
+msgstr "flag"
+
+msgid "🇵🇦.name"
+msgstr "flag: Panama"
+
+msgid "🇵🇦.keywords"
+msgstr "flag"
+
+msgid "🇵🇪.name"
+msgstr "flag: Peru"
+
+msgid "🇵🇪.keywords"
+msgstr "flag"
+
+msgid "🇵🇫.name"
+msgstr "flag: French Polynesia"
+
+msgid "🇵🇫.keywords"
+msgstr "flag"
+
+msgid "🇵🇬.name"
+msgstr "flag: Papua New Guinea"
+
+msgid "🇵🇬.keywords"
+msgstr "flag"
+
+msgid "🇵🇭.name"
+msgstr "flag: Philippines"
+
+msgid "🇵🇭.keywords"
+msgstr "flag"
+
+msgid "🇵🇰.name"
+msgstr "flag: Pakistan"
+
+msgid "🇵🇰.keywords"
+msgstr "flag"
+
+msgid "🇵🇱.name"
+msgstr "flag: Poland"
+
+msgid "🇵🇱.keywords"
+msgstr "flag"
+
+msgid "🇵🇲.name"
+msgstr "flag: St. Pierre & Miquelon"
+
+msgid "🇵🇲.keywords"
+msgstr "flag"
+
+msgid "🇵🇳.name"
+msgstr "flag: Pitcairn Islands"
+
+msgid "🇵🇳.keywords"
+msgstr "flag"
+
+msgid "🇵🇷.name"
+msgstr "flag: Puerto Rico"
+
+msgid "🇵🇷.keywords"
+msgstr "flag"
+
+msgid "🇵🇸.name"
+msgstr "flag: Palestinian Territories"
+
+msgid "🇵🇸.keywords"
+msgstr "flag"
+
+msgid "🇵🇹.name"
+msgstr "flag: Portugal"
+
+msgid "🇵🇹.keywords"
+msgstr "flag"
+
+msgid "🇵🇼.name"
+msgstr "flag: Palau"
+
+msgid "🇵🇼.keywords"
+msgstr "flag"
+
+msgid "🇵🇾.name"
+msgstr "flag: Paraguay"
+
+msgid "🇵🇾.keywords"
+msgstr "flag"
+
+msgid "🇶🇦.name"
+msgstr "flag: Qatar"
+
+msgid "🇶🇦.keywords"
+msgstr "flag"
+
+msgid "🇷🇪.name"
+msgstr "flag: Réunion"
+
+msgid "🇷🇪.keywords"
+msgstr "flag"
+
+msgid "🇷🇴.name"
+msgstr "flag: Romania"
+
+msgid "🇷🇴.keywords"
+msgstr "flag"
+
+msgid "🇷🇸.name"
+msgstr "flag: Serbia"
+
+msgid "🇷🇸.keywords"
+msgstr "flag"
+
+msgid "🇷🇺.name"
+msgstr "flag: Russia"
+
+msgid "🇷🇺.keywords"
+msgstr "flag"
+
+msgid "🇷🇼.name"
+msgstr "flag: Rwanda"
+
+msgid "🇷🇼.keywords"
+msgstr "flag"
+
+msgid "🇸🇦.name"
+msgstr "flag: Saudi Arabia"
+
+msgid "🇸🇦.keywords"
+msgstr "flag"
+
+msgid "🇸🇧.name"
+msgstr "flag: Solomon Islands"
+
+msgid "🇸🇧.keywords"
+msgstr "flag"
+
+msgid "🇸🇨.name"
+msgstr "flag: Seychelles"
+
+msgid "🇸🇨.keywords"
+msgstr "flag"
+
+msgid "🇸🇩.name"
+msgstr "flag: Sudan"
+
+msgid "🇸🇩.keywords"
+msgstr "flag"
+
+msgid "🇸🇪.name"
+msgstr "flag: Sweden"
+
+msgid "🇸🇪.keywords"
+msgstr "flag"
+
+msgid "🇸🇬.name"
+msgstr "flag: Singapore"
+
+msgid "🇸🇬.keywords"
+msgstr "flag"
+
+msgid "🇸🇭.name"
+msgstr "flag: St. Helena"
+
+msgid "🇸🇭.keywords"
+msgstr "flag"
+
+msgid "🇸🇮.name"
+msgstr "flag: Slovenia"
+
+msgid "🇸🇮.keywords"
+msgstr "flag"
+
+msgid "🇸🇯.name"
+msgstr "flag: Svalbard & Jan Mayen"
+
+msgid "🇸🇯.keywords"
+msgstr "flag"
+
+msgid "🇸🇰.name"
+msgstr "flag: Slovakia"
+
+msgid "🇸🇰.keywords"
+msgstr "flag"
+
+msgid "🇸🇱.name"
+msgstr "flag: Sierra Leone"
+
+msgid "🇸🇱.keywords"
+msgstr "flag"
+
+msgid "🇸🇲.name"
+msgstr "flag: San Marino"
+
+msgid "🇸🇲.keywords"
+msgstr "flag"
+
+msgid "🇸🇳.name"
+msgstr "flag: Senegal"
+
+msgid "🇸🇳.keywords"
+msgstr "flag"
+
+msgid "🇸🇴.name"
+msgstr "flag: Somalia"
+
+msgid "🇸🇴.keywords"
+msgstr "flag"
+
+msgid "🇸🇷.name"
+msgstr "flag: Suriname"
+
+msgid "🇸🇷.keywords"
+msgstr "flag"
+
+msgid "🇸🇸.name"
+msgstr "flag: South Sudan"
+
+msgid "🇸🇸.keywords"
+msgstr "flag"
+
+msgid "🇸🇹.name"
+msgstr "flag: São Tomé & Príncipe"
+
+msgid "🇸🇹.keywords"
+msgstr "flag"
+
+msgid "🇸🇻.name"
+msgstr "flag: El Salvador"
+
+msgid "🇸🇻.keywords"
+msgstr "flag"
+
+msgid "🇸🇽.name"
+msgstr "flag: Sint Maarten"
+
+msgid "🇸🇽.keywords"
+msgstr "flag"
+
+msgid "🇸🇾.name"
+msgstr "flag: Syria"
+
+msgid "🇸🇾.keywords"
+msgstr "flag"
+
+msgid "🇸🇿.name"
+msgstr "flag: Eswatini"
+
+msgid "🇸🇿.keywords"
+msgstr "flag"
+
+msgid "🇹🇦.name"
+msgstr "flag: Tristan da Cunha"
+
+msgid "🇹🇦.keywords"
+msgstr "flag"
+
+msgid "🇹🇨.name"
+msgstr "flag: Turks & Caicos Islands"
+
+msgid "🇹🇨.keywords"
+msgstr "flag"
+
+msgid "🇹🇩.name"
+msgstr "flag: Chad"
+
+msgid "🇹🇩.keywords"
+msgstr "flag"
+
+msgid "🇹🇫.name"
+msgstr "flag: French Southern Territories"
+
+msgid "🇹🇫.keywords"
+msgstr "flag"
+
+msgid "🇹🇬.name"
+msgstr "flag: Togo"
+
+msgid "🇹🇬.keywords"
+msgstr "flag"
+
+msgid "🇹🇭.name"
+msgstr "flag: Thailand"
+
+msgid "🇹🇭.keywords"
+msgstr "flag"
+
+msgid "🇹🇯.name"
+msgstr "flag: Tajikistan"
+
+msgid "🇹🇯.keywords"
+msgstr "flag"
+
+msgid "🇹🇰.name"
+msgstr "flag: Tokelau"
+
+msgid "🇹🇰.keywords"
+msgstr "flag"
+
+msgid "🇹🇱.name"
+msgstr "flag: Timor-Leste"
+
+msgid "🇹🇱.keywords"
+msgstr "flag"
+
+msgid "🇹🇲.name"
+msgstr "flag: Turkmenistan"
+
+msgid "🇹🇲.keywords"
+msgstr "flag"
+
+msgid "🇹🇳.name"
+msgstr "flag: Tunisia"
+
+msgid "🇹🇳.keywords"
+msgstr "flag"
+
+msgid "🇹🇴.name"
+msgstr "flag: Tonga"
+
+msgid "🇹🇴.keywords"
+msgstr "flag"
+
+msgid "🇹🇷.name"
+msgstr "flag: Türkiye"
+
+msgid "🇹🇷.keywords"
+msgstr "flag"
+
+msgid "🇹🇹.name"
+msgstr "flag: Trinidad & Tobago"
+
+msgid "🇹🇹.keywords"
+msgstr "flag"
+
+msgid "🇹🇻.name"
+msgstr "flag: Tuvalu"
+
+msgid "🇹🇻.keywords"
+msgstr "flag"
+
+msgid "🇹🇼.name"
+msgstr "flag: Taiwan"
+
+msgid "🇹🇼.keywords"
+msgstr "flag"
+
+msgid "🇹🇿.name"
+msgstr "flag: Tanzania"
+
+msgid "🇹🇿.keywords"
+msgstr "flag"
+
+msgid "🇺🇦.name"
+msgstr "flag: Ukraine"
+
+msgid "🇺🇦.keywords"
+msgstr "flag"
+
+msgid "🇺🇬.name"
+msgstr "flag: Uganda"
+
+msgid "🇺🇬.keywords"
+msgstr "flag"
+
+msgid "🇺🇲.name"
+msgstr "flag: U.S. Outlying Islands"
+
+msgid "🇺🇲.keywords"
+msgstr "flag"
+
+msgid "🇺🇳.name"
+msgstr "flag: United Nations"
+
+msgid "🇺🇳.keywords"
+msgstr "flag"
+
+msgid "🇺🇸.name"
+msgstr "flag: United States"
+
+msgid "🇺🇸.keywords"
+msgstr "flag"
+
+msgid "🇺🇾.name"
+msgstr "flag: Uruguay"
+
+msgid "🇺🇾.keywords"
+msgstr "flag"
+
+msgid "🇺🇿.name"
+msgstr "flag: Uzbekistan"
+
+msgid "🇺🇿.keywords"
+msgstr "flag"
+
+msgid "🇻🇦.name"
+msgstr "flag: Vatican City"
+
+msgid "🇻🇦.keywords"
+msgstr "flag"
+
+msgid "🇻🇨.name"
+msgstr "flag: St. Vincent & Grenadines"
+
+msgid "🇻🇨.keywords"
+msgstr "flag"
+
+msgid "🇻🇪.name"
+msgstr "flag: Venezuela"
+
+msgid "🇻🇪.keywords"
+msgstr "flag"
+
+msgid "🇻🇬.name"
+msgstr "flag: British Virgin Islands"
+
+msgid "🇻🇬.keywords"
+msgstr "flag"
+
+msgid "🇻🇮.name"
+msgstr "flag: U.S. Virgin Islands"
+
+msgid "🇻🇮.keywords"
+msgstr "flag"
+
+msgid "🇻🇳.name"
+msgstr "flag: Vietnam"
+
+msgid "🇻🇳.keywords"
+msgstr "flag"
+
+msgid "🇻🇺.name"
+msgstr "flag: Vanuatu"
+
+msgid "🇻🇺.keywords"
+msgstr "flag"
+
+msgid "🇼🇫.name"
+msgstr "flag: Wallis & Futuna"
+
+msgid "🇼🇫.keywords"
+msgstr "flag"
+
+msgid "🇼🇸.name"
+msgstr "flag: Samoa"
+
+msgid "🇼🇸.keywords"
+msgstr "flag"
+
+msgid "🇽🇰.name"
+msgstr "flag: Kosovo"
+
+msgid "🇽🇰.keywords"
+msgstr "flag"
+
+msgid "🇾🇪.name"
+msgstr "flag: Yemen"
+
+msgid "🇾🇪.keywords"
+msgstr "flag"
+
+msgid "🇾🇹.name"
+msgstr "flag: Mayotte"
+
+msgid "🇾🇹.keywords"
+msgstr "flag"
+
+msgid "🇿🇦.name"
+msgstr "flag: South Africa"
+
+msgid "🇿🇦.keywords"
+msgstr "flag"
+
+msgid "🇿🇲.name"
+msgstr "flag: Zambia"
+
+msgid "🇿🇲.keywords"
+msgstr "flag"
+
+msgid "🇿🇼.name"
+msgstr "flag: Zimbabwe"
+
+msgid "🇿🇼.keywords"
+msgstr "flag"
+
+msgid "🏴󠁧󠁢󠁥󠁮󠁧󠁿.name"
+msgstr "flag: England"
+
+msgid "🏴󠁧󠁢󠁥󠁮󠁧󠁿.keywords"
+msgstr "flag"
+
+msgid "🏴󠁧󠁢󠁳󠁣󠁴󠁿.name"
+msgstr "flag: Scotland"
+
+msgid "🏴󠁧󠁢󠁳󠁣󠁴󠁿.keywords"
+msgstr "flag"
+
+msgid "🏴󠁧󠁢󠁷󠁬󠁳󠁿.name"
+msgstr "flag: Wales"
+
+msgid "🏴󠁧󠁢󠁷󠁬󠁳󠁿.keywords"
+msgstr "flag"

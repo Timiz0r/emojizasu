@@ -1,0 +1,409 @@
+msgid ""
+msgstr ""
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "(^▽^).name"
+msgstr "ニコニコ"
+
+msgid "(^▽^).keywords"
+msgstr "嬉しい | 笑顔 | ニコニコ"
+
+msgid "ヽ(^o^)丿.name"
+msgstr "ウェーイ"
+
+msgid "ヽ(^o^)丿.keywords"
+msgstr "嬉しい | ウェーイ | やった"
+
+msgid "\\(≧▽≦)/.name"
+msgstr "超嬉しい"
+
+msgid "\\(≧▽≦)/.keywords"
+msgstr "大喜び | 超嬉しい"
+
+msgid "(＾▽＾).name"
+msgstr "笑顔"
+
+msgid "(＾▽＾).keywords"
+msgstr "嬉しい | 笑顔"
+
+msgid "(ﾉ´∀｀)ﾉ.name"
+msgstr "喜び"
+
+msgid "(ﾉ´∀｀)ﾉ.keywords"
+msgstr "喜び | 嬉しい"
+
+msgid "(*´▽`*).name"
+msgstr "にこにこ"
+
+msgid "(*´▽`*).keywords"
+msgstr "にこにこ | 笑顔"
+
+msgid "ヾ(*´∀`*)ﾉ.name"
+msgstr "大喜び"
+
+msgid "ヾ(*´∀`*)ﾉ.keywords"
+msgstr "嬉しい | 大喜び"
+
+msgid "(o^▽^o).name"
+msgstr "嬉しい"
+
+msgid "(o^▽^o).keywords"
+msgstr "嬉しい | 喜ぶ"
+
+msgid "(T_T).name"
+msgstr "泣いてる"
+
+msgid "(T_T).keywords"
+msgstr "悲しい | 泣く | 涙"
+
+msgid "(;_;).name"
+msgstr "わーん"
+
+msgid "(;_;).keywords"
+msgstr "わーん | 泣く | 悲しい"
+
+msgid "(っ◞‸◟c).name"
+msgstr "号泣"
+
+msgid "(っ◞‸◟c).keywords"
+msgstr "号泣 | 悲しい | 泣く"
+
+msgid "( ; ω ; ).name"
+msgstr "悲しい"
+
+msgid "( ; ω ; ).keywords"
+msgstr "悲しい | 泣く"
+
+msgid "(´；ω；`).name"
+msgstr "うるうる"
+
+msgid "(´；ω；`).keywords"
+msgstr "うるうる | 涙目 | ぴえん"
+
+msgid "ヽ(;▽;)ノ.name"
+msgstr "わーん"
+
+msgid "ヽ(;▽;)ノ.keywords"
+msgstr "泣く | わーん"
+
+msgid "(╯°□°）╯︵ ┻━┻.name"
+msgstr "テーブルをひっくり返す"
+
+msgid "(╯°□°）╯︵ ┻━┻.keywords"
+msgstr "怒り | テーブルクロ"
+
+msgid "┻━┻ ︵ヽ(`Д´)ﾉ︵ ┻━┻.name"
+msgstr "ダブルテーブルフリップ"
+
+msgid "┻━┻ ︵ヽ(`Д´)ﾉ︵ ┻━┻.keywords"
+msgstr "怒り | テーブル"
+
+msgid "٩(ఠ益ఠ)۶.name"
+msgstr "激怒"
+
+msgid "٩(ఠ益ఠ)۶.keywords"
+msgstr "怒り | 激怒 | キレる"
+
+msgid "(╬ Ò ‸ Ó).name"
+msgstr "怒り"
+
+msgid "(╬ Ò ‸ Ó).keywords"
+msgstr "怒り | ムカつく"
+
+msgid "(*`益´*).name"
+msgstr "むかっ"
+
+msgid "(*`益´*).keywords"
+msgstr "むかっ | 怒り"
+
+msgid "(〃>_<;〃).name"
+msgstr "恥ずかしい"
+
+msgid "(〃>_<;〃).keywords"
+msgstr "恥ずかしい | 照れ"
+
+msgid "(*ノωノ).name"
+msgstr "照れ"
+
+msgid "(*ノωノ).keywords"
+msgstr "照れ | 恥ずかしい"
+
+msgid "(*/ω\\*).name"
+msgstr "恥ずかしくて隠れる"
+
+msgid "(*/ω\\*).keywords"
+msgstr "照れ | 隠れる"
+
+msgid "(*^_^*).name"
+msgstr "照れ笑い"
+
+msgid "(*^_^*).keywords"
+msgstr "照れ笑い | 恥ずかしい"
+
+msgid "(°ロ°).name"
+msgstr "ビックリ"
+
+msgid "(°ロ°).keywords"
+msgstr "びっくり | 驚き | ビックリ"
+
+msgid "(・・?).name"
+msgstr "疑問"
+
+msgid "(・・?).keywords"
+msgstr "疑問 | わからない | ？"
+
+msgid "Σ(°△°|||).name"
+msgstr "ギョッ"
+
+msgid "Σ(°△°|||).keywords"
+msgstr "ギョッ | ビックリ | 驚き"
+
+msgid "(⊙_⊙).name"
+msgstr "目を丸くして"
+
+msgid "(⊙_⊙).keywords"
+msgstr "驚き | 目が点"
+
+msgid "(@_@).name"
+msgstr "目が回る"
+
+msgid "(@_@).keywords"
+msgstr "目が回る | 混乱"
+
+msgid "(♡˙︶˙♡).name"
+msgstr "ラブラブ"
+
+msgid "(♡˙︶˙♡).keywords"
+msgstr "ラブラブ | 好き | 愛"
+
+msgid "(´ ▽`).。ｏ♡.name"
+msgstr "恋の夢想"
+
+msgid "(´ ▽`).。ｏ♡.keywords"
+msgstr "恋 | ラブ | 夢"
+
+msgid "(ノ*>∀<)ノ♡.name"
+msgstr "愛を送る"
+
+msgid "(ノ*>∀<)ノ♡.keywords"
+msgstr "送る | 愛 | ラブ"
+
+msgid "♡( ◡‿◡ ).name"
+msgstr "うっとり"
+
+msgid "♡( ◡‿◡ ).keywords"
+msgstr "うっとり | 好き"
+
+msgid "(づ￣ ³￣)づ.name"
+msgstr "ハグする"
+
+msgid "(づ￣ ³￣)づ.keywords"
+msgstr "ハグ | 抱きつく | 愛"
+
+msgid "(づ。◕‿‿◕。)づ.name"
+msgstr "大ハグ"
+
+msgid "(づ。◕‿‿◕。)づ.keywords"
+msgstr "大ハグ | かわいい | ハグ"
+
+msgid "¯\\_(ツ)_/¯.name"
+msgstr "どうしよ"
+
+msgid "¯\\_(ツ)_/¯.keywords"
+msgstr "どうしよ | 知らん | シュラッグ"
+
+msgid "(・_・;).name"
+msgstr "困った"
+
+msgid "(・_・;).keywords"
+msgstr "困った | どうしよ"
+
+msgid "(•_•) ( •_•)>⌐■-■ (⌐■_■).name"
+msgstr "かかってこい"
+
+msgid "(•_•) ( •_•)>⌐■-■ (⌐■_■).keywords"
+msgstr "かっこいい | クール"
+
+msgid "( ͡° ͜ʖ ͡°).name"
+msgstr "レニー"
+
+msgid "( ͡° ͜ʖ ͡°).keywords"
+msgstr "レニー | ニヤリ"
+
+msgid "(￣ー￣).name"
+msgstr "ドヤ"
+
+msgid "(￣ー￣).keywords"
+msgstr "ドヤ | ニヤリ | してやったり"
+
+msgid "(｀・ω・´).name"
+msgstr "やる気"
+
+msgid "(｀・ω・´).keywords"
+msgstr "やる気 | 気合 | ドヤ"
+
+msgid "(=^ω^=).name"
+msgstr "猫顔"
+
+msgid "(=^ω^=).keywords"
+msgstr "かわいい | 猫 | ネコ"
+
+msgid "(^･ω･^).name"
+msgstr "嬉しい猫"
+
+msgid "(^･ω･^).keywords"
+msgstr "猫 | 嬉しい"
+
+msgid "( ̄(oo) ̄).name"
+msgstr "ブタ"
+
+msgid "( ̄(oo) ̄).keywords"
+msgstr "ブタ | 豚"
+
+msgid "( ・(ｴ)・ ).name"
+msgstr "クマ"
+
+msgid "( ・(ｴ)・ ).keywords"
+msgstr "クマ | 熊"
+
+msgid "ฅ(＾・ω・＾ฅ).name"
+msgstr "にゃん"
+
+msgid "ฅ(＾・ω・＾ฅ).keywords"
+msgstr "にゃん | 猫 | ネコ"
+
+msgid "(U ᵕ U❁).name"
+msgstr "ウサギ"
+
+msgid "(U ᵕ U❁).keywords"
+msgstr "ウサギ | かわいい"
+
+msgid "(﹃ .).name"
+msgstr "よだれ"
+
+msgid "(﹃ .).keywords"
+msgstr "よだれ | 眠い | 睡眠"
+
+msgid "(u_u).name"
+msgstr "眠い"
+
+msgid "(u_u).keywords"
+msgstr "眠い | おやすみ"
+
+msgid "(-_-)zzZ.name"
+msgstr "すやすや"
+
+msgid "(-_-)zzZ.keywords"
+msgstr "すやすや | 眠い | おやすみ"
+
+msgid "(。-ω-)zzZ.name"
+msgstr "グッスリ"
+
+msgid "(。-ω-)zzZ.keywords"
+msgstr "グッスリ | おやすみ"
+
+msgid "(ノ°▽°)ノ⌒♪.name"
+msgstr "歌ってる"
+
+msgid "(ノ°▽°)ノ⌒♪.keywords"
+msgstr "歌 | 音楽 | 歌ってる"
+
+msgid "ヾ(•ω•`)o.name"
+msgstr "バイバイ"
+
+msgid "ヾ(•ω•`)o.keywords"
+msgstr "バイバイ | さよなら | ばいばい"
+
+msgid "(^_^)/~.name"
+msgstr "またね"
+
+msgid "(^_^)/~.keywords"
+msgstr "またね | バイバイ | さよなら"
+
+msgid "m(_ _)m.name"
+msgstr "お辞儀"
+
+msgid "m(_ _)m.keywords"
+msgstr "お辞儀 | ありがとう | ごめんなさい"
+
+msgid "(・∀・).name"
+msgstr "ニヤニヤ"
+
+msgid "(・∀・).keywords"
+msgstr "ニヤニヤ | 笑う"
+
+msgid "(´∀｀).name"
+msgstr "のほほん"
+
+msgid "(´∀｀).keywords"
+msgstr "のほほん | ゆったり"
+
+msgid "(´-ω-｀).name"
+msgstr "しんみり"
+
+msgid "(´-ω-｀).keywords"
+msgstr "しんみり | 静か | 落ち着いた"
+
+msgid "(`・ω・´)ゞ.name"
+msgstr "敬礼"
+
+msgid "(`・ω・´)ゞ.keywords"
+msgstr "敬礼 | 了解 | はい"
+
+msgid "(ΦωΦ).name"
+msgstr "ワクワク"
+
+msgid "(ΦωΦ).keywords"
+msgstr "ワクワク | 楽しみ"
+
+msgid "w(°o°)w.name"
+msgstr "びっくり"
+
+msgid "w(°o°)w.keywords"
+msgstr "びっくり | すごい | ビックリ"
+
+msgid "(；一_一).name"
+msgstr "しらけ"
+
+msgid "(；一_一).keywords"
+msgstr "しらけ | つまらない | 冷める"
+
+msgid "(¬_¬).name"
+msgstr "横目"
+
+msgid "(¬_¬).keywords"
+msgstr "横目 | 疑い | 怪しい"
+
+msgid "(○｀д´)ノシ.name"
+msgstr "あっちいけ"
+
+msgid "(○｀д´)ノシ.keywords"
+msgstr "あっちいけ | あっちへ行け | 怒り"
+
+msgid "φ(•ᴗ•○).name"
+msgstr "メモ中"
+
+msgid "φ(•ᴗ•○).keywords"
+msgstr "メモ | 書く | 勉強"
+
+msgid "(ﾉ*°▽°)ﾉ.name"
+msgstr "興奮"
+
+msgid "(ﾉ*°▽°)ﾉ.keywords"
+msgstr "興奮 | やったー"
+
+msgid "ヽ(´▽｀)/.name"
+msgstr "やったー"
+
+msgid "ヽ(´▽｀)/.keywords"
+msgstr "やったー | 嬉しい | 大喜び"
+
+msgid "(*>ω<*).name"
+msgstr "照れ嬉しい"
+
+msgid "(*>ω<*).keywords"
+msgstr "照れ嬉しい | かわいい"
+

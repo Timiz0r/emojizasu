@@ -1,0 +1,975 @@
+msgid ""
+msgstr ""
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "🐵.name"
+msgstr "monkey face"
+
+msgid "🐵.keywords"
+msgstr "animal | banana | face | monkey"
+
+msgid "🐒.name"
+msgstr "monkey"
+
+msgid "🐒.keywords"
+msgstr "animal | banana | monkey"
+
+msgid "🦍.name"
+msgstr "gorilla"
+
+msgid "🦍.keywords"
+msgstr "animal | gorilla"
+
+msgid "🦧.name"
+msgstr "orangutan"
+
+msgid "🦧.keywords"
+msgstr "animal | ape | monkey | orangutan"
+
+msgid "🐶.name"
+msgstr "dog face"
+
+msgid "🐶.keywords"
+msgstr "adorbs | animal | dog | face | pet | puppies | puppy"
+
+msgid "🐕.name"
+msgstr "dog"
+
+msgid "🐕.keywords"
+msgstr "animal | animals | dog | dogs | pet"
+
+msgid "🦮.name"
+msgstr "guide dog"
+
+msgid "🦮.keywords"
+msgstr "accessibility | animal | blind | dog | guide"
+
+msgid "🐕‍🦺.name"
+msgstr "service dog"
+
+msgid "🐕‍🦺.keywords"
+msgstr "accessibility | animal | assistance | dog | service"
+
+msgid "🐩.name"
+msgstr "poodle"
+
+msgid "🐩.keywords"
+msgstr "animal | dog | fluffy | poodle"
+
+msgid "🐺.name"
+msgstr "wolf"
+
+msgid "🐺.keywords"
+msgstr "animal | face | wolf"
+
+msgid "🦊.name"
+msgstr "fox"
+
+msgid "🦊.keywords"
+msgstr "animal | face | fox"
+
+msgid "🦝.name"
+msgstr "raccoon"
+
+msgid "🦝.keywords"
+msgstr "animal | curious | raccoon | sly"
+
+msgid "🐱.name"
+msgstr "cat face"
+
+msgid "🐱.keywords"
+msgstr "animal | cat | face | kitten | kitty | pet"
+
+msgid "🐈.name"
+msgstr "cat"
+
+msgid "🐈.keywords"
+msgstr "animal | animals | cat | cats | kitten | pet"
+
+msgid "🐈‍⬛.name"
+msgstr "black cat"
+
+msgid "🐈‍⬛.keywords"
+msgstr "animal | black | cat | feline | halloween | meow | unlucky"
+
+msgid "🦁.name"
+msgstr "lion"
+
+msgid "🦁.keywords"
+msgstr "alpha | animal | face | Leo | lion | mane | order | rawr | roar | safari | strong | zodiac"
+
+msgid "🐯.name"
+msgstr "tiger face"
+
+msgid "🐯.keywords"
+msgstr "animal | big | cat | face | predator | tiger"
+
+msgid "🐅.name"
+msgstr "tiger"
+
+msgid "🐅.keywords"
+msgstr "animal | big | cat | predator | tiger | zoo"
+
+msgid "🐆.name"
+msgstr "leopard"
+
+msgid "🐆.keywords"
+msgstr "animal | big | cat | leopard | predator | zoo"
+
+msgid "🐴.name"
+msgstr "horse face"
+
+msgid "🐴.keywords"
+msgstr "animal | dressage | equine | face | farm | horse | horses"
+
+msgid "🫎.name"
+msgstr "moose"
+
+msgid "🫎.keywords"
+msgstr "alces | animal | antlers | elk | mammal | moose"
+
+msgid "🫏.name"
+msgstr "donkey"
+
+msgid "🫏.keywords"
+msgstr "animal | ass | burro | donkey | hinny | mammal | mule | stubborn"
+
+msgid "🐎.name"
+msgstr "horse"
+
+msgid "🐎.keywords"
+msgstr "animal | equestrian | farm | horse | racehorse | racing"
+
+msgid "🦄.name"
+msgstr "unicorn"
+
+msgid "🦄.keywords"
+msgstr "face | unicorn"
+
+msgid "🦓.name"
+msgstr "zebra"
+
+msgid "🦓.keywords"
+msgstr "animal | stripe | zebra"
+
+msgid "🦌.name"
+msgstr "deer"
+
+msgid "🦌.keywords"
+msgstr "animal | deer"
+
+msgid "🦬.name"
+msgstr "bison"
+
+msgid "🦬.keywords"
+msgstr "animal | bison | buffalo | herd | wisent"
+
+msgid "🐮.name"
+msgstr "cow face"
+
+msgid "🐮.keywords"
+msgstr "animal | cow | face | farm | milk | moo"
+
+msgid "🐂.name"
+msgstr "ox"
+
+msgid "🐂.keywords"
+msgstr "animal | animals | bull | farm | ox | Taurus | zodiac"
+
+msgid "🐃.name"
+msgstr "water buffalo"
+
+msgid "🐃.keywords"
+msgstr "animal | buffalo | water | zoo"
+
+msgid "🐄.name"
+msgstr "cow"
+
+msgid "🐄.keywords"
+msgstr "animal | animals | cow | farm | milk | moo"
+
+msgid "🐷.name"
+msgstr "pig face"
+
+msgid "🐷.keywords"
+msgstr "animal | bacon | face | farm | pig | pork"
+
+msgid "🐖.name"
+msgstr "pig"
+
+msgid "🐖.keywords"
+msgstr "animal | bacon | farm | pig | pork | sow"
+
+msgid "🐗.name"
+msgstr "boar"
+
+msgid "🐗.keywords"
+msgstr "animal | boar | pig"
+
+msgid "🐽.name"
+msgstr "pig nose"
+
+msgid "🐽.keywords"
+msgstr "animal | face | farm | nose | pig | smell | snout"
+
+msgid "🐏.name"
+msgstr "ram"
+
+msgid "🐏.keywords"
+msgstr "animal | Aries | horns | male | ram | sheep | zodiac | zoo"
+
+msgid "🐑.name"
+msgstr "ewe"
+
+msgid "🐑.keywords"
+msgstr "animal | baa | ewe | farm | female | fluffy | lamb | sheep | wool"
+
+msgid "🐐.name"
+msgstr "goat"
+
+msgid "🐐.keywords"
+msgstr ""
+"animal | Capricorn | farm | goat | milk | zodiac"
+" | "
+"goat | greatest of all time | GOAT | legend | best | top"
+
+msgid "🐪.name"
+msgstr "camel"
+
+msgid "🐪.keywords"
+msgstr "animal | camel | desert | dromedary | hump | one"
+
+msgid "🐫.name"
+msgstr "two-hump camel"
+
+msgid "🐫.keywords"
+msgstr "animal | bactrian | camel | desert | hump | two | two-hump"
+
+msgid "🦙.name"
+msgstr "llama"
+
+msgid "🦙.keywords"
+msgstr "alpaca | animal | guanaco | llama | vicuña | wool"
+
+msgid "🦒.name"
+msgstr "giraffe"
+
+msgid "🦒.keywords"
+msgstr "animal | giraffe | spots"
+
+msgid "🐘.name"
+msgstr "elephant"
+
+msgid "🐘.keywords"
+msgstr "animal | elephant"
+
+msgid "🦣.name"
+msgstr "mammoth"
+
+msgid "🦣.keywords"
+msgstr "animal | extinction | large | mammoth | tusk | wooly"
+
+msgid "🦏.name"
+msgstr "rhinoceros"
+
+msgid "🦏.keywords"
+msgstr "animal | rhinoceros"
+
+msgid "🦛.name"
+msgstr "hippopotamus"
+
+msgid "🦛.keywords"
+msgstr "animal | hippo | hippopotamus"
+
+msgid "🐭.name"
+msgstr "mouse face"
+
+msgid "🐭.keywords"
+msgstr "animal | face | mouse"
+
+msgid "🐁.name"
+msgstr "mouse"
+
+msgid "🐁.keywords"
+msgstr "animal | animals | mouse"
+
+msgid "🐀.name"
+msgstr "rat"
+
+msgid "🐀.keywords"
+msgstr "animal | rat"
+
+msgid "🐹.name"
+msgstr "hamster"
+
+msgid "🐹.keywords"
+msgstr "animal | face | hamster | pet"
+
+msgid "🐰.name"
+msgstr "rabbit face"
+
+msgid "🐰.keywords"
+msgstr "animal | bunny | face | pet | rabbit"
+
+msgid "🐇.name"
+msgstr "rabbit"
+
+msgid "🐇.keywords"
+msgstr "animal | bunny | pet | rabbit"
+
+msgid "🐿️.name"
+msgstr "chipmunk"
+
+msgid "🐿️.keywords"
+msgstr "animal | chipmunk | squirrel"
+
+msgid "🦫.name"
+msgstr "beaver"
+
+msgid "🦫.keywords"
+msgstr "animal | beaver | dam | teeth"
+
+msgid "🦔.name"
+msgstr "hedgehog"
+
+msgid "🦔.keywords"
+msgstr "animal | hedgehog | spiny"
+
+msgid "🦇.name"
+msgstr "bat"
+
+msgid "🦇.keywords"
+msgstr "animal | bat | vampire"
+
+msgid "🐻.name"
+msgstr "bear"
+
+msgid "🐻.keywords"
+msgstr "animal | bear | face | grizzly | growl | honey"
+
+msgid "🐻‍❄️.name"
+msgstr "polar bear"
+
+msgid "🐻‍❄️.keywords"
+msgstr "animal | arctic | bear | polar | white"
+
+msgid "🐨.name"
+msgstr "koala"
+
+msgid "🐨.keywords"
+msgstr "animal | australia | bear | down | face | koala | marsupial | under"
+
+msgid "🐼.name"
+msgstr "panda"
+
+msgid "🐼.keywords"
+msgstr "animal | bamboo | face | panda"
+
+msgid "🦥.name"
+msgstr "sloth"
+
+msgid "🦥.keywords"
+msgstr "lazy | sloth | slow"
+
+msgid "🦦.name"
+msgstr "otter"
+
+msgid "🦦.keywords"
+msgstr "animal | fishing | otter | playful"
+
+msgid "🦨.name"
+msgstr "skunk"
+
+msgid "🦨.keywords"
+msgstr "animal | skunk | stink"
+
+msgid "🦘.name"
+msgstr "kangaroo"
+
+msgid "🦘.keywords"
+msgstr "animal | joey | jump | kangaroo | marsupial"
+
+msgid "🦡.name"
+msgstr "badger"
+
+msgid "🦡.keywords"
+msgstr "animal | badger | honey | pester"
+
+msgid "🐾.name"
+msgstr "paw prints"
+
+msgid "🐾.keywords"
+msgstr "feet | paw | paws | print | prints"
+
+msgid "🦃.name"
+msgstr "turkey"
+
+msgid "🦃.keywords"
+msgstr "bird | gobble | thanksgiving | turkey"
+
+msgid "🐔.name"
+msgstr "chicken"
+
+msgid "🐔.keywords"
+msgstr "animal | bird | chicken | ornithology"
+
+msgid "🐓.name"
+msgstr "rooster"
+
+msgid "🐓.keywords"
+msgstr "animal | bird | ornithology | rooster"
+
+msgid "🐣.name"
+msgstr "hatching chick"
+
+msgid "🐣.keywords"
+msgstr "animal | baby | bird | chick | egg | hatching"
+
+msgid "🐤.name"
+msgstr "baby chick"
+
+msgid "🐤.keywords"
+msgstr "animal | baby | bird | chick | ornithology"
+
+msgid "🐥.name"
+msgstr "front-facing baby chick"
+
+msgid "🐥.keywords"
+msgstr "animal | baby | bird | chick | front-facing | newborn | ornithology"
+
+msgid "🐦.name"
+msgstr "bird"
+
+msgid "🐦.keywords"
+msgstr "animal | bird | ornithology"
+
+msgid "🐧.name"
+msgstr "penguin"
+
+msgid "🐧.keywords"
+msgstr "animal | antarctica | bird | ornithology | penguin"
+
+msgid "🕊️.name"
+msgstr "dove"
+
+msgid "🕊️.keywords"
+msgstr "bird | dove | fly | ornithology | peace"
+
+msgid "🦅.name"
+msgstr "eagle"
+
+msgid "🦅.keywords"
+msgstr "animal | bird | eagle | ornithology"
+
+msgid "🦆.name"
+msgstr "duck"
+
+msgid "🦆.keywords"
+msgstr "animal | bird | duck | ornithology"
+
+msgid "🦢.name"
+msgstr "swan"
+
+msgid "🦢.keywords"
+msgstr "animal | bird | cygnet | duckling | ornithology | swan | ugly"
+
+msgid "🦉.name"
+msgstr "owl"
+
+msgid "🦉.keywords"
+msgstr "animal | bird | ornithology | owl | wise"
+
+msgid "🦤.name"
+msgstr "dodo"
+
+msgid "🦤.keywords"
+msgstr "animal | bird | dodo | extinction | large | ornithology"
+
+msgid "🪶.name"
+msgstr "feather"
+
+msgid "🪶.keywords"
+msgstr "bird | feather | flight | light | plumage"
+
+msgid "🦩.name"
+msgstr "flamingo"
+
+msgid "🦩.keywords"
+msgstr "animal | bird | flamboyant | flamingo | ornithology | tropical"
+
+msgid "🦚.name"
+msgstr "peacock"
+
+msgid "🦚.keywords"
+msgstr "animal | bird | colorful | ornithology | ostentatious | peacock | peahen | pretty | proud"
+
+msgid "🦜.name"
+msgstr "parrot"
+
+msgid "🦜.keywords"
+msgstr "animal | bird | ornithology | parrot | pirate | talk"
+
+msgid "🪽.name"
+msgstr "wing"
+
+msgid "🪽.keywords"
+msgstr "angelic | ascend | aviation | bird | fly | flying | heavenly | mythology | soar | wing"
+
+msgid "🐦‍⬛.name"
+msgstr "black bird"
+
+msgid "🐦‍⬛.keywords"
+msgstr "animal | beak | bird | black | caw | corvid | crow | ornithology | raven | rook"
+
+msgid "🪿.name"
+msgstr "goose"
+
+msgid "🪿.keywords"
+msgstr "animal | bird | duck | flock | fowl | gaggle | gander | geese | goose | honk | ornithology | silly"
+
+msgid "🐦‍🔥.name"
+msgstr "phoenix"
+
+msgid "🐦‍🔥.keywords"
+msgstr "ascend | ascension | emerge | fantasy | firebird | glory | immortal | phoenix | rebirth | reincarnation | reinvent | renewal | revival | revive | rise | transform"
+
+msgid "🐸.name"
+msgstr "frog"
+
+msgid "🐸.keywords"
+msgstr "animal | face | frog"
+
+msgid "🐊.name"
+msgstr "crocodile"
+
+msgid "🐊.keywords"
+msgstr "animal | crocodile | zoo"
+
+msgid "🐢.name"
+msgstr "turtle"
+
+msgid "🐢.keywords"
+msgstr "animal | terrapin | tortoise | turtle"
+
+msgid "🦎.name"
+msgstr "lizard"
+
+msgid "🦎.keywords"
+msgstr "animal | lizard | reptile"
+
+msgid "🐍.name"
+msgstr "snake"
+
+msgid "🐍.keywords"
+msgstr "animal | bearer | Ophiuchus | serpent | snake | zodiac"
+
+msgid "🐲.name"
+msgstr "dragon face"
+
+msgid "🐲.keywords"
+msgstr "animal | dragon | face | fairy | fairytale | tale"
+
+msgid "🐉.name"
+msgstr "dragon"
+
+msgid "🐉.keywords"
+msgstr "animal | dragon | fairy | fairytale | knights | tale"
+
+msgid "🦕.name"
+msgstr "sauropod"
+
+msgid "🦕.keywords"
+msgstr "brachiosaurus | brontosaurus | dinosaur | diplodocus | sauropod"
+
+msgid "🦖.name"
+msgstr "T-Rex"
+
+msgid "🦖.keywords"
+msgstr "dinosaur | Rex | T | T-Rex | Tyrannosaurus"
+
+msgid "🐳.name"
+msgstr "spouting whale"
+
+msgid "🐳.keywords"
+msgstr "animal | beach | face | ocean | spouting | whale"
+
+msgid "🐋.name"
+msgstr "whale"
+
+msgid "🐋.keywords"
+msgstr "animal | beach | ocean | whale"
+
+msgid "🐬.name"
+msgstr "dolphin"
+
+msgid "🐬.keywords"
+msgstr "animal | beach | dolphin | flipper | ocean"
+
+msgid "🫍.name"
+msgstr "orca"
+
+msgid "🫍.keywords"
+msgstr "marine | ocean | whale"
+
+msgid "🦭.name"
+msgstr "seal"
+
+msgid "🦭.keywords"
+msgstr "animal | lion | ocean | sea | seal"
+
+msgid "🐟.name"
+msgstr "fish"
+
+msgid "🐟.keywords"
+msgstr "animal | dinner | fish | fishes | fishing | Pisces | zodiac"
+
+msgid "🐠.name"
+msgstr "tropical fish"
+
+msgid "🐠.keywords"
+msgstr "animal | fish | fishes | tropical"
+
+msgid "🐡.name"
+msgstr "blowfish"
+
+msgid "🐡.keywords"
+msgstr "animal | blowfish | fish"
+
+msgid "🦈.name"
+msgstr "shark"
+
+msgid "🦈.keywords"
+msgstr "animal | fish | shark"
+
+msgid "🐙.name"
+msgstr "octopus"
+
+msgid "🐙.keywords"
+msgstr "animal | creature | ocean | octopus"
+
+msgid "🐚.name"
+msgstr "spiral shell"
+
+msgid "🐚.keywords"
+msgstr "animal | beach | conch | sea | shell | spiral"
+
+msgid "🪸.name"
+msgstr "coral"
+
+msgid "🪸.keywords"
+msgstr "change | climate | coral | ocean | reef | sea"
+
+msgid "🪼.name"
+msgstr "jellyfish"
+
+msgid "🪼.keywords"
+msgstr "animal | aquarium | burn | invertebrate | jelly | jellyfish | life | marine | ocean | ouch | plankton | sea | sting | stinger | tentacles"
+
+msgid "🦀.name"
+msgstr "crab"
+
+msgid "🦀.keywords"
+msgstr "Cancer | crab | zodiac"
+
+msgid "🦞.name"
+msgstr "lobster"
+
+msgid "🦞.keywords"
+msgstr "animal | bisque | claws | lobster | seafood"
+
+msgid "🦐.name"
+msgstr "shrimp"
+
+msgid "🦐.keywords"
+msgstr "food | shellfish | shrimp | small"
+
+msgid "🦑.name"
+msgstr "squid"
+
+msgid "🦑.keywords"
+msgstr "animal | food | mollusk | squid"
+
+msgid "🦪.name"
+msgstr "oyster"
+
+msgid "🦪.keywords"
+msgstr "diving | oyster | pearl"
+
+msgid "🐌.name"
+msgstr "snail"
+
+msgid "🐌.keywords"
+msgstr "animal | escargot | garden | nature | slug | snail"
+
+msgid "🦋.name"
+msgstr "butterfly"
+
+msgid "🦋.keywords"
+msgstr ""
+"butterfly | insect | pretty"
+" | "
+"butterfly | transformation | beautiful | flutter | change"
+
+msgid "🐛.name"
+msgstr "bug"
+
+msgid "🐛.keywords"
+msgstr "animal | bug | garden | insect"
+
+msgid "🐜.name"
+msgstr "ant"
+
+msgid "🐜.keywords"
+msgstr "animal | ant | garden | insect"
+
+msgid "🐝.name"
+msgstr "honeybee"
+
+msgid "🐝.keywords"
+msgstr "animal | bee | bumblebee | honey | honeybee | insect | nature | spring"
+
+msgid "🪲.name"
+msgstr "beetle"
+
+msgid "🪲.keywords"
+msgstr "animal | beetle | bug | insect"
+
+msgid "🐞.name"
+msgstr "lady beetle"
+
+msgid "🐞.keywords"
+msgstr "animal | beetle | garden | insect | lady | ladybird | ladybug | nature"
+
+msgid "🦗.name"
+msgstr "cricket"
+
+msgid "🦗.keywords"
+msgstr "animal | bug | cricket | grasshopper | insect | Orthoptera"
+
+msgid "🪳.name"
+msgstr "cockroach"
+
+msgid "🪳.keywords"
+msgstr "animal | cockroach | insect | pest | roach"
+
+msgid "🕷️.name"
+msgstr "spider"
+
+msgid "🕷️.keywords"
+msgstr "animal | insect | spider"
+
+msgid "🕸️.name"
+msgstr "spider web"
+
+msgid "🕸️.keywords"
+msgstr "spider | web"
+
+msgid "🦂.name"
+msgstr "scorpion"
+
+msgid "🦂.keywords"
+msgstr "Scorpio | scorpion | Scorpius | zodiac"
+
+msgid "🦟.name"
+msgstr "mosquito"
+
+msgid "🦟.keywords"
+msgstr "bite | disease | fever | insect | malaria | mosquito | pest | virus"
+
+msgid "🪰.name"
+msgstr "fly"
+
+msgid "🪰.keywords"
+msgstr "animal | disease | fly | insect | maggot | pest | rotting"
+
+msgid "🪱.name"
+msgstr "worm"
+
+msgid "🪱.keywords"
+msgstr "animal | annelid | earthworm | parasite | worm"
+
+msgid "🦠.name"
+msgstr "microbe"
+
+msgid "🦠.keywords"
+msgstr "amoeba | bacteria | microbe | science | virus"
+
+msgid "💐.name"
+msgstr "bouquet"
+
+msgid "💐.keywords"
+msgstr "anniversary | birthday | bouquet | date | flower | love | plant | romance"
+
+msgid "🌸.name"
+msgstr "cherry blossom"
+
+msgid "🌸.keywords"
+msgstr ""
+"blossom | cherry | flower | plant | spring | springtime"
+" | "
+"cherry blossom | sakura | spring | japan | flower | hanami"
+
+msgid "💮.name"
+msgstr "white flower"
+
+msgid "💮.keywords"
+msgstr "flower | white"
+
+msgid "🪷.name"
+msgstr "lotus"
+
+msgid "🪷.keywords"
+msgstr "beauty | Buddhism | calm | flower | Hinduism | lotus | peace | purity | serenity"
+
+msgid "🏵️.name"
+msgstr "rosette"
+
+msgid "🏵️.keywords"
+msgstr "plant | rosette"
+
+msgid "🌹.name"
+msgstr "rose"
+
+msgid "🌹.keywords"
+msgstr "beauty | elegant | flower | love | plant | red | rose | valentine"
+
+msgid "🥀.name"
+msgstr "wilted flower"
+
+msgid "🥀.keywords"
+msgstr "dying | flower | wilted"
+
+msgid "🌺.name"
+msgstr "hibiscus"
+
+msgid "🌺.keywords"
+msgstr "flower | hibiscus | plant"
+
+msgid "🌻.name"
+msgstr "sunflower"
+
+msgid "🌻.keywords"
+msgstr "flower | outdoors | plant | sun | sunflower"
+
+msgid "🌼.name"
+msgstr "blossom"
+
+msgid "🌼.keywords"
+msgstr "blossom | buttercup | dandelion | flower | plant"
+
+msgid "🌷.name"
+msgstr "tulip"
+
+msgid "🌷.keywords"
+msgstr "blossom | flower | growth | plant | tulip"
+
+msgid "🪻.name"
+msgstr "hyacinth"
+
+msgid "🪻.keywords"
+msgstr "bloom | bluebonnet | flower | hyacinth | indigo | lavender | lilac | lupine | plant | purple | shrub | snapdragon | spring | violet"
+
+msgid "🌱.name"
+msgstr "seedling"
+
+msgid "🌱.keywords"
+msgstr "plant | sapling | seedling | sprout | young"
+
+msgid "🪴.name"
+msgstr "potted plant"
+
+msgid "🪴.keywords"
+msgstr "decor | grow | house | nurturing | plant | pot | potted"
+
+msgid "🌲.name"
+msgstr "evergreen tree"
+
+msgid "🌲.keywords"
+msgstr "christmas | evergreen | forest | pine | tree"
+
+msgid "🌳.name"
+msgstr "deciduous tree"
+
+msgid "🌳.keywords"
+msgstr "deciduous | forest | green | habitat | shedding | tree"
+
+msgid "🌴.name"
+msgstr "palm tree"
+
+msgid "🌴.keywords"
+msgstr "beach | palm | plant | tree | tropical"
+
+msgid "🌵.name"
+msgstr "cactus"
+
+msgid "🌵.keywords"
+msgstr "cactus | desert | drought | nature | plant"
+
+msgid "🌾.name"
+msgstr "sheaf of rice"
+
+msgid "🌾.keywords"
+msgstr "ear | grain | grains | plant | rice | sheaf"
+
+msgid "🌿.name"
+msgstr "herb"
+
+msgid "🌿.keywords"
+msgstr "herb | leaf | plant"
+
+msgid "☘️.name"
+msgstr "shamrock"
+
+msgid "☘️.keywords"
+msgstr "irish | plant | shamrock"
+
+msgid "🍀.name"
+msgstr "four leaf clover"
+
+msgid "🍀.keywords"
+msgstr "4 | clover | four | four-leaf | irish | leaf | lucky | plant"
+
+msgid "🍁.name"
+msgstr "maple leaf"
+
+msgid "🍁.keywords"
+msgstr "falling | leaf | maple"
+
+msgid "🍂.name"
+msgstr "fallen leaf"
+
+msgid "🍂.keywords"
+msgstr "autumn | fall | fallen | falling | leaf"
+
+msgid "🍃.name"
+msgstr "leaf fluttering in wind"
+
+msgid "🍃.keywords"
+msgstr "blow | flutter | fluttering | leaf | wind"
+
+msgid "🪹.name"
+msgstr "empty nest"
+
+msgid "🪹.keywords"
+msgstr "branch | empty | home | nest | nesting"
+
+msgid "🪺.name"
+msgstr "nest with eggs"
+
+msgid "🪺.keywords"
+msgstr "bird | branch | egg | eggs | nest | nesting"
+
+msgid "🍄.name"
+msgstr "mushroom"
+
+msgid "🍄.keywords"
+msgstr "fungus | mushroom | toadstool"
+
+msgid "🪾.name"
+msgstr "leafless tree"
+
+msgid "🪾.keywords"
+msgstr "bare | barren | branches | dead | drought | leafless | tree | trunk | winter | wood"
