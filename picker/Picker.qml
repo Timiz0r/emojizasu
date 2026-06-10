@@ -46,8 +46,10 @@ PanelWindow {
     property string pendingEmoji: ""
 
     onVisibleChanged: {
-        if (visible && !positioned) window.tryApplyInitialGeometry()
-        if (!visible) {
+        if (visible) {
+            panel.refreshRecentSnapshot()
+            if (!positioned) window.tryApplyInitialGeometry()
+        } else {
             keySocket.everConnected = false
             keyChannelDown = false
             panel.resetFocusState()

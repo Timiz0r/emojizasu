@@ -46,8 +46,13 @@ Rectangle {
     property var searchEmojiItems: []
     property var searchKaomojiItems: []
 
-    readonly property var recentEmojiItems: EmojiData.recentItems.filter(i => i.category !== "kaomoji")
-    readonly property var recentKaomojiItems: EmojiData.recentItems.filter(i => i.category === "kaomoji")
+    property var recentEmojiItems: []
+    property var recentKaomojiItems: []
+
+    function refreshRecentSnapshot() {
+        recentEmojiItems = EmojiData.recentItems.filter(function(i) { return i.category !== "kaomoji" })
+        recentKaomojiItems = EmojiData.recentItems.filter(function(i) { return i.category === "kaomoji" })
+    }
 
     // True only in the test negative-control (EMOJIZASU_FORCE_FOCUSABLE): the
     // search field takes real keyboard focus and reproduces the focus-steal leak.
@@ -331,11 +336,17 @@ Rectangle {
         onTriggered: root.refreshSearch()
     }
 
+    onDataReadyChanged: {
+        if (dataReady) refreshRecentSnapshot()
+    }
+
     onIsSearchingChanged: {
         gridSelectedIndex = isSearching ? 0 : (internalFocus === "grid" ? 0 : -1)
+        if (!isSearching && currentCategory === "recent") refreshRecentSnapshot()
     }
 
     onCurrentCategoryChanged: {
+        if (currentCategory === "recent") refreshRecentSnapshot()
         if (internalFocus === "grid") gridSelectedIndex = 0
     }
 
