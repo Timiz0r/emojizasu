@@ -16,7 +16,7 @@ Item {
     readonly property int browseColumnCount: browseGrid.width > 0
         ? Math.max(1, Math.floor(browseGrid.width / 42)) : 1
     readonly property int recentColumnCount: browseGrid.width > 0
-        ? Math.max(1, Math.floor((browseGrid.width + 2) / 44)) : 1
+        ? Math.max(1, Math.floor(browseGrid.width / 42)) : 1
 
     signal emojiSelected(string emoji)
 
@@ -103,7 +103,7 @@ Item {
 
             Flow {
                 width: parent.width
-                spacing: 2
+                spacing: 0
                 visible: root.recentEmojiItems.length > 0
                 Repeater {
                     id: recentEmojiRepeater
