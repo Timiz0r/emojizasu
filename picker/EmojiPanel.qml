@@ -19,7 +19,7 @@ Rectangle {
     function _() { return Localization._.apply(null, arguments) }
 
     readonly property string language: Localization.localeCode
-    property alias searchText: searchInput.text
+    property alias searchText: header.searchText
     property string currentCategory: "recent"
 
     property real dragMaxX: 0
@@ -57,19 +57,13 @@ Rectangle {
         recentKaomojiItems = EmojiData.recentItems.filter(i => EmojiData.kaomojis[i])
     }
 
-    // True only in the test negative-control (EMOJIZASU_FORCE_FOCUSABLE): the
-    // search field takes real keyboard focus and reproduces the focus-steal leak.
-    // Disabled in normal operation.
     property bool forceFocusable: false
 
     readonly property bool isSearching: searchText.length > 0
 
-    readonly property int browseGridColumns: browseGrid.width > 0
-        ? Math.max(1, Math.floor(browseGrid.width / browseGrid.cellWidth)) : 1
-    readonly property int searchEmojiCols: searchFlickable.width > 0
-        ? Math.max(1, Math.floor((searchFlickable.width + 2) / 44)) : 1
-    readonly property int recentEmojiCols: browseGrid.width > 0
-        ? Math.max(1, Math.floor((browseGrid.width + 2) / 44)) : 1
+    readonly property int browseGridColumns: browsePane.browseColumnCount
+    readonly property int searchEmojiCols: searchPane.emojiColumnCount
+    readonly property int recentEmojiCols: browsePane.recentColumnCount
 
     readonly property int gridCount: {
         if (isSearching) return searchEmojiItems.length + searchKaomojiItems.length
@@ -81,7 +75,7 @@ Rectangle {
         DebugLog.event(scope || "panel", where
             + "  internalFocus=" + internalFocus
             + " wantsKeyboard=" + wantsKeyboard
-            + " searchFocus=" + searchInput.activeFocus
+            + " searchFocus=" + header.inputActiveFocus
             + " gridSel=" + gridSelectedIndex
             + " searching=" + isSearching)
     }
@@ -125,22 +119,28 @@ Rectangle {
 
     onWantsKeyboardChanged: {
         if (wantsKeyboard) Qt.callLater(() => {
-            searchInput.forceActiveFocus()
-            dlog("forceActiveFocus(callLater)")
+            header.focusInput()
+            dlog("focusInput(callLater)")
         })
-        else searchInput.focus = false
+        else header.blurInput()
     }
 
     Connections {
-        target: searchInput
-        function onActiveFocusChanged() {
-            root.dlog("searchInput.activeFocusChanged=" + searchInput.activeFocus)
-            if (!searchInput.activeFocus && root.internalFocus === "search" && !root.forceFocusable)
+        target: header
+        function onInputFocusLost() {
+            root.dlog("searchInput.activeFocusChanged=false")
+            if (root.internalFocus === "search" && !root.forceFocusable)
                 root.releaseKeyboard()
         }
+        function onSearchAreaClicked() { root.engageSearch() }
+        function onReturnKeyPressed() { root.dlog("Qt Keys.Return"); root.selectFirstEmoji() }
+        function onEscapeKeyPressed() { root.dlog("Qt Keys.Escape"); root.closeRequested() }
+        function onTabKeyPressed() { root.dlog("Qt Keys.Tab"); root.advanceFromSearch() }
+        function onBacktabKeyPressed() { root.dlog("Qt Keys.Backtab"); root.internalFocus = "categories"; root.wantsKeyboard = false }
+        function onDownKeyPressed() { root.dlog("Qt Keys.Down"); root.advanceFromSearch() }
     }
 
-    readonly property bool searchFocused: searchInput.activeFocus
+    readonly property bool searchFocused: header.inputActiveFocus
 
     function handleKeyLine(line) {
         const intent = KeyNav.route(line, internalFocus)
@@ -188,40 +188,36 @@ Rectangle {
 
     function insertInSearch(text) {
         ensureSearchEngaged()
-        const p = searchInput.cursorPosition
-        searchInput.text = searchInput.text.slice(0, p) + text + searchInput.text.slice(p)
-        searchInput.cursorPosition = p + text.length
+        const p = header.searchCursorPosition
+        header.searchText = header.searchText.slice(0, p) + text + header.searchText.slice(p)
+        header.searchCursorPosition = p + text.length
     }
 
     function clipboardInSearch(op) {
         ensureSearchEngaged()
-        if (op === "selectAll") Qt.callLater(() => searchInput.selectAll())
-        else if (op === "copy") Qt.callLater(() => searchInput.copy())
-        else if (op === "cut") Qt.callLater(() => searchInput.cut())
-        else if (op === "paste") Qt.callLater(() => searchInput.paste())
+        if (op === "selectAll") Qt.callLater(() => header.selectAll())
+        else if (op === "copy") Qt.callLater(() => header.copy())
+        else if (op === "cut") Qt.callLater(() => header.cut())
+        else if (op === "paste") Qt.callLater(() => header.paste())
     }
 
     function deleteBackInSearch() {
         ensureSearchEngaged()
-        const p = searchInput.cursorPosition
+        const p = header.searchCursorPosition
         if (p > 0) {
-            searchInput.text = searchInput.text.slice(0, p - 1) + searchInput.text.slice(p)
-            searchInput.cursorPosition = p - 1
+            header.searchText = header.searchText.slice(0, p - 1) + header.searchText.slice(p)
+            header.searchCursorPosition = p - 1
         }
     }
 
     function moveSearchCursor(delta) {
         ensureSearchEngaged()
-        const np = searchInput.cursorPosition + delta
-        if (np >= 0 && np <= searchInput.text.length) searchInput.cursorPosition = np
+        const np = header.searchCursorPosition + delta
+        if (np >= 0 && np <= header.searchText.length) header.searchCursorPosition = np
     }
 
     function moveCategory(direction) {
-        const ci = categoryMeta.findIndex(c => c.id === currentCategory)
-        const target = direction === "left" ? ci - 1 : ci + 1
-        if (target < 0 || target >= categoryMeta.length) return
-        currentCategory = categoryMeta[target].id
-        catBar.positionViewAtIndex(target, ListView.Contain)
+        catBar.moveTo(direction)
     }
 
     function gridAtTop() {
@@ -234,7 +230,6 @@ Rectangle {
             if (currentCategory === "kaomoji") return gridSelectedIndex <= 0
             return gridSelectedIndex < browseGridColumns
         }
-        // search
         if (searchEmojiItems.length > 0)
             return gridSelectedIndex < Math.min(searchEmojiCols, searchEmojiItems.length)
         return gridSelectedIndex <= 0
@@ -247,32 +242,18 @@ Rectangle {
             if (currentCategory === "recent") {
                 gridSelectedIndex = KeyNav.nextSearchIndex(direction, gridSelectedIndex,
                     recentEmojiItems.length, recentKaomojiItems.length, recentEmojiCols)
-                ensureRecentVisible()
+                browsePane.ensureRecentVisible(gridSelectedIndex)
             } else if (currentCategory === "kaomoji") {
                 gridSelectedIndex = KeyNav.nextKaomojiIndex(direction, gridSelectedIndex, browseItems.length)
-                kaomojiListView.positionViewAtIndex(gridSelectedIndex, ListView.Contain)
+                browsePane.positionKaomojiAt(gridSelectedIndex)
             } else {
                 gridSelectedIndex = KeyNav.nextBrowseIndex(direction, gridSelectedIndex, browseGridColumns, browseItems.length)
-                browseGrid.positionViewAtIndex(gridSelectedIndex, GridView.Contain)
+                browsePane.positionBrowseAt(gridSelectedIndex)
             }
         } else {
             gridSelectedIndex = KeyNav.nextSearchIndex(direction, gridSelectedIndex,
                 searchEmojiItems.length, searchKaomojiItems.length, searchEmojiCols)
         }
-    }
-
-    function ensureRecentVisible() {
-        if (gridSelectedIndex < 0) return
-        const item = gridSelectedIndex < recentEmojiItems.length
-            ? recentEmojiRepeater.itemAt(gridSelectedIndex)
-            : recentKaomojiRepeater.itemAt(gridSelectedIndex - recentEmojiItems.length)
-        if (!item) return
-        const top = item.mapToItem(recentColumn, 0, 0).y
-        const bottom = top + item.height
-        if (top < recentFlickable.contentY)
-            recentFlickable.contentY = top
-        else if (bottom > recentFlickable.contentY + recentFlickable.height)
-            recentFlickable.contentY = bottom - recentFlickable.height
     }
 
     function selectEmojiAt(idx) {
@@ -361,13 +342,13 @@ Rectangle {
 
     Connections {
         target: EmojiData
-        function onEmojiRevisionChanged() { if (root.isSearching) root.refreshSearch() }
+        function onChangeTrackingChanged() { if (root.isSearching) root.refreshSearch() }
     }
 
     Component.onCompleted: {
         Localization.sources = [Qt.resolvedUrl("data/locale/ja.po")]
         if (forceFocusable)
-            Qt.callLater(() => searchInput.forceActiveFocus())
+            Qt.callLater(() => header.focusInput())
     }
 
     SystemPalette { id: palette; colorGroup: SystemPalette.Active }
@@ -376,202 +357,39 @@ Rectangle {
         anchors { fill: parent; margins: 8 }
         spacing: 6
 
-        // Header
-        RowLayout {
+        PanelHeader {
+            id: header
             Layout.fillWidth: true
-            spacing: 6
-
-            Item {
-                Layout.preferredWidth: 20
-                Layout.preferredHeight: 34
-
-                Text {
-                    anchors.centerIn: parent
-                    text: "⠿"
-                    font.pixelSize: 18
-                    renderType: Text.NativeRendering
-                    color: Qt.alpha(palette.windowText,
-                                    dragArea.containsMouse || dragArea.drag.active ? 0.75 : 0.35)
-                }
-
-                MouseArea {
-                    id: dragArea
-                    anchors.fill: parent
-                    hoverEnabled: true
-                    cursorShape: Qt.SizeAllCursor
-                    drag.target: root
-                    drag.axis: Drag.XAndYAxis
-                    drag.threshold: 0
-                    drag.minimumX: 0
-                    drag.maximumX: root.dragMaxX
-                    drag.minimumY: 0
-                    drag.maximumY: root.dragMaxY
-                }
-            }
-
-            Rectangle {
-                Layout.fillWidth: true
-                height: 34
-                radius: 17
-                color: palette.base
-                border.color: (root.forceFocusable ? searchInput.activeFocus
-                                                    : root.internalFocus === "search")
-                              ? palette.highlight : Qt.darker(palette.base, 1.2)
-                border.width: 1
-
-                RowLayout {
-                    anchors { fill: parent; leftMargin: 12; rightMargin: 8 }
-                    spacing: 6
-
-                    Text {
-                        text: "🔍"; font.pixelSize: 16; renderType: Text.NativeRendering
-                    }
-
-                    Item {
-                        Layout.fillWidth: true; Layout.fillHeight: true
-                        clip: true
-
-                        TextInput {
-                            id: searchInput
-                            anchors.fill: parent
-                            font.pixelSize: 14; color: palette.text
-                            verticalAlignment: TextInput.AlignVCenter; clip: true
-                            activeFocusOnPress: root.forceFocusable
-                            cursorVisible: root.forceFocusable ? activeFocus
-                                                               : root.internalFocus === "search"
-
-                            Keys.onReturnPressed: { root.dlog("Qt Keys.Return"); root.selectFirstEmoji() }
-                            Keys.onEnterPressed: { root.dlog("Qt Keys.Enter"); root.selectFirstEmoji() }
-                            Keys.onEscapePressed: { root.dlog("Qt Keys.Escape"); root.closeRequested() }
-                            Keys.onTabPressed: { root.dlog("Qt Keys.Tab"); root.advanceFromSearch() }
-                            Keys.onBacktabPressed: { root.dlog("Qt Keys.Backtab"); root.internalFocus = "categories"; root.wantsKeyboard = false }
-                            Keys.onDownPressed: { root.dlog("Qt Keys.Down"); root.advanceFromSearch() }
-                        }
-
-                        Text {
-                            anchors { left: parent.left; verticalCenter: parent.verticalCenter }
-                            text: _`Search emoji...`
-                            color: Qt.alpha(palette.text, 0.38); font.pixelSize: 14
-                            visible: searchInput.text.length === 0
-                        }
-
-                        MouseArea {
-                            anchors.fill: parent
-                            enabled: !root.wantsKeyboard && !root.forceFocusable
-                            cursorShape: Qt.IBeamCursor
-                            onClicked: root.engageSearch()
-                        }
-                    }
-
-                    Text {
-                        text: "✕"; font.pixelSize: 12
-                        color: Qt.alpha(palette.text, 0.5)
-                        visible: root.searchText.length > 0
-                        MouseArea {
-                            anchors.fill: parent; cursorShape: Qt.PointingHandCursor
-                            onClicked: {
-                                root.searchText = ""
-                                if (root.forceFocusable) searchInput.forceActiveFocus()
-                            }
-                        }
-                    }
-                }
-            }
-
-            // Language toggle
-            Rectangle {
-                width: 46; height: 34; radius: 17
-                color: langHover.containsMouse ? Qt.lighter(palette.button, 1.1) : palette.button
-                border.color: Qt.darker(palette.button, 1.15); border.width: 1
-                Text {
-                    anchors.centerIn: parent
-                    text: root.language === "ja" ? "JA" : "EN"
-                    font.pixelSize: 13; font.bold: true; color: palette.buttonText
-                }
-                MouseArea {
-                    id: langHover; anchors.fill: parent; hoverEnabled: true
-                    cursorShape: Qt.PointingHandCursor
-                    onClicked: Localization.localeCode = (Localization.localeCode === "ja" ? "en" : "ja")
-                }
-            }
-
-            // Close
-            Rectangle {
-                width: 34; height: 34; radius: 17
-                color: xHover.containsMouse ? "#c0392b" : Qt.alpha(palette.button, 0.7)
-                Text {
-                    anchors.centerIn: parent; text: "✕"; font.pixelSize: 14
-                    color: xHover.containsMouse ? "white" : palette.buttonText
-                }
-                MouseArea {
-                    id: xHover; anchors.fill: parent; hoverEnabled: true
-                    cursorShape: Qt.PointingHandCursor; onClicked: root.closeRequested()
-                }
-            }
+            implicitHeight: 34
+            dragTarget: root
+            dragMaxX: root.dragMaxX
+            dragMaxY: root.dragMaxY
+            internalFocus: root.internalFocus
+            wantsKeyboard: root.wantsKeyboard
+            forceFocusable: root.forceFocusable
+            language: root.language
+            onCloseRequested: root.closeRequested()
         }
 
-        // Categories
-        Rectangle {
+        CategoryBar {
+            id: catBar
             Layout.fillWidth: true
             height: 44
-            color: "transparent"
-            radius: 6
-            border.color: root.internalFocus === "categories" ? Qt.alpha(palette.highlight, 0.6) : "transparent"
-            border.width: 1
+            categoryMeta: root.categoryMeta
+            currentCategory: root.currentCategory
+            focused: root.internalFocus === "categories"
             visible: !root.isSearching
-
-            ListView {
-                id: catBar
-                anchors.fill: parent; orientation: ListView.Horizontal; spacing: 1; clip: true
-                model: root.categoryMeta
-                ScrollBar.horizontal: ScrollBar { policy: ScrollBar.AlwaysOff }
-
-                delegate: Item {
-                    required property var modelData
-                    width: 44; height: 44
-
-                    Rectangle {
-                        anchors { fill: parent; margins: 2 }
-                        radius: 6
-                        color: root.currentCategory === modelData.id
-                               ? Qt.alpha(palette.highlight, 0.22)
-                               : tabHover.containsMouse ? Qt.alpha(palette.highlight, 0.1) : "transparent"
-
-                        Rectangle {
-                            anchors { bottom: parent.bottom; horizontalCenter: parent.horizontalCenter; bottomMargin: 1 }
-                            width: 20; height: 2; radius: 1; color: palette.highlight
-                            visible: root.currentCategory === modelData.id
-                        }
-
-                        Text {
-                            anchors.centerIn: parent
-                            text: modelData.icon
-                            font.pixelSize: modelData.id === "kaomoji" ? 8 : 22
-                            renderType: Text.NativeRendering
-                        }
-
-                        MouseArea {
-                            id: tabHover; anchors.fill: parent; hoverEnabled: true
-                            cursorShape: Qt.PointingHandCursor
-                            onClicked: {
-                                root.currentCategory = modelData.id
-                                root.searchText = ""
-                            }
-                            ToolTip.visible: containsMouse; ToolTip.delay: 600
-                            ToolTip.text: modelData.name
-                        }
-                    }
-                }
+            onCategoryActivated: id => {
+                root.currentCategory = id
+                root.searchText = ""
             }
         }
 
-        // Separator
         Rectangle {
             Layout.fillWidth: true; height: 1; color: Qt.alpha(palette.windowText, 0.1)
             visible: !root.isSearching
         }
 
-        // Status line
         Text {
             Layout.fillWidth: true
             font.pixelSize: 11; color: Qt.alpha(palette.windowText, 0.45)
@@ -596,200 +414,32 @@ Rectangle {
             Layout.fillWidth: true; Layout.fillHeight: true
             currentIndex: root.isSearching ? 1 : 0
 
-            // Browse / Recent
-            Item {
-                GridView {
-                    id: browseGrid
-                    anchors.fill: parent; clip: true
-                    cellWidth: 42; cellHeight: 42
-                    model: root.browseItems
-                    visible: root.currentCategory !== "recent" && root.currentCategory !== "kaomoji"
-                    ScrollBar.vertical: ScrollBar { policy: ScrollBar.AsNeeded }
-
-                    delegate: EmojiCell {
-                        required property var modelData
-                        required property int index
-                        emojiChar: modelData
-                        label: EmojiData.nameFor(modelData)
-                        selected: root.internalFocus === "grid" && index === root.gridSelectedIndex
-                        onActivated: root.emojiSelected(emojiChar)
-                    }
-
-                    Text {
-                        anchors.centerIn: parent
-                        visible: browseGrid.count === 0 && root.dataReady
-                        text: _`No emoji here`
-                        color: Qt.alpha(palette.windowText, 0.38); font.pixelSize: 13
-                        horizontalAlignment: Text.AlignHCenter; wrapMode: Text.Wrap; width: 200
-                    }
-                }
-
-                ListView {
-                    id: kaomojiListView
-                    anchors.fill: parent; clip: true; spacing: 1
-                    model: root.browseItems
-                    visible: root.currentCategory === "kaomoji"
-                    ScrollBar.vertical: ScrollBar { policy: ScrollBar.AsNeeded }
-
-                    delegate: KaomojiCell {
-                        required property var modelData
-                        required property int index
-                        kaomojiText: modelData
-                        label: EmojiData.nameFor(modelData)
-                        width: kaomojiListView.width
-                        highlight: index % 2 === 0
-                        selected: root.internalFocus === "grid" && index === root.gridSelectedIndex
-                        onActivated: root.emojiSelected(kaomojiText)
-                    }
-                }
-
-                Flickable {
-                    id: recentFlickable
-                    anchors.fill: parent; clip: true
-                    visible: root.currentCategory === "recent"
-                    contentHeight: recentColumn.implicitHeight
-                    ScrollBar.vertical: ScrollBar { policy: ScrollBar.AsNeeded }
-
-                    Column {
-                        id: recentColumn
-                        width: recentFlickable.width
-                        spacing: 0
-
-                        Flow {
-                            width: parent.width
-                            spacing: 2
-                            visible: root.recentEmojiItems.length > 0
-                            Repeater {
-                                id: recentEmojiRepeater
-                                model: root.recentEmojiItems
-                                delegate: EmojiCell {
-                                    required property var modelData
-                                    required property int index
-                                    emojiChar: modelData
-                                    label: EmojiData.nameFor(modelData)
-                                    selected: root.internalFocus === "grid" && index === root.gridSelectedIndex
-                                    onActivated: root.emojiSelected(emojiChar)
-                                }
-                            }
-                        }
-
-                        Column {
-                            width: parent.width
-                            spacing: 1
-                            visible: root.recentKaomojiItems.length > 0
-                            Repeater {
-                                id: recentKaomojiRepeater
-                                model: root.recentKaomojiItems
-                                delegate: KaomojiCell {
-                                    required property var modelData
-                                    required property int index
-                                    kaomojiText: modelData
-                                    label: EmojiData.nameFor(modelData)
-                                    width: recentColumn.width
-                                    highlight: index % 2 === 0
-                                    selected: root.internalFocus === "grid" && (root.recentEmojiItems.length + index) === root.gridSelectedIndex
-                                    onActivated: root.emojiSelected(kaomojiText)
-                                }
-                            }
-                        }
-
-                        Item {
-                            width: parent.width; height: 120
-                            visible: root.recentEmojiItems.length === 0 && root.recentKaomojiItems.length === 0 && root.dataReady
-                            Text {
-                                anchors.centerIn: parent
-                                text: _`No recently used emoji yet`
-                                color: Qt.alpha(palette.windowText, 0.38); font.pixelSize: 13
-                                horizontalAlignment: Text.AlignHCenter; wrapMode: Text.Wrap; width: 200
-                            }
-                        }
-                    }
-                }
+            BrowsePane {
+                id: browsePane
+                currentCategory: root.currentCategory
+                browseItems: root.browseItems
+                recentEmojiItems: root.recentEmojiItems
+                recentKaomojiItems: root.recentKaomojiItems
+                gridSelectedIndex: root.gridSelectedIndex
+                gridFocused: root.internalFocus === "grid"
+                dataReady: root.dataReady
+                onEmojiSelected: emoji => root.emojiSelected(emoji)
             }
 
-            // Search results
-            Item {
-                Flickable {
-                    id: searchFlickable
-                    anchors.fill: parent; clip: true
-                    contentHeight: searchColumn.implicitHeight
-                    ScrollBar.vertical: ScrollBar { policy: ScrollBar.AsNeeded }
-
-                    Column {
-                        id: searchColumn
-                        width: searchFlickable.width
-                        spacing: 0
-
-                        // Emoji results
-                        Flow {
-                            id: searchEmojiFlow
-                            width: parent.width
-                            spacing: 2
-                            visible: root.searchEmojiItems.length > 0
-                            Repeater {
-                                model: root.searchEmojiItems
-                                delegate: EmojiCell {
-                                    required property var modelData
-                                    required property int index
-                                    emojiChar: modelData
-                                    label: EmojiData.nameFor(modelData)
-                                    selected: root.internalFocus === "grid" && index === root.gridSelectedIndex
-                                    onActivated: root.emojiSelected(emojiChar)
-                                }
-                            }
-                        }
-
-                        // Kaomoji results header
-                        Item {
-                            width: parent.width; height: 28
-                            visible: root.searchKaomojiItems.length > 0 && root.searchEmojiItems.length > 0
-
-                            Text {
-                                anchors { left: parent.left; verticalCenter: parent.verticalCenter; leftMargin: 4 }
-                                text: _`Kaomoji`
-                                font.pixelSize: 11; font.bold: true
-                                color: Qt.alpha(palette.windowText, 0.4)
-                            }
-                        }
-
-                        // Kaomoji results list
-                        Column {
-                            width: parent.width
-                            spacing: 1
-                            visible: root.searchKaomojiItems.length > 0
-                            Repeater {
-                                model: root.searchKaomojiItems
-                                delegate: KaomojiCell {
-                                    required property var modelData
-                                    required property int index
-                                    kaomojiText: modelData
-                                    label: EmojiData.nameFor(modelData)
-                                    width: searchColumn.width
-                                    highlight: index % 2 === 0
-                                    selected: root.internalFocus === "grid" && (root.searchEmojiItems.length + index) === root.gridSelectedIndex
-                                    onActivated: root.emojiSelected(kaomojiText)
-                                }
-                            }
-                        }
-
-                        // Empty state
-                        Item {
-                            width: parent.width; height: 120
-                            visible: root.searchEmojiItems.length === 0 && root.searchKaomojiItems.length === 0 && root.isSearching && root.dataReady
-                            Text {
-                                anchors.centerIn: parent
-                                text: _(t`No results for "${root.searchText}"`)
-                                color: Qt.alpha(palette.windowText, 0.38); font.pixelSize: 13
-                                horizontalAlignment: Text.AlignHCenter; wrapMode: Text.Wrap; width: 260
-                            }
-                        }
-                    }
-                }
+            SearchPane {
+                id: searchPane
+                searchEmojiItems: root.searchEmojiItems
+                searchKaomojiItems: root.searchKaomojiItems
+                gridSelectedIndex: root.gridSelectedIndex
+                gridFocused: root.internalFocus === "grid"
+                isSearching: root.isSearching
+                dataReady: root.dataReady
+                searchText: root.searchText
+                onEmojiSelected: emoji => root.emojiSelected(emoji)
             }
         }
     }
 
-    // Loading overlay
     Rectangle {
         anchors.fill: parent; radius: 8; color: palette.window
         visible: !root.dataReady
@@ -835,8 +485,7 @@ Rectangle {
 
     Item {
         anchors { right: parent.right; bottom: parent.bottom }
-        width: 16
-        height: 16
+        width: 16; height: 16
 
         Text {
             anchors { right: parent.right; bottom: parent.bottom; rightMargin: 3; bottomMargin: 1 }
