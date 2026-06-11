@@ -278,20 +278,7 @@ PanelWindow {
 
     Process {
         id: kwinRefocusProcess
-        command: [
-            "bash", "-c",
-            "printf '%s\\n'" +
-            " 'var active = workspace.activeWindow;" +
-            " var stack = workspace.stackingOrder;" +
-            " for (var i = stack.length - 1; i >= 0; i--) {" +
-            "   var w = stack[i];" +
-            "   if (w && !w.deleted && w.normalWindow && w !== active) { workspace.activeWindow = w; break; }" +
-            " }'" +
-            " > /tmp/emojizasu-refocus.js &&" +
-            " qdbus6 org.kde.KWin /Scripting loadScript /tmp/emojizasu-refocus.js emojizasu_refocus 2>/dev/null &&" +
-            " qdbus6 org.kde.KWin /Scripting start 2>/dev/null &&" +
-            " qdbus6 org.kde.KWin /Scripting unloadScript emojizasu_refocus 2>/dev/null; true"
-        ]
+        command: [Qt.resolvedUrl("kwin-refocus.sh").toString().slice(7)] // strip file://
         onExited: if (window.pendingEmoji.length > 0) yieldTimer.start()
     }
 
