@@ -148,13 +148,11 @@ picker_ui_case() {
     pkill -f -- "--path $PICKER_DIR" 2>/dev/null || true
 }
 
-# Same as picker_ui_case but commits while the search box is engaged
-# (focusSearch → wantsKeyboard=true → picker focusable), so it exercises the
-# commit() release path: releaseKeyboard → refocus (KWin) / yieldTimer (wlroots)
-# → doCommit. The emoji must still land in the target and not leak into the
-# focused search box. This is the positive counterpart to the negative control.
+# Same as picker_ui_case but commits while the search box is engaged. Search must
+# leave the target focused and keep the key channel connected, so the emoji lands
+# in the target without compositor-specific focus transfer.
 picker_focused_commit_case() {
-    local name="real picker: engaged-search commit lands in target, not search box" pick="🎯"
+    local name="real picker: engaged search keeps target focus and key channel" pick="🎯"
     start_picker   || { bad "$name (picker didn't start)"; return; }
     ensure_focused || { bad "$name (target never gained focus)"; return; }
     tgt clear >/dev/null
@@ -163,15 +161,20 @@ picker_focused_commit_case() {
     if [ "$(pkr isVisible)" != "true" ]; then bad "$name (picker not visible)"; return; fi
     pkr focusSearch >/dev/null
     sleep 0.2
+    local target_active search_focused key_connected
+    target_active="$(tgt isActive)"
+    search_focused="$(pkr searchBoxFocused)"
+    key_connected="$(pkr keyChannelConnected)"
     pkr pick "$pick" >/dev/null
 
     local got search
     got="$(expect_text "$pick")"
     search="$(pkr searchBoxText)"
-    if [ "$got" = "$pick" ] && [ -z "$search" ]; then
-        ok "$name → target='$got', search box empty"
+    if [ "$target_active" = "true" ] && [ "$search_focused" = "false" ] \
+        && [ "$key_connected" = "true" ] && [ "$got" = "$pick" ] && [ -z "$search" ]; then
+        ok "$name → target focused, key channel connected, target='$got'"
     else
-        bad "$name: target='$got' (want '$pick'), searchBox='$search' (want empty)"
+        bad "$name: active='$target_active', searchFocused='$search_focused', keyConnected='$key_connected', target='$got', searchBox='$search'"
     fi
     pkr hide >/dev/null
     pkill -f -- "--path $PICKER_DIR" 2>/dev/null || true
@@ -180,11 +183,16 @@ picker_focused_commit_case() {
 # Forwarded keys (addon→socket→panel) drive the search box, with no Wayland
 # keyboard focus on the picker. Uses the feedKey hook to inject wire-format key
 # lines — the same path real keys take after the socket — so it runs without
-# input synthesis. fcitx keysyms: c=99 a=97 t=116, BackSpace=0xff08=65288.
+# input synthesis.
 picker_search_input_case() {
-    local name="real picker: forwarded keys type into search box"
+    local name="real picker: forwarded search typing, navigation, and escape"
     start_picker || { bad "$name (picker didn't start)"; return; }
     pkr open >/dev/null; sleep 0.2
+    pkr focusSearch >/dev/null
+    if [ "$(pkr keyChannelConnected)" != "true" ]; then
+        bad "$name: key channel disconnected after engaging search"
+        return
+    fi
     pkr feedKey "99 0 c" >/dev/null
     pkr feedKey "97 0 a"  >/dev/null
     pkr feedKey "116 0 t" >/dev/null
@@ -193,11 +201,17 @@ picker_search_input_case() {
     if [ "$s" = "cat" ]; then ok "$name → search='$s'"
     else bad "$name: search='$s' (want 'cat')"; fi
 
-    pkr feedKey "65288 0 " >/dev/null; sleep 0.1
+    pkr feedKey "65361 0 " >/dev/null
+    pkr feedKey "120 0 x" >/dev/null
+    pkr feedKey "65288 0 " >/dev/null
+    sleep 0.1
     s="$(pkr searchBoxText)"
-    if [ "$s" = "ca" ]; then ok "$name: backspace → '$s'"
-    else bad "$name: backspace got '$s' (want 'ca')"; fi
-    pkr hide >/dev/null
+    if [ "$s" = "cat" ]; then ok "$name: cursor-left/edit/backspace → '$s'"
+    else bad "$name: cursor-left/edit/backspace got '$s' (want 'cat')"; fi
+
+    pkr feedKey "65307 0 " >/dev/null; sleep 0.1
+    if [ "$(pkr isVisible)" = "false" ]; then ok "$name: escape closes picker"
+    else bad "$name: escape did not close picker"; fi
     pkill -f -- "--path $PICKER_DIR" 2>/dev/null || true
 }
 

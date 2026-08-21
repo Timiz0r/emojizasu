@@ -85,7 +85,6 @@ Rectangle {
 
     function engageSearch() {
         internalFocus = "search"
-        wantsKeyboard = true
         dlog("engageSearch")
     }
 
@@ -184,7 +183,6 @@ Rectangle {
 
     function ensureSearchEngaged() {
         if (internalFocus !== "search") engageSearch()
-        else wantsKeyboard = true
     }
 
     function insertInSearch(text) {

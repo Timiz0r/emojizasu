@@ -34,10 +34,10 @@ PanelWindow {
         return !!e && e.toLowerCase().indexOf("kde") !== -1
     }
 
-    // The picker takes keyboard focus only while the search box is engaged
-    // (panel.wantsKeyboard) so the TextInput edits natively; otherwise it stays
-    // unfocused and search/nav keys are diverted through the addon's key socket.
-    focusable: panel.wantsKeyboard || forceFocusable
+    // Keep the target application focused on every compositor. Search editing and
+    // navigation are handled through the addon's key socket; making the layer
+    // surface focusable here is unreliable on compositors such as niri.
+    focusable: forceFocusable
     visible: false
 
     property bool positioned: false
@@ -166,18 +166,18 @@ PanelWindow {
         function feedKey(line: string): void { panel.handleKeyLine(line) }
         function searchBoxText(): string { return panel.searchText }
         function searchBoxFocused(): bool { return panel.searchFocused }
+        function keyChannelConnected(): bool { return keySocket.connected }
         function isVisible(): bool { return window.visible }
         function focusSearch(): void { panel.focusSearch() }
     }
 
-    // Keystrokes forwarded from the addon while the picker is unfocused (browsing /
-    // type-to-search). When the search box engages, the picker takes real keyboard
-    // focus and Qt delivers keys to the TextInput directly, so the socket
-    // disconnects to avoid double-handling.
+    // Keystrokes forwarded from the addon while browsing and searching. The target
+    // application retains compositor keyboard focus, while fcitx consumes the keys
+    // and sends them here for internal routing.
     Socket {
         id: keySocket
         path: window.keySocketPath
-        connected: window.visible && !window.focusable
+        connected: window.visible && !window.forceFocusable
         property bool everConnected: false
         parser: SplitParser {
             splitMarker: "\n"
