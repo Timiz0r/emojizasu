@@ -10,6 +10,7 @@ Still unfinished, so plenty of jank and churn.
 ## Prereqs
 * Wayland (supporting `zwlr_layer_shell`, `zwp_text_input_manager`)
 * fcitx5
+* wl-clipboard
 
 ## Usage
 First, review the code since nothing is in a stable state.

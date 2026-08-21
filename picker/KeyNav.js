@@ -68,11 +68,12 @@ function route(line, internalFocus) {
 
     if (ctrlHeld) {
         let op = ""
+        const shortcutSym = sym >= 0x41 && sym <= 0x5a ? sym + 0x20 : sym
         // Not clipboard, but meh
-        if (sym === keyA) op = "selectAll"
-        else if (sym === keyC) op = "copy"
-        else if (sym === keyX) op = "cut"
-        else if (sym === keyV) op = "paste"
+        if (shortcutSym === keyA) op = "selectAll"
+        else if (shortcutSym === keyC) op = "copy"
+        else if (shortcutSym === keyX) op = "cut"
+        else if (shortcutSym === keyV) op = "paste"
         return { kind: "clipboard", op: op }
     }
 

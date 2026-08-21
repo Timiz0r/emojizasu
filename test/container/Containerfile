@@ -1,7 +1,7 @@
 FROM docker.io/library/archlinux:latest
 
 RUN pacman -Syu --noconfirm --needed \
-        sway dbus \
+        sway dbus wl-clipboard \
         fcitx5 \
         quickshell \
         qt6-tools \

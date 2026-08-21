@@ -201,13 +201,35 @@ picker_search_input_case() {
     if [ "$s" = "cat" ]; then ok "$name → search='$s'"
     else bad "$name: search='$s' (want 'cat')"; fi
 
+    pkr feedKey "65 5 " >/dev/null
+    pkr feedKey "100 0 d" >/dev/null
+    pkr feedKey "111 0 o" >/dev/null
+    pkr feedKey "103 0 g" >/dev/null
+    sleep 0.1
+    s="$(pkr searchBoxText)"
+    if [ "$s" = "dog" ]; then ok "$name: ctrl-a replaces selection → '$s'"
+    else bad "$name: ctrl-a replacement got '$s' (want 'dog')"; fi
+
+    pkr feedKey "97 4 " >/dev/null
+    pkr feedKey "120 4 " >/dev/null
+    sleep 0.1
+    s="$(pkr searchBoxText)"
+    if [ -z "$s" ]; then ok "$name: ctrl-x cuts selection"
+    else bad "$name: ctrl-x left '$s' (want empty)"; fi
+
+    pkr feedKey "118 4 " >/dev/null
+    sleep 0.1
+    s="$(pkr searchBoxText)"
+    if [ "$s" = "dog" ]; then ok "$name: ctrl-v restores clipboard → '$s'"
+    else bad "$name: ctrl-v got '$s' (want 'dog')"; fi
+
     pkr feedKey "65361 0 " >/dev/null
     pkr feedKey "120 0 x" >/dev/null
     pkr feedKey "65288 0 " >/dev/null
     sleep 0.1
     s="$(pkr searchBoxText)"
-    if [ "$s" = "cat" ]; then ok "$name: cursor-left/edit/backspace → '$s'"
-    else bad "$name: cursor-left/edit/backspace got '$s' (want 'cat')"; fi
+    if [ "$s" = "dog" ]; then ok "$name: cursor-left/edit/backspace → '$s'"
+    else bad "$name: cursor-left/edit/backspace got '$s' (want 'dog')"; fi
 
     pkr feedKey "65307 0 " >/dev/null; sleep 0.1
     if [ "$(pkr isVisible)" = "false" ]; then ok "$name: escape closes picker"

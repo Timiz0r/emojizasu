@@ -15,6 +15,9 @@ Item {
 
     property alias searchText: searchInput.text
     property alias searchCursorPosition: searchInput.cursorPosition
+    property alias searchSelectionStart: searchInput.selectionStart
+    property alias searchSelectionEnd: searchInput.selectionEnd
+    property alias searchSelectedText: searchInput.selectedText
     readonly property bool inputActiveFocus: searchInput.activeFocus
 
     signal closeRequested()
@@ -29,9 +32,7 @@ Item {
     function focusInput() { searchInput.forceActiveFocus() }
     function blurInput() { searchInput.focus = false }
     function selectAll() { searchInput.selectAll() }
-    function copy() { searchInput.copy() }
-    function cut() { searchInput.cut() }
-    function paste() { searchInput.paste() }
+    function deselect() { searchInput.deselect() }
 
     readonly property var t: Localization.t
     function _() { return Localization._.apply(null, arguments) }
@@ -105,6 +106,7 @@ Item {
                         font.pixelSize: 14; color: palette.text
                         verticalAlignment: TextInput.AlignVCenter; clip: true
                         activeFocusOnPress: root.forceFocusable
+                        persistentSelection: true
                         cursorVisible: root.forceFocusable ? activeFocus
                                                            : root.internalFocus === "search"
 

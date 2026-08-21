@@ -213,6 +213,8 @@ PanelWindow {
         onCloseRequested: window.visible = false
         onMoveWindowRequested: (dx, dy) => window.nudge(dx, dy)
         onResizeRequested: (w, h) => window.resize(w, h)
+        onClipboardCopyRequested: text => window.copyToClipboard(text)
+        onClipboardPasteRequested: window.pasteFromClipboard()
         onXChanged: window.queueSaveGeometry()
         onYChanged: window.queueSaveGeometry()
     }
@@ -292,6 +294,38 @@ PanelWindow {
     }
 
     Process { id: commitProcess }
+
+    property string pendingClipboardText: ""
+
+    function copyToClipboard(text) {
+        if (clipboardCopyProcess.running || text.length === 0) return
+        pendingClipboardText = text
+        clipboardCopyProcess.stdinEnabled = true
+        clipboardCopyProcess.running = true
+    }
+
+    function pasteFromClipboard() {
+        if (!clipboardPasteProcess.running)
+            clipboardPasteProcess.running = true
+    }
+
+    Process {
+        id: clipboardCopyProcess
+        command: ["wl-copy", "--type", "text/plain;charset=utf-8"]
+        onStarted: {
+            write(window.pendingClipboardText)
+            stdinEnabled = false
+            window.pendingClipboardText = ""
+        }
+    }
+
+    Process {
+        id: clipboardPasteProcess
+        command: ["wl-paste", "--no-newline", "--type", "text"]
+        stdout: StdioCollector {
+            onStreamFinished: panel.insertInSearch(text)
+        }
+    }
 
     Shortcut {
         sequence: "Escape"

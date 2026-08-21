@@ -14,6 +14,8 @@ Rectangle {
     signal closeRequested()
     signal moveWindowRequested(real dx, real dy)
     signal resizeRequested(real w, real h)
+    signal clipboardCopyRequested(string text)
+    signal clipboardPasteRequested()
 
     readonly property var t: Localization.t
     function _() { return Localization._.apply(null, arguments) }
@@ -187,21 +189,40 @@ Rectangle {
 
     function insertInSearch(text) {
         ensureSearchEngaged()
-        const p = header.searchCursorPosition
-        header.searchText = header.searchText.slice(0, p) + text + header.searchText.slice(p)
-        header.searchCursorPosition = p + text.length
+        const start = header.searchSelectionStart
+        const end = header.searchSelectionEnd
+        header.searchText = header.searchText.slice(0, start) + text + header.searchText.slice(end)
+        header.searchCursorPosition = start + text.length
     }
 
     function clipboardInSearch(op) {
         ensureSearchEngaged()
-        if (op === "selectAll") Qt.callLater(() => header.selectAll())
-        else if (op === "copy") Qt.callLater(() => header.copy())
-        else if (op === "cut") Qt.callLater(() => header.cut())
-        else if (op === "paste") Qt.callLater(() => header.paste())
+        if (op === "selectAll") header.selectAll()
+        else if (op === "copy") {
+            if (header.searchSelectedText.length > 0)
+                clipboardCopyRequested(header.searchSelectedText)
+        } else if (op === "cut") {
+            if (header.searchSelectedText.length > 0) {
+                clipboardCopyRequested(header.searchSelectedText)
+                deleteSearchSelection()
+            }
+        } else if (op === "paste") {
+            clipboardPasteRequested()
+        }
+    }
+
+    function deleteSearchSelection() {
+        const start = header.searchSelectionStart
+        const end = header.searchSelectionEnd
+        if (start === end) return false
+        header.searchText = header.searchText.slice(0, start) + header.searchText.slice(end)
+        header.searchCursorPosition = start
+        return true
     }
 
     function deleteBackInSearch() {
         ensureSearchEngaged()
+        if (deleteSearchSelection()) return
         const p = header.searchCursorPosition
         if (p > 0) {
             header.searchText = header.searchText.slice(0, p - 1) + header.searchText.slice(p)
@@ -211,6 +232,13 @@ Rectangle {
 
     function moveSearchCursor(delta) {
         ensureSearchEngaged()
+        const start = header.searchSelectionStart
+        const end = header.searchSelectionEnd
+        if (start !== end) {
+            header.searchCursorPosition = delta < 0 ? start : end
+            header.deselect()
+            return
+        }
         const np = header.searchCursorPosition + delta
         if (np >= 0 && np <= header.searchText.length) header.searchCursorPosition = np
     }
