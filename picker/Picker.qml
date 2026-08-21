@@ -249,8 +249,8 @@ PanelWindow {
 
     function doCommit(emoji) {
         commitProcess.command = [
-            "qdbus6", window.dbusService, "/imd",
-            window.dbusInterface + ".QueuedCommit", emoji
+            "busctl", "--user", "call", window.dbusService, "/imd",
+            window.dbusInterface, "QueuedCommit", "s", emoji
         ]
         commitProcess.running = true
     }
