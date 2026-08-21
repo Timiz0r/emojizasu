@@ -51,6 +51,7 @@ Rectangle {
 
     property var recentEmojiItems: []
     property var recentKaomojiItems: []
+    readonly property bool recentDataReady: EmojiData.recentDataReady
 
     function refreshRecentSnapshot() {
         recentEmojiItems = EmojiData.recentItems.filter(i => !EmojiData.kaomojis[i])
@@ -324,6 +325,10 @@ Rectangle {
 
     onDataReadyChanged: {
         if (dataReady) refreshRecentSnapshot()
+    }
+
+    onRecentDataReadyChanged: {
+        if (recentDataReady) refreshRecentSnapshot()
     }
 
     onIsSearchingChanged: {

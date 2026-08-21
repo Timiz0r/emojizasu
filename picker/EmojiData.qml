@@ -14,6 +14,7 @@ Singleton {
     readonly property var items: _items
     readonly property var categoryItems: _categoryItems
     readonly property var recentItems: _recentItems
+    readonly property bool recentDataReady: dataReady && _recentLoaded
 
     property int changeTracking: 0
 
@@ -27,6 +28,7 @@ Singleton {
     
     property var _recentList: []
     property var _recentItems: []
+    property bool _recentLoaded: false
 
     property var _kwCache: ({})
     property var _enKwCache: ({})
@@ -166,8 +168,13 @@ Singleton {
             try { root._recentList = JSON.parse(text()) }
             catch(e) { root._recentList = [] }
             root._buildRecentItems()
+            root._recentLoaded = true
         }
         onFileChanged: reload()
-        onLoadFailed: { root._recentList = []; root._recentItems = [] }
+        onLoadFailed: {
+            root._recentList = []
+            root._recentItems = []
+            root._recentLoaded = true
+        }
     }
 }
