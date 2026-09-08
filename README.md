@@ -15,11 +15,13 @@ Still unfinished, so plenty of jank and churn.
 ## Usage
 First, review the code since nothing is in a stable state.
 
-Install daemon via `imd/install.sh`.
-
-Reload fcitx5 (KDE-specific one via `imd/reload.sh`).
+Install and run daemon via `imd/install.sh`.
 
 Run `toggle.sh` and perhaps bind it to a key combination.
+
+If the install reports the addon didn't come up, log out and back in once so the
+session picks up `FCITX_ADDON_DIRS`. On KDE, `imd/reload.sh` reloads a rebuilt
+addon via KWin's launcher (which `install.sh` uses automatically there).
 
 ## Why not...
 * wtype: doesn't work on KDE Plasma
