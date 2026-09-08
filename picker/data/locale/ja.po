@@ -30,8 +30,19 @@ msgstr "「{0}」は見つかりませんでした"
 msgid "Can't reach the key-input service"
 msgstr "キー入力サービスに接続できません"
 
-msgid "Check that fcitx5 and the emojizasu addon are running, then reopen."
+msgid "Check that fcitx5 and the emojizasu addon are running."
 msgstr "fcitx5 と emojizasu アドオンが動作しているか確認してください"
+
+msgid "Reconnecting..."
+msgstr "再接続中..."
+
+msgid "Retry now"
+msgstr "今すぐ再接続"
+
+msgid "Retrying in {0} second"
+msgid_plural "Retrying in {0} seconds"
+msgstr[0] "まもなく再接続行します"
+msgstr[1] "{0} 秒後に再接続します"
 
 msgid "{0} result"
 msgid_plural "{0} results"

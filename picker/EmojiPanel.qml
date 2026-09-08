@@ -16,6 +16,7 @@ Rectangle {
     signal resizeRequested(real w, real h)
     signal clipboardCopyRequested(string text)
     signal clipboardPasteRequested()
+    signal retryRequested()
 
     readonly property var t: Localization.t
     function _() { return Localization._.apply(null, arguments) }
@@ -30,6 +31,7 @@ Rectangle {
     property string internalFocus: "grid"
     property bool wantsKeyboard: false
     property bool keyChannelDown: false
+    property int keyRetrySeconds: 0
     property int gridSelectedIndex: 0
 
     readonly property bool dataReady: EmojiData.dataReady
@@ -402,114 +404,147 @@ Rectangle {
             onCloseRequested: root.closeRequested()
         }
 
-        CategoryBar {
-            id: catBar
-            Layout.fillWidth: true
-            height: 44
-            categoryMeta: root.categoryMeta
-            currentCategory: root.currentCategory
-            focused: root.internalFocus === "categories"
-            visible: !root.isSearching
-            onCategoryActivated: id => {
-                root.currentCategory = id
-                root.searchText = ""
-            }
-        }
-
-        Rectangle {
-            Layout.fillWidth: true; height: 1; color: Qt.alpha(palette.windowText, 0.1)
-            visible: !root.isSearching
-        }
-
-        Text {
-            Layout.fillWidth: true
-            font.pixelSize: 11; color: Qt.alpha(palette.windowText, 0.45)
-            visible: root.dataReady
-            text: {
-                if (root.isSearching) {
-                    const n = root.searchEmojiItems.length + root.searchKaomojiItems.length
-                    return _(t`${n} result`, n, { other: t`${n} results`, zero: t`No results` })
-                }
-                if (root.currentCategory === "recent")
-                    return _`Recently used`
-                for (const meta of root.categoryMeta) {
-                    if (meta.id === root.currentCategory) {
-                        return meta.name + "  " + root.browseItems.length
-                    }
-                }
-                return ""
-            }
-        }
-
+        // Only the body below the header swaps out for the loading and
+        // disconnected states, so the drag handle, language toggle and close
+        // button stay usable — otherwise the window could only be killed from
+        // outside.
         StackLayout {
             Layout.fillWidth: true; Layout.fillHeight: true
-            currentIndex: root.isSearching ? 1 : 0
+            currentIndex: !root.dataReady ? 1 : (root.keyChannelDown ? 2 : 0)
 
-            BrowsePane {
-                id: browsePane
-                currentCategory: root.currentCategory
-                browseItems: root.browseItems
-                recentEmojiItems: root.recentEmojiItems
-                recentKaomojiItems: root.recentKaomojiItems
-                gridSelectedIndex: root.gridSelectedIndex
-                gridFocused: root.internalFocus === "grid"
-                dataReady: root.dataReady
-                onEmojiSelected: emoji => root.emojiSelected(emoji)
+            ColumnLayout {
+                spacing: 6
+
+                CategoryBar {
+                    id: catBar
+                    Layout.fillWidth: true
+                    height: 44
+                    categoryMeta: root.categoryMeta
+                    currentCategory: root.currentCategory
+                    focused: root.internalFocus === "categories"
+                    visible: !root.isSearching
+                    onCategoryActivated: id => {
+                        root.currentCategory = id
+                        root.searchText = ""
+                    }
+                }
+
+                Rectangle {
+                    Layout.fillWidth: true; height: 1; color: Qt.alpha(palette.windowText, 0.1)
+                    visible: !root.isSearching
+                }
+
+                Text {
+                    Layout.fillWidth: true
+                    font.pixelSize: 11; color: Qt.alpha(palette.windowText, 0.45)
+                    text: {
+                        if (root.isSearching) {
+                            const n = root.searchEmojiItems.length + root.searchKaomojiItems.length
+                            return _(t`${n} result`, n, { other: t`${n} results`, zero: t`No results` })
+                        }
+                        if (root.currentCategory === "recent")
+                            return _`Recently used`
+                        for (const meta of root.categoryMeta) {
+                            if (meta.id === root.currentCategory) {
+                                return meta.name + "  " + root.browseItems.length
+                            }
+                        }
+                        return ""
+                    }
+                }
+
+                StackLayout {
+                    Layout.fillWidth: true; Layout.fillHeight: true
+                    currentIndex: root.isSearching ? 1 : 0
+
+                    BrowsePane {
+                        id: browsePane
+                        currentCategory: root.currentCategory
+                        browseItems: root.browseItems
+                        recentEmojiItems: root.recentEmojiItems
+                        recentKaomojiItems: root.recentKaomojiItems
+                        gridSelectedIndex: root.gridSelectedIndex
+                        gridFocused: root.internalFocus === "grid"
+                        dataReady: root.dataReady
+                        onEmojiSelected: emoji => root.emojiSelected(emoji)
+                    }
+
+                    SearchPane {
+                        id: searchPane
+                        searchEmojiItems: root.searchEmojiItems
+                        searchKaomojiItems: root.searchKaomojiItems
+                        gridSelectedIndex: root.gridSelectedIndex
+                        gridFocused: root.internalFocus === "grid"
+                        isSearching: root.isSearching
+                        dataReady: root.dataReady
+                        searchText: root.searchText
+                        onEmojiSelected: emoji => root.emojiSelected(emoji)
+                    }
+                }
             }
 
-            SearchPane {
-                id: searchPane
-                searchEmojiItems: root.searchEmojiItems
-                searchKaomojiItems: root.searchKaomojiItems
-                gridSelectedIndex: root.gridSelectedIndex
-                gridFocused: root.internalFocus === "grid"
-                isSearching: root.isSearching
-                dataReady: root.dataReady
-                searchText: root.searchText
-                onEmojiSelected: emoji => root.emojiSelected(emoji)
+            Item {
+                Column {
+                    anchors.centerIn: parent; spacing: 12
+                    Text {
+                        anchors.horizontalCenter: parent.horizontalCenter
+                        text: "🌸"; font.pixelSize: 48; renderType: Text.NativeRendering
+                    }
+                    Text {
+                        anchors.horizontalCenter: parent.horizontalCenter
+                        text: _`Loading...`
+                        color: Qt.alpha(palette.windowText, 0.5); font.pixelSize: 14
+                    }
+                }
             }
-        }
-    }
 
-    Rectangle {
-        anchors.fill: parent; radius: 8; color: palette.window
-        visible: !root.dataReady
-
-        Column {
-            anchors.centerIn: parent; spacing: 12
-            Text {
-                anchors.horizontalCenter: parent.horizontalCenter
-                text: "🌸"; font.pixelSize: 48; renderType: Text.NativeRendering
-            }
-            Text {
-                anchors.horizontalCenter: parent.horizontalCenter
-                text: _`Loading...`
-                color: Qt.alpha(palette.windowText, 0.5); font.pixelSize: 14
-            }
-        }
-    }
-
-    Rectangle {
-        anchors.fill: parent; radius: 8; color: palette.window
-        visible: root.keyChannelDown
-
-        Column {
-            anchors.centerIn: parent; spacing: 12; width: 300
-            Text {
-                anchors.horizontalCenter: parent.horizontalCenter
-                text: "⚠️"; font.pixelSize: 48; renderType: Text.NativeRendering
-            }
-            Text {
-                width: parent.width
-                text: _`Can't reach the key-input service`
-                color: palette.windowText; font.pixelSize: 15; font.bold: true
-                horizontalAlignment: Text.AlignHCenter; wrapMode: Text.Wrap
-            }
-            Text {
-                width: parent.width
-                text: _`Check that fcitx5 and the emojizasu addon are running, then reopen.`
-                color: Qt.alpha(palette.windowText, 0.55); font.pixelSize: 12
-                horizontalAlignment: Text.AlignHCenter; wrapMode: Text.Wrap
+            Item {
+                Column {
+                    anchors.centerIn: parent; spacing: 12; width: 300
+                    Text {
+                        anchors.horizontalCenter: parent.horizontalCenter
+                        text: "⚠️"; font.pixelSize: 40; renderType: Text.NativeRendering
+                    }
+                    Text {
+                        width: parent.width
+                        text: _`Can't reach the key-input service`
+                        color: palette.windowText; font.pixelSize: 15; font.bold: true
+                        horizontalAlignment: Text.AlignHCenter; wrapMode: Text.Wrap
+                    }
+                    Text {
+                        width: parent.width
+                        text: _`Check that fcitx5 and the emojizasu addon are running.`
+                        color: Qt.alpha(palette.windowText, 0.55); font.pixelSize: 12
+                        horizontalAlignment: Text.AlignHCenter; wrapMode: Text.Wrap
+                    }
+                    Text {
+                        width: parent.width
+                        text: {
+                            const n = root.keyRetrySeconds
+                            if (n <= 0) return _`Reconnecting...`
+                            return _(t`Retrying in ${n} second`, n, { other: t`Retrying in ${n} seconds` })
+                        }
+                        color: Qt.alpha(palette.windowText, 0.7); font.pixelSize: 12
+                        horizontalAlignment: Text.AlignHCenter; wrapMode: Text.Wrap
+                    }
+                    Rectangle {
+                        anchors.horizontalCenter: parent.horizontalCenter
+                        width: retryLabel.implicitWidth + 24; height: 28; radius: 14
+                        color: retryHover.containsMouse ? Qt.lighter(palette.button, 1.1) : palette.button
+                        border.color: Qt.darker(palette.button, 1.15); border.width: 1
+                        Text {
+                            id: retryLabel
+                            anchors.centerIn: parent
+                            text: _`Retry now`
+                            font.pixelSize: 12; color: palette.buttonText
+                        }
+                        MouseArea {
+                            id: retryHover; anchors.fill: parent; hoverEnabled: true
+                            cursorShape: Qt.PointingHandCursor
+                            onClicked: root.retryRequested()
+                        }
+                    }
+                }
             }
         }
     }

@@ -45,14 +45,72 @@ PanelWindow {
     property bool keyChannelDown: false
     property string pendingEmoji: ""
 
+    // Reconnect loop for the addon's key socket. A Socket that failed to connect
+    // won't retry when its `connected` property is toggled — the object has to be
+    // recreated — so retries destroy and rebuild it through `keySocketLoader`.
+    readonly property int keyRetryInterval: 5
+    property int keyRetrySeconds: 0
+    property bool keyChannelEverConnected: false
+    readonly property bool keyChannelWanted: visible && !forceFocusable
+    readonly property bool keyChannelConnected: keySocketLoader.item ? keySocketLoader.item.connected : false
+
     onVisibleChanged: {
         if (visible) {
             panel.refreshRecentSnapshot()
+            keyStateCheck.restart()
             if (!positioned) window.tryApplyInitialGeometry()
         } else {
-            keySocket.everConnected = false
+            keyRetryTimer.stop()
+            keyStateCheck.stop()
+            keyRetrySeconds = 0
+            keyChannelEverConnected = false
             keyChannelDown = false
             panel.resetFocusState()
+        }
+    }
+
+    // A failed connect can happen synchronously while the `connected` binding is
+    // first evaluated — before QML signal handlers are attached — so the socket's
+    // error/state signals can't be relied on to notice a missing daemon. Poll the
+    // resulting state instead.
+    Timer {
+        id: keyStateCheck
+        interval: 250
+        onTriggered: {
+            if (!window.keyChannelWanted) return
+            if (window.keyChannelConnected) {
+                window.keyChannelDown = false
+                window.keyRetrySeconds = 0
+                keyRetryTimer.stop()
+            } else {
+                window.keyChannelDown = true
+                window.scheduleKeyRetry()
+            }
+        }
+    }
+
+    function scheduleKeyRetry() {
+        if (!keyChannelWanted || keyRetryTimer.running) return
+        keyRetrySeconds = keyRetryInterval
+        keyRetryTimer.restart()
+    }
+
+    function retryKeySocketNow() {
+        if (!keyChannelWanted) return
+        keyRetryTimer.stop()
+        keyRetrySeconds = 0
+        keySocketLoader.active = false
+        keySocketLoader.active = true
+        keyStateCheck.restart()
+    }
+
+    Timer {
+        id: keyRetryTimer
+        interval: 1000
+        repeat: true
+        onTriggered: {
+            if (window.keyRetrySeconds > 1) { window.keyRetrySeconds--; return }
+            window.retryKeySocketNow()
         }
     }
 
@@ -166,37 +224,52 @@ PanelWindow {
         function feedKey(line: string): void { panel.handleKeyLine(line) }
         function searchBoxText(): string { return panel.searchText }
         function searchBoxFocused(): bool { return panel.searchFocused }
-        function keyChannelConnected(): bool { return keySocket.connected }
+        function keyChannelConnected(): bool { return window.keyChannelConnected }
+        function keyChannelDown(): bool { return window.keyChannelDown }
+        function keyRetrySeconds(): int { return window.keyRetrySeconds }
+        function retryKeyChannel(): void { window.retryKeySocketNow() }
         function isVisible(): bool { return window.visible }
         function focusSearch(): void { panel.focusSearch() }
     }
 
     // Keystrokes forwarded from the addon while browsing and searching. The target
     // application retains compositor keyboard focus, while fcitx consumes the keys
-    // and sends them here for internal routing.
-    Socket {
-        id: keySocket
-        path: window.keySocketPath
-        connected: window.visible && !window.forceFocusable
-        property bool everConnected: false
-        parser: SplitParser {
-            splitMarker: "\n"
-            onRead: line => panel.handleKeyLine(line)
-        }
-        onConnectionStateChanged: {
-            DebugLog.event("socket", "connected=" + connected
-                + " visible=" + window.visible + " focusable=" + window.focusable)
-            if (connected) {
-                everConnected = true
-                window.keyChannelDown = false
-            } else if (everConnected && window.visible && !window.focusable) {
-                console.warn("emojizasu: key socket dropped (search unusable)")
-                window.keyChannelDown = true
+    // and sends them here for internal routing. Held in a Loader so a failed
+    // connection can be retried by rebuilding the Socket.
+    Loader {
+        id: keySocketLoader
+        active: true
+        sourceComponent: Component {
+            Socket {
+                path: window.keySocketPath
+                connected: window.keyChannelWanted
+                parser: SplitParser {
+                    splitMarker: "\n"
+                    onRead: line => panel.handleKeyLine(line)
+                }
+                onConnectionStateChanged: {
+                    DebugLog.event("socket", "connected=" + connected
+                        + " visible=" + window.visible + " focusable=" + window.focusable)
+                    if (connected) {
+                        window.keyChannelEverConnected = true
+                        window.keyChannelDown = false
+                        keyRetryTimer.stop()
+                        window.keyRetrySeconds = 0
+                    } else if (window.keyChannelWanted) {
+                        if (window.keyChannelEverConnected)
+                            console.warn("emojizasu: key socket dropped (search unusable)")
+                        window.keyChannelDown = true
+                        window.scheduleKeyRetry()
+                    }
+                }
+                onError: err => {
+                    DebugLog.event("socket", "error " + err)
+                    if (window.keyChannelWanted) {
+                        window.keyChannelDown = true
+                        window.scheduleKeyRetry()
+                    }
+                }
             }
-        }
-        onError: err => {
-            console.warn("emojizasu: cannot reach key socket (" + err + ")")
-            if (window.visible && !window.focusable) window.keyChannelDown = true
         }
     }
 
@@ -208,7 +281,9 @@ PanelWindow {
         dragMaxY: window.height - window.panelHeight
         forceFocusable: window.forceFocusable
         keyChannelDown: window.keyChannelDown
+        keyRetrySeconds: window.keyRetrySeconds
 
+        onRetryRequested: window.retryKeySocketNow()
         onEmojiSelected: emoji => window.commit(emoji)
         onCloseRequested: window.visible = false
         onMoveWindowRequested: (dx, dy) => window.nudge(dx, dy)
